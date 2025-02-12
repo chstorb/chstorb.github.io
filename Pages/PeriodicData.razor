@@ -1,0 +1,43 @@
+﻿@page "/periodic-data"
+@implements IDisposable
+@using BlazorWebAssemblyApp.Models.GitHub
+@using BlazorWebAssemblyApp.Services
+@inject PeriodicDataService DataService
+
+<h3>Dashboard</h3>
+
+@if (issues == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <ul>
+        @foreach (var issue in issues)
+        {
+            <li>@issue.Title</li>
+        }
+    </ul>
+}
+
+@code {
+    private IEnumerable<Issue>? issues = [];
+
+    protected override void OnInitialized()
+    {
+        DataService.OnDataUpdated += UpdateIssues;
+        DataService.Start();
+    }
+
+    private void UpdateIssues(IEnumerable<Issue> newIssues)
+    {
+        issues = newIssues;
+        InvokeAsync(StateHasChanged);
+    }
+
+    public void Dispose()
+    {
+        DataService.OnDataUpdated -= UpdateIssues;
+        DataService.Stop();
+    }
+}
