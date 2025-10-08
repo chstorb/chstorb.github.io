@@ -1,0 +1,47 @@
+﻿name: Deploy Blazor WASM to GitHub Pages
+
+on:
+  push:
+    branches: [ "main" ] # Oder "master", je nach Ihrem Hauptbranch
+  workflow_dispatch:
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+      
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.0.x' # Passen Sie dies an Ihre .NET-Version an
+
+    - name: Restore dependencies
+      run: dotnet restore
+      
+    # Der kritische Build-Schritt: Veröffentlichen der App
+    - name: Publish Blazor WebAssembly
+      run: dotnet publish -c Release -o app/publish /p:GHPages=true --nologo
+      # --nologo ist nur kosmetisch. Wichtiger ist die Konfiguration der Projektdatei, falls Sie den Base Path im Build statt in der index.html setzen wollen.
+      
+    # Wenn Benutzer nach dem Deployment die Anwendung direkt aufrufen (https://chstorb.github.io/) funktioniert es, aber bei einem Deep-Link 
+    # oder nach einem Refresh auf einer Subseite (z.B. /radzengrid) erhalten sie einen 404 Not Found Fehler. GitHub Pages ist ein statischer 
+    # Host und weiß nicht, wie es mit dem Blazor-Routing umgehen soll. Die Lösung besteht darin, die index.html als 404.html zu kopieren. 
+    # GitHub Pages verwendet die 404.html als Fallback für nicht gefundene Routen, wodurch Blazor das Routing übernehmen kann.
+    - name: Fix 404 Routing for GitHub Pages
+      run: cp app/publish/wwwroot/index.html app/publish/wwwroot/404.html
+
+    - name: Adjust output directory for gh-pages
+      # Die statischen Dateien liegen im 'wwwroot' des 'publish' Ordners.
+      run: mv app/publish/wwwroot app/publish/dist
+      
+    # Deployment auf GitHub Pages (peaceiris/actions-gh-pages ist der Standard)
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: app/publish/dist # Das Verzeichnis, das die statischen Dateien enthält
+        publish_branch: gh-pages # Der Branch, den GitHub Pages liest
+        cname: chstorb.github.io # Optional, wenn Sie eine Custom Domain haben, sonst entfernen
