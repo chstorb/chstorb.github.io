@@ -29,7 +29,7 @@ jobs:
     - name: Publish Blazor WebAssembly (Release Build)
       # NEUE, KORRIGIERTE ZEILE: Pfad zur .csproj-Datei hinzufügen!
       # Erstellt die statischen Assets im Ordner 'app/publish/wwwroot'
-      run: dotnet publish BlazorWebAssemblyApp/BlazorWebAssemblyApp.csproj -c Release -o app/publish --nologo
+      run: dotnet publish BlazorWebAssemblyApp.csproj -c Release -o app/publish --nologo
       # Wenn Ihr Projekt im Root des Repos liegt, lautet der Pfad:
       # run: dotnet publish BlazorWebAssemblyApp.csproj -c Release -o app/publish --nologo
       # --nologo ist nur kosmetisch. Wichtiger ist die Konfiguration der Projektdatei, falls Sie den Base Path im Build statt in der index.html setzen wollen.
