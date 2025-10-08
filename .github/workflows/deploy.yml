@@ -26,8 +26,12 @@ jobs:
       run: dotnet restore
       
     # Der kritische Build-Schritt: Veröffentlichen der App
-    - name: Publish Blazor WebAssembly
-      run: dotnet publish -c Release -o app/publish /p:GHPages=true --nologo
+    - name: Publish Blazor WebAssembly (Release Build)
+      # NEUE, KORRIGIERTE ZEILE: Pfad zur .csproj-Datei hinzufügen!
+      # Erstellt die statischen Assets im Ordner 'app/publish/wwwroot'
+      run: dotnet publish BlazorWebAssemblyApp/BlazorWebAssemblyApp.csproj -c Release -o app/publish --nologo
+      # Wenn Ihr Projekt im Root des Repos liegt, lautet der Pfad:
+      # run: dotnet publish BlazorWebAssemblyApp.csproj -c Release -o app/publish --nologo
       # --nologo ist nur kosmetisch. Wichtiger ist die Konfiguration der Projektdatei, falls Sie den Base Path im Build statt in der index.html setzen wollen.
       
     # Wenn Benutzer nach dem Deployment die Anwendung direkt aufrufen (https://chstorb.github.io/) funktioniert es, aber bei einem Deep-Link 
@@ -37,9 +41,9 @@ jobs:
     - name: Fix 404 Routing for GitHub Pages
       run: cp app/publish/wwwroot/index.html app/publish/wwwroot/404.html
 
-    - name: Adjust output directory for gh-pages
-      # Die statischen Dateien liegen im 'wwwroot' des 'publish' Ordners.
-      run: mv app/publish/wwwroot app/publish/dist
+    #- name: Adjust output directory for gh-pages
+    #  # Die statischen Dateien liegen im 'wwwroot' des 'publish' Ordners.
+    #  run: mv app/publish/wwwroot app/publish/dist
       
     # Deployment auf GitHub Pages (peaceiris/actions-gh-pages ist der Standard)
     - name: Deploy to GitHub Pages
