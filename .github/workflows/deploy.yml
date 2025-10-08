@@ -5,6 +5,10 @@ on:
     branches: [ "main" ] # Oder "master", je nach Ihrem Hauptbranch
   workflow_dispatch:
 
+  # HIER MUSS DER BERECHTIGUNGSBLOCK EINGEFÜGT WERDEN
+permissions:
+  contents: write # KRITISCH: Erlaubt dem Workflow, in Repository-Inhalte (inkl. gh-pages) zu schreiben.
+
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
@@ -42,6 +46,7 @@ jobs:
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: app/publish/dist # Das Verzeichnis, das die statischen Dateien enthält
+        #publish_dir: app/publish/dist # Das Verzeichnis, das die statischen Dateien enthält
+        publish_dir: app/publish/wwwroot
         publish_branch: gh-pages # Der Branch, den GitHub Pages liest
         cname: chstorb.github.io # Optional, wenn Sie eine Custom Domain haben, sonst entfernen
