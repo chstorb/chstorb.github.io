@@ -3,7 +3,7 @@
     <RadzenTheme Theme="material" />
 </HeadContent>
 <RadzenComponents />
-<div class="page">
+@* <div class="page">
     <div class="sidebar">
         <NavMenu />
     </div>
@@ -17,4 +17,44 @@
             @Body
         </article>
     </main>
-</div>
+</div> *@
+<HeadContent>
+    <RadzenTheme Theme="material" />
+</HeadContent>
+
+<RadzenLayout>
+
+    <RadzenHeader>
+        <div class="d-flex align-items-center">
+            <RadzenSidebarToggle Click="@(() => sidebarExpanded = !sidebarExpanded)" />
+            <RadzenLabel Text="STC STORB Consulting" class="rz-ml-3" />
+        </div>
+    </RadzenHeader>
+
+    <RadzenSidebar @bind-Expanded="@sidebarExpanded">
+        <RadzenPanelMenu>
+            <RadzenPanelMenuItem Text="Home" Icon="home" Path="/" />
+
+            <RadzenPanelMenuItem Text="Counter" Icon="exposure_plus_1" Path="/counter" />
+
+            <RadzenPanelMenuItem Text="Weather" Icon="cloudy_snowing" Path="/weather" />
+        </RadzenPanelMenu>
+    </RadzenSidebar>
+
+    <RadzenBody>
+        <div class="rz-p-4">
+            @Body
+        </div>
+    </RadzenBody>
+
+    <RadzenFooter>
+        <div class="text-center rz-p-2">
+            &copy; @DateTime.Now.Year STC STORB Consulting auf GitHub Pages
+        </div>
+    </RadzenFooter>
+
+</RadzenLayout>
+
+@code {
+    bool sidebarExpanded = true;
+}
