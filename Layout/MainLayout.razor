@@ -1,23 +1,11 @@
 ﻿@inherits LayoutComponentBase
+
 <HeadContent>
     <RadzenTheme Theme="material" />
 </HeadContent>
+
 <RadzenComponents />
-@* <div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
-        </div>
-
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
-</div> *@
 <HeadContent>
     <RadzenTheme Theme="material" />
 </HeadContent>
@@ -25,10 +13,28 @@
 <RadzenLayout>
 
     <RadzenHeader>
-        <div class="d-flex align-items-center">
-            <RadzenSidebarToggle Click="@(() => sidebarExpanded = !sidebarExpanded)" />
-            <RadzenLabel Text="STC STORB Consulting" class="rz-ml-3" />
-        </div>
+        <RadzenStack Orientation="Orientation.Horizontal"
+                     AlignItems="AlignItems.Center"
+                     JustifyContent="JustifyContent.SpaceBetween"
+                     Class="w-100 rz-p-2">
+
+            <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center">
+                <RadzenSidebarToggle Click="@(() => sidebarExpanded = !sidebarExpanded)" />
+                <RadzenLabel Text="STC STORB Consulting" Class="rz-ml-3 rz-text-nowrap" />
+            </RadzenStack>
+
+            <RadzenMenu Orientation="Orientation.Horizontal">
+                <RadzenMenuItem Text="DataGrid Demo" Path="/weather" Icon="grid_on" />
+                <RadzenMenuItem Text="Contact" Path="/contact" Icon="mail" />
+
+                <RadzenMenuItem Text="Account" Icon="account_circle">
+                    <RadzenMenuItem Text="Profile" Path="/profile" />
+                    <RadzenMenuItem Text="Settings" Path="/settings" />
+                    <RadzenMenuItem Text="Logout" Path="/logout" />
+                </RadzenMenuItem>
+            </RadzenMenu>
+
+        </RadzenStack>
     </RadzenHeader>
 
     <RadzenSidebar @bind-Expanded="@sidebarExpanded">
@@ -55,6 +61,3 @@
 
 </RadzenLayout>
 
-@code {
-    bool sidebarExpanded = true;
-}
