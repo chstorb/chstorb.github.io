@@ -2,12 +2,12 @@
 
 on:
   push:
-    branches: [ "main" ] # Oder "master", je nach Ihrem Hauptbranch
+    branches: [ "main" ] # Or "master", depending on your main branch
   workflow_dispatch:
 
-  # HIER MUSS DER BERECHTIGUNGSBLOCK EINGEFÜGT WERDEN
+  # THE PERMISSIONS BLOCK MUST BE INSERTED HERE
 permissions:
-  contents: write # KRITISCH: Erlaubt dem Workflow, in Repository-Inhalte (inkl. gh-pages) zu schreiben.
+  contents: write # CRITICAL: Allows the workflow to write to repository contents (including gh-pages).
 
 jobs:
   build_and_deploy:
@@ -20,37 +20,37 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '8.0.x' # Passen Sie dies an Ihre .NET-Version an
+        dotnet-version: '8.0.x' # Adjust this to your .NET version
 
     - name: Restore dependencies
       run: dotnet restore
       
-    # Der kritische Build-Schritt: Veröffentlichen der App
+    # The critical build step: Publish the app
     - name: Publish Blazor WebAssembly (Release Build)
-      # NEUE, KORRIGIERTE ZEILE: Pfad zur .csproj-Datei hinzufügen!
-      # Erstellt die statischen Assets im Ordner 'app/publish/wwwroot'
+      # NEW, CORRECTED LINE: Add path to .csproj file!
+      # Creates the static assets in the folder 'app/publish/wwwroot'
       run: dotnet publish BlazorWebAssemblyApp.csproj -c Release -o app/publish --nologo
-      # Wenn Ihr Projekt im Root des Repos liegt, lautet der Pfad:
+      # If your project is in the root of the repo, the path is:
       # run: dotnet publish BlazorWebAssemblyApp.csproj -c Release -o app/publish --nologo
-      # --nologo ist nur kosmetisch. Wichtiger ist die Konfiguration der Projektdatei, falls Sie den Base Path im Build statt in der index.html setzen wollen.
+      # --nologo is only cosmetic. More important is the configuration of the project file if you want to set the base path during build instead of in index.html.
       
-    # Wenn Benutzer nach dem Deployment die Anwendung direkt aufrufen (https://chstorb.github.io/) funktioniert es, aber bei einem Deep-Link 
-    # oder nach einem Refresh auf einer Subseite (z.B. /radzengrid) erhalten sie einen 404 Not Found Fehler. GitHub Pages ist ein statischer 
-    # Host und weiß nicht, wie es mit dem Blazor-Routing umgehen soll. Die Lösung besteht darin, die index.html als 404.html zu kopieren. 
-    # GitHub Pages verwendet die 404.html als Fallback für nicht gefundene Routen, wodurch Blazor das Routing übernehmen kann.
+    # When users access the application directly after deployment (https://chstorb.github.io/) it works, but with a deep link
+    # or after a refresh on a subpage (e.g. /radzengrid) they get a 404 Not Found error. GitHub Pages is a static
+    # host and does not know how to handle Blazor routing. The solution is to copy index.html to 404.html.
+    # GitHub Pages uses 404.html as a fallback for not found routes, allowing Blazor to take over routing.
     - name: Fix 404 Routing for GitHub Pages
       run: cp app/publish/wwwroot/index.html app/publish/wwwroot/404.html
 
     #- name: Adjust output directory for gh-pages
-    #  # Die statischen Dateien liegen im 'wwwroot' des 'publish' Ordners.
+    #  # The static files are in the 'wwwroot' of the 'publish' folder.
     #  run: mv app/publish/wwwroot app/publish/dist
       
-    # Deployment auf GitHub Pages (peaceiris/actions-gh-pages ist der Standard)
+    # Deployment to GitHub Pages (peaceiris/actions-gh-pages is the standard)
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        #publish_dir: app/publish/dist # Das Verzeichnis, das die statischen Dateien enthält
+        #publish_dir: app/publish/dist # The directory containing the static files
         publish_dir: app/publish/wwwroot
-        publish_branch: gh-pages # Der Branch, den GitHub Pages liest
-        cname: chstorb.github.io # Optional, wenn Sie eine Custom Domain haben, sonst entfernen
+        publish_branch: gh-pages # The branch read by GitHub Pages
+        cname: chstorb.github.io # Optional, if you have a custom domain, otherwise remove
