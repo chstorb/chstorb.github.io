@@ -1,7 +1,13 @@
 ﻿@page "/"
+@using System.Text.RegularExpressions
+@inject HttpClient Http
+
+<style>
+    .rz-markdown img {
+        width: 340px !important;
+    }
+</style>
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
-
-Welcome to your new app.
+<RadzenMarkdown Text=@markdownContent AllowHtml=@allowHtml />
