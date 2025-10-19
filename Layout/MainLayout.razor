@@ -1,4 +1,5 @@
-﻿@inherits LayoutComponentBase
+﻿@using BlazorWebAssemblyApp.Shared
+@inherits LayoutComponentBase
 
 <HeadContent>
     <RadzenTheme Theme="material" />
@@ -24,13 +25,13 @@
             </RadzenStack>
 
             <RadzenMenu Orientation="Orientation.Horizontal">
-                <RadzenMenuItem Text="DataGrid Demo" Path="/weather" Icon="grid_on" />
-                <RadzenMenuItem Text="Contact" Path="/contact" Icon="mail" />
+                <RadzenMenuItem Text="DataGrid Demo" Path="https://storbconsulting.wordpress.com" Icon="grid_on" />
+                <RadzenMenuItem Text="Contact" Path="https://storbconsulting.wordpress.com" Icon="mail" />
 
                 <RadzenMenuItem Text="Account" Icon="account_circle">
-                    <RadzenMenuItem Text="Profile" Path="/profile" />
-                    <RadzenMenuItem Text="Settings" Path="/settings" />
-                    <RadzenMenuItem Text="Logout" Path="/logout" />
+                    <RadzenMenuItem Text="Profile" Path="https://storbconsulting.wordpress.com" />
+                    <RadzenMenuItem Text="Settings" Path="https://storbconsulting.wordpress.com" />
+                    <RadzenMenuItem Text="Logout" Path="https://storbconsulting.wordpress.com" />
                 </RadzenMenuItem>
             </RadzenMenu>
 
@@ -54,10 +55,11 @@
     </RadzenBody>
 
     <RadzenFooter>
-        <div class="text-center rz-p-2">
-            &copy; @DateTime.Now.Year STC STORB Consulting auf GitHub Pages
-        </div>
+        <! -- Sticky footer content -->
     </RadzenFooter>
 
 </RadzenLayout>
 
+<div class="footer-container">
+    <Footer />
+</div>

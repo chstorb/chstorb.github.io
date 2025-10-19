@@ -1,19 +1,18 @@
 ﻿using BlazorWebAssemblyApp.Services;
 using Microsoft.AspNetCore.Components;
 
-namespace BlazorWebAssemblyApp.Pages;
-
-public partial class Home
+namespace BlazorWebAssemblyApp.Pages.Policies;
+public partial class PrivacyPolicy
 {
-    [Inject]
+    [Inject] 
     public required IMarkdownService MarkdownService { get; set; }
 
+    private string markdownContent = "";
     private bool allowHtml = true;
-    private string? markdownContent = "";
 
     protected override async Task OnInitializedAsync()
     {
-        var url = "https://raw.githubusercontent.com/chstorb/chstorb/main/README.md";
+        var url = "https://raw.githubusercontent.com/chstorb/chstorb/main/policies/privacy-policy.md";
         markdownContent = await MarkdownService.LoadSanitizedMarkdownAsync(url);
     }
 }

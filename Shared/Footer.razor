@@ -1,0 +1,33 @@
+﻿@using Radzen
+
+<RadzenRow Class="footer-lead" Style="margin-bottom: 1rem;">
+    <RadzenColumn Width="12rem">
+        <RadzenImage Path="images/stclogotransparent.png" Style="max-width: 90px;" />
+    </RadzenColumn>
+    <RadzenColumn>
+        <h6>STC STORB Consulting</h6>
+        <p>Modulare, rechtssichere Weblösungen für moderne Unternehmen.</p>
+    </RadzenColumn>
+</RadzenRow>
+
+<RadzenRow Class="footer-links">
+    <RadzenColumn Width="50%">
+        <h6>Unternehmen</h6>
+        <RadzenLink Path="https://storbconsulting.wordpress.com" Text="Über uns" />
+        <RadzenLink Path="https://storbconsulting.wordpress.com" Text="Blogs" />
+    </RadzenColumn>
+    <RadzenColumn Width="50%">
+        <h6>Rechtliches</h6>
+        <RadzenLink Path="/legal-notice" Text="Impressum" />
+        <RadzenLink Path="/privacy-policy" Text="Datenschutzerklärung" />
+        <RadzenLink Path="/cookie-policy" Text="Cookie-Richtlinie" />
+    </RadzenColumn>
+</RadzenRow>
+
+<RadzenRow Class="footer-bottom" Style="margin-top: 1rem;">
+    <RadzenColumn>
+        <p class="text-center rz-p-2">
+            &copy; @DateTime.Now.Year STC STORB Consulting auf GitHub Pages
+        </p>
+    </RadzenColumn>
+</RadzenRow>
