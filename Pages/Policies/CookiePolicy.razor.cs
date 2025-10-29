@@ -12,7 +12,7 @@ public partial class CookiePolicy
 
     protected override async Task OnInitializedAsync()
     {
-        var url = "https://raw.githubusercontent.com/chstorb/chstorb/main/policies/cookie-policy.md";
+        var url = "https://raw.githubusercontent.com/chstorb/chstorb/main/content/consulting/policies/cookie-policy.md";
         markdownContent = await MarkdownService.GetContentAsync(url);
     }
 }

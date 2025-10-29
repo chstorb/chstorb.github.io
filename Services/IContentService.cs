@@ -3,8 +3,8 @@ namespace BlazorWebAssemblyApp.Services;
 
 public interface IContentService
 {
-    IEnumerable<string> GetAllSlugs(List<ContentEntry> index, string tenant);
-    Task<List<ContentEntry>> GetContentIndexAsync();
-    IEnumerable<ContentEntry> GetFooterLinks(List<ContentEntry> index, string tenant);
-    IEnumerable<ContentEntry> GetTenantNavigation(List<ContentEntry> index, string tenant);
+    Task<ContentEntry?> GetTenantRootAsync(string tenant);
+    IEnumerable<ContentEntry> GetTenantNavigation(ContentEntry root);
+    IEnumerable<ContentEntry> GetFooterLinks(ContentEntry root);
+    IEnumerable<string> GetAllSlugs(ContentEntry root);
 }

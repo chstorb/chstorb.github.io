@@ -14,7 +14,10 @@ public partial class SitemapComponent
 
     protected override async Task OnInitializedAsync()
     {
-        var index = await ContentService.GetContentIndexAsync();
-        AllSlugs = ContentService.GetAllSlugs(index, Tenant).ToList();
+        var root = await ContentService.GetTenantRootAsync(Tenant);
+        if (root is not null)
+        {
+            AllSlugs = ContentService.GetAllSlugs(root).ToList();
+        }
     }
 }

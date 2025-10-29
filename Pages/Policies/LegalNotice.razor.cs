@@ -12,7 +12,7 @@ public partial class LegalNotice
 
     protected override async Task OnInitializedAsync()
     {
-        var url = "https://raw.githubusercontent.com/chstorb/chstorb/main/policies/legal-notice.md";
+        var url = "https://raw.githubusercontent.com/chstorb/chstorb/main/content/consulting/policies/legal-notice.md";
         markdownContent = await MarkdownService.GetContentAsync(url);
     }
 }

@@ -1,17 +1,31 @@
-﻿<ul class="main-nav">
+﻿@* <ul class="main-nav">
     @foreach (var entry in Navigation)
     {
         <li>
-            <NavLink href="@($"/content/{entry.Slug}")">@entry.Title</NavLink>
+            <NavLink href="@($"/{Tenant}/content/{entry.Slug}")">@entry.Title</NavLink>
             @if (entry.Children?.Any() == true)
             {
                 <ul>
-                    @foreach (var child in entry.Children.OrderBy(c => c.Order))
+                    @foreach (var child in entry.Children.Where(c => c.Section == "main" && !c.Hidden).OrderBy(c => c.Order))
                     {
-                        <li><NavLink href="@($"/content/{child.Slug}")">@child.Title</NavLink></li>
+                        <li><NavLink href="@($"/{Tenant}/content/{child.Slug}")">@child.Title</NavLink></li>
                     }
                 </ul>
             }
         </li>
     }
-</ul>
+</ul> *@
+
+@foreach (var entry in Navigation)
+{
+    <RadzenPanelMenuItem Text="@entry.Title" Icon="home" Path="@($"/{Tenant}/content/{entry.Slug}")" />
+    @if (entry.Children?.Any() == true)
+    {
+        <RadzenPanelMenu>
+            @foreach (var child in entry.Children.Where(c => c.Section == "main" && !c.Hidden).OrderBy(c => c.Order))
+            {
+                <RadzenPanelMenuItem Text="@entry.Title" Icon="home" Path="@($"/{Tenant}/content/{entry.Slug}")" />
+            }
+        </RadzenPanelMenu>
+    }
+}

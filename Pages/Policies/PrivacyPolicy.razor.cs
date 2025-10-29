@@ -12,7 +12,7 @@ public partial class PrivacyPolicy
 
     protected override async Task OnInitializedAsync()
     {
-        var url = "https://raw.githubusercontent.com/chstorb/chstorb/main/policies/privacy-policy.md";
+        var url = "https://raw.githubusercontent.com/chstorb/chstorb/main/content/consulting/policies/privacy-policy.md";
         markdownContent = await MarkdownService.GetContentAsync(url);
     }
 }

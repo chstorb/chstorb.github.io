@@ -23,35 +23,36 @@ public partial class ContentPage
 
     protected override async Task OnInitializedAsync()
     {
-        var index = await ContentService.GetContentIndexAsync();
+        var root = await ContentService.GetTenantRootAsync(Tenant);
+        if (root is null)
+        {
+            PageTitle = "Mandant nicht gefunden";
+            return;
+        }
 
-        // Suche nach passendem ContentEntry
-        ContentEntry? entry = FindEntry(index, Slug, Tenant);
-
-        if (entry == null || string.IsNullOrWhiteSpace(entry.File))
+        var entry = FindEntryBySlug(root, Slug);
+        if (entry is null || string.IsNullOrWhiteSpace(entry.File))
         {
             PageTitle = "Seite nicht gefunden";
             return;
         }
 
         PageTitle = entry.Title;
-        var MarkdownFile = entry.File;
+        var MarkdownFile = $"https://raw.githubusercontent.com/chstorb/chstorb/main/content/{entry.File}";
 
         markdownContent = await MarkdownService.GetContentAsync(MarkdownFile);
     }
 
-    private ContentEntry? FindEntry(List<ContentEntry> index, string slug, string tenant)
+    private ContentEntry? FindEntryBySlug(ContentEntry entry, string slug)
     {
-        foreach (var entry in index)
+        if (entry.Slug == slug) return entry;
+
+        foreach (var child in entry.Children ?? Enumerable.Empty<ContentEntry>())
         {
-            if (entry.Tenant != tenant) continue;
-            if (entry.Slug == slug) return entry;
-            foreach (var child in entry.Children ?? [])
-            {
-                if (child.Slug == slug && child.Tenant == tenant)
-                    return child;
-            }
+            var match = FindEntryBySlug(child, slug);
+            if (match is not null) return match;
         }
+
         return null;
     }
 }

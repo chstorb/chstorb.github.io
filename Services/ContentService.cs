@@ -11,39 +11,49 @@ public class ContentService : IContentService
         _http = http;
     }
 
-    public async Task<List<ContentEntry>> GetContentIndexAsync()
+    public async Task<ContentEntry?> GetTenantRootAsync(string tenant)
     {
-        var json = await _http.GetStringAsync("content/index.json");
-        return JsonSerializer.Deserialize<List<ContentEntry>>(json);
+        var url = "https://raw.githubusercontent.com/chstorb/chstorb/main/content/index.json";
+        var json = await _http.GetStringAsync(url);
+
+        var options = new JsonSerializerOptions
+        {
+            PropertyNameCaseInsensitive = true
+        };
+
+        var allRoots = JsonSerializer.Deserialize<List<ContentEntry>>(json, options) ?? new();
+        return allRoots.FirstOrDefault(e => e.Tenant == tenant);
     }
 
-    public IEnumerable<ContentEntry> GetTenantNavigation(List<ContentEntry> index, string tenant)
+    public IEnumerable<ContentEntry> GetTenantNavigation(ContentEntry root)
     {
-        return index
-            .Where(e => e.Tenant == tenant && e.Section == "main" && !e.Hidden)
+        return root.Children
+            .Where(e => e.Section == "main" && !e.Hidden)
             .OrderBy(e => e.Order);
     }
 
-    public IEnumerable<ContentEntry> GetFooterLinks(List<ContentEntry> index, string tenant)
+    public IEnumerable<ContentEntry> GetFooterLinks(ContentEntry root)
     {
-        return index
-            .SelectMany(e => e.Children ?? new())
-            .Where(c => c.Section == "footer" && !c.Hidden && c.Tenant == tenant)
+        return root.Children
+            .SelectMany(e => e.Children ?? new List<ContentEntry>())
+            .Where(c => c.Section == "footer" && !c.Hidden)
             .OrderBy(c => c.Order);
     }
 
-    public IEnumerable<string> GetAllSlugs(List<ContentEntry> index, string tenant)
+    public IEnumerable<string> GetAllSlugs(ContentEntry root)
     {
         var slugs = new List<string>();
+
         void Collect(ContentEntry entry)
         {
-            if (entry.Tenant == tenant)
-            {
+            if (!string.IsNullOrWhiteSpace(entry.Slug))
                 slugs.Add(entry.Slug);
-                foreach (var child in entry.Children ?? new()) Collect(child);
-            }
+
+            foreach (var child in entry.Children ?? Enumerable.Empty<ContentEntry>())
+                Collect(child);
         }
-        foreach (var entry in index) Collect(entry);
+
+        Collect(root);
         return slugs;
     }
 }

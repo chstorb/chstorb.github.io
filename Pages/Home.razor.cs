@@ -13,7 +13,7 @@ public partial class Home
 
     protected override async Task OnInitializedAsync()
     {
-        var url = "https://raw.githubusercontent.com/chstorb/chstorb/main/README.md";
+        var url = "https://raw.githubusercontent.com/chstorb/chstorb/main/content/consulting/index.md";
         markdownContent = await MarkdownService.GetContentAsync(url);
     }
 }
