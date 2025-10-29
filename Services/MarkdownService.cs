@@ -11,7 +11,7 @@ public class MarkdownService(HttpClient http) : IMarkdownService
     /// <summary>
     /// Loads markdown content from a public GitHub raw URL and sanitizes it.
     /// </summary>
-    public async Task<string> LoadSanitizedMarkdownAsync(string rawUrl)
+    public async Task<string> GetContentAsync(string rawUrl)
     {
         var raw = await _http.GetStringAsync(rawUrl);
         return SanitizeMarkdown(raw);

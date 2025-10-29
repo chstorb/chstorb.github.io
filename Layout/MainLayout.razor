@@ -38,7 +38,7 @@
         </RadzenStack>
     </RadzenHeader>
 
-    <RadzenSidebar @bind-Expanded="@sidebarExpanded">
+@*     <RadzenSidebar @bind-Expanded="@sidebarExpanded">
         <RadzenPanelMenu>
             <RadzenPanelMenuItem Text="Home" Icon="home" Path="/" />
 
@@ -46,7 +46,9 @@
 
             <RadzenPanelMenuItem Text="Weather" Icon="cloudy_snowing" Path="/weather" />
         </RadzenPanelMenu>
-    </RadzenSidebar>
+    </RadzenSidebar> *@
+
+    <DynamicNav />
 
     <RadzenBody>
         <div class="rz-p-4">

@@ -1,0 +1,17 @@
+﻿<ul class="main-nav">
+    @foreach (var entry in Navigation)
+    {
+        <li>
+            <NavLink href="@($"/content/{entry.Slug}")">@entry.Title</NavLink>
+            @if (entry.Children?.Any() == true)
+            {
+                <ul>
+                    @foreach (var child in entry.Children.OrderBy(c => c.Order))
+                    {
+                        <li><NavLink href="@($"/content/{child.Slug}")">@child.Title</NavLink></li>
+                    }
+                </ul>
+            }
+        </li>
+    }
+</ul>
