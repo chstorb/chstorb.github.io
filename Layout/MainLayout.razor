@@ -38,21 +38,7 @@
         </RadzenStack>
     </RadzenHeader>
 
-        <RadzenSidebar @bind-Expanded="@sidebarExpanded">
-        <RadzenPanelMenu>
-            <RadzenPanelMenuItem Text="Home" Icon="home" Path="/" />
-
-            <RadzenPanelMenuItem Text="Counter" Icon="exposure_plus_1" Path="/counter" />
-
-            <RadzenPanelMenuItem Text="Weather" Icon="cloudy_snowing" Path="/weather" />
-
-            <RadzenPanelMenuItem Text="Kontakt" Icon="mail" Path="/stc-consulting/content/contact" />
-        </RadzenPanelMenu>
-    </RadzenSidebar>
-
-@*     <RadzenSidebar @bind-Expanded="@sidebarExpanded">
-        <DynamicNav Tenant="stc-consulting" />
-    </RadzenSidebar> *@
+    <DynamicNav Tenant="stc-consulting" />
 
     <RadzenBody>
         <div class="rz-p-4">

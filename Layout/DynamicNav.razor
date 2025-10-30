@@ -1,31 +1,20 @@
-﻿@* <ul class="main-nav">
-    @foreach (var entry in Navigation)
-    {
-        <li>
-            <NavLink href="@($"/{Tenant}/content/{entry.Slug}")">@entry.Title</NavLink>
-            @if (entry.Children?.Any() == true)
+﻿<RadzenSidebar @bind-Expanded="@sidebarExpanded">
+    <RadzenPanelMenu>
+        @foreach (var entry in Navigation)
+        {
+            @if (entry.Children?.Any(c => c.Section == "main" && !c.Hidden) == true)
             {
-                <ul>
+                <RadzenPanelMenuItem Text="@entry.Title" Icon="home">
                     @foreach (var child in entry.Children.Where(c => c.Section == "main" && !c.Hidden).OrderBy(c => c.Order))
                     {
-                        <li><NavLink href="@($"/{Tenant}/content/{child.Slug}")">@child.Title</NavLink></li>
+                        <RadzenPanelMenuItem Text="@child.Title" Icon="chevron_right" Path="@($"/{Tenant}/content/{child.Slug}")" />
                     }
-                </ul>
+                </RadzenPanelMenuItem>
             }
-        </li>
-    }
-</ul> *@
-
-@foreach (var entry in Navigation)
-{
-    <RadzenPanelMenuItem Text="@entry.Title" Icon="home" Path="@($"/{Tenant}/content/{entry.Slug}")" />
-    @if (entry.Children?.Any() == true)
-    {
-        <RadzenPanelMenu>
-            @foreach (var child in entry.Children.Where(c => c.Section == "main" && !c.Hidden).OrderBy(c => c.Order))
+            else
             {
                 <RadzenPanelMenuItem Text="@entry.Title" Icon="home" Path="@($"/{Tenant}/content/{entry.Slug}")" />
             }
-        </RadzenPanelMenu>
-    }
-}
+        }
+    </RadzenPanelMenu>
+</RadzenSidebar>

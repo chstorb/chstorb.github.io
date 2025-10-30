@@ -10,8 +10,8 @@ public partial class ContentPage
     [Inject]
     public required IMarkdownService MarkdownService { get; set; }
 
-    [Parameter] 
-    public string Tenant { get; set; }
+    [Parameter]
+    public required string Tenant { get; set; } = "stc-consulting";
 
     [Parameter] 
     public string Slug { get; set; }
@@ -21,7 +21,7 @@ public partial class ContentPage
     private string markdownContent = "";
     private bool allowHtml = true;
 
-    protected override async Task OnInitializedAsync()
+    protected override async Task OnParametersSetAsync()
     {
         var root = await ContentService.GetTenantRootAsync(Tenant);
         if (root is null)

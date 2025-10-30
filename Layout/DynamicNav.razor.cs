@@ -8,16 +8,18 @@ public partial class DynamicNav
     public required IContentService ContentService { get; set; }
 
     [Parameter]
-    public string Tenant { get; set; }
+    public required string Tenant { get; set; }
 
-    List<ContentEntry> Navigation = new();
+    List<ContentEntry> Navigation = [];
+
+    bool sidebarExpanded = true;
 
     protected override async Task OnInitializedAsync()
     {
         var root = await ContentService.GetTenantRootAsync(Tenant);
         if (root is not null)
         {
-            Navigation = ContentService.GetTenantNavigation(root).ToList();
+            Navigation = [.. ContentService.GetTenantNavigation(root)];
         }
     }
 }
