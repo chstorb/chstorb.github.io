@@ -24,7 +24,7 @@
                 <RadzenLabel Text="STC STORB Consulting" Class="rz-ml-3 rz-text-nowrap" />
             </RadzenStack>
 
-            <RadzenMenu Orientation="Orientation.Horizontal">
+            <RadzenMenu Orientation="Orientation.Horizontal" Style="display:none;">
                 <RadzenMenuItem Text="DataGrid Demo" Path="https://storbconsulting.wordpress.com" Icon="grid_on" />
                 <RadzenMenuItem Text="Contact" Path="https://storbconsulting.wordpress.com" Icon="mail" />
 
@@ -38,7 +38,7 @@
         </RadzenStack>
     </RadzenHeader>
 
-    <DynamicNav Tenant="stc-consulting" />
+    <DynamicNav SidebarExpanded="@sidebarExpanded" Tenant="stc-consulting" />
 
     <RadzenBody>
         <div class="rz-p-4">

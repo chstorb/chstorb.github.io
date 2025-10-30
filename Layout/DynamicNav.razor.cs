@@ -7,12 +7,13 @@ public partial class DynamicNav
     [Inject] 
     public required IContentService ContentService { get; set; }
 
+    [Parameter] 
+    public bool SidebarExpanded { get; set; }
+
     [Parameter]
     public required string Tenant { get; set; }
 
     List<ContentEntry> Navigation = [];
-
-    bool sidebarExpanded = true;
 
     protected override async Task OnInitializedAsync()
     {
