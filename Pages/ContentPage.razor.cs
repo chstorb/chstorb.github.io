@@ -23,6 +23,8 @@ public partial class ContentPage
 
     protected override async Task OnParametersSetAsync()
     {
+        markdownContent = string.Empty;
+
         var root = await ContentService.GetTenantRootAsync(Tenant);
         if (root is null)
         {
@@ -43,7 +45,7 @@ public partial class ContentPage
         markdownContent = await MarkdownService.GetContentAsync(MarkdownFile);
     }
 
-    private ContentEntry? FindEntryBySlug(ContentEntry entry, string slug)
+    private static ContentEntry? FindEntryBySlug(ContentEntry entry, string slug)
     {
         if (entry.Slug == slug) return entry;
 

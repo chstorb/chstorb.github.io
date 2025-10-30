@@ -2,12 +2,13 @@
 
 public class ContentEntry
 {
-    public string Title { get; set; }
-    public string Slug { get; set; }
-    public string File { get; set; }
+    public string Title { get; set; } = string.Empty;
+    public string Slug { get; set; } = string.Empty;
+    public string File { get; set; } = string.Empty;
     public string Section { get; set; } = "main";
-    public bool Hidden { get; set; } = false;
     public int Order { get; set; } = 0;
     public string Tenant { get; set; } = "default";
-    public List<ContentEntry> Children { get; set; } = new();
+    public string Icon { get; set; } = "folder";
+    public bool Hidden { get; set; } = false;
+    public List<ContentEntry> Children { get; set; } = [];
 }

@@ -1,19 +1,19 @@
 ﻿<RadzenSidebar @bind-Expanded="@sidebarExpanded">
-    <RadzenPanelMenu>
+    <RadzenPanelMenu Match="NavLinkMatch.Prefix">
         @foreach (var entry in Navigation)
         {
             @if (entry.Children?.Any(c => c.Section == "main" && !c.Hidden) == true)
             {
-                <RadzenPanelMenuItem Text="@entry.Title" Icon="home">
+                <RadzenPanelMenuItem Text="@entry.Title" Icon="@entry.Icon" Path="@($"/{Tenant}/content/{entry.Slug}")">
                     @foreach (var child in entry.Children.Where(c => c.Section == "main" && !c.Hidden).OrderBy(c => c.Order))
                     {
-                        <RadzenPanelMenuItem Text="@child.Title" Icon="chevron_right" Path="@($"/{Tenant}/content/{child.Slug}")" />
+                        <RadzenPanelMenuItem Text="@child.Title" Icon="@child.Icon" Path="@($"/{Tenant}/content/{child.Slug}")" />
                     }
                 </RadzenPanelMenuItem>
             }
             else
             {
-                <RadzenPanelMenuItem Text="@entry.Title" Icon="home" Path="@($"/{Tenant}/content/{entry.Slug}")" />
+                <RadzenPanelMenuItem Text="@entry.Title" Icon="@entry.Icon" Path="@($"/{Tenant}/content/{entry.Slug}")" />
             }
         }
     </RadzenPanelMenu>

@@ -1,5 +1,11 @@
 ﻿@page "/{Tenant}/content/{Slug}"
 
+<style>
+    .rz-markdown img {
+        width: 340px !important;
+    }
+</style>
+
 <PageTitle>@PageTitle</PageTitle>
 
-<RadzenMarkdown Text="@markdownContent" AllowHtml="@allowHtml" />
+<RadzenMarkdown @key="@($"{Tenant}-{Slug}")" Text="@markdownContent" AllowHtml="@allowHtml" />
