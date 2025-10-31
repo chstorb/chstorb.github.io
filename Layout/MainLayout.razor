@@ -37,8 +37,10 @@
 
         </RadzenStack>
     </RadzenHeader>
-
-    <DynamicNav SidebarExpanded="@sidebarExpanded" Tenant="stc-consulting" />
+        
+    <RadzenSidebar @bind-Expanded="@sidebarExpanded">
+        <DynamicPanelMenu Tenant="stc-consulting" />
+    </RadzenSidebar>
 
     <RadzenBody>
         <div class="rz-p-4">

@@ -2,13 +2,10 @@
 using Microsoft.AspNetCore.Components;
 
 namespace BlazorWebAssemblyApp.Layout;
-public partial class DynamicNav
+public partial class DynamicPanelMenu
 {
     [Inject] 
     public required IContentService ContentService { get; set; }
-
-    [Parameter] 
-    public bool SidebarExpanded { get; set; }
 
     [Parameter]
     public required string Tenant { get; set; }
