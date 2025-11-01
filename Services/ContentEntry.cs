@@ -10,5 +10,8 @@ public class ContentEntry
     public string Tenant { get; set; } = "default";
     public string Icon { get; set; } = "folder";
     public bool Hidden { get; set; } = false;
+    public string Tooltip { get; set; } = string.Empty;
+    public string Badge { get; set; } = string.Empty;
+    public SeoMetadata Seo { get; set; } = new();
     public List<ContentEntry> Children { get; set; } = [];
 }

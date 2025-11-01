@@ -1,10 +1,12 @@
 ﻿@page "/{Tenant}/content/{Slug}"
 
-<style>
-    .rz-markdown img {
-        width: 340px !important;
-    }
-</style>
+<HeadContent>
+    <meta name="description" content="@(CurrentEntry?.Seo?.Description ?? "STC STORB Consulting - Entdecken Sie unsere Cloud-, Dokumentations- und E-Commerce-Dienstleistungen.")" />
+    <meta name="robots" content="@(CurrentEntry?.Seo?.Robots ?? " index,follow")" />
+    <meta property="og:title" content="@(CurrentEntry?.Seo?.Title ?? CurrentEntry?.Title ?? "STC STORB Consulting")" />
+    <meta property="og:description" content="@(CurrentEntry?.Seo?.Description ?? "STC STORB Consulting - Entdecken Sie unsere Cloud-, Dokumentations- und E-Commerce-Dienstleistungen.")" />
+    <meta property="og:type" content="website" />
+</HeadContent>
 
 <PageTitle>@PageTitle</PageTitle>
 

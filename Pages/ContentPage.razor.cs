@@ -13,12 +13,14 @@ public partial class ContentPage
     [Parameter]
     public required string Tenant { get; set; } = "stc-consulting";
 
-    [Parameter] 
-    public string Slug { get; set; }
+    [Parameter]
+    public string Slug { get; set; } = string.Empty;
+
+    public ContentEntry? CurrentEntry { get; set; }
 
     private string PageTitle = "Lade Inhalt…";
 
-    private string markdownContent = "";
+    private string markdownContent = string.Empty;
     private bool allowHtml = true;
 
     protected override async Task OnParametersSetAsync()
@@ -39,7 +41,8 @@ public partial class ContentPage
             return;
         }
 
-        PageTitle = entry.Title;
+        PageTitle = entry.Seo?.Title ?? entry.Title;
+
         var MarkdownFile = $"https://raw.githubusercontent.com/chstorb/chstorb/main/content/{entry.File}";
 
         markdownContent = await MarkdownService.GetContentAsync(MarkdownFile);

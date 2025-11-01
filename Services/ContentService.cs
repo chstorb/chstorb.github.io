@@ -32,12 +32,12 @@ public class ContentService : IContentService
             .OrderBy(e => e.Order);
     }
 
-    public IEnumerable<ContentEntry> GetFooterLinks(ContentEntry root)
+    public async Task<IEnumerable<ContentEntry>> GetFooterPoliciesAsync(string tenant)
     {
-        return root.Children
-            .SelectMany(e => e.Children ?? new List<ContentEntry>())
-            .Where(c => c.Section == "footer" && !c.Hidden)
-            .OrderBy(c => c.Order);
+        var root = await GetTenantRootAsync(tenant);
+        var policies = root?.Children?.FirstOrDefault(e => e.Slug == "policies");
+        return policies?.Children?.Where(e => e.Section == "footer" && !e.Hidden)
+                                  .OrderBy(e => e.Order) ?? Enumerable.Empty<ContentEntry>();
     }
 
     public IEnumerable<string> GetAllSlugs(ContentEntry root)
