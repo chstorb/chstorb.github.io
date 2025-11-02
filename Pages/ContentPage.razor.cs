@@ -1,5 +1,6 @@
 ﻿using BlazorWebAssemblyApp.Services;
 using Microsoft.AspNetCore.Components;
+using Microsoft.JSInterop;
 
 namespace BlazorWebAssemblyApp.Pages;
 public partial class ContentPage
@@ -8,7 +9,13 @@ public partial class ContentPage
     public required IContentService ContentService { get; set; }
 
     [Inject]
+    public required IJSRuntime JS { get; set; }
+
+    [Inject]
     public required IMarkdownService MarkdownService { get; set; }
+
+    [Inject]
+    public required NavigationManager Navigation { get; set; }
 
     [Parameter]
     public required string Tenant { get; set; } = "stc-consulting";
@@ -23,7 +30,32 @@ public partial class ContentPage
     private string markdownContent = string.Empty;
     private bool allowHtml = true;
 
+    private bool isRoot => string.IsNullOrEmpty(Tenant) && string.IsNullOrEmpty(Slug);
+
+
     protected override async Task OnParametersSetAsync()
+    {
+        var isRoot = string.IsNullOrWhiteSpace(Tenant) && string.IsNullOrWhiteSpace(Slug);
+
+        if (isRoot)
+        {
+            // Try to get last route from session storage
+            var lastRoute = await JS.InvokeAsync<string>("sessionStorage.getItem", "lastRoute");
+            if (!string.IsNullOrEmpty(lastRoute))
+            {
+                Navigation.NavigateTo(lastRoute, forceLoad: true);
+                return;
+            }
+
+            // Fallback to default
+            Tenant = "stc-consulting";
+            Slug = "company";
+        }
+
+        await LoadContentAsync(Tenant, Slug);
+    }
+
+    private async Task LoadContentAsync(string tenant, string slug)
     {
         markdownContent = string.Empty;
 
@@ -53,9 +85,12 @@ public partial class ContentPage
 
         PageTitle = entry.Seo?.Title ?? entry.Title;
 
-        var MarkdownFile = $"https://raw.githubusercontent.com/chstorb/chstorb/main/content/{entry.File}";
+        var markdownFile = $"https://raw.githubusercontent.com/chstorb/chstorb/main/content/{entry.File}";
 
-        markdownContent = await MarkdownService.GetContentAsync(MarkdownFile);
+        markdownContent = await MarkdownService.GetContentAsync(markdownFile);
+
+        var current = $"/{tenant}/content/{slug}";
+        await JS.InvokeVoidAsync("sessionStorage.setItem", "lastRoute", current);
     }
 
     private static ContentEntry? FindEntryBySlug(ContentEntry entry, string slug)
