@@ -1,21 +1,14 @@
 ﻿using BlazorWebAssemblyApp.Services;
 using Microsoft.AspNetCore.Components;
-using Microsoft.JSInterop;
 
-namespace BlazorWebAssemblyApp.Pages;
-public partial class ContentPage
+namespace BlazorWebAssemblyApp.Pages.Components;
+public partial class MarkdownContent
 {
     [Inject]
     public required IContentService ContentService { get; set; }
 
     [Inject]
-    public required IJSRuntime JS { get; set; }
-
-    [Inject]
     public required IMarkdownService MarkdownService { get; set; }
-
-    [Inject]
-    public required NavigationManager Navigation { get; set; }
 
     [Parameter]
     public required string Tenant { get; set; } = "stc-consulting";
@@ -23,35 +16,21 @@ public partial class ContentPage
     [Parameter]
     public string Slug { get; set; } = string.Empty;
 
-    public ContentEntry? CurrentEntry { get; set; }
+    protected ContentEntry? CurrentEntry { get; set; }
 
-    private string PageTitle = "Lade Inhalt…";
+    private string PageTitle = "Lade Inhalt …";
+
+    private string Description = string.Empty;
+    private string Robots = "index, follow";
+    private string OgTitle = string.Empty;
+    private string OgDescription = string.Empty;
+    private string OgType = "website";
 
     private string markdownContent = string.Empty;
     private bool allowHtml = true;
 
-    private bool isRoot => string.IsNullOrEmpty(Tenant) && string.IsNullOrEmpty(Slug);
-
-
     protected override async Task OnParametersSetAsync()
     {
-        var isRoot = string.IsNullOrWhiteSpace(Tenant) && string.IsNullOrWhiteSpace(Slug);
-
-        if (isRoot)
-        {
-            // Try to get last route from session storage
-            var lastRoute = await JS.InvokeAsync<string>("sessionStorage.getItem", "lastRoute");
-            if (!string.IsNullOrEmpty(lastRoute))
-            {
-                Navigation.NavigateTo(lastRoute, forceLoad: true);
-                return;
-            }
-
-            // Fallback to default
-            Tenant = "stc-consulting";
-            Slug = "company";
-        }
-
         await LoadContentAsync(Tenant, Slug);
     }
 
@@ -76,21 +55,22 @@ public partial class ContentPage
             return;
         }
 
-        var entry = FindEntryBySlug(root, Slug);
-        if (entry is null || string.IsNullOrWhiteSpace(entry.File))
+        CurrentEntry = FindEntryBySlug(root, Slug);
+        if (CurrentEntry is null || string.IsNullOrWhiteSpace(CurrentEntry.File))
         {
             PageTitle = "Seite nicht gefunden";
             return;
         }
 
-        PageTitle = entry.Seo?.Title ?? entry.Title;
+        PageTitle = CurrentEntry.Seo?.Title ?? CurrentEntry.Title;
+        Description = CurrentEntry?.Seo?.Description ?? "STC STORB Consulting - Entdecken Sie unsere Cloud-, Dokumentations- und E-Commerce-Dienstleistungen.";
+        Robots = CurrentEntry?.Seo?.Robots ?? "index, follow";
+        OgTitle = CurrentEntry?.Seo?.Title ?? CurrentEntry?.Title ?? "STC STORB Consulting";
+        OgDescription = CurrentEntry?.Seo?.Description ?? "STC STORB Consulting - Entdecken Sie unsere Cloud-, Dokumentations- und E-Commerce-Dienstleistungen.";
 
-        var markdownFile = $"https://raw.githubusercontent.com/chstorb/chstorb/main/content/{entry.File}";
+        var markdownFile = $"https://raw.githubusercontent.com/chstorb/chstorb/main/content/{CurrentEntry?.File ?? "consulting/index.md"}";
 
         markdownContent = await MarkdownService.GetContentAsync(markdownFile);
-
-        var current = $"/{tenant}/content/{slug}";
-        await JS.InvokeVoidAsync("sessionStorage.setItem", "lastRoute", current);
     }
 
     private static ContentEntry? FindEntryBySlug(ContentEntry entry, string slug)

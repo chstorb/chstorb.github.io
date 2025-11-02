@@ -1,16 +1,16 @@
 ﻿using BlazorWebAssemblyApp.Services;
 using Microsoft.AspNetCore.Components;
 
-namespace BlazorWebAssemblyApp.Pages;
-public partial class SitemapComponent
+namespace BlazorWebAssemblyApp.Pages.Components;
+public partial class Sitemap
 {
     [Inject]
     public required IContentService ContentService { get; set; }
 
     [Parameter] 
-    public string Tenant { get; set; }
+    public string Tenant { get; set; } = "stc-consulting";
 
-    List<string> AllSlugs = new();
+    List<string> AllSlugs = [];
 
     protected override async Task OnInitializedAsync()
     {
