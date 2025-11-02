@@ -27,6 +27,16 @@ public partial class ContentPage
     {
         markdownContent = string.Empty;
 
+        if (string.IsNullOrWhiteSpace(Tenant))
+        {
+            Tenant = "stc-consulting";
+        }
+
+        if (string.IsNullOrWhiteSpace(Slug))
+        {
+            Slug = "company";
+        }
+
         var root = await ContentService.GetTenantRootAsync(Tenant);
         if (root is null)
         {
