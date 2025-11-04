@@ -1,16 +1,18 @@
-﻿using BlazorWebAssemblyApp.Services;
+﻿using BlazorWebAssemblyApp.Models;
+using BlazorWebAssemblyApp.Services;
+using BlazorWebAssemblyApp.Shared;
 using Microsoft.AspNetCore.Components;
 
-namespace BlazorWebAssemblyApp.Shared;
+namespace BlazorWebAssemblyApp.Layout;
 public partial class Footer
 {
     [Inject]
     public required IContentService ContentService { get; set; }
 
-    [Parameter] 
-    public string Tenant { get; set; } = "stc-consulting";
+    [Parameter]
+    public string Tenant { get; set; } = TenantNames.Consulting;
 
-    private IEnumerable<ContentEntry> Policies = [];
+    private IEnumerable<TenantEntry> Policies = [];
 
     protected override async Task OnInitializedAsync()
     {

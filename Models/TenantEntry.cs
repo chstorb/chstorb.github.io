@@ -1,6 +1,6 @@
-﻿namespace BlazorWebAssemblyApp.Services;
+﻿namespace BlazorWebAssemblyApp.Models;
 
-public class ContentEntry
+public class TenantEntry
 {
     public string Title { get; set; } = string.Empty;
     public string Slug { get; set; } = string.Empty;
@@ -13,5 +13,5 @@ public class ContentEntry
     public string Tooltip { get; set; } = string.Empty;
     public string Badge { get; set; } = string.Empty;
     public SeoMetadata Seo { get; set; } = new();
-    public List<ContentEntry> Children { get; set; } = [];
+    public List<TenantEntry> Children { get; set; } = [];
 }

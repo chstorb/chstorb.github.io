@@ -1,55 +1,53 @@
-﻿using System.Text.Json;
+﻿using BlazorWebAssemblyApp.Models;
+using BlazorWebAssemblyApp.Shared.Http;
+using System.Text.Json;
 
 namespace BlazorWebAssemblyApp.Services;
 
-public class ContentService : IContentService
+public class ContentService(IHttpClientFactory httpClientFactory) : IContentService
 {
-    private readonly HttpClient _http;
+    private readonly HttpClient _httpClient = httpClientFactory.CreateClient(HttpClientNames.App);
 
-    public ContentService(HttpClient http)
+    // CA1869: Cache JsonSerializerOptions instance for reuse
+    private static readonly JsonSerializerOptions _jsonOptions = new()
     {
-        _http = http;
+        PropertyNameCaseInsensitive = true
+    };
+
+    public async Task<TenantEntry?> GetTenantIndexAsync(string tenant)
+    {
+        var url = $"index.{tenant}.json";
+        var json = await _httpClient.GetStringAsync(url);
+
+        var tenantEntry = JsonSerializer.Deserialize<TenantEntry>(json, _jsonOptions);
+        return tenantEntry;
     }
 
-    public async Task<ContentEntry?> GetTenantRootAsync(string tenant)
-    {
-        var url = "https://raw.githubusercontent.com/chstorb/chstorb/main/content/index.json";
-        var json = await _http.GetStringAsync(url);
-
-        var options = new JsonSerializerOptions
-        {
-            PropertyNameCaseInsensitive = true
-        };
-
-        var allRoots = JsonSerializer.Deserialize<List<ContentEntry>>(json, options) ?? new();
-        return allRoots.FirstOrDefault(e => e.Tenant == tenant);
-    }
-
-    public IEnumerable<ContentEntry> GetTenantNavigation(ContentEntry root)
+    public IEnumerable<TenantEntry> GetTenantNavigation(TenantEntry root)
     {
         return root.Children
             .Where(e => e.Section == "main" && !e.Hidden)
             .OrderBy(e => e.Order);
     }
 
-    public async Task<IEnumerable<ContentEntry>> GetFooterPoliciesAsync(string tenant)
+    public async Task<IEnumerable<TenantEntry>> GetFooterPoliciesAsync(string tenant)
     {
-        var root = await GetTenantRootAsync(tenant);
+        var root = await GetTenantIndexAsync(tenant);
         var policies = root?.Children?.FirstOrDefault(e => e.Slug == "policies");
         return policies?.Children?.Where(e => e.Section == "footer" && !e.Hidden)
-                                  .OrderBy(e => e.Order) ?? Enumerable.Empty<ContentEntry>();
+                                  .OrderBy(e => e.Order) ?? Enumerable.Empty<TenantEntry>();
     }
 
-    public IEnumerable<string> GetAllSlugs(ContentEntry root)
+    public IEnumerable<string> GetAllSlugs(TenantEntry root)
     {
         var slugs = new List<string>();
 
-        void Collect(ContentEntry entry)
+        void Collect(TenantEntry entry)
         {
             if (!string.IsNullOrWhiteSpace(entry.Slug))
                 slugs.Add(entry.Slug);
 
-            foreach (var child in entry.Children ?? Enumerable.Empty<ContentEntry>())
+            foreach (var child in entry.Children ?? Enumerable.Empty<TenantEntry>())
                 Collect(child);
         }
 

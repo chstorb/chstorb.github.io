@@ -41,6 +41,9 @@ jobs:
     - name: Fix 404 Routing for GitHub Pages
       run: cp app/publish/wwwroot/index.html app/publish/wwwroot/404.html
 
+    - name: Create .nojekyll file
+      run: touch app/publish/wwwroot/.nojekyll
+
     #- name: Adjust output directory for gh-pages
     #  # The static files are in the 'wwwroot' of the 'publish' folder.
     #  run: mv app/publish/wwwroot app/publish/dist

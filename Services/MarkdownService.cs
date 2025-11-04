@@ -1,19 +1,18 @@
-﻿using System.Net.Http;
+﻿using BlazorWebAssemblyApp.Shared.Http;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace BlazorWebAssemblyApp.Services;
 
-public class MarkdownService(HttpClient http) : IMarkdownService
+public class MarkdownService(IHttpClientFactory httpClientFactory) : IMarkdownService
 {
-    private readonly HttpClient _http = http;
+    private readonly HttpClient _httpClient = httpClientFactory.CreateClient(HttpClientNames.GitHubRaw);
 
     /// <summary>
     /// Loads markdown content from a public GitHub raw URL and sanitizes it.
     /// </summary>
-    public async Task<string> GetContentAsync(string rawUrl)
+    public async Task<string> GetContentAsync(string relativePath)
     {
-        var raw = await _http.GetStringAsync(rawUrl);
+        var raw = await _httpClient.GetStringAsync(relativePath);
         return SanitizeMarkdown(raw);
     }
 

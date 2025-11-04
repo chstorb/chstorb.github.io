@@ -1,4 +1,6 @@
-﻿using BlazorWebAssemblyApp.Services;
+﻿using BlazorWebAssemblyApp.Models;
+using BlazorWebAssemblyApp.Services;
+using BlazorWebAssemblyApp.Shared;
 using Microsoft.AspNetCore.Components;
 
 namespace BlazorWebAssemblyApp.Pages.Components;
@@ -11,12 +13,12 @@ public partial class MarkdownContent
     public required IMarkdownService MarkdownService { get; set; }
 
     [Parameter]
-    public required string Tenant { get; set; } = "stc-consulting";
+    public required string Tenant { get; set; } = TenantNames.Consulting;
 
     [Parameter]
     public string Slug { get; set; } = string.Empty;
 
-    protected ContentEntry? CurrentEntry { get; set; }
+    protected TenantEntry? CurrentEntry { get; set; }
 
     private string PageTitle = "Lade Inhalt …";
 
@@ -25,6 +27,15 @@ public partial class MarkdownContent
     private string OgTitle = string.Empty;
     private string OgDescription = string.Empty;
     private string OgType = "website";
+    private string OgUrl = "https://chstorb.github.io";
+    private string OgImage = "https://raw.githubusercontent.com/chstorb/chstorb/main/assets/images/consulting/stclogotransparent.png";
+
+    private string TwitterCard = "summary_large_image";
+    private string TwitterSite = "@christianstorb";
+    private string TwitterCreator = "@christianstorb";
+    private string TwitterTitle = string.Empty;
+    private string TwitterDescription = string.Empty;
+    private string TwitterImage = "https://raw.githubusercontent.com/chstorb/chstorb/main/assets/images/consulting/stclogotransparent.png";
 
     private string markdownContent = string.Empty;
     private bool allowHtml = true;
@@ -40,7 +51,7 @@ public partial class MarkdownContent
 
         if (string.IsNullOrWhiteSpace(Tenant))
         {
-            Tenant = "stc-consulting";
+            Tenant = TenantNames.Consulting;
         }
 
         if (string.IsNullOrWhiteSpace(Slug))
@@ -48,7 +59,7 @@ public partial class MarkdownContent
             Slug = "company";
         }
 
-        var root = await ContentService.GetTenantRootAsync(Tenant);
+        var root = await ContentService.GetTenantIndexAsync(Tenant);
         if (root is null)
         {
             PageTitle = "Mandant nicht gefunden";
@@ -68,16 +79,16 @@ public partial class MarkdownContent
         OgTitle = CurrentEntry?.Seo?.Title ?? CurrentEntry?.Title ?? "STC STORB Consulting";
         OgDescription = CurrentEntry?.Seo?.Description ?? "STC STORB Consulting - Entdecken Sie unsere Cloud-, Dokumentations- und E-Commerce-Dienstleistungen.";
 
-        var markdownFile = $"https://raw.githubusercontent.com/chstorb/chstorb/main/content/{CurrentEntry?.File ?? "consulting/index.md"}";
+        var markdownFile = $"{CurrentEntry?.File ?? "consulting/consulting.md"}";
 
         markdownContent = await MarkdownService.GetContentAsync(markdownFile);
     }
 
-    private static ContentEntry? FindEntryBySlug(ContentEntry entry, string slug)
+    private static TenantEntry? FindEntryBySlug(TenantEntry entry, string slug)
     {
         if (entry.Slug == slug) return entry;
 
-        foreach (var child in entry.Children ?? Enumerable.Empty<ContentEntry>())
+        foreach (var child in entry.Children ?? Enumerable.Empty<TenantEntry>())
         {
             var match = FindEntryBySlug(child, slug);
             if (match is not null) return match;

@@ -1,4 +1,4 @@
-﻿namespace BlazorWebAssemblyApp.Services;
+﻿namespace BlazorWebAssemblyApp.Models;
 
 public class SeoMetadata
 {

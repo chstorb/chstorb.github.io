@@ -1,0 +1,318 @@
+﻿{
+  "title": "STC STORB Consulting",
+  "slug": "consulting",
+  "file": "consulting/index.md",
+  "section": "main",
+  "order": 100,
+  "icon": "business",
+  "tooltip": "Übersicht über STC STORB Consulting",
+  "badge": "Start",
+  "seo": {
+    "title": "STC STORB Consulting – Übersicht",
+    "description": "Willkommen bei STC STORB Consulting – Ihr Partner für Cloud, Dokumentation und E-Commerce.",
+    "robots": "index,follow"
+  },
+  "children": [
+    {
+      "title": "Unternehmen",
+      "slug": "company",
+      "file": "consulting/index.md",
+      "order": 110,
+      "icon": "domain",
+      "tooltip": "Informationen zum Unternehmen",
+      "badge": "Profil",
+      "seo": {
+        "title": "STC STORB Consulting – Unternehmen",
+        "description": "Erfahren Sie mehr über die Struktur und Philosophie von STC STORB Consulting.",
+        "robots": "index,follow"
+      }
+    },
+    {
+      "title": "Grundsätze",
+      "slug": "principles",
+      "file": "consulting/principles.md",
+      "order": 120,
+      "icon": "rule",
+      "tooltip": "Unsere Werte und Leitlinien",
+      "badge": "Philosophie",
+      "seo": {
+        "title": "STC STORB Consulting – Grundsätze",
+        "description": "Die ethischen und fachlichen Prinzipien, die unsere Arbeit leiten.",
+        "robots": "index,follow"
+      }
+    },
+    {
+      "title": "Leistungen",
+      "slug": "services",
+      "file": "consulting/services.md",
+      "order": 130,
+      "icon": "build_circle",
+      "tooltip": "Unsere technischen und beratenden Leistungen",
+      "badge": "Angebot",
+      "seo": {
+        "title": "STC STORB Consulting – Leistungen",
+        "description": "Entdecken Sie unsere Cloud-, Dokumentations- und E-Commerce-Dienstleistungen.",
+        "robots": "index,follow"
+      }
+    },
+    {
+      "title": "Profile im Web",
+      "slug": "profiles",
+      "file": "consulting/profiles.md",
+      "order": 140,
+      "icon": "public",
+      "tooltip": "Externe Profile und Netzwerke",
+      "badge": "Extern",
+      "seo": {
+        "title": "STC STORB Consulting – Profile im Web",
+        "description": "Finden Sie STC STORB Consulting auf LinkedIn, GitHub und anderen Plattformen.",
+        "robots": "index,follow"
+      }
+    },
+    {
+      "title": "Karriere",
+      "slug": "career",
+      "file": "consulting/career/index.md",
+      "order": 200,
+      "icon": "work",
+      "tooltip": "Karriere bei STC STORB Consulting",
+      "badge": "Jobs",
+      "seo": {
+        "title": "STC STORB Consulting – Karriere",
+        "description": "Informationen zu offenen Stellen und Anforderungen.",
+        "robots": "index,follow"
+      },
+      "children": [
+        {
+          "title": "Anforderungsprofil",
+          "slug": "requirements",
+          "file": "consulting/career/requirements.md",
+          "order": 210,
+          "icon": "assignment",
+          "tooltip": "Was wir von Bewerbern erwarten",
+          "badge": "Profil",
+          "seo": {
+            "title": "STC STORB Consulting – Anforderungsprofil",
+            "description": "Fachliche und persönliche Anforderungen für Bewerber.",
+            "robots": "index,follow"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Kontakt",
+      "slug": "contact",
+      "file": "consulting/contact/index.md",
+      "order": 300,
+      "icon": "contact_mail",
+      "tooltip": "Kontaktmöglichkeiten",
+      "badge": "Support",
+      "seo": {
+        "title": "STC STORB Consulting – Kontakt",
+        "description": "So erreichen Sie uns – Kontaktformular und Ansprechpartner.",
+        "robots": "index,follow"
+      },
+      "children": [
+        {
+          "title": "Ansprechpartner",
+          "slug": "contacts",
+          "file": "consulting/contact/contacts.md",
+          "order": 310,
+          "icon": "person",
+          "tooltip": "Direkte Ansprechpartner",
+          "badge": "Team",
+          "seo": {
+            "title": "STC STORB Consulting – Ansprechpartner",
+            "description": "Lernen Sie unser Team kennen und finden Sie den richtigen Kontakt.",
+            "robots": "index,follow"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Partner",
+      "slug": "partner",
+      "file": "consulting/partner/index.md",
+      "order": 400,
+      "icon": "handshake",
+      "tooltip": "Unsere Partner und Kooperationen",
+      "badge": "Netzwerk",
+      "seo": {
+        "title": "STC STORB Consulting – Partner",
+        "description": "Strategische Partnerschaften und technologische Kooperationen.",
+        "robots": "index,follow"
+      }
+    },
+    {
+      "title": "Referenzen",
+      "slug": "references",
+      "file": "consulting/references/index.md",
+      "order": 500,
+      "icon": "star",
+      "tooltip": "Erfolgreiche Projekte und Kunden",
+      "badge": "Erfahrung",
+      "seo": {
+        "title": "STC STORB Consulting – Referenzen",
+        "description": "Ausgewählte Projekte und Kundenbeziehungen.",
+        "robots": "index,follow"
+      },
+      "children": [
+        {
+          "title": "Ausgewählte Referenzen",
+          "slug": "featured-references",
+          "file": "consulting/references/featured-references.md",
+          "order": 510,
+          "icon": "grade",
+          "tooltip": "Highlights unserer Arbeit",
+          "badge": "Top",
+          "seo": {
+            "title": "STC STORB Consulting – Ausgewählte Referenzen",
+            "description": "Besonders erfolgreiche Projekte im Überblick.",
+            "robots": "index,follow"
+          }
+        },
+        {
+          "title": "Produkte / Projekte",
+          "slug": "products-projects",
+          "file": "consulting/references/featured-projects.md",
+          "order": 520,
+          "icon": "widgets",
+          "tooltip": "Technische Lösungen und Produkte",
+          "badge": "Tech",
+          "seo": {
+            "title": "STC STORB Consulting – Produkte und Projekte",
+            "description": "Technische Umsetzungen und Produktentwicklungen.",
+            "robots": "index,follow"
+          }
+        },
+        {
+          "title": "Unternehmen",
+          "slug": "featured-companies",
+          "file": "consulting/references/featured-companies.md",
+          "order": 530,
+          "icon": "apartment",
+          "tooltip": "Kunden und Branchen",
+          "badge": "B2B",
+          "seo": {
+            "title": "STC STORB Consulting – Unternehmen",
+            "description": "Branchen und Kunden, mit denen wir zusammenarbeiten.",
+            "robots": "index,follow"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Rechtliches",
+      "slug": "policies",
+      "section": "footer",
+      "hidden": true,
+      "order": 900,
+      "icon": "gavel",
+      "tooltip": "Rechtliche Informationen und Pflichtseiten",
+      "badge": "Legal",
+      "seo": {
+        "title": "STC STORB Consulting – Rechtliches",
+        "description": "Alle rechtlich relevanten Seiten im Überblick.",
+        "robots": "noindex,follow"
+      },
+      "children": [
+        {
+          "title": "Impressum",
+          "slug": "legal-notice",
+          "file": "consulting/policies/legal-notice.md",
+          "section": "footer",
+          "hidden": false,
+          "order": 910,
+          "icon": "info",
+          "tooltip": "Angaben gemäß § 5 TMG",
+          "badge": "Pflichtseite",
+          "seo": {
+            "title": "Impressum – STC STORB Consulting",
+            "description": "Gesetzlich vorgeschriebene Anbieterkennzeichnung für STC STORB Consulting.",
+            "robots": "index,follow"
+          }
+        },
+        {
+          "title": "Datenschutz",
+          "slug": "privacy-policy",
+          "file": "consulting/policies/privacy-policy.md",
+          "section": "footer",
+          "hidden": false,
+          "order": 920,
+          "icon": "lock",
+          "tooltip": "Informationen zur Verarbeitung personenbezogener Daten",
+          "badge": "Pflichtseite",
+          "seo": {
+            "title": "Datenschutzerklärung – STC STORB Consulting",
+            "description": "Erfahren Sie, wie STC STORB Consulting Ihre personenbezogenen Daten schützt und verarbeitet.",
+            "robots": "index,follow"
+          }
+        },
+        {
+          "title": "AGB",
+          "slug": "terms-of-service",
+          "file": "consulting/policies/terms-of-service.md",
+          "section": "footer",
+          "hidden": false,
+          "order": 930,
+          "icon": "description",
+          "tooltip": "Vertragsbedingungen für unsere Leistungen",
+          "badge": "Standard",
+          "seo": {
+            "title": "Allgemeine Geschäftsbedingungen – STC STORB Consulting",
+            "description": "Lesen Sie die AGB für die Nutzung unserer Dienstleistungen und Angebote.",
+            "robots": "index,follow"
+          }
+        },
+        {
+          "title": "Widerrufsbelehrung",
+          "slug": "withdrawal-policy",
+          "file": "consulting/policies/withdrawal-policy.md",
+          "section": "footer",
+          "hidden": false,
+          "order": 940,
+          "icon": "undo",
+          "tooltip": "Hinweise zum Widerrufsrecht bei Fernabsatzverträgen",
+          "badge": "Verbraucherschutz",
+          "seo": {
+            "title": "Widerrufsbelehrung – STC STORB Consulting",
+            "description": "Informationen zum Widerrufsrecht für Verbraucher gemäß § 355 BGB.",
+            "robots": "index,follow"
+          }
+        },
+        {
+          "title": "Cookie-Richtlinie",
+          "slug": "cookie-policy",
+          "file": "consulting/policies/cookie-policy.md",
+          "section": "footer",
+          "hidden": false,
+          "order": 950,
+          "icon": "cookie",
+          "tooltip": "Details zur Verwendung von Cookies auf dieser Website",
+          "badge": "DSGVO",
+          "seo": {
+            "title": "Cookie-Richtlinie – STC STORB Consulting",
+            "description": "Erfahren Sie, welche Cookies wir verwenden und wie Sie Ihre Zustimmung verwalten können.",
+            "robots": "index,follow"
+          }
+        },
+        {
+          "title": "Versandbedingungen",
+          "slug": "shipping-policy",
+          "file": "consulting/policies/shipping-policy.md",
+          "section": "footer",
+          "hidden": false,
+          "order": 960,
+          "icon": "local_shipping",
+          "tooltip": "Lieferzeiten, Versandkosten und Versanddienstleister",
+          "badge": "Shop",
+          "seo": {
+            "title": "Versandbedingungen – STC STORB Consulting",
+            "description": "Informationen zu Versandarten, Lieferzeiten und Kosten für Ihre Bestellung.",
+            "robots": "index,follow"
+          }
+        }
+      ]
+    }
+  ]
+}

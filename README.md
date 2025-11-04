@@ -133,3 +133,10 @@ jobs:
 
 > [!TIP]
 > For further optimization and deployment guidance, refer to the official [Microsoft documentation](https://learn.microsoft.com/en-us/aspnet/core/blazor/host-and-deploy/webassembly?view=aspnetcore-9.0).
+
+---
+
+## References
+
+- [Radzen.Blazor Documentation](https://blazor.radzen.com/)
+- [Host and deploy ASP.NET Core standalone Blazor WebAssembly with GitHub Pages](https://learn.microsoft.com/en-us/aspnet/core/blazor/host-and-deploy/webassembly?view=aspnetcore-9.0)

@@ -35,7 +35,7 @@
     </RadzenHeader>
         
     <RadzenSidebar @bind-Expanded="@sidebarExpanded">
-        <DynamicPanelMenu Tenant="stc-consulting" />
+        <DynamicPanelMenu Tenant="@TenantNames.Consulting" />
     </RadzenSidebar>
 
     <RadzenBody>
@@ -51,5 +51,5 @@
 </RadzenLayout>
 
 <div class="footer-container">
-    <Footer Tenant="stc-consulting" />
+    <Footer Tenant="@TenantNames.Consulting" />
 </div>
