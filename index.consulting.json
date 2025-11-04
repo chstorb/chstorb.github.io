@@ -1,7 +1,7 @@
 ﻿{
   "title": "STC STORB Consulting",
   "slug": "consulting",
-  "file": "consulting/index.md",
+  "file": "consulting/consulting.md",
   "section": "main",
   "order": 100,
   "icon": "business",
@@ -16,7 +16,7 @@
     {
       "title": "Unternehmen",
       "slug": "company",
-      "file": "consulting/index.md",
+      "file": "consulting/consulting.md",
       "order": 110,
       "icon": "domain",
       "tooltip": "Informationen zum Unternehmen",
@@ -72,7 +72,7 @@
     {
       "title": "Karriere",
       "slug": "career",
-      "file": "consulting/career/index.md",
+      "file": "consulting/career/career.md",
       "order": 200,
       "icon": "work",
       "tooltip": "Karriere bei STC STORB Consulting",
@@ -102,7 +102,7 @@
     {
       "title": "Kontakt",
       "slug": "contact",
-      "file": "consulting/contact/index.md",
+      "file": "consulting/contact/contact.md",
       "order": 300,
       "icon": "contact_mail",
       "tooltip": "Kontaktmöglichkeiten",
@@ -132,7 +132,7 @@
     {
       "title": "Partner",
       "slug": "partner",
-      "file": "consulting/partner/index.md",
+      "file": "consulting/partner/partner.md",
       "order": 400,
       "icon": "handshake",
       "tooltip": "Unsere Partner und Kooperationen",
@@ -146,7 +146,7 @@
     {
       "title": "Referenzen",
       "slug": "references",
-      "file": "consulting/references/index.md",
+      "file": "consulting/references/references.md",
       "order": 500,
       "icon": "star",
       "tooltip": "Erfolgreiche Projekte und Kunden",
