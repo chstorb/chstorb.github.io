@@ -28,14 +28,14 @@ public partial class MarkdownContent
     private string OgDescription = string.Empty;
     private string OgType = "website";
     private string OgUrl = "https://chstorb.github.io";
-    private string OgImage = "https://raw.githubusercontent.com/chstorb/chstorb/main/assets/images/consulting/stclogotransparent.png";
+    private string OgImage = "https://raw.githubusercontent.com/chstorb/chstorb/main/assets/images/consulting/og-image.png";
 
     private string TwitterCard = "summary_large_image";
     private string TwitterSite = "@christianstorb";
     private string TwitterCreator = "@christianstorb";
     private string TwitterTitle = string.Empty;
     private string TwitterDescription = string.Empty;
-    private string TwitterImage = "https://raw.githubusercontent.com/chstorb/chstorb/main/assets/images/consulting/stclogotransparent.png";
+    private string TwitterImage = "https://raw.githubusercontent.com/chstorb/chstorb/main/assets/images/consulting/og-image.png";
 
     private string markdownContent = string.Empty;
     private bool allowHtml = true;
