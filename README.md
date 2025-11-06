@@ -36,7 +36,7 @@ This project demonstrates a modern Blazor WebAssembly Single-Page Application (S
    ```
 3. **Run locally**
    ```sh
-   dotnet run --project BlazorWebAssemblyApp.csproj
+   dotnet run --project WebApp.csproj
    ```
 4. **Deploy to GitHub Pages**
    See [Deployment to GitHub Pages](#deployment-to-github-pages).
@@ -72,7 +72,7 @@ This project demonstrates a modern Blazor WebAssembly Single-Page Application (S
 
 ```xml
 <PropertyGroup>
-  <StaticWebAssetBasePath>BlazorWebAssemblyApp/</StaticWebAssetBasePath>
+  <!--<StaticWebAssetBasePath>WebApp/</StaticWebAssetBasePath>-->
   <BlazorWebAssemblyEnableCompression>true</BlazorWebAssemblyEnableCompression>
   <PublishTrimmed>true</PublishTrimmed>
 </PropertyGroup>

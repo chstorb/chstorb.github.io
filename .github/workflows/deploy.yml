@@ -29,7 +29,7 @@ jobs:
     - name: Publish Blazor WebAssembly (Release Build)
       # NEW, CORRECTED LINE: Add path to .csproj file!
       # Creates the static assets in the folder 'app/publish/wwwroot'
-      run: dotnet publish BlazorWebAssemblyApp.csproj -c Release -o app/publish --nologo
+      run: dotnet publish BlazorWebAssemblyApp/WebApp/WebApp.csproj -c Release -o app/publish --nologo
       # If your project is in the root of the repo, the path is:
       # run: dotnet publish BlazorWebAssemblyApp.csproj -c Release -o app/publish --nologo
       # --nologo is only cosmetic. More important is the configuration of the project file if you want to set the base path during build instead of in index.html.
