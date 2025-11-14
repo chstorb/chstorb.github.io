@@ -7,3 +7,4 @@
 /Tools/SitemapGenerator/obj
 /WebApp/obj
 /WebApp.Core/obj
+*.user
