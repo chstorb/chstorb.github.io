@@ -1,6 +1,7 @@
 ---
 layout: default
-title: "STC STORB Consulting"
+title: Über uns
+permalink: /consulting/
 ---
 
 ### STC steht seit der Gründung im Dezember 2000 für Eigenständigkeit und Unabhängigkeit.

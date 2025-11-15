@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+  <!-- Character encoding: must be first -->
   <meta charset="utf-8">
   <title>{{ page.title }} | {{ site.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{{ site.description }}">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="{{ '/assets/css/custom.css' | relative_url }}" rel="stylesheet">
-  {% seo %}
+
+  <meta name="keywords" content="STC STORB, Consulting, Cloud, Blazor, .NET, Azure, Dokumentation, Multi-Tenant, GitHub Pages">
+  <meta name="author" content="Christian Storb">
+  
+  <!-- Search engine crawling behavior -->
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">    
+  
+  <!-- Mobile responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+  <!-- Open Graph for social media previews -->
+  <meta property="og:title" content="STC STORB Consulting – Cloud & Architektur">
+  <meta property="og:description" content="Modulare, rechtssichere Weblösungen für Consulting, Travel und Music.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://chstorb.github.io/">
+  <meta property="og:image" content="https://raw.githubusercontent.com/chstorb/chstorb/main/assets/images/consulting/og-image.png">
+
+  <!-- Twitter Card preview -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="STC STORB Consulting – Cloud & Architektur">
+  <meta name="twitter:description" content="Modulare, rechtssichere Weblösungen für Consulting, Travel und Music.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/chstorb/chstorb/main/assets/images/consulting/og-image.png">
+
+  <!-- Google Search Console verification -->
+  <meta name="google-site-verification" content="v1IaICzb6Ve4AAMD6dPYhqWkk5TxQ5Aa6vRxUSs89aA" />
+
+  {% seo %} 
 </head>
 <body>
   {% include navbar.html %}
