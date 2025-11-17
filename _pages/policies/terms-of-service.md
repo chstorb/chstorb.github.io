@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "AGB"
+title: "Allgemeine Geschäftsbedingungen (AGB)"
 description: "Allgemeine Geschäftsbedingungen von STC STORB Consulting – rechtliche Grundlagen für Nutzung und Einkauf."
 permalink: /policies/terms-of-service/
 author: "Christian Storb"
@@ -14,10 +14,6 @@ twitter:
 robots: "index, follow"
 categories: [policies, terms, consulting]
 tags: [AGB, Terms of Service, Consulting, Recht, Online-Shop]
----
-
-### Allgemeine Geschäftsbedingungen (AGB)
-
 ---
 
 #### Übersicht

@@ -16,8 +16,6 @@ categories: [policies, shipping, consulting]
 tags: [Versand, Lieferung, Shipping Policy, Consulting, Deutschland]
 ---
 
-### Versandbedingungen
-
 #### Liefergebiet
 Wir liefern ausschließlich innerhalb Deutschlands.  
 

@@ -16,8 +16,6 @@ categories: [contact, consulting, profile]
 tags: [Ansprechpartner, Consulting, Organisation, Controlling, IT, Karriere]
 ---
 
-### Ansprechpartner
-
 Eine fundierte kaufmännische und betriebswirtschaftliche Ausbildung sowie langjährige praktische Berufserfahrung bilden die Basis unseres Geschäfts.  
 Methoden mit Augenmaß einzusetzen, das Know‑how unserer Kunden einzubinden und Umsetzungshürden abzubauen sind zentrale Elemente unseres Erfolges.  
 So erzielen wir bestmögliche Ergebnisse bei effizientem Ressourceneinsatz. Partnerschaft, Wertschätzung, Verbindlichkeit und Vertrauen prägen unseren Umgang mit Kunden und Kollegen.  

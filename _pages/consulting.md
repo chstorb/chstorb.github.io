@@ -16,8 +16,6 @@ categories: [consulting, company]
 tags: [Über uns, Consulting, Projekte, Unternehmen, Beratung, Erfolg]
 ---
 
-### Über uns 
-
 Seit unserer Gründung im Dezember 2000 lösen wir erfolgreich die Aufgaben unserer Kunden.  
 Die Bandbreite unserer Projekte ist groß – viele Auftraggeber begleiten wir seit den ersten Tagen und arbeiten langfristig mit ihnen zusammen.  
 

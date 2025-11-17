@@ -16,8 +16,6 @@ categories: [references, testimonials, consulting]
 tags: [Referenzen, Projekte, Consulting, Bewertungen, Testimonials]
 ---
 
-### Ausgewählte Referenzen
-
 #### Multithreading-Servermodule mit VC++ und Oracle (10/2004 – 01/2005)  
 **Referenz:** Entwicklungskoordinator Kredit, ABIT AG, 16.02.2005  
 

@@ -16,8 +16,6 @@ categories: [policies, cookies, consulting]
 tags: [Cookie-Richtlinie, Datenschutz, Consulting, IT, Rechtssicherheit]
 ---
 
-### Cookie-Richtlinie
-
 **Letzte Aktualisierung:** 19. Oktober 2025  
 
 Diese Cookie-Richtlinie erläutert, wie **STC STORB Consulting** („wir“, „uns“, „unser“) Cookies und ähnliche Technologien auf unserer Website [`https://chstorb.github.io`](https://chstorb.github.io) verwendet.

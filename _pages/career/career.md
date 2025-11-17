@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Karriere bei STC STORB Consulting"
+title: "Ihre Karriere bei STC STORB Consulting"
 description: "Gestalten Sie mit uns modulare, rechtssichere Weblösungen – wir suchen erfahrene Persönlichkeiten mit Unternehmergeist."
 permalink: /career/career/
 author: "Christian Storb"
@@ -15,8 +15,6 @@ robots: "index, follow"
 categories: [career, consulting, jobs]
 tags: [Karriere, Consulting, Cloud, Architektur, Blazor, Azure]
 ---
-
-### Ihre Karriere bei STC STORB Consulting
 
 Das wachsende Interesse an unseren Beratungs‑ und Serviceleistungen eröffnet uns neue Chancen.  
 Zur Verstärkung unseres Teams suchen wir Persönlichkeiten mit Erfahrung, Unternehmergeist und Freude an Innovation.  

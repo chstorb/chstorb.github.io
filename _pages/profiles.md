@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Profile"
+title: "STC im Web"
 description: "STC STORB Consulting – Profile und Auftritte auf verschiedenen Plattformen im Web."
 permalink: /profiles/
 author: "Christian Storb"
@@ -15,8 +15,6 @@ robots: "index, follow"
 categories: [profiles, consulting]
 tags: [Profile, Consulting, Social Media, Musik, Projekte]
 ---
-
-### STC im Web
 
 STC STORB Consulting ist auf verschiedenen Plattformen vertreten.  
 Hier finden Sie eine Übersicht unserer Profile und Auftritte:  

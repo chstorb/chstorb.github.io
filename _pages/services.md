@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Services"
+title: "Unsere Services"
 description: "STC STORB Consulting – Projektunterstützung von der Planung über die Entwicklung bis zur Markteinführung und den Betrieb."
 permalink: /services/
 author: "Christian Storb"
@@ -15,8 +15,6 @@ robots: "index, follow"
 categories: [services, consulting]
 tags: [Services, Consulting, Projekte, Microsoft, Entwicklung, Betrieb]
 ---
-
-### Unsere Services
 
 STC unterstützt Ihr Projekt bei Kunden und Geschäftspartnern vor Ort – von der **Planung** über die **Entwicklung** bis zur **Markteinführung** und den **Betrieb**.  
 

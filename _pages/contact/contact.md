@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Kontakt"
+title: "Kontakt zu STC STORB Consulting"
 description: "Nehmen Sie Kontakt zu STC STORB Consulting auf – wir beraten Sie von der Planung bis zum Betrieb."
 permalink: /contact/contact/
 author: "Christian Storb"
@@ -15,8 +15,6 @@ robots: "index, follow"
 categories: [contact, consulting]
 tags: [Kontakt, Consulting, Cloud, Architektur, Blazor, Azure]
 ---
-
-### Kontakt zu STC STORB Consulting
 
 Wir freuen uns, Sie auf unserer Website begrüßen zu dürfen.  
 

@@ -16,8 +16,6 @@ categories: [policies, returns, consulting]
 tags: [Rücksendungen, Widerruf, Umtausch, Erstattung, Consulting]
 ---
 
-### Rücksendungen
-
 Unser Rückgaberecht gilt für **14 Tage** ab Erhalt der Ware.  
 Nach Ablauf dieser Frist ist eine Rückerstattung oder ein Umtausch leider nicht mehr möglich.  
 

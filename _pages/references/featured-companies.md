@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Unternehmen"
+title: "Ausgewählte Unternehmen"
 description: "Referenzen: Ausgewählte Unternehmen, mit denen STC STORB Consulting zusammengearbeitet hat."
 permalink: /references/featured-companies/
 author: "Christian Storb"
@@ -15,8 +15,6 @@ robots: "index, follow"
 categories: [references, companies, consulting]
 tags: [Unternehmen, Referenzen, Consulting, Projekte, Partnerschaften]
 ---
-
-### Ausgewählte Unternehmen
 
 STC STORB Consulting hat in Projekten mit namhaften Unternehmen aus unterschiedlichen Branchen zusammengearbeitet.  
 

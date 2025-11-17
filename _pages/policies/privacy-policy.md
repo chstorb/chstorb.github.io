@@ -16,8 +16,6 @@ categories: [policies, privacy, consulting]
 tags: [Datenschutz, Privacy Policy, Consulting, Rechtssicherheit, Cookies]
 ---
 
-### Datenschutzerklärung
-
 **Letzte Aktualisierung:** 31. Oktober 2024  
 
 Diese Datenschutzrichtlinie beschreibt, wie **STC STORB Consulting** („wir“, „uns“, „unser“) personenbezogene Daten sammelt, verwendet und weitergibt, wenn Sie unsere Website besuchen, unsere Dienste nutzen oder mit uns kommunizieren.

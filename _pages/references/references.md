@@ -16,8 +16,6 @@ categories: [references, consulting]
 tags: [Referenzen, Projekte, Consulting, Branchenexpertise]
 ---
 
-### Referenzen
-
 Gute Consultants zeichnen sich durch ihre Referenzen aus.  
 
 #### Machen Sie sich ein Bild von unserer Arbeit – ausgewählte Projekte zeigen unsere Kompetenz.  

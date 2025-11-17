@@ -16,8 +16,6 @@ categories: [career, consulting, requirements]
 tags: [Karriere, Anforderungen, Consulting, Management, Azure, Blazor]
 ---
 
-### Anforderungen 
-
 Sie verfügen über mindestens sechs Jahre Berufserfahrung und haben in Führungs‑ oder Beratungspositionen nachhaltige Erfolge erzielt. Eine hohe Fachkompetenz in mindestens zwei Branchen und Themen zeichnet Sie aus. 
 Problemstellungen zu strukturieren gehört zu Ihrer Arbeitsweise; Projekthürden erkennen und abbauen gelingt Ihnen rechtzeitig. Sie überzeugen sowohl Top‑Management als auch Mitarbeiter und fügen sich flexibel in bestehende Strukturen und Teams ein. Eigenverantwortung fordern und ausschöpfen ist für Sie selbstverständlich. Ihr Anspruch auf überdurchschnittliche Leistung zeigt sich durchgängig – vom Hochschulabschluss bis zu Ihren Arbeitszeugnissen.  
 

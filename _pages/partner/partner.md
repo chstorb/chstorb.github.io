@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Partner"
+title: "Synergy at Work"
 description: "STC STORB Consulting arbeitet mit starken Partnern wie 4Unit Systems Integration für ganzheitliche IT-Lösungen."
 permalink: /partner/partner/
 author: "Christian Storb"
@@ -15,8 +15,6 @@ robots: "index, follow"
 categories: [partner, consulting]
 tags: [Partner, Kooperation, IT-Dienstleistungen, Consulting, ECM, Softwareentwicklung]
 ---
-
-### Synergy at Work
 
 Die Zusammenarbeit mit engagierten und kompetenten Partnern ist ein zentraler Bestandteil unserer Unternehmensstrategie.  
 Gemeinsam mit unseren Kooperationspartnern bilden wir einen interdisziplinären Expertenverbund, der für Ihre Fragestellungen ganzheitliche Lösungen entwickelt und erfolgreich umsetzt.  

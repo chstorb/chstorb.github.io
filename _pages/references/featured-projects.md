@@ -16,8 +16,6 @@ categories: [references, projects, consulting]
 tags: [Projekte, Referenzen, Consulting, IT, E-Government, Industrie]
 ---
 
-### Ausgewählte Projekte
-
 #### A2LL
 „Arbeitslosengeld 2, Leistungen zum Lebensunterhalt“ – das größte webgestützte Transaktionssystem Deutschlands.  
 - Bis zu 40.000 gleichzeitige Nutzer, ca. 800.000 Buchungen pro Tag  

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Grundsätze"
+title: "Unsere Unternehmensgrundsätze"
 description: "Die Unternehmensgrundsätze von STC STORB Consulting – Unabhängigkeit, Objektivität, Kompetenz und Vertraulichkeit."
 permalink: /principles/
 author: "Christian Storb"
@@ -15,8 +15,6 @@ robots: "index, follow"
 categories: [principles, consulting]
 tags: [Grundsätze, Unternehmenswerte, Consulting, Unabhängigkeit, Objektivität, Kompetenz, Vertraulichkeit]
 ---
-
-### Unsere Unternehmensgrundsätze
 
 Neue Wege zu beschreiten hat bei uns Tradition.  
 Bei allem Wandel bleiben unsere Grundsätze unverändert – sie bilden das Gleichgewicht unserer Geschäftstätigkeit und sind die Basis für nachhaltige Beratungserfolge.  

@@ -16,8 +16,6 @@ categories: [policies, legal, consulting]
 tags: [Impressum, Recht, Consulting, Kleinunternehmer, Datenschutz]
 ---
 
-### Impressum
-
 **STC STORB Consulting**  
 Christian Storb  
 Humboldtweg 3  
