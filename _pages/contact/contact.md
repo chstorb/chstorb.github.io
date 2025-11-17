@@ -1,16 +1,33 @@
 ---
 layout: default
-title: Kontakt
+title: "Kontakt"
+description: "Nehmen Sie Kontakt zu STC STORB Consulting auf – wir beraten Sie von der Planung bis zum Betrieb."
 permalink: /contact/contact/
+author: "Christian Storb"
+
+# Open Graph / Twitter Cards
+image: "/assets/images/consulting/og-image.png"
+twitter:
+  card: "summary_large_image"
+  creator: "@ChristianStorb"
+
+robots: "index, follow"
+categories: [contact, consulting]
+tags: [Kontakt, Consulting, Cloud, Architektur, Blazor, Azure]
 ---
 
-### Wir freuen uns, Sie auf unserer Website begrüßen zu dürfen!  Als Beratungs- und Serviceunternehmen im IT-Markt unterstützt STC STORB Consulting in Projekten von der Planung über die Entwicklung bis zur Markteinführung und dem Betrieb.  
+### Kontakt zu STC STORB Consulting
 
-Wenn Sie Fragen zu unseren Beratungsleistungen oder unserer Firma haben, so können Sie per E-Mail oder Telefon Kontakt zu uns aufnehmen. Alternativ können Sie auch unser Feedback-Formular nutzen, um uns zu kontaktieren.  
+Wir freuen uns, Sie auf unserer Website begrüßen zu dürfen.  
+
+Als Beratungs‑ und Serviceunternehmen im IT‑Markt unterstützen wir Projekte von der Planung über die Entwicklung bis zur Markteinführung und den Betrieb.  
+
+Haben Sie Fragen zu unseren Leistungen oder zu unserem Unternehmen?  
+Sie erreichen uns direkt per E‑Mail oder Telefon.    
 
 **STC STORB Consulting**  
-Mobil: +49 (0) 1590 6810 667  
+📱 Mobil: +49 (0) 1590 6810 667  
+✉️ E‑Mail: [mail2storb@gmail.com](mailto:mail2storb@gmail.com)  
+🌐 Internet: [https://chstorb.github.io](https://chstorb.github.io)
 
-E-Mail: [mail2storb@gmail.com](mailto:mail2storb@gmail.com) 
-
-Internet: [https://chstorb.github.io](https://chstorb.github.io)  
+[Ansprechpartner]({{ site.baseurl }}/contact/contacts/)  

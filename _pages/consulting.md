@@ -1,13 +1,34 @@
 ---
 layout: default
-title: Über uns
+title: "Über uns"
+description: "STC STORB Consulting – seit 2000 unabhängige Beratung und erfolgreiche Projekte für Unternehmen jeder Größe."
 permalink: /consulting/
+author: "Christian Storb"
+
+# Open Graph / Twitter Cards
+image: "/assets/images/consulting/og-image.png"
+twitter:
+  card: "summary_large_image"
+  creator: "@ChristianStorb"
+
+robots: "index, follow"
+categories: [consulting, company]
+tags: [Über uns, Consulting, Projekte, Unternehmen, Beratung, Erfolg]
 ---
 
-### STC steht seit der Gründung im Dezember 2000 für Eigenständigkeit und Unabhängigkeit.
+### Über uns 
 
-Seit vielen Jahren lösen wir Aufgaben unserer Kunden mit Erfolg. Die Bandbreite der von uns durchgeführten Projekte ist entsprechend hoch. Wir arbeiten mit vielen Kunden langfristig zusammen, nicht wenige sind Kunden der ersten Stunde, die wir seit unserer Unternehmensgründung im Jahr 2000 unterstützen.  
+Seit unserer Gründung im Dezember 2000 lösen wir erfolgreich die Aufgaben unserer Kunden.  
+Die Bandbreite unserer Projekte ist groß – viele Auftraggeber begleiten wir seit den ersten Tagen und arbeiten langfristig mit ihnen zusammen.  
 
-Wir arbeiten sowohl für Großunternehmen als auch für mittlere und kleinere Auftraggeber. Große Unternehmen verlangen vom Consultant, in einem komplexen Umfeld zügig Ergebnisse zu erzielen. Bei kleineren Unternehmen kommt es vor allem darauf an, sehr schnell einen angemessenen Return On Investment bezüglich des Beraterhonorars zu erzielen. Unternehmen verschiedener Größenordnungen können voneinander lernen.  
+Wir beraten sowohl **Großunternehmen** als auch **mittelständische und kleinere Betriebe**:  
+- In komplexen Umfeldern liefern wir schnell belastbare Ergebnisse.  
+- Bei kleineren Unternehmen achten wir besonders auf einen raschen Return on Investment.  
+- Unternehmen unterschiedlicher Größen profitieren vom gegenseitigen Erfahrungsaustausch.  
 
-Als erfahrener und kompetenter Partner sind wir für alle Beratungs- und Serviceaufgaben rund um Ihr Unternehmen etabliert. Die Nachhaltigkeit unserer Projekterfolge ist die Basis unserer langjährigen und vertrauensvollen Kundenbeziehungen. Unsere leistungs- und zielorientierte Arbeitsweise, stellen wir permanent und zeitgemäß auf den sich ständig ändernden Beratungsbedarf ein. Der permanente Erfahrungsaustausch mit unseren Kunden bildet eine solide Basis für die erfolgreiche Abwicklung unserer Beratungsprojekte.  
+Als erfahrener Partner sind wir für alle Beratungs‑ und Serviceaufgaben rund um Ihr Unternehmen etabliert.  
+Die **Nachhaltigkeit unserer Projekterfolge** bildet die Basis für langjährige, vertrauensvolle Kundenbeziehungen.  
+
+Unsere Arbeitsweise ist leistungs‑ und zielorientiert, stets angepasst an den sich wandelnden Beratungsbedarf.  
+Der kontinuierliche Erfahrungsaustausch mit unseren Kunden schafft eine solide Grundlage für die erfolgreiche Umsetzung unserer Projekte.  
+

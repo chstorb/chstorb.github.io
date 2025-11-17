@@ -1,49 +1,80 @@
 ---
 layout: default
-title: Rücksendungen
+title: "Rücksendungen"
+description: "Informationen zu Rückgabe, Umtausch und Erstattung bei STC STORB Consulting."
 permalink: /policies/withdrawal-policy/
+author: "Christian Storb"
+
+# Open Graph / Twitter Cards
+image: "/assets/images/consulting/og-image.png"
+twitter:
+  card: "summary_large_image"
+  creator: "@ChristianStorb"
+
+robots: "index, follow"
+categories: [policies, returns, consulting]
+tags: [Rücksendungen, Widerruf, Umtausch, Erstattung, Consulting]
 ---
 
-### RÜCKSENDUNGEN
-----
-Unser Rückgaberecht gilt für 14 Tage. Wenn Ihr Kauf mehr als 14 Tage zurückliegt, können wir Ihnen leider keine Rückerstattung und keinen Umtausch anbieten.
+### Rücksendungen
 
-Um für eine Rücksendung infrage zu kommen, muss Ihr Artikel unbenutzt und in demselben Zustand sein, in dem Sie ihn erhalten haben. Der Artikel muss sich zudem in der Originalverpackung befinden.
+Unser Rückgaberecht gilt für **14 Tage** ab Erhalt der Ware.  
+Nach Ablauf dieser Frist ist eine Rückerstattung oder ein Umtausch leider nicht mehr möglich.  
 
-Einige Artikel sind komplett von der Rückgabe ausgeschlossen. Verderbliche Waren wie Lebensmittel, Blumen, Zeitungen oder Zeitschriften können nicht zurückgegeben werden. Wir akzeptieren auch keine Produkte, bei denen es sich um Intim- oder Hygieneartikel, gefährliche Materialien oder brennbare Flüssigkeiten oder Gase handelt.
+#### Voraussetzungen
+- Artikel muss unbenutzt und im Originalzustand sein  
+- Rücksendung nur in der Originalverpackung  
+- Quittung oder Kaufbeleg erforderlich  
+- Rücksendung bitte nicht direkt an den Hersteller senden  
 
- Des Weiteren können folgende Artikel nicht zurückgegeben werden:
- * Geschenkgutscheine
- * Softwareprodukte zum Herunterladen
- * Einige Gesundheits- und Körperpflegeprodukte
+#### Ausschlüsse
+Von der Rückgabe ausgeschlossen sind:  
+- Verderbliche Waren (Lebensmittel, Blumen, Zeitungen, Zeitschriften)  
+- Intim‑ und Hygieneartikel  
+- Gefährliche Materialien, brennbare Flüssigkeiten oder Gase  
+- Geschenkgutscheine  
+- Softwareprodukte zum Herunterladen  
+- Bestimmte Gesundheits‑ und Körperpflegeprodukte  
 
-Um Ihre Rückgabe abzuschließen, benötigen wir eine Quittung oder einen Kaufbeleg.
-Bitte senden Sie die gekauften Artikel nicht an den Hersteller zurück. 
+#### Teilweise Rückerstattung
+Nur eingeschränkt möglich bei:  
+- Bücher mit deutlichen Gebrauchsspuren  
+- Geöffnete CDs, DVDs, VHS‑Kassetten, Software, Videospiele, Kassetten oder Vinylplatten  
+- Artikel, die beschädigt oder unvollständig zurückgesendet werden  
+- Rücksendungen nach Ablauf der 14‑Tage‑Frist  
 
-In bestimmten Situationen werden nur teilweise Rückerstattungen gewährt (falls zutreffend)
- * Bücher mit offensichtlichen Gebrauchsspuren
- * CDs, DVDs, VHS-Kassetten, Software, Videospiele, Kassetten oder Vinylplatten, die geöffnet wurden.
- * Artikel, die sich nicht mehr im Originalzustand befinden, beschädigt sind oder bei denen Teile aus Gründen fehlen, die nicht auf unseren Fehler zurückzuführen sind.
- * Artikel, die nach Ablauf von 14 Tagen ab Lieferung zurückgesendet werden.
- 
-#### Rückerstattungen (falls zutreffend)
-Wenn wir Ihre Rücksendung erhalten und kontrolliert haben, senden wir Ihnen eine E-Mail zu, um Sie zu informieren, dass wir den von Ihnen zurückgegebenen Artikel erhalten haben. Wir werden Sie auch über die Genehmigung oder Ablehnung Ihrer Rückerstattung informieren. Wenn Ihre Rückerstattung genehmigt wurde, wird sie bearbeitet. Nach einigen Tagen erfolgt dann automatisch eine Gutschrift auf Ihre Kreditkarte oder die ursprüngliche Zahlungsmethode.
+---
 
-#### Verspätete oder fehlende Rückerstattungen (falls zutreffend) 
-Wenn Sie noch keine Rückerstattung erhalten haben, überprüfen Sie zunächst noch einmal Ihr Bankkonto. Kontaktieren Sie anschließend Ihr Kreditkartenunternehmen. Es kann einige Zeit dauern, bis Ihre Rückerstattung gutgeschrieben wird. Wenden Sie sich als Nächstes an Ihre Bank. Es gibt häufig eine Bearbeitungszeit, bis eine Rückerstattung auf Ihr Konto gebucht wird. Wenn Sie all dies getan haben und noch immer keine Rückerstattung erhalten haben, kontaktieren Sie uns bitte unter mail2storb@gmail.com.
+#### Rückerstattungen
+Nach Eingang und Prüfung Ihrer Rücksendung informieren wir Sie per E‑Mail über Genehmigung oder Ablehnung.  
+Bei Genehmigung erfolgt die Rückerstattung automatisch auf Ihre ursprüngliche Zahlungsmethode.  
 
-#### Angebotsartikel (falls zutreffend) 
-Eine Rückerstattung kann nur für Artikel mit regulärem Preis erfolgen, Angebotsartikel sind von der Rückerstattung leider ausgeschlossen.
+#### Verspätete oder fehlende Rückerstattungen
+- Prüfen Sie Ihr Bankkonto und kontaktieren Sie ggf. Ihr Kreditkartenunternehmen oder Ihre Bank.  
+- Bearbeitungszeiten können variieren.  
+- Bei Problemen wenden Sie sich bitte an: [mail2storb@gmail.com](mailto:mail2storb@gmail.com).  
 
-#### Umtausch (falls zutreffend) 
-Ein Umtausch wird nur für defekte oder beschädigte Artikel gewährt. Wenn Sie einen Artikel gegen den gleichen Artikel umtauschen möchten, senden Sie uns eine E-Mail an mail2storb@gmail.com und schicke Sie den Artikel an: Humboldtweg 3, Nottuln, Nordrhein-Westfalen, 48301, Deutschland.
+#### Angebotsartikel
+Rückerstattungen sind nur für regulär bepreiste Artikel möglich. Angebotsartikel sind ausgeschlossen.  
+
+#### Umtausch
+Ein Umtausch ist nur bei defekten oder beschädigten Artikeln möglich.  
+Kontakt: [mail2storb@gmail.com](mailto:mail2storb@gmail.com)  
+Rücksendung an: Humboldtweg 3, 48301 Nottuln, Nordrhein‑Westfalen, Deutschland  
 
 #### Geschenke
-Wenn der Artikel beim Kauf als Geschenk gekennzeichnet und direkt an Sie gesendet wurde, erhalten Sie bei Rückgabe des Artikels einen Gutschein in Höhe des Einkaufswerts. Sobald der zurückgeschickte Artikel bei uns eingegangen ist, erhalten Sie einen Gutschein per E-Mail. Wenn der Artikel beim Kauf nicht als Geschenk gekennzeichnet oder an die schenkende Person gesendet wurde, erfolgt die Erstattung an die schenkende Person, und die schenkende Person wird über die Rückgabe informiert.
+- Bei als Geschenk gekennzeichneten Artikeln erhalten Sie einen Gutschein über den Einkaufswert.  
+- Bei nicht als Geschenk gekennzeichneten Artikeln erfolgt die Erstattung an die schenkende Person.  
 
 #### Versand
-Um Ihr Produkt zurückzugeben, sollten Sie Ihr Produkt an: Humboldtweg 3, Nottuln, Nordrhein-Westfalen, 48301, Deutschland senden. Sie müssen die Versandkosten für die Rücksendung Ihres Artikels selbst tragen. Versandkosten können nicht erstattet werden. Wenn Sie eine Rückerstattung erhalten, werden die Versandkosten für die Rücksendung von Ihrer Rückerstattung abgezogen. Die Zeit, die es dauert, bis der umgetauschte Artikel bei Ihnen eintrifft, kann je nach Land, in dem Sie wohnhaft sind, variieren. Wenn Sie einen Artikel im Wert von über 75 € verschicken, sollten Sie einen Versanddienst mit Sendungsverfolgung oder den Abschluss einer Versandversicherung in Betracht ziehen. Wir können nicht garantieren, dass wir den von Ihnen zurückgegebenen Artikel erhalten werden.
+Rücksendungen bitte an:  
+**Humboldtweg 3, 48301 Nottuln, Nordrhein‑Westfalen, Deutschland**  
+
+- Rücksendekosten sind vom Käufer zu tragen und nicht erstattungsfähig.  
+- Bei Rückerstattung werden Rücksendekosten abgezogen.  
+- Für Artikel über 75 € empfehlen wir einen Versanddienst mit Sendungsverfolgung oder eine Versandversicherung.  
+- Wir können den Erhalt einer Rücksendung ohne Sendungsverfolgung nicht garantieren.  
 
 ---
 
-*Diese Rückgabebedingungen gelten für alle Dienste und Online-Auftritte von STC STORB Consulting.*
+*Diese Rückgabebedingungen gelten für alle Dienste und Online‑Auftritte von STC STORB Consulting.*

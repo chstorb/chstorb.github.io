@@ -23,9 +23,17 @@ email: mail2storb@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Modulare, rechtssichere Weblösungen für Consulting, Travel und Music. Spezialisiert auf Azure, .NET und Blazor.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://chstorb.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+author:
+  name: Christian Storb
+  email: mail2storb@gmail.com
+
+# Social Media / SEO
+twitter_username: "ChristianStorb"   # without @
+github_username: "chstorb"
+
+# Default image for Open Graph & Twitter Cards
+image: "/assets/images/consulting/og-image.png"
 
 # Build settings
 theme: minima

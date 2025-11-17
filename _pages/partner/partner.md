@@ -1,24 +1,38 @@
 ---
 layout: default
-title: Partner
+title: "Partner"
+description: "STC STORB Consulting arbeitet mit starken Partnern wie 4Unit Systems Integration für ganzheitliche IT-Lösungen."
 permalink: /partner/partner/
+author: "Christian Storb"
+
+# Open Graph / Twitter Cards
+image: "/assets/images/consulting/og-image.png"
+twitter:
+  card: "summary_large_image"
+  creator: "@ChristianStorb"
+
+robots: "index, follow"
+categories: [partner, consulting]
+tags: [Partner, Kooperation, IT-Dienstleistungen, Consulting, ECM, Softwareentwicklung]
 ---
 
-### Synergy At Work!
+### Synergy at Work
 
-Die Zusammenarbeit mit engagierten, kompetenten Partnern ist wesentlicher Bestandteil unserer Unternehmensstrategie.  
+Die Zusammenarbeit mit engagierten und kompetenten Partnern ist ein zentraler Bestandteil unserer Unternehmensstrategie.  
+Gemeinsam mit unseren Kooperationspartnern bilden wir einen interdisziplinären Expertenverbund, der für Ihre Fragestellungen ganzheitliche Lösungen entwickelt und erfolgreich umsetzt.  
 
-So können wir für Ihre vielfältigen Fragestellungen mit unseren Kooperationspartnern einen interdisziplinären Expertenverbund einsetzen, um für Sie ganzheitliche Lösungen zu entwickeln und gemeinsam mit Ihnen umzusetzen. Unter einer idealen Partnerschaft verstehen wir die Kooperation mit Unternehmen, die unsere Dienste und Produkte mit ihren Kompetenzen zu Lösungskonzepten bündeln, mit denen unterschiedlichste Kundenanforderungen optimal erfüllt werden können.  
+Unter einer idealen Partnerschaft verstehen wir die Kooperation mit Unternehmen, die unsere Leistungen und Produkte mit ihren Kompetenzen ergänzen. So entstehen Lösungskonzepte, die unterschiedlichste Kundenanforderungen optimal erfüllen.  
+
+---
 
 #### 4Unit Systems Integration
-Die 4Unit Systems Integration GmbH bietet ein vielseitiges Spektrum an IT-Dienstleistungen:  
 
-Beratung und Coaching in allen Phasen von anspruchsvollen IT-Lösungen  
+Die 4Unit Systems Integration GmbH bietet ein breites Spektrum an IT‑Dienstleistungen und begleitet anspruchsvolle Projekte in allen Phasen:  
 
-- Entwicklung individueller, plattformunabhängiger Softwarelösungen
-- „Customizing“ von komplexen Standard-Softwarelösungen
-- Erneuerung und Migration von bestehenden IT-Systemen
-- Unterstützung bei der Einführung und Schulung von IT-Lösungen
-- Komplettlösungen für Enterprise Content Management(ECM)-System
+- Entwicklung individueller, plattformunabhängiger Softwarelösungen  
+- Anpassung („Customizing“) komplexer Standardsoftware  
+- Erneuerung und Migration bestehender IT‑Systeme  
+- Unterstützung bei Einführung und Schulung von IT‑Lösungen  
+- Komplettlösungen für Enterprise Content Management (ECM)  
 
-Internet: [http://www.4unit.com/gm](http://www.4unit.com/gm)
+🌐 Internet: [www.4unit.com/gm](http://www.4unit.com/gm)

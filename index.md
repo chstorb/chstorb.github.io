@@ -1,6 +1,22 @@
 ---
 layout: default
 title: "STC STORB Consulting"
+description: "Seit 2000 eigenständig und unabhängig: modulare, rechtssichere Weblösungen für Consulting, Travel und Music."
+author: "Christian Storb"
+
+# Open Graph / Twitter Cards
+image: "/assets/images/consulting/og-image.png"
+twitter:
+  card: "summary_large_image"
+  creator: "@ChristianStorb"
+
+# SEO / Sitemap
+permalink: "/"
+robots: "index, follow"
+
+# Optional: Categories or tags for internal structure
+categories: [consulting, cloud, architecture]
+tags: [Azure, .NET, Blazor, Dokumentation, Multi-Tenant, GitHub Pages]
 ---
 
 ### STC steht seit der Gründung im Dezember 2000 für Eigenständigkeit und Unabhängigkeit.

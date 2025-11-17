@@ -1,15 +1,36 @@
 ---
 layout: default
 title: "Services"
+description: "STC STORB Consulting – Projektunterstützung von der Planung über die Entwicklung bis zur Markteinführung und den Betrieb."
 permalink: /services/
+author: "Christian Storb"
+
+# Open Graph / Twitter Cards
+image: "/assets/images/consulting/og-image.png"
+twitter:
+  card: "summary_large_image"
+  creator: "@ChristianStorb"
+
+robots: "index, follow"
+categories: [services, consulting]
+tags: [Services, Consulting, Projekte, Microsoft, Entwicklung, Betrieb]
 ---
 
-### STC unterstützt Ihr Projekt bei Ihren Kunden und Geschäftspartnern vor Ort von der Planung über die Entwicklung bis zur Markteinführung und dem Betrieb.
+### Unsere Services
 
-In vielen Projekten ist der Aufwand, eigenes Know-how aufzubauen, zu groß und auch zu langwierig. Dazu kommt, dass z. B. nach der Entwicklung einer Applikation das reine Entwicklungs- und Implementierungs-Know-how kaum oder überhaupt nicht mehr benötigt wird und das eingestellte Personal fortan anderweitig einzusetzen oder wieder zu entlassen wäre.
+STC unterstützt Ihr Projekt bei Kunden und Geschäftspartnern vor Ort – von der **Planung** über die **Entwicklung** bis zur **Markteinführung** und den **Betrieb**.  
 
-Auch der Zeitfaktor spielt eine wesentliche Rolle. Während STC sofort „On-Shore“ zur Verfügung steht, kann der Aufbau neuen Fachwissens bei bestehendem Personal mehrere Monate dauern, wenn die notwendigen fachlichen Grundlagen und Qualifikationen dafür überhaupt vorhanden sind.
+#### Warum STC?
+- Der Aufbau eigenen Know-hows ist oft zu aufwendig und langwierig.  
+- Nach Projektabschluss wird spezielles Entwicklungswissen häufig nicht mehr benötigt – internes Personal müsste umgeschult oder entlassen werden.  
+- Zeitfaktor: Während STC sofort „On‑Shore“ verfügbar ist, dauert der Wissensaufbau im Unternehmen oft Monate.  
 
-Seit 2000 lösen wir Aufgaben im Microsoft-Umfeld mit Erfolg. Die Bandbreite der von uns durchgeführten Projekte ist entsprechend hoch. Wir arbeiten sowohl für Großunternehmen als auch für mittlere und kleinere Auftraggeber. Mit vielen Kunden arbeiten wir langfristig zusammen.
+#### Unsere Expertise
+- Erfolgreiche Projekte im **Microsoft-Umfeld** seit 2000  
+- Breite Projekterfahrung in unterschiedlichen Branchen  
+- Zusammenarbeit mit **Großunternehmen**, **mittelständischen Betrieben** und **kleineren Auftraggebern**  
+- Langfristige Kundenbeziehungen durch nachhaltige Projekterfolge  
 
-Wir unterstützen unsere Kunden vor Ort im gesamten Bundesgebiet.
+#### Einsatzgebiet
+Wir unterstützen unsere Kunden **vor Ort im gesamten Bundesgebiet**.  
+

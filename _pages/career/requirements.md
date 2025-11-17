@@ -1,42 +1,61 @@
 ---
 layout: default
-title: Anforderungen
+title: "Anforderungen"
+description: "Ihre Erfahrung und Fachkompetenz sind gefragt – werden Sie Teil von STC STORB Consulting."
 permalink: /career/requirements/
+author: "Christian Storb"
+
+# Open Graph / Twitter Cards
+image: "/assets/images/consulting/og-image.png"
+twitter:
+  card: "summary_large_image"
+  creator: "@ChristianStorb"
+
+robots: "index, follow"
+categories: [career, consulting, requirements]
+tags: [Karriere, Anforderungen, Consulting, Management, Azure, Blazor]
 ---
 
-### Sie verfügen über mindestens sechs Jahre Berufserfahrung und haben während Ihres beruflichen Werdeganges in Führungs- oder Beratungspositionen bereits nachhaltige Erfolge erzielt. Eine hohe Fachkompetenz in mindestens zwei Branchen und Themen bringen Sie mit. Problemstellungen zu strukturieren ist fester Bestandteil Ihrer Arbeitsweise. Sie wissen, wie man Projekthürden rechtzeitig erkennt und abbaut. Ihnen gelingt es, das Top-Management und die Mitarbeiter zu überzeugen und zu gewinnen. Abhängig von den Rahmenbedingungen Ihrer Rolle beim Kunden fügen Sie sich in bestehende Strukturen und Teams ein. Sie fordern Eigenverantwortung ein und schöpfen diese im Sinne des Projekterfolges aus. Zu Ihrem inneren Antrieb gehört es, überdurchschnittliche Leistungen zu erbringen – das zeigt sich durchgängig von der Note Ihres Hochschulabschlusses bis zu Ihren Arbeitszeugnissen.  
+### Anforderungen 
 
-Aufgrund aktueller Projektschwerpunkte suchen wir insbesondere auch Ma­nagementberater mit Kompetenzen in den Branchen  
+Sie verfügen über mindestens sechs Jahre Berufserfahrung und haben in Führungs‑ oder Beratungspositionen nachhaltige Erfolge erzielt. Eine hohe Fachkompetenz in mindestens zwei Branchen und Themen zeichnet Sie aus. 
+Problemstellungen zu strukturieren gehört zu Ihrer Arbeitsweise; Projekthürden erkennen und abbauen gelingt Ihnen rechtzeitig. Sie überzeugen sowohl Top‑Management als auch Mitarbeiter und fügen sich flexibel in bestehende Strukturen und Teams ein. Eigenverantwortung fordern und ausschöpfen ist für Sie selbstverständlich. Ihr Anspruch auf überdurchschnittliche Leistung zeigt sich durchgängig – vom Hochschulabschluss bis zu Ihren Arbeitszeugnissen.  
 
-- Energieversorgung
-- Finanzdienstleistung
-- Handel und Konsumgüter
-- Öffentlicher Bereich
-- Telekommunikation
+#### Branchenkompetenz
+Wir suchen insbesondere Managementberater mit Erfahrung in:
+- Energieversorgung  
+- Finanzdienstleistung  
+- Handel und Konsumgüter  
+- Öffentlicher Bereich  
+- Telekommunikation  
 
-sowie in den Funktionen 
-- Controlling
-- IT-Management
-- Logistik
-- Marketing, Vertrieb, Service
+#### Funktionskompetenz
+Zusätzlich sind Kenntnisse in folgenden Bereichen von Vorteil:
+- Controlling  
+- IT‑Management  
+- Logistik  
+- Marketing, Vertrieb, Service  
 
 #### Ihre Aufgaben
-- Sie wirken in allen Phasen der Projekte mit, angefangen bei der Analyse und Strategie bis hin zu Modellierung, Implementierung, Test und Einführung
-- Sie führen eigenständig Informationsmanagement durch, um unseren Kunden eine bessere Nutzung von Informationen zu ermöglichen
-- Von der Konzeption bis zur Umsetzung begleiten Sie im Team Umstrukturierungen und organisatorische Veränderungen
+- Mitarbeit in allen Projektphasen: Analyse, Strategie, Modellierung, Implementierung, Test und Einführung  
+- Eigenständiges Informationsmanagement zur besseren Nutzung von Daten durch unsere Kunden  
+- Begleitung von Umstrukturierungen und organisatorischen Veränderungen – von der Konzeption bis zur Umsetzung  
 
 #### Ihr Profil
-- Ein überdurchschnittlich abgeschlossenes Studium
-- Sehr gute Kommunikationsfähigkeit, um auf allen Ebenen eines Unternehmens auftreten zu können
-- Gute analytische und konzeptionelle Fähigkeiten
-- Sehr gutes Englisch in Wort und Schrift
-- Teamgeist sowie Flexibilität und Mobilität
+- Überdurchschnittlich abgeschlossenes Studium  
+- Sehr gute Kommunikationsfähigkeit auf allen Unternehmensebenen  
+- Ausgeprägte analytische und konzeptionelle Fähigkeiten  
+- Sehr gutes Englisch in Wort und Schrift  
+- Teamgeist, Flexibilität und Mobilität  
 
 #### Was wir bieten
-- Ein spannendes Arbeitsumfeld mit täglich neuen Herausforderungen
-- Die Möglichkeit, Ihr Talent in vollem Umfang zu entwickeln, gestützt durch kontinuierliche Weiterbildung
+- Ein spannendes Arbeitsumfeld mit täglich neuen Herausforderungen  
+- Die Möglichkeit, Ihr Talent voll zu entfalten – unterstützt durch kontinuierliche Weiterbildung  
 
-Gern beantwortet Ihnen Herr Christian Storb weitere Fragen. 
-Mobil: +49 (0) 1590 6810 667  
+---
 
-Wir freuen uns auf Ihre vollständigen Bewerbungsunterlagen mit Angabe Ihrer Gehaltsvorstellung. Wir bevorzugen Bewerbungsunterlagen per E-Mail an die Adresse [mail2storb@gmail.com](mailto:mail2storb@gmail.com).  
+Gern beantwortet Ihnen Herr Christian Storb weitere Fragen.  
+📱 Mobil: +49 (0) 1590 6810 667  
+
+Wir freuen uns auf Ihre vollständigen Bewerbungsunterlagen mit Angabe Ihrer Gehaltsvorstellung.  
+Bitte senden Sie Ihre Bewerbung bevorzugt per E‑Mail an [mail2storb@gmail.com](mailto:mail2storb@gmail.com).
