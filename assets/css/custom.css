@@ -1,14 +1,57 @@
-h1, h2, h3 {
-  font-weight: 700;
+/* Inter für Fließtext und UI */
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/inter/Inter-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/inter/Inter-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/inter/Inter-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
 }
 
-.page-title {
-  font-size: 1.5rem;   
+/* Montserrat für Headlines */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/montserrat/Montserrat-Bold.woff2') format('woff2');
   font-weight: 700;
-  margin-bottom: 1rem;
+  font-style: normal;
 }
-.page-subtitle {
-  font-size: 1.25rem; 
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/montserrat/Montserrat-SemiBold.woff2') format('woff2');
   font-weight: 600;
+  font-style: normal;
+}
+
+/* Typografische Hierarchie */
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #212529; /* Bootstrap Standard */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', 'Inter', sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-top: 1.5rem;
   margin-bottom: 0.75rem;
 }
+
+/* UI-Elemente */
+.navbar, .btn, .form-control, .dropdown-item {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
