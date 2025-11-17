@@ -39,6 +39,9 @@ image: "/assets/images/consulting/og-image.png"
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+
+url: "https://chstorb.github.io"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
