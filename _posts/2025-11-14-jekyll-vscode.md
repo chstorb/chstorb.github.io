@@ -94,6 +94,3 @@ Sitemap: https://username.github.io/sitemap.xml
 
 🎯 Fazit
 Mit Jekyll, Ruby und VS Code lässt sich schnell eine statische Website erstellen. Die Kombination aus klarer Projektstruktur, hilfreichen Extensions und automatischer SEO-Optimierung macht den Einstieg einfach. GitHub Pages übernimmt das Hosting, sodass die Seite sofort online verfügbar ist.
-
-Code
-
