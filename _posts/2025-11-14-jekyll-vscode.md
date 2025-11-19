@@ -1,11 +1,10 @@
 ---
-layout: default
+layout: post
 title: "Eine Website mit Jekyll und VS Code erstellen"
 date: 2025-11-14 19:23:35 +0100
 categories: [Jekyll, Ruby, GitHub Pages, VS Code]
+image: /assets/images/consulting/blog/jekyll+vscode.png
 ---
-
-# Eine Website mit Jekyll und VS Code erstellen
 
 Jekyll ist ein statischer Site-Generator, der besonders gut mit GitHub Pages harmoniert.  
 In diesem Artikel zeige ich allgemein, wie man eine eigene Website mit Jekyll erstellt und dabei **Visual Studio Code (VS Code)** als Entwicklungsumgebung nutzt.

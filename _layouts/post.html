@@ -34,6 +34,9 @@
     <h1 class="{% if page.title == nil or page.title == '' %} visually-hidden{% endif %}">
       {{- page.title | default: "STC STORB Consulting" -}}
     </h1>
+      {% if page.image %}
+        <img src="{{ page.image }}" class="my-3" alt="{{ post.title }}">
+      {% endif %}
     {{ content }}
   </main>
   {% include footer.html %}
