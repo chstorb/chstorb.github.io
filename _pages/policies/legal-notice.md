@@ -37,7 +37,7 @@ Nicht vorhanden – Kleinunternehmer gemäß § 19 UStG
 Die EU‑Kommission stellt seit dem 15. Februar 2016 eine Plattform für außergerichtliche Streitschlichtung bereit.  
 Verbraucher können darüber Streitigkeiten im Zusammenhang mit Online‑Bestellungen zunächst ohne Gericht klären.  
 
-👉 Plattform: [https://ec.europa.eu/consumers/odr/](https://ec.europa.eu/consumers/odr/)  
+👉 Plattform: [https://consumer-redress.ec.europa.eu/index_de](https://consumer-redress.ec.europa.eu/index_de)  
 
 Wir sind gesetzlich verpflichtet, auf unsere E‑Mail‑Adresse hinzuweisen:  
 **[mail2storb@gmail.com](mailto:mail2storb@gmail.com)**  

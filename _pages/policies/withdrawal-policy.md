@@ -19,11 +19,11 @@ tags: [Rücksendungen, Widerruf, Umtausch, Erstattung, Consulting]
 Unser Rückgaberecht gilt für **14 Tage** ab Erhalt der Ware.  
 Nach Ablauf dieser Frist ist eine Rückerstattung oder ein Umtausch leider nicht mehr möglich.  
 
-#### Voraussetzungen
-- Artikel muss unbenutzt und im Originalzustand sein  
-- Rücksendung nur in der Originalverpackung  
-- Quittung oder Kaufbeleg erforderlich  
-- Rücksendung bitte nicht direkt an den Hersteller senden  
+#### Hinweise
+- Die Ware darf zur Prüfung wie im Ladengeschäft getestet werden. Bei darüber hinausgehender Nutzung kann Wertersatz verlangt werden.  
+- Bitte senden Sie die Ware möglichst in der Originalverpackung zurück. Dies ist jedoch keine Voraussetzung für die wirksame Ausübung des Widerrufsrechts.  
+- Quittung oder Kaufbeleg erforderlich.   
+- Rücksendung bitte nicht direkt an den Hersteller senden. 
 
 #### Ausschlüsse
 Von der Rückgabe ausgeschlossen sind:  
@@ -53,7 +53,7 @@ Bei Genehmigung erfolgt die Rückerstattung automatisch auf Ihre ursprüngliche 
 - Bei Problemen wenden Sie sich bitte an: [mail2storb@gmail.com](mailto:mail2storb@gmail.com).  
 
 #### Angebotsartikel
-Rückerstattungen sind nur für regulär bepreiste Artikel möglich. Angebotsartikel sind ausgeschlossen.  
+Das Widerrufsrecht gilt auch für reduzierte Artikel. Ausgenommen sind lediglich Waren, die nach gesetzlichen Vorgaben nicht zurückgegeben werden können (z. B. Hygieneartikel, versiegelte Produkte nach Öffnung, digitale Inhalte nach Beginn der Ausführung).  
 
 #### Umtausch
 Ein Umtausch ist nur bei defekten oder beschädigten Artikeln möglich.  
