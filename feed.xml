@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://chstorb.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://chstorb.github.io/" rel="alternate" type="text/html" /><updated>2026-01-06T19:03:11+00:00</updated><id>https://chstorb.github.io/feed.xml</id><title type="html">STC</title><subtitle>Modulare, rechtssichere Weblösungen für Consulting, Travel und Music. Spezialisiert auf Azure, .NET und Blazor.</subtitle><author><name>Christian Storb</name><email>mail2storb@gmail.com</email></author><entry><title type="html">Resiliente Anwendungen mit Polly in C#</title><link href="https://chstorb.github.io/.net/cloud-technologie/microservices/open%20source/programmierung/softwareentwicklung/2025/11/18/resiliente-anwendungen-mit-polly.html" rel="alternate" type="text/html" title="Resiliente Anwendungen mit Polly in C#" /><published>2025-11-18T00:00:00+00:00</published><updated>2025-11-18T00:00:00+00:00</updated><id>https://chstorb.github.io/.net/cloud-technologie/microservices/open%20source/programmierung/softwareentwicklung/2025/11/18/resiliente-anwendungen-mit-polly</id><content type="html" xml:base="https://chstorb.github.io/.net/cloud-technologie/microservices/open%20source/programmierung/softwareentwicklung/2025/11/18/resiliente-anwendungen-mit-polly.html"><![CDATA[<p>In der modernen Softwareentwicklung sind <strong>Fehlertoleranz</strong> und <strong>Resilienz</strong> entscheidende Faktoren für stabile Anwendungen.<br />
+<strong>Polly</strong>, eine leistungsstarke Resilience-Bibliothek für .NET, hilft Entwicklern, transiente Fehler elegant zu bewältigen und zuverlässige Systeme zu bauen.</p>
+
+<h2 id="was-ist-polly">Was ist Polly?</h2>
+<p>Polly ist eine Open-Source-Bibliothek für Fehlermanagement und Resilienzstrategien in .NET-Anwendungen.<br />
+Sie ermöglicht es Entwicklern, Wiederholungen, Circuit Breakers, Timeouts, Fallbacks, Rate Limiting und andere Schutzmechanismen in ihren Code zu integrieren.</p>
+
+<p>Gerade in Cloud- und Microservices-Architekturen kommt es häufig zu transienten Fehlern – vorübergehenden Problemen wie Netzwerkunterbrechungen oder überlasteten Servern.<br />
+Polly hilft dabei, diese Fehler abzufangen und intelligent zu behandeln.</p>
+
+<h2 id="die-wichtigsten-resilience-strategien-mit-polly">Die wichtigsten Resilience-Strategien mit Polly</h2>
+
+<h3 id="retry-mechanismus">Retry-Mechanismus</h3>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">var</span> <span class="n">retryPolicy</span> <span class="p">=</span> <span class="n">Policy</span>
+    <span class="p">.</span><span class="n">Handle</span><span class="p">&lt;</span><span class="n">HttpRequestException</span><span class="p">&gt;()</span>
+    <span class="p">.</span><span class="nf">Retry</span><span class="p">(</span><span class="m">3</span><span class="p">);</span> <span class="c1">// Wiederhole die Aktion bis zu 3-mal</span>
+</code></pre></div></div>
+
+<h3 id="circuit-breaker">Circuit Breaker</h3>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">var</span> <span class="n">circuitBreakerPolicy</span> <span class="p">=</span> <span class="n">Policy</span>
+    <span class="p">.</span><span class="n">Handle</span><span class="p">&lt;</span><span class="n">Exception</span><span class="p">&gt;()</span>
+    <span class="p">.</span><span class="nf">CircuitBreaker</span><span class="p">(</span><span class="m">2</span><span class="p">,</span> <span class="n">TimeSpan</span><span class="p">.</span><span class="nf">FromMinutes</span><span class="p">(</span><span class="m">1</span><span class="p">));</span> <span class="c1">// Unterbricht nach 2 Fehlern für 1 Minute</span>
+</code></pre></div></div>
+
+<h3 id="timeout">Timeout</h3>
+<pre><code class="language-charp">var timeoutPolicy = Policy.Timeout(TimeSpan.FromSeconds(5)); // Abbruch nach 5 Sekunden
+</code></pre>
+
+<h3 id="fallback">Fallback</h3>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">var</span> <span class="n">fallbackPolicy</span> <span class="p">=</span> <span class="n">Policy</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;</span>
+    <span class="p">.</span><span class="n">Handle</span><span class="p">&lt;</span><span class="n">Exception</span><span class="p">&gt;()</span>
+    <span class="p">.</span><span class="nf">Fallback</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="s">"Standardantwort bei Fehlern"</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Warum Polly für deine Projekte nutzen?
+Durch die Integration von Polly in deine C#-Anwendungen kannst du:</p>
+
+<p>✅ <strong>Fehlertoleranz verbessern</strong></p>
+
+<p>✅ <strong>Systemstabilität erhöhen</strong></p>
+
+<p>✅ <strong>Nutzererlebnis optimieren</strong></p>
+
+<p>✅ <strong>Netzwerk- und API-Fehler abfangen</strong></p>
+
+<p>✅ <strong>Dienste in Cloud-Umgebungen robuster gestalten</strong></p>
+
+<p>Ob für Webanwendungen, Microservices oder API-Clients – Polly ist ein unverzichtbares Werkzeug für Entwickler, die ihre Software widerstandsfähiger machen möchten.</p>
+
+<h3 id="fazit">Fazit</h3>
+<p>Polly ist eine unverzichtbare Bibliothek für alle, die robuste und fehlertolerante Anwendungen entwickeln. Mit ihren vielseitigen Resilience-Strategien hilft sie, Software zuverlässiger zu machen und die Auswirkungen von transienten Fehlern zu minimieren.</p>
+
+<h3 id="referenzen">Referenzen</h3>
+<ul>
+  <li><a href="https://github.com/App-vNext/Polly">Polly</a></li>
+</ul>]]></content><author><name>STC STORB Consulting</name></author><category term=".NET" /><category term="Cloud-Technologie" /><category term="Microservices" /><category term="Open Source" /><category term="Programmierung" /><category term="Softwareentwicklung" /><category term="C#" /><category term="Polly" /><category term="Resilienz" /><category term="Fehlertoleranz" /><category term="Retry" /><category term="Circuit Breaker" /><category term="Timeout" /><category term="Fallback" /><category term="Rate Limiting" /><summary type="html"><![CDATA[In der modernen Softwareentwicklung sind Fehlertoleranz und Resilienz entscheidende Faktoren für stabile Anwendungen. Polly, eine leistungsstarke Resilience-Bibliothek für .NET, hilft Entwicklern, transiente Fehler elegant zu bewältigen und zuverlässige Systeme zu bauen.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://chstorb.github.io/assets/images/consulting/blog/polly.webp" /><media:content medium="image" url="https://chstorb.github.io/assets/images/consulting/blog/polly.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Eine Website mit Jekyll und VS Code erstellen</title><link href="https://chstorb.github.io/jekyll/ruby/github%20pages/vs%20code/2025/11/14/jekyll-vscode.html" rel="alternate" type="text/html" title="Eine Website mit Jekyll und VS Code erstellen" /><published>2025-11-14T18:23:35+00:00</published><updated>2025-11-14T18:23:35+00:00</updated><id>https://chstorb.github.io/jekyll/ruby/github%20pages/vs%20code/2025/11/14/jekyll-vscode</id><content type="html" xml:base="https://chstorb.github.io/jekyll/ruby/github%20pages/vs%20code/2025/11/14/jekyll-vscode.html"><![CDATA[<p>Jekyll ist ein statischer Site-Generator, der besonders gut mit GitHub Pages harmoniert.<br />
+In diesem Artikel zeige ich allgemein, wie man eine eigene Website mit Jekyll erstellt und dabei <strong>Visual Studio Code (VS Code)</strong> als Entwicklungsumgebung nutzt.</p>
+
+<hr />
+
+<h2 id="-voraussetzungen">🚀 Voraussetzungen</h2>
+
+<p>Um mit Jekyll zu starten, benötigt man:</p>
+<ul>
+  <li><strong>Ruby</strong> (unter Windows am besten mit RubyInstaller inkl. MSYS2).</li>
+  <li><strong>Bundler</strong> und <strong>Jekyll</strong>, installiert über <code class="language-plaintext highlighter-rouge">gem install bundler jekyll</code>.</li>
+  <li><strong>VS Code</strong> als IDE mit Extensions wie <em>Ruby LSP</em> und <em>Jekyll Helper</em>.</li>
+  <li>Ein GitHub Repository, z. B. <code class="language-plaintext highlighter-rouge">username.github.io</code>.</li>
+</ul>
+
+<hr />
+
+<h2 id="-projekt-starten">📂 Projekt starten</h2>
+
+<p>Ein neues Projekt wird mit folgendem Befehl angelegt:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll new mysite
+</code></pre></div></div>
+
+<p>Wenn man bereits ein Repository hat, kann man die Struktur auch direkt dort erzeugen:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll new <span class="nb">.</span> <span class="nt">--force</span>
+</code></pre></div></div>
+
+<p>Zur lokalen Vorschau startet man den eingebauten Server:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">exec </span>jekyll serve
+</code></pre></div></div>
+
+<p>Die Seite läuft dann unter http://localhost:4000.</p>
+
+<hr />
+
+<h2 id="-arbeiten-mit-vs-code">🛠 Arbeiten mit VS Code</h2>
+
+<p>Die typische Struktur einer Jekyll-Seite umfasst:</p>
+
+<p>_posts/ für Blogartikel</p>
+
+<p>pages/ für statische Seiten</p>
+
+<p>_layouts/ für Layouts</p>
+
+<p>_includes/ für wiederverwendbare Teile (z. B. Navigation, Footer)</p>
+
+<p>assets/ für CSS und Bilder</p>
+
+<p>Hilfreiche Extensions in VS Code:</p>
+
+<p>Ruby LSP für Syntax und Autocomplete.</p>
+
+<p>Jekyll Helper zum Erstellen neuer Posts direkt in VS Code.</p>
+
+<p>Jekyll Snippets für Liquid-Templates und Front Matter.</p>
+
+<hr />
+
+<h2 id="-konfiguration">🔧 Konfiguration</h2>
+
+<p>In der Datei _config.yml werden zentrale Einstellungen gepflegt:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Meine</span><span class="nv"> </span><span class="s">Jekyll</span><span class="nv"> </span><span class="s">Seite"</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Einfach</span><span class="nv"> </span><span class="s">und</span><span class="nv"> </span><span class="s">schnell</span><span class="nv"> </span><span class="s">mit</span><span class="nv"> </span><span class="s">VS</span><span class="nv"> </span><span class="s">Code</span><span class="nv"> </span><span class="s">erstellt."</span>
+<span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://username.github.io"</span>
+<span class="na">lang</span><span class="pi">:</span> <span class="s2">"</span><span class="s">de"</span>
+<span class="na">plugins</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">jekyll-sitemap</span>
+  <span class="pi">-</span> <span class="s">jekyll-seo-tag</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="-seo-und-sitemap">📈 SEO und Sitemap</h2>
+
+<p>Für Suchmaschinenoptimierung sind zwei Plugins besonders wichtig:</p>
+
+<p>jekyll-sitemap: erzeugt automatisch eine sitemap.xml.</p>
+
+<p>jekyll-seo-tag: fügt Meta-Tags für Suchmaschinen und Social Media hinzu.</p>
+
+<p>Zusätzlich empfiehlt sich eine robots.txt im Root:</p>
+
+<pre><code class="language-txt">User-agent: *
+Allow: /
+Sitemap: https://username.github.io/sitemap.xml
+</code></pre>
+
+<hr />
+
+<h2 id="-fazit">🎯 Fazit</h2>
+
+<p>Mit Jekyll, Ruby und VS Code lässt sich schnell eine statische Website erstellen. Die Kombination aus klarer Projektstruktur, hilfreichen Extensions und automatischer SEO-Optimierung macht den Einstieg einfach. GitHub Pages übernimmt das Hosting, sodass die Seite sofort online verfügbar ist.</p>]]></content><author><name>Christian Storb</name><email>mail2storb@gmail.com</email></author><category term="Jekyll" /><category term="Ruby" /><category term="GitHub Pages" /><category term="VS Code" /><summary type="html"><![CDATA[Jekyll ist ein statischer Site-Generator, der besonders gut mit GitHub Pages harmoniert. In diesem Artikel zeige ich allgemein, wie man eine eigene Website mit Jekyll erstellt und dabei Visual Studio Code (VS Code) als Entwicklungsumgebung nutzt.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://chstorb.github.io/assets/images/consulting/blog/jekyll+vscode.png" /><media:content medium="image" url="https://chstorb.github.io/assets/images/consulting/blog/jekyll+vscode.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Welcome to Jekyll!</title><link href="https://chstorb.github.io/jekyll/2025/11/14/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2025-11-14T18:22:35+00:00</published><updated>2025-11-14T18:22:35+00:00</updated><id>https://chstorb.github.io/jekyll/2025/11/14/welcome-to-jekyll</id><content type="html" xml:base="https://chstorb.github.io/jekyll/2025/11/14/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+<p>Jekyll requires blog post files to be named according to the following format:</p>
+
+<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+
+<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name>Christian Storb</name><email>mail2storb@gmail.com</email></author><category term="jekyll" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://chstorb.github.io/assets/images/consulting/blog/welcome2jekyll.png" /><media:content medium="image" url="https://chstorb.github.io/assets/images/consulting/blog/welcome2jekyll.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

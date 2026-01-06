@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <!-- Character encoding: must be first -->
+  <meta charset="utf-8">
+  
+   <!-- Mobile responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+  <link href="/assets/css/custom.css" rel="stylesheet">
+
+  <meta name="author" content="Christian Storb">
+  
+  <!-- Search engine crawling behavior -->
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">    
+  <meta name="bingbot" content="index, follow">
+
+  <!-- Microsoftg Bing Verification Code -->
+  <meta name="msvalidate.01" content="50E4DF6885A9E802F9939396E0483E3D" />
+
+  <!-- Google Search Console verification -->
+  <meta name="google-site-verification" content="v1IaICzb6Ve4AAMD6dPYhqWkk5TxQ5Aa6vRxUSs89aA" />
+
+  <link rel="icon" href="/assets/images/consulting/favicon.png" type="image/png">
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Resiliente Anwendungen mit Polly in C# | STC</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Resiliente Anwendungen mit Polly in C#" />
+<meta name="author" content="STC STORB Consulting" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="In der modernen Softwareentwicklung sind Fehlertoleranz und Resilienz entscheidende Faktoren für stabile Anwendungen. Polly, eine leistungsstarke Resilience-Bibliothek für .NET, hilft Entwicklern, transiente Fehler elegant zu bewältigen und zuverlässige Systeme zu bauen." />
+<meta property="og:description" content="In der modernen Softwareentwicklung sind Fehlertoleranz und Resilienz entscheidende Faktoren für stabile Anwendungen. Polly, eine leistungsstarke Resilience-Bibliothek für .NET, hilft Entwicklern, transiente Fehler elegant zu bewältigen und zuverlässige Systeme zu bauen." />
+<link rel="canonical" href="https://chstorb.github.io/.net/cloud-technologie/microservices/open%20source/programmierung/softwareentwicklung/2025/11/18/resiliente-anwendungen-mit-polly.html" />
+<meta property="og:url" content="https://chstorb.github.io/.net/cloud-technologie/microservices/open%20source/programmierung/softwareentwicklung/2025/11/18/resiliente-anwendungen-mit-polly.html" />
+<meta property="og:site_name" content="STC" />
+<meta property="og:image" content="https://chstorb.github.io/assets/images/consulting/blog/polly.webp" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-11-18T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://chstorb.github.io/assets/images/consulting/blog/polly.webp" />
+<meta property="twitter:title" content="Resiliente Anwendungen mit Polly in C#" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"STC STORB Consulting"},"dateModified":"2025-11-18T00:00:00+00:00","datePublished":"2025-11-18T00:00:00+00:00","description":"In der modernen Softwareentwicklung sind Fehlertoleranz und Resilienz entscheidende Faktoren für stabile Anwendungen. Polly, eine leistungsstarke Resilience-Bibliothek für .NET, hilft Entwicklern, transiente Fehler elegant zu bewältigen und zuverlässige Systeme zu bauen.","headline":"Resiliente Anwendungen mit Polly in C#","image":"https://chstorb.github.io/assets/images/consulting/blog/polly.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://chstorb.github.io/.net/cloud-technologie/microservices/open%20source/programmierung/softwareentwicklung/2025/11/18/resiliente-anwendungen-mit-polly.html"},"url":"https://chstorb.github.io/.net/cloud-technologie/microservices/open%20source/programmierung/softwareentwicklung/2025/11/18/resiliente-anwendungen-mit-polly.html"}</script>
+<!-- End Jekyll SEO tag -->
+ 
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <nav class="navbar navbar-expand-lg bg-body-secondary">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="/">STC STORB Consulting</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item"><a class="nav-link" href="/consulting/">Über uns</a></li>
+        <li class="nav-item"><a class="nav-link" href="/principles/">Grundsätze</a></li>
+        <li class="nav-item"><a class="nav-link" href="/profiles/">Profile</a></li>
+        <li class="nav-item"><a class="nav-link" href="/services/">Services</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/career/career/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Karriere
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/career/career/">Übersicht</a></li>
+            <li><a class="dropdown-item" href="/career/requirements/">Anforderungen</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="/partner/partner/">Partner</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/references/references/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Referenzen
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/references/references/">Übersicht</a></li>
+            <li><a class="dropdown-item" href="/references/featured-projects/">Ausgewählte Projekte</a></li>
+            <li><a class="dropdown-item" href="/references/featured-references/">Ausgewählte Referenzen</a></li>
+            <li><a class="dropdown-item" href="/references/featured-companies/">Ausgewählte Unternehmen</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/contact/contact/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Kontakt
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/contact/contact/">Übersicht</a></li>
+            <li><a class="dropdown-item" href="/contact/contacts/">Ansprechpartner</a></li>
+          </ul>
+        </li>
+      </ul>      
+    </div>
+  </div>
+</nav>
+  <main class="container my-5 flex-fill" role="main">    
+    <h1 class="">Resiliente Anwendungen mit Polly in C#</h1>
+      
+        <img src="/assets/images/consulting/blog/polly.webp" class="img-fluid my-3" alt="">
+      
+    <p>In der modernen Softwareentwicklung sind <strong>Fehlertoleranz</strong> und <strong>Resilienz</strong> entscheidende Faktoren für stabile Anwendungen.<br />
+<strong>Polly</strong>, eine leistungsstarke Resilience-Bibliothek für .NET, hilft Entwicklern, transiente Fehler elegant zu bewältigen und zuverlässige Systeme zu bauen.</p>
+
+<h2 id="was-ist-polly">Was ist Polly?</h2>
+<p>Polly ist eine Open-Source-Bibliothek für Fehlermanagement und Resilienzstrategien in .NET-Anwendungen.<br />
+Sie ermöglicht es Entwicklern, Wiederholungen, Circuit Breakers, Timeouts, Fallbacks, Rate Limiting und andere Schutzmechanismen in ihren Code zu integrieren.</p>
+
+<p>Gerade in Cloud- und Microservices-Architekturen kommt es häufig zu transienten Fehlern – vorübergehenden Problemen wie Netzwerkunterbrechungen oder überlasteten Servern.<br />
+Polly hilft dabei, diese Fehler abzufangen und intelligent zu behandeln.</p>
+
+<h2 id="die-wichtigsten-resilience-strategien-mit-polly">Die wichtigsten Resilience-Strategien mit Polly</h2>
+
+<h3 id="retry-mechanismus">Retry-Mechanismus</h3>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">var</span> <span class="n">retryPolicy</span> <span class="p">=</span> <span class="n">Policy</span>
+    <span class="p">.</span><span class="n">Handle</span><span class="p">&lt;</span><span class="n">HttpRequestException</span><span class="p">&gt;()</span>
+    <span class="p">.</span><span class="nf">Retry</span><span class="p">(</span><span class="m">3</span><span class="p">);</span> <span class="c1">// Wiederhole die Aktion bis zu 3-mal</span>
+</code></pre></div></div>
+
+<h3 id="circuit-breaker">Circuit Breaker</h3>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">var</span> <span class="n">circuitBreakerPolicy</span> <span class="p">=</span> <span class="n">Policy</span>
+    <span class="p">.</span><span class="n">Handle</span><span class="p">&lt;</span><span class="n">Exception</span><span class="p">&gt;()</span>
+    <span class="p">.</span><span class="nf">CircuitBreaker</span><span class="p">(</span><span class="m">2</span><span class="p">,</span> <span class="n">TimeSpan</span><span class="p">.</span><span class="nf">FromMinutes</span><span class="p">(</span><span class="m">1</span><span class="p">));</span> <span class="c1">// Unterbricht nach 2 Fehlern für 1 Minute</span>
+</code></pre></div></div>
+
+<h3 id="timeout">Timeout</h3>
+<pre><code class="language-charp">var timeoutPolicy = Policy.Timeout(TimeSpan.FromSeconds(5)); // Abbruch nach 5 Sekunden
+</code></pre>
+
+<h3 id="fallback">Fallback</h3>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">var</span> <span class="n">fallbackPolicy</span> <span class="p">=</span> <span class="n">Policy</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;</span>
+    <span class="p">.</span><span class="n">Handle</span><span class="p">&lt;</span><span class="n">Exception</span><span class="p">&gt;()</span>
+    <span class="p">.</span><span class="nf">Fallback</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="s">"Standardantwort bei Fehlern"</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Warum Polly für deine Projekte nutzen?
+Durch die Integration von Polly in deine C#-Anwendungen kannst du:</p>
+
+<p>✅ <strong>Fehlertoleranz verbessern</strong></p>
+
+<p>✅ <strong>Systemstabilität erhöhen</strong></p>
+
+<p>✅ <strong>Nutzererlebnis optimieren</strong></p>
+
+<p>✅ <strong>Netzwerk- und API-Fehler abfangen</strong></p>
+
+<p>✅ <strong>Dienste in Cloud-Umgebungen robuster gestalten</strong></p>
+
+<p>Ob für Webanwendungen, Microservices oder API-Clients – Polly ist ein unverzichtbares Werkzeug für Entwickler, die ihre Software widerstandsfähiger machen möchten.</p>
+
+<h3 id="fazit">Fazit</h3>
+<p>Polly ist eine unverzichtbare Bibliothek für alle, die robuste und fehlertolerante Anwendungen entwickeln. Mit ihren vielseitigen Resilience-Strategien hilft sie, Software zuverlässiger zu machen und die Auswirkungen von transienten Fehlern zu minimieren.</p>
+
+<h3 id="referenzen">Referenzen</h3>
+<ul>
+  <li><a href="https://github.com/App-vNext/Polly">Polly</a></li>
+</ul>
+
+
+  </main>
+  <footer class="bg-body-secondary py-4 mt-auto">
+  <div class="container text-center">
+    <p class="text-body mb-1">&copy; 2025 STC STORB Consulting</p>
+    <small>
+      <a href="/policies/legal-notice/" class="text-body">Impressum</a> |
+      <a href="/policies/privacy-policy/" class="text-body">Datenschutz</a> |
+      <a href="/policies/terms-of-service/" class="text-body">AGB</a> |
+      <a href="/policies/withdrawal-policy/" class="text-body">Widerruf</a> |
+      <a href="/policies/cookie-policy/" class="text-body">Cookies</a> |
+      <a href="/policies/shipping-policy/" class="text-body">Versand</a>
+    </small>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

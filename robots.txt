@@ -1,5 +1,1 @@
-﻿User-agent: *
-Allow: /content/
-Disallow: /admin/
-Disallow: /api/
 Sitemap: https://chstorb.github.io/sitemap.xml
