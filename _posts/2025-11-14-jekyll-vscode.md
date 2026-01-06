@@ -43,7 +43,10 @@ bundle exec jekyll serve
 
 Die Seite läuft dann unter http://localhost:4000.
 
-🛠 Arbeiten mit VS Code
+---
+
+## 🛠 Arbeiten mit VS Code 
+
 Die typische Struktur einer Jekyll-Seite umfasst:
 
 _posts/ für Blogartikel
@@ -64,7 +67,10 @@ Jekyll Helper zum Erstellen neuer Posts direkt in VS Code.
 
 Jekyll Snippets für Liquid-Templates und Front Matter.
 
-🔧 Konfiguration
+---
+
+## 🔧 Konfiguration 
+
 In der Datei _config.yml werden zentrale Einstellungen gepflegt:
 
 ```yaml
@@ -77,7 +83,10 @@ plugins:
   - jekyll-seo-tag
 ```
 
-📈 SEO und Sitemap
+---
+
+## 📈 SEO und Sitemap 
+
 Für Suchmaschinenoptimierung sind zwei Plugins besonders wichtig:
 
 jekyll-sitemap: erzeugt automatisch eine sitemap.xml.
@@ -92,5 +101,8 @@ Allow: /
 Sitemap: https://username.github.io/sitemap.xml
 ```
 
-🎯 Fazit
+---
+
+## 🎯 Fazit 
+
 Mit Jekyll, Ruby und VS Code lässt sich schnell eine statische Website erstellen. Die Kombination aus klarer Projektstruktur, hilfreichen Extensions und automatischer SEO-Optimierung macht den Einstieg einfach. GitHub Pages übernimmt das Hosting, sodass die Seite sofort online verfügbar ist.
