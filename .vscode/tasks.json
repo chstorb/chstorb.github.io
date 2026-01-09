@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Jekyll Serve",
+      "type": "shell",
+      "command": "bundle exec jekyll serve --livereload",
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "custom",
+        "pattern": {
+          "regexp": "^.*Server address: http://.*$"
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "Configuration file:",
+          "endsPattern": "Server running... press ctrl-c to stop."
+        }
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
