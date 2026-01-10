@@ -22,12 +22,12 @@ Diese Cookie-Richtlinie erläutert, wie **STC STORB Consulting** („wir“, „
 
 ---
 
-#### 1. Was sind Cookies?
+## 1. Was sind Cookies?
 Cookies sind kleine Textdateien, die von Websites auf Ihrem Gerät gespeichert werden. Sie verbessern die Benutzererfahrung, ermöglichen Funktionen und liefern statistische Informationen.
 
 ---
 
-#### 2. Welche Cookies verwenden wir?
+## 2. Welche Cookies verwenden wir?
 Unsere Website setzt aktuell **keine Tracking-Cookies** oder personalisierte Analyse-Dienste ein.  
 Es können jedoch technisch notwendige Cookies gesetzt werden, um die Funktionalität sicherzustellen.
 
@@ -40,19 +40,19 @@ Bei eingebundenen Inhalten (z. B. YouTube, Spotify) können externe Anbieter e
 
 ---
 
-#### 3. Cookie-Einwilligung
+## 3. Cookie-Einwilligung
 Da wir keine nicht-notwendigen Cookies verwenden, ist derzeit **kein Cookie-Banner erforderlich**.  
 Sollte sich dies ändern (z. B. durch Analyse-Tools), informieren wir Sie transparent und holen Ihre Einwilligung ein.
 
 ---
 
-#### 4. Verwaltung von Cookies
+## 4. Verwaltung von Cookies
 Sie können Cookies jederzeit über die Einstellungen Ihres Browsers löschen oder blockieren.  
 Bitte beachten Sie: Dies kann die Funktionalität unserer Website einschränken.
 
 ---
 
-#### 5. Kontakt
+## 5. Kontakt
 Bei Fragen zur Verwendung von Cookies oder zum Datenschutz wenden Sie sich bitte an:
 
 **STC STORB Consulting**  

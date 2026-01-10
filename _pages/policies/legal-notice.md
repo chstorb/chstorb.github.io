@@ -33,7 +33,7 @@ Nicht vorhanden – Kleinunternehmer gemäß § 19 UStG
 
 ---
 
-#### Streitbeilegung
+## Streitbeilegung
 Die EU‑Kommission stellt seit dem 15. Februar 2016 eine Plattform für außergerichtliche Streitschlichtung bereit.  
 Verbraucher können darüber Streitigkeiten im Zusammenhang mit Online‑Bestellungen zunächst ohne Gericht klären.  
 
@@ -46,7 +46,7 @@ Wir bemühen uns, Meinungsverschiedenheiten aus Verträgen einvernehmlich beizul
 
 ---
 
-#### Hinweis zu Inhalten
+## Hinweis zu Inhalten
 Alle Texte, Bilder, Grafiken sowie Ton‑, Video‑ und Animationsdateien unterliegen dem Urheberrecht und anderen Gesetzen zum Schutz geistigen Eigentums.  
 Sie dürfen weder für Handelszwecke oder zur Weitergabe kopiert, noch verändert oder auf anderen Websites genutzt werden.  
 
@@ -57,7 +57,7 @@ Die Gewährleistungsbedingungen entnehmen Sie bitte unseren Allgemeinen Geschäf
 
 ---
 
-#### Bildnachweise
+## Bildnachweise
 - [Pixabay](https://pixabay.com)  
 
 ---

@@ -19,14 +19,14 @@ tags: [Grundsätze, Unternehmenswerte, Consulting, Unabhängigkeit, Objektivitä
 Neue Wege zu beschreiten hat bei uns Tradition.  
 Bei allem Wandel bleiben unsere Grundsätze unverändert – sie bilden das Gleichgewicht unserer Geschäftstätigkeit und sind die Basis für nachhaltige Beratungserfolge.  
 
-#### Unabhängigkeit
+## Unabhängigkeit
 Wir wahren die Unabhängigkeit von Dritten – insbesondere bei Entscheidungen über Lieferanten oder Partner unserer Klienten.  
 
-#### Objektivität
+## Objektivität
 Unsere Beratung berücksichtigt Chancen und Risiken gleichermaßen und bleibt stets sachlich fundiert.  
 
-#### Kompetenz
+## Kompetenz
 Wir beraten ausschließlich in Feldern, in denen wir nachweislich Kompetenz besitzen oder erworben haben.  
 
-#### Vertraulichkeit
+## Vertraulichkeit
 Alle im Beratungsprozess gewonnenen Kenntnisse und Informationen bleiben vertraulich und gelangen nicht an Dritte.  

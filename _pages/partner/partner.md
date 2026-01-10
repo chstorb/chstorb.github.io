@@ -24,7 +24,7 @@ Unter einer idealen Partnerschaft verstehen wir die Kooperation mit Unternehmen,
 
 ---
 
-#### 4Unit Systems Integration
+## 4Unit Systems Integration
 
 Die 4Unit Systems Integration GmbH bietet ein breites Spektrum an IT‑Dienstleistungen und begleitet anspruchsvolle Projekte in allen Phasen:  
 

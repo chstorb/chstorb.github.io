@@ -19,7 +19,7 @@ tags: [Karriere, Anforderungen, Consulting, Management, Azure, Blazor]
 Sie verfügen über mindestens sechs Jahre Berufserfahrung und haben in Führungs‑ oder Beratungspositionen nachhaltige Erfolge erzielt. Eine hohe Fachkompetenz in mindestens zwei Branchen und Themen zeichnet Sie aus. 
 Problemstellungen zu strukturieren gehört zu Ihrer Arbeitsweise; Projekthürden erkennen und abbauen gelingt Ihnen rechtzeitig. Sie überzeugen sowohl Top‑Management als auch Mitarbeiter und fügen sich flexibel in bestehende Strukturen und Teams ein. Eigenverantwortung fordern und ausschöpfen ist für Sie selbstverständlich. Ihr Anspruch auf überdurchschnittliche Leistung zeigt sich durchgängig – vom Hochschulabschluss bis zu Ihren Arbeitszeugnissen.  
 
-#### Branchenkompetenz
+## Branchenkompetenz
 Wir suchen insbesondere Managementberater mit Erfahrung in:
 - Energieversorgung  
 - Finanzdienstleistung  
@@ -27,26 +27,26 @@ Wir suchen insbesondere Managementberater mit Erfahrung in:
 - Öffentlicher Bereich  
 - Telekommunikation  
 
-#### Funktionskompetenz
+## Funktionskompetenz
 Zusätzlich sind Kenntnisse in folgenden Bereichen von Vorteil:
 - Controlling  
 - IT‑Management  
 - Logistik  
 - Marketing, Vertrieb, Service  
 
-#### Ihre Aufgaben
+## Ihre Aufgaben
 - Mitarbeit in allen Projektphasen: Analyse, Strategie, Modellierung, Implementierung, Test und Einführung  
 - Eigenständiges Informationsmanagement zur besseren Nutzung von Daten durch unsere Kunden  
 - Begleitung von Umstrukturierungen und organisatorischen Veränderungen – von der Konzeption bis zur Umsetzung  
 
-#### Ihr Profil
+## Ihr Profil
 - Überdurchschnittlich abgeschlossenes Studium  
 - Sehr gute Kommunikationsfähigkeit auf allen Unternehmensebenen  
 - Ausgeprägte analytische und konzeptionelle Fähigkeiten  
 - Sehr gutes Englisch in Wort und Schrift  
 - Teamgeist, Flexibilität und Mobilität  
 
-#### Was wir bieten
+## Was wir bieten
 - Ein spannendes Arbeitsumfeld mit täglich neuen Herausforderungen  
 - Die Möglichkeit, Ihr Talent voll zu entfalten – unterstützt durch kontinuierliche Weiterbildung  
 

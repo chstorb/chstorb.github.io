@@ -22,7 +22,7 @@ Diese Datenschutzrichtlinie beschreibt, wie **STC STORB Consulting** („wir“,
 
 ---
 
-#### 1. Verantwortlicher
+## 1. Verantwortlicher
 **STC STORB Consulting**  
 Christian Storb  
 Humboldtweg 3  
@@ -31,12 +31,12 @@ D‑48301 Nottuln
 
 ---
 
-#### 2. Änderungen dieser Datenschutzrichtlinie
+## 2. Änderungen dieser Datenschutzrichtlinie
 Wir können diese Richtlinie gelegentlich aktualisieren. Änderungen werden auf der Website veröffentlicht und das Datum „Letzte Aktualisierung“ angepasst.
 
 ---
 
-#### 3. Erhebung und Verwendung personenbezogener Daten
+## 3. Erhebung und Verwendung personenbezogener Daten
 
 **A. Direkt von Ihnen bereitgestellt**  
 - Kontaktdaten (Name, Adresse, Telefonnummer, E‑Mail)  
@@ -57,7 +57,7 @@ Wir können diese Richtlinie gelegentlich aktualisieren. Änderungen werden auf 
 
 ---
 
-#### 4. Verwendungszwecke
+## 4. Verwendungszwecke
 - Bereitstellung und Verbesserung unserer Dienste  
 - Kommunikation mit Ihnen  
 - Marketing und Werbung  
@@ -66,7 +66,7 @@ Wir können diese Richtlinie gelegentlich aktualisieren. Änderungen werden auf 
 
 ---
 
-#### 5. Cookies
+## 5. Cookies
 
 Wir verwenden Cookies zur Verbesserung der Website und für Analysezwecke.  
 Details zu Art, Umfang und Verwaltung unserer Cookies finden Sie in unserer [Cookie-Richtlinie]({{ site.baseurl }}/policies/cookie-policy/).  
@@ -75,7 +75,7 @@ Bei eingebundenen Diensten Dritter (z. B. YouTube, Spotify) können zusätzlic
 
 ---
 
-#### 6. Weitergabe personenbezogener Daten
+## 6. Weitergabe personenbezogener Daten
 **Kategorien von Empfängern:**  
 - Dienstleister (IT, Zahlungsabwicklung, Versand, Support)  
 - Geschäfts‑ und Marketingpartner  
@@ -84,7 +84,7 @@ Bei eingebundenen Diensten Dritter (z. B. YouTube, Spotify) können zusätzlic
 
 ---
 
-#### 7. Rechte der betroffenen Personen
+## 7. Rechte der betroffenen Personen
 Je nach Wohnort haben Sie folgende Rechte:  
 - Auskunft  
 - Löschung  
@@ -97,23 +97,23 @@ Je nach Wohnort haben Sie folgende Rechte:
 
 ---
 
-#### 8. Kommunikationseinstellungen
+## 8. Kommunikationseinstellungen
 Sie können sich jederzeit von Werbe‑E‑Mails abmelden. Systemnachrichten (z. B. Bestellbestätigungen) bleiben davon unberührt.
 
 ---
 
-#### 9. Beschwerden
+## 9. Beschwerden
 Bei Beschwerden wenden Sie sich bitte an [mail2storb@gmail.com](mailto:mail2storb@gmail.com).  
 Alternativ können Sie Ihre lokale Datenschutzbehörde kontaktieren.
 
 ---
 
-#### 10. Internationale Datenübermittlung
+## 10. Internationale Datenübermittlung
 Daten können außerhalb Europas verarbeitet werden. Wir nutzen Standardvertragsklauseln oder gleichwertige Mechanismen, sofern kein angemessenes Schutzniveau festgestellt wurde.
 
 ---
 
-#### 11. Kontakt
+## 11. Kontakt
 **STC STORB Consulting**  
 Christian Storb  
 Humboldtweg 3  

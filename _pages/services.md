@@ -18,17 +18,17 @@ tags: [Services, Consulting, Projekte, Microsoft, Entwicklung, Betrieb]
 
 STC unterstützt Ihr Projekt bei Kunden und Geschäftspartnern vor Ort – von der **Planung** über die **Entwicklung** bis zur **Markteinführung** und den **Betrieb**.  
 
-#### Warum STC?
+## Warum STC?
 - Der Aufbau eigenen Know-hows ist oft zu aufwendig und langwierig.  
 - Nach Projektabschluss wird spezielles Entwicklungswissen häufig nicht mehr benötigt – internes Personal müsste umgeschult oder entlassen werden.  
 - Zeitfaktor: Während STC sofort „On‑Shore“ verfügbar ist, dauert der Wissensaufbau im Unternehmen oft Monate.  
 
-#### Unsere Expertise
+## Unsere Expertise
 - Erfolgreiche Projekte im **Microsoft-Umfeld** seit 2000  
 - Breite Projekterfahrung in unterschiedlichen Branchen  
 - Zusammenarbeit mit **Großunternehmen**, **mittelständischen Betrieben** und **kleineren Auftraggebern**  
 - Langfristige Kundenbeziehungen durch nachhaltige Projekterfolge  
 
-#### Einsatzgebiet
+## Einsatzgebiet
 Wir unterstützen unsere Kunden **vor Ort im gesamten Bundesgebiet**.  
 

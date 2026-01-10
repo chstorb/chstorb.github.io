@@ -3,6 +3,7 @@ layout: post
 title: "Eine Website mit Jekyll und VS Code erstellen"
 date: 2025-11-14 19:23:35 +0100
 categories: [Jekyll, Ruby, GitHub Pages, VS Code]
+description: "Eine Anleitung zur effizienten Erstellung von Jekyll-Websites mit Visual Studio Code."
 image: /assets/images/consulting/blog/jekyll+vscode.png
 ---
 

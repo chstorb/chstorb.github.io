@@ -16,7 +16,7 @@ categories: [references, projects, consulting]
 tags: [Projekte, Referenzen, Consulting, IT, E-Government, Industrie]
 ---
 
-#### A2LL
+## A2LL
 „Arbeitslosengeld 2, Leistungen zum Lebensunterhalt“ – das größte webgestützte Transaktionssystem Deutschlands.  
 - Bis zu 40.000 gleichzeitige Nutzer, ca. 800.000 Buchungen pro Tag  
 - Eine der größten E‑Government‑Lösungen Europas  
@@ -25,7 +25,7 @@ tags: [Projekte, Referenzen, Consulting, IT, E-Government, Industrie]
 
 ---
 
-#### ABIT Kredit
+## ABIT Kredit
 Leistungsfähige Softwarelösung für den gesamten Kreditprozess:  
 - Kreditantrags- und Kreditsachbearbeitung für alle Engagementgrößen und Institutsgruppen  
 - Zentraler und dezentraler Einsatz möglich  
@@ -33,19 +33,19 @@ Leistungsfähige Softwarelösung für den gesamten Kreditprozess:
 
 ---
 
-#### ARTEMIS
+## ARTEMIS
 High‑Speed‑Analyse‑Werkzeug für W‑CDMA (UMTS Trace Tool).  
 
 ---
 
-#### CASQ‑it APQP
+## CASQ‑it APQP
 Advanced Product Quality Planning (APQP) – Projektmanagement nach ISO/TS 16949:  
 - Strukturierte Projektverfolgung mit Checklisten  
 - Kompakte Statusreports für jederzeitige Übersicht  
 
 ---
 
-#### POLADIS‑neu
+## POLADIS‑neu
 Polizeiliches Anwenderorientiertes Dezentrales InformationsSystem für Rheinland‑Pfalz:  
 - Vorgangsbearbeitungssystem für alle Dienststellen  
 - Schnittstellen zur Justiz und zur Polizeilichen Kriminalstatistik (PKS)  
@@ -54,13 +54,13 @@ Polizeiliches Anwenderorientiertes Dezentrales InformationsSystem für Rheinland
 
 ---
 
-#### proKOM
+## proKOM
 Informationsverarbeitungssystem für die Datenredaktion der T‑Com:  
 - Erfassung, Austausch und Nutzung von Teilnehmerdaten  
 
 ---
 
-#### X‑Pact®
+## X‑Pact®
 Metallurgische Prozessmodelle für die Stahlwerksautomation:  
 - Energie‑ und Materialmanagement abgestimmt auf Schmelzverhalten  
 - Mess‑, Steuerungs‑ und Regeltechnik für effiziente Prozesse  

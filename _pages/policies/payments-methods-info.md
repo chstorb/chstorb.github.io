@@ -20,25 +20,25 @@ Wir bieten Ihnen verschiedene sichere Zahlungsmethoden an. Um den Bestellprozess
 
 ---
 
-#### **1. PayPal**
+## **1. PayPal**
 
 Sie bezahlen den Rechnungsbetrag über den Online-Anbieter PayPal (PayPal (Europe) S.à r.l. et Cie, S.C.A., 22–24 Boulevard Royal, L-2449 Luxembourg). Sie werden im Bestellprozess auf die Website von PayPal weitergeleitet, wo Sie Ihre Zahlung bestätigen können.
 
-#### 2. **Kreditkarte / Debitkarte**  
+## 2. **Kreditkarte / Debitkarte**  
 
 Sie bezahlen bequem mit Ihrer Kredit- oder Debitkarte. Unterstützt werden gängige Anbieter wie Visa, Mastercard und American Express. Die Belastung Ihres Kontos erfolgt unmittelbar nach Abschluss der Bestellung.
 
-#### 3. **Apple Pay / Google Pay**  
+## 3. **Apple Pay / Google Pay**  
 
 Nutzen Sie Ihr Smartphone oder Tablet für eine schnelle und sichere Zahlung. Sie bestätigen die Transaktion direkt über Ihr Gerät.
 
-#### 4. **Offline-Zahlung**  
+## 4. **Offline-Zahlung**  
 
 Für Testkäufe oder individuelle Vereinbarungen bieten wir die Möglichkeit einer manuellen Abwicklung. Bitte beachten Sie, dass die Bestellung  erst nach Zahlungseingang bearbeitet wird.
 
 ---
 
-##### 🔒 Hinweise zur Datenverarbeitung (DSGVO)
+### 🔒 Hinweise zur Datenverarbeitung (DSGVO)
 
 Im Rahmen der Zahlungsabwicklung erfolgt eine Weitergabe Ihrer Zahlungsdaten an den jeweiligen Zahlungsdienstleister.  
 Die Weitergabe ist für die Durchführung der Zahlung und damit zur Erfüllung des Vertrages mit Ihnen erforderlich (Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO).  

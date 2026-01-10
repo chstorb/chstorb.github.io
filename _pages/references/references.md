@@ -18,7 +18,7 @@ tags: [Referenzen, Projekte, Consulting, Branchenexpertise]
 
 Gute Consultants zeichnen sich durch ihre Referenzen aus.  
 
-#### Machen Sie sich ein Bild von unserer Arbeit – ausgewählte Projekte zeigen unsere Kompetenz.  
+## Machen Sie sich ein Bild von unserer Arbeit – ausgewählte Projekte zeigen unsere Kompetenz.  
 
 Unsere Beratungspraxis verdeutlicht: Das breite Spektrum unserer Auftraggeber stärkt unsere Lösungskompetenz. Davon profitieren sowohl große Unternehmen als auch kleine Kunden.  
 
@@ -30,7 +30,7 @@ So entstehen maßgeschneiderte Lösungen, die nachhaltig wirken und den Erfolg u
 
 ---
 
-### Weiterführende Seiten
+## Weiterführende Seiten
 
 - [Ausgewählte Projekte]({{ site.baseurl }}/references/featured-projects/)  
 - [Ausgewählte Referenzen]({{ site.baseurl }}/references/featured-references/)  

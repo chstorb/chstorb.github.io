@@ -3,6 +3,7 @@ layout: post
 title: "Resiliente Anwendungen mit Polly in C#"
 date: 2025-11-18
 categories: [.NET, Cloud-Technologie, Microservices, Open Source, Programmierung, Softwareentwicklung]
+description: "Erfahren Sie, wie Sie mit der Polly-Bibliothek in C# robuste und fehlertolerante Anwendungen entwickeln."
 tags: [C#, Polly, Resilienz, Fehlertoleranz, Retry, Circuit Breaker, Timeout, Fallback, Rate Limiting]
 author: STC STORB Consulting
 image: /assets/images/consulting/blog/polly.webp
@@ -35,7 +36,7 @@ var circuitBreakerPolicy = Policy
 ```
 
 ### Timeout
-```charp
+```csharp
 var timeoutPolicy = Policy.Timeout(TimeSpan.FromSeconds(5)); // Abbruch nach 5 Sekunden
 ```
 
