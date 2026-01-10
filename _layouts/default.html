@@ -1,45 +1,51 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" class="h-100">
 
 <head>
-  <!-- Character encoding: must be first -->
+  <!-- Character encoding -->
   <meta charset="utf-8">
-
-  <!-- Mobile responsiveness -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- SEO & Social -->
+  {% seo %}
+  <meta name="author" content="Christian Storb">
+  <meta name="robots" content="index, follow">
+
+  <!-- Verification -->
+  <meta name="msvalidate.01" content="50E4DF6885A9E802F9939396E0483E3D" />
+  <meta name="google-site-verification" content="v1IaICzb6Ve4AAMD6dPYhqWkk5TxQ5Aa6vRxUSs89aA" />
+
+  <!-- Assets -->
+  <link href="{{ '/assets/images/consulting/favicon.png' | relative_url }}" rel="icon" type="image/png">
+
+  <!-- CSS -->
   <link href="{{ '/assets/css/bootstrap.min.css' | relative_url }}?v={{ site.time | date: '%s' }}" rel="stylesheet">
   <link href="{{ '/assets/css/material-symbols.css' | relative_url }}?v={{ site.time | date: '%s' }}" rel="stylesheet">
   <link href="{{ '/assets/css/custom.css' | relative_url }}?v={{ site.time | date: '%s' }}" rel="stylesheet">
-
-  <meta name="author" content="Christian Storb">
-
-  <!-- Search engine crawling behavior -->
-  <meta name="robots" content="index, follow">
-  <meta name="googlebot" content="index, follow">
-  <meta name="bingbot" content="index, follow">
-
-  <!-- Microsoftg Bing Verification Code -->
-  <meta name="msvalidate.01" content="50E4DF6885A9E802F9939396E0483E3D" />
-
-  <!-- Google Search Console verification -->
-  <meta name="google-site-verification" content="v1IaICzb6Ve4AAMD6dPYhqWkk5TxQ5Aa6vRxUSs89aA" />
-
-  <link rel="icon" href="{{ '/assets/images/consulting/favicon.png' | relative_url }}" type="image/png">
-
-  {% seo %}
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column h-100 bg-light">
+
   {% include navbar.html %}
-  <main class="container my-5 flex-fill" role="main">
-    <h1 class="{% if page.title == nil or page.title == '' %} visually-hidden{% endif %}">
-      {{- page.title | default: "STC STORB Consulting" -}}
-    </h1>
-    {{ content }}
+
+  <main class="flex-shrink-0" role="main">
+    <div class="container py-5">
+
+      <!-- Page Title (Visually Hidden by default, accessible for Screen Readers) -->
+      <h1 class="{% if page.title == nil or page.title == '' %} visually-hidden{% endif %} mb-4 fw-bold text-dark">
+        {{- page.title | default: "STC STORB Consulting" -}}
+      </h1>
+
+      {{ content }}
+
+    </div>
   </main>
+
   {% include footer.html %}
+
+  <!-- Scripts -->
   <script src="{{ '/assets/js/bootstrap.bundle.min.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
+
 </body>
 
 </html>

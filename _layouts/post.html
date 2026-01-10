@@ -1,48 +1,107 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" class="h-100">
 
 <head>
-  <!-- Character encoding: must be first -->
+  <!-- Character encoding -->
   <meta charset="utf-8">
-
-  <!-- Mobile responsiveness -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- SEO & Social -->
+  {% seo %}
+  <meta name="author" content="Christian Storb">
+  <meta name="robots" content="index, follow">
+
+  <!-- Verification -->
+  <meta name="msvalidate.01" content="50E4DF6885A9E802F9939396E0483E3D" />
+  <meta name="google-site-verification" content="v1IaICzb6Ve4AAMD6dPYhqWkk5TxQ5Aa6vRxUSs89aA" />
+
+  <!-- Assets -->
+  <link href="{{ '/assets/images/consulting/favicon.png' | relative_url }}" rel="icon" type="image/png">
+
+  <!-- CSS -->
   <link href="{{ '/assets/css/bootstrap.min.css' | relative_url }}?v={{ site.time | date: '%s' }}" rel="stylesheet">
   <link href="{{ '/assets/css/material-symbols.css' | relative_url }}?v={{ site.time | date: '%s' }}" rel="stylesheet">
   <link href="{{ '/assets/css/custom.css' | relative_url }}?v={{ site.time | date: '%s' }}" rel="stylesheet">
-
-  <meta name="author" content="Christian Storb">
-
-  <!-- Search engine crawling behavior -->
-  <meta name="robots" content="index, follow">
-  <meta name="googlebot" content="index, follow">
-  <meta name="bingbot" content="index, follow">
-
-  <!-- Microsoftg Bing Verification Code -->
-  <meta name="msvalidate.01" content="50E4DF6885A9E802F9939396E0483E3D" />
-
-  <!-- Google Search Console verification -->
-  <meta name="google-site-verification" content="v1IaICzb6Ve4AAMD6dPYhqWkk5TxQ5Aa6vRxUSs89aA" />
-
-  <link rel="icon" href="{{ '/assets/images/consulting/favicon.png' | relative_url }}" type="image/png">
-
-  {% seo %}
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column h-100 bg-light">
+
   {% include navbar.html %}
-  <main class="container my-5 flex-fill" role="main">
-    <h1 class="{% if page.title == nil or page.title == '' %} visually-hidden{% endif %}">
-      {{- page.title | default: "STC STORB Consulting" -}}
-    </h1>
-    {% if page.image %}
-    <img src="{{ page.image }}" class="img-fluid my-3" alt="{{ post.title }}">
-    {% endif %}
-    {{ content }}
+
+  <main class="flex-shrink-0" role="main">
+
+    <!-- Hero / Header Section for Post -->
+    <div class="bg-white border-bottom py-5 mb-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <div class="mb-3 text-uppercase text-primary fw-bold small tracking-wider">
+              {{ page.categories | join: " • " }}
+            </div>
+            <h1 class="display-4 fw-bold mb-4">{{ page.title }}</h1>
+            <div class="d-flex align-items-center justify-content-center text-muted">
+              <span class="d-flex align-items-center">
+                <span class="material-symbols-outlined me-1 fs-5">calendar_today</span>
+                {{ page.date | date: "%d. %B %Y" }}
+              </span>
+              {% if page.author %}
+              <span class="mx-2">•</span>
+              <span class="d-flex align-items-center">
+                <span class="material-symbols-outlined me-1 fs-5">person</span>
+                {{ page.author }}
+              </span>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center">
+
+        {% if page.image %}
+        <div class="col-lg-8 mb-5">
+          <div class="rounded-4 overflow-hidden shadow-sm">
+            <img src="{{ page.image }}" class="img-fluid w-100" alt="{{ page.title }}">
+          </div>
+        </div>
+        {% endif %}
+
+        <div class="col-lg-8">
+          <div class="bg-white p-4 p-md-5 rounded-4 shadow-sm">
+            <div class="article-content" style="font-size: 1.1rem; line-height: 1.8;">
+              {{ content }}
+            </div>
+          </div>
+
+          <!-- Navigation between posts -->
+          <div class="d-flex justify-content-between mt-5 pt-4 border-top">
+            {% if page.previous.url %}
+            <a class="btn btn-outline-secondary rounded-pill px-4" href="{{ page.previous.url }}">
+              &larr; Vorheriger
+            </a>
+            {% else %}
+            <div></div>
+            {% endif %}
+
+            {% if page.next.url %}
+            <a class="btn btn-outline-primary rounded-pill px-4" href="{{ page.next.url }}">
+              Nächster &rarr;
+            </a>
+            {% endif %}
+          </div>
+
+        </div>
+      </div>
+    </div>
   </main>
+
   {% include footer.html %}
+
+  <!-- Scripts -->
   <script src="{{ '/assets/js/bootstrap.bundle.min.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
+
 </body>
 
 </html>

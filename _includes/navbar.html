@@ -1,50 +1,69 @@
-<nav class="navbar navbar-expand-lg bg-body-secondary">
+<nav class="navbar navbar-expand-lg sticky-top">
   <div class="container">
-    <a class="navbar-brand fw-bold" href="{{ site.baseurl }}/">STC STORB Consulting</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="{{ site.baseurl }}/">
+      <img src="{{ '/assets/images/consulting/stclogotransparent.png' | relative_url }}" alt="STC Logo"
+        class="navbar-logo">
+      STC STORB Consulting
+    </a>
+    <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
 
-        <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/consulting/">Über uns</a></li>
-        <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/principles/">Grundsätze</a></li>
-        <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/profiles/">Profile</a></li>
-        <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/services/">Services</a></li>
+        <li class="nav-item">
+          <a class="nav-link px-3" href="{{ site.baseurl }}/consulting/">Über uns</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3" href="{{ site.baseurl }}/principles/">Grundsätze</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3" href="{{ site.baseurl }}/profiles/">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3" href="{{ site.baseurl }}/services/">Services</a>
+        </li>
+
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="{{ site.baseurl }}/career/career/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle px-3" href="{{ site.baseurl }}/career/career/" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
             Karriere
           </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="{{ site.baseurl }}/career/career/">Übersicht</a></li>
-            <li><a class="dropdown-item" href="{{ site.baseurl }}/career/requirements/">Anforderungen</a></li>
+          <ul class="dropdown-menu border-0 shadow-sm rounded-3 mt-1">
+            <li><a class="dropdown-item py-2" href="{{ site.baseurl }}/career/career/">Übersicht</a></li>
+            <li><a class="dropdown-item py-2" href="{{ site.baseurl }}/career/requirements/">Anforderungen</a></li>
           </ul>
         </li>
 
-        <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/partner/partner/">Partner</a></li>
+        <li class="nav-item">
+          <a class="nav-link px-3" href="{{ site.baseurl }}/partner/partner/">Partner</a>
+        </li>
+
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="{{ site.baseurl }}/references/references/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle px-3" href="{{ site.baseurl }}/references/references/" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
             Referenzen
           </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="{{ site.baseurl }}/references/references/">Übersicht</a></li>
-            <li><a class="dropdown-item" href="{{ site.baseurl }}/references/featured-projects/">Ausgewählte Projekte</a></li>
-            <li><a class="dropdown-item" href="{{ site.baseurl }}/references/featured-references/">Ausgewählte Referenzen</a></li>
-            <li><a class="dropdown-item" href="{{ site.baseurl }}/references/featured-companies/">Ausgewählte Unternehmen</a></li>
+          <ul class="dropdown-menu border-0 shadow-sm rounded-3 mt-1">
+            <li><a class="dropdown-item py-2" href="{{ site.baseurl }}/references/references/">Übersicht</a></li>
+            <li><a class="dropdown-item py-2" href="{{ site.baseurl }}/references/featured-projects/">Ausgewählte
+                Projekte</a></li>
+            <li><a class="dropdown-item py-2" href="{{ site.baseurl }}/references/featured-references/">Ausgewählte
+                Referenzen</a></li>
+            <li><a class="dropdown-item py-2" href="{{ site.baseurl }}/references/featured-companies/">Ausgewählte
+                Unternehmen</a></li>
           </ul>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="{{ site.baseurl }}/contact/contact/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+        <li class="nav-item ps-lg-3">
+          <a class="btn btn-primary text-white" href="{{ site.baseurl }}/contact/contact/">
             Kontakt
           </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="{{ site.baseurl }}/contact/contact/">Übersicht</a></li>
-            <li><a class="dropdown-item" href="{{ site.baseurl }}/contact/contacts/">Ansprechpartner</a></li>
-          </ul>
         </li>
-      </ul>      
+
+      </ul>
     </div>
   </div>
 </nav>
