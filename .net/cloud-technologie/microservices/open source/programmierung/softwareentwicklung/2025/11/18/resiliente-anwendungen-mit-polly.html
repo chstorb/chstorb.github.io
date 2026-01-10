@@ -8,9 +8,9 @@
   <!-- Mobile responsiveness -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="/assets/css/bootstrap.min.css?v=1767983509" rel="stylesheet">
-  <link href="/assets/css/material-symbols.css?v=1767983509" rel="stylesheet">
-  <link href="/assets/css/custom.css?v=1767983509" rel="stylesheet">
+  <link href="/assets/css/bootstrap.min.css?v=1768049520" rel="stylesheet">
+  <link href="/assets/css/material-symbols.css?v=1768049520" rel="stylesheet">
+  <link href="/assets/css/custom.css?v=1768049520" rel="stylesheet">
 
   <meta name="author" content="Christian Storb">
 
@@ -33,8 +33,8 @@
 <meta property="og:title" content="Resiliente Anwendungen mit Polly in C#" />
 <meta name="author" content="STC STORB Consulting" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="In der modernen Softwareentwicklung sind Fehlertoleranz und Resilienz entscheidende Faktoren für stabile Anwendungen. Polly, eine leistungsstarke Resilience-Bibliothek für .NET, hilft Entwicklern, transiente Fehler elegant zu bewältigen und zuverlässige Systeme zu bauen." />
-<meta property="og:description" content="In der modernen Softwareentwicklung sind Fehlertoleranz und Resilienz entscheidende Faktoren für stabile Anwendungen. Polly, eine leistungsstarke Resilience-Bibliothek für .NET, hilft Entwicklern, transiente Fehler elegant zu bewältigen und zuverlässige Systeme zu bauen." />
+<meta name="description" content="Erfahren Sie, wie Sie mit der Polly-Bibliothek in C# robuste und fehlertolerante Anwendungen entwickeln." />
+<meta property="og:description" content="Erfahren Sie, wie Sie mit der Polly-Bibliothek in C# robuste und fehlertolerante Anwendungen entwickeln." />
 <link rel="canonical" href="https://chstorb.github.io/.net/cloud-technologie/microservices/open%20source/programmierung/softwareentwicklung/2025/11/18/resiliente-anwendungen-mit-polly.html" />
 <meta property="og:url" content="https://chstorb.github.io/.net/cloud-technologie/microservices/open%20source/programmierung/softwareentwicklung/2025/11/18/resiliente-anwendungen-mit-polly.html" />
 <meta property="og:site_name" content="STC" />
@@ -45,7 +45,7 @@
 <meta property="twitter:image" content="https://chstorb.github.io/assets/images/consulting/blog/polly.webp" />
 <meta property="twitter:title" content="Resiliente Anwendungen mit Polly in C#" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"STC STORB Consulting"},"dateModified":"2025-11-18T00:00:00+00:00","datePublished":"2025-11-18T00:00:00+00:00","description":"In der modernen Softwareentwicklung sind Fehlertoleranz und Resilienz entscheidende Faktoren für stabile Anwendungen. Polly, eine leistungsstarke Resilience-Bibliothek für .NET, hilft Entwicklern, transiente Fehler elegant zu bewältigen und zuverlässige Systeme zu bauen.","headline":"Resiliente Anwendungen mit Polly in C#","image":"https://chstorb.github.io/assets/images/consulting/blog/polly.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://chstorb.github.io/.net/cloud-technologie/microservices/open%20source/programmierung/softwareentwicklung/2025/11/18/resiliente-anwendungen-mit-polly.html"},"url":"https://chstorb.github.io/.net/cloud-technologie/microservices/open%20source/programmierung/softwareentwicklung/2025/11/18/resiliente-anwendungen-mit-polly.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"STC STORB Consulting"},"dateModified":"2025-11-18T00:00:00+00:00","datePublished":"2025-11-18T00:00:00+00:00","description":"Erfahren Sie, wie Sie mit der Polly-Bibliothek in C# robuste und fehlertolerante Anwendungen entwickeln.","headline":"Resiliente Anwendungen mit Polly in C#","image":"https://chstorb.github.io/assets/images/consulting/blog/polly.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://chstorb.github.io/.net/cloud-technologie/microservices/open%20source/programmierung/softwareentwicklung/2025/11/18/resiliente-anwendungen-mit-polly.html"},"url":"https://chstorb.github.io/.net/cloud-technologie/microservices/open%20source/programmierung/softwareentwicklung/2025/11/18/resiliente-anwendungen-mit-polly.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -131,8 +131,8 @@ Polly hilft dabei, diese Fehler abzufangen und intelligent zu behandeln.</p>
 </code></pre></div></div>
 
 <h3 id="timeout">Timeout</h3>
-<pre><code class="language-charp">var timeoutPolicy = Policy.Timeout(TimeSpan.FromSeconds(5)); // Abbruch nach 5 Sekunden
-</code></pre>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">var</span> <span class="n">timeoutPolicy</span> <span class="p">=</span> <span class="n">Policy</span><span class="p">.</span><span class="nf">Timeout</span><span class="p">(</span><span class="n">TimeSpan</span><span class="p">.</span><span class="nf">FromSeconds</span><span class="p">(</span><span class="m">5</span><span class="p">));</span> <span class="c1">// Abbruch nach 5 Sekunden</span>
+</code></pre></div></div>
 
 <h3 id="fallback">Fallback</h3>
 <div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">var</span> <span class="n">fallbackPolicy</span> <span class="p">=</span> <span class="n">Policy</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;</span>
