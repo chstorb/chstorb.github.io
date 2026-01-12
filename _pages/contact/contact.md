@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Kontakt zu STC STORB Consulting"
-description: "Nehmen Sie Kontakt zu STC STORB Consulting auf – wir beraten Sie von der Planung bis zum Betrieb."
+title: "Kontakt"
+description: "Nehmen Sie Kontakt mit STC STORB Consulting auf – wir beraten Sie von der Planung bis zum Betrieb."
 permalink: /contact/contact/
 author: "Christian Storb"
 
