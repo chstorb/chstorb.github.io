@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://chstorb.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://chstorb.github.io/" rel="alternate" type="text/html" /><updated>2026-01-14T18:55:15+00:00</updated><id>https://chstorb.github.io/feed.xml</id><title type="html">STORB Consulting</title><subtitle>STC STORB Consulting unterstützt Ihr Projekt bei Kunden und Geschäftspartnern vor Ort – von der Planung über die Entwicklung bis zur Markteinführung und den Betrieb.</subtitle><author><name>Christian Storb</name><email>mail2storb@gmail.com</email></author><entry><title type="html">Resiliente Anwendungen mit Polly in C#</title><link href="https://chstorb.github.io/.net/cloud-technologie/microservices/open%20source/programmierung/softwareentwicklung/2025/11/18/resiliente-anwendungen-mit-polly.html" rel="alternate" type="text/html" title="Resiliente Anwendungen mit Polly in C#" /><published>2025-11-18T00:00:00+00:00</published><updated>2025-11-18T00:00:00+00:00</updated><id>https://chstorb.github.io/.net/cloud-technologie/microservices/open%20source/programmierung/softwareentwicklung/2025/11/18/resiliente-anwendungen-mit-polly</id><content type="html" xml:base="https://chstorb.github.io/.net/cloud-technologie/microservices/open%20source/programmierung/softwareentwicklung/2025/11/18/resiliente-anwendungen-mit-polly.html"><![CDATA[<p>In der modernen Softwareentwicklung sind <strong>Fehlertoleranz</strong> und <strong>Resilienz</strong> entscheidende Faktoren für stabile Anwendungen.<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://chstorb.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://chstorb.github.io/" rel="alternate" type="text/html" /><updated>2026-01-14T20:57:11+00:00</updated><id>https://chstorb.github.io/feed.xml</id><title type="html">STORB Consulting</title><subtitle>STC STORB Consulting unterstützt Ihr Projekt bei Kunden und Geschäftspartnern vor Ort – von der Planung über die Entwicklung bis zur Markteinführung und den Betrieb.</subtitle><author><name>Christian Storb</name><email>mail2storb@gmail.com</email></author><entry><title type="html">Resiliente Anwendungen mit Polly in C#</title><link href="https://chstorb.github.io/.net/cloud-technologie/microservices/open%20source/programmierung/softwareentwicklung/2025/11/18/resiliente-anwendungen-mit-polly.html" rel="alternate" type="text/html" title="Resiliente Anwendungen mit Polly in C#" /><published>2025-11-18T00:00:00+00:00</published><updated>2025-11-18T00:00:00+00:00</updated><id>https://chstorb.github.io/.net/cloud-technologie/microservices/open%20source/programmierung/softwareentwicklung/2025/11/18/resiliente-anwendungen-mit-polly</id><content type="html" xml:base="https://chstorb.github.io/.net/cloud-technologie/microservices/open%20source/programmierung/softwareentwicklung/2025/11/18/resiliente-anwendungen-mit-polly.html"><![CDATA[<p>In der modernen Softwareentwicklung sind <strong>Fehlertoleranz</strong> und <strong>Resilienz</strong> entscheidende Faktoren für stabile Anwendungen.<br />
 <strong>Polly</strong>, eine leistungsstarke Resilience-Bibliothek für .NET, hilft Entwicklern, transiente Fehler elegant zu bewältigen und zuverlässige Systeme zu bauen.</p>
 
 <h2 id="was-ist-polly">Was ist Polly?</h2>
@@ -56,8 +56,6 @@ Durch die Integration von Polly in deine C#-Anwendungen kannst du:</p>
 </ul>]]></content><author><name>STC STORB Consulting</name></author><category term=".NET" /><category term="Cloud-Technologie" /><category term="Microservices" /><category term="Open Source" /><category term="Programmierung" /><category term="Softwareentwicklung" /><category term="C#" /><category term="Polly" /><category term="Resilienz" /><category term="Fehlertoleranz" /><category term="Retry" /><category term="Circuit Breaker" /><category term="Timeout" /><category term="Fallback" /><category term="Rate Limiting" /><summary type="html"><![CDATA[Erfahren Sie, wie Sie mit der Polly-Bibliothek in C# robuste und fehlertolerante Anwendungen entwickeln.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://chstorb.github.io/assets/images/consulting/blog/polly.webp" /><media:content medium="image" url="https://chstorb.github.io/assets/images/consulting/blog/polly.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Eine Website mit Jekyll und VS Code erstellen</title><link href="https://chstorb.github.io/jekyll/ruby/github%20pages/vs%20code/2025/11/14/jekyll-vscode.html" rel="alternate" type="text/html" title="Eine Website mit Jekyll und VS Code erstellen" /><published>2025-11-14T18:23:35+00:00</published><updated>2025-11-14T18:23:35+00:00</updated><id>https://chstorb.github.io/jekyll/ruby/github%20pages/vs%20code/2025/11/14/jekyll-vscode</id><content type="html" xml:base="https://chstorb.github.io/jekyll/ruby/github%20pages/vs%20code/2025/11/14/jekyll-vscode.html"><![CDATA[<p>Jekyll ist ein statischer Site-Generator, der besonders gut mit GitHub Pages harmoniert.<br />
 In diesem Artikel zeige ich allgemein, wie man eine eigene Website mit Jekyll erstellt und dabei <strong>Visual Studio Code (VS Code)</strong> als Entwicklungsumgebung nutzt.</p>
 
-<hr />
-
 <h2 id="-voraussetzungen">🚀 Voraussetzungen</h2>
 
 <p>Um mit Jekyll zu starten, benötigt man:</p>
@@ -67,8 +65,6 @@ In diesem Artikel zeige ich allgemein, wie man eine eigene Website mit Jekyll er
   <li><strong>VS Code</strong> als IDE mit Extensions wie <em>Ruby LSP</em> und <em>Jekyll Helper</em>.</li>
   <li>Ein GitHub Repository, z. B. <code class="language-plaintext highlighter-rouge">username.github.io</code>.</li>
 </ul>
-
-<hr />
 
 <h2 id="-projekt-starten">📂 Projekt starten</h2>
 
@@ -88,8 +84,6 @@ In diesem Artikel zeige ich allgemein, wie man eine eigene Website mit Jekyll er
 </code></pre></div></div>
 
 <p>Die Seite läuft dann unter http://localhost:4000.</p>
-
-<hr />
 
 <h2 id="-arbeiten-mit-vs-code">🛠 Arbeiten mit VS Code</h2>
 
@@ -113,8 +107,6 @@ In diesem Artikel zeige ich allgemein, wie man eine eigene Website mit Jekyll er
 
 <p>Jekyll Snippets für Liquid-Templates und Front Matter.</p>
 
-<hr />
-
 <h2 id="-konfiguration">🔧 Konfiguration</h2>
 
 <p>In der Datei _config.yml werden zentrale Einstellungen gepflegt:</p>
@@ -127,8 +119,6 @@ In diesem Artikel zeige ich allgemein, wie man eine eigene Website mit Jekyll er
   <span class="pi">-</span> <span class="s">jekyll-sitemap</span>
   <span class="pi">-</span> <span class="s">jekyll-seo-tag</span>
 </code></pre></div></div>
-
-<hr />
 
 <h2 id="-seo-und-sitemap">📈 SEO und Sitemap</h2>
 
@@ -144,8 +134,6 @@ In diesem Artikel zeige ich allgemein, wie man eine eigene Website mit Jekyll er
 Allow: /
 Sitemap: https://username.github.io/sitemap.xml
 </code></pre>
-
-<hr />
 
 <h2 id="-fazit">🎯 Fazit</h2>
 
