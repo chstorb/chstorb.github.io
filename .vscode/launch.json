@@ -7,6 +7,7 @@
             "type": "chrome",
             "url": "http://localhost:4000",
             "webRoot": "${workspaceFolder}",
+            "runtimeExecutable": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
             "preLaunchTask": "Jekyll Serve"
         }
     ]
