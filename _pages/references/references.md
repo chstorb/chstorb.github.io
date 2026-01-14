@@ -28,8 +28,6 @@ Wir bringen Expertise aus zahlreichen Branchen mit:
 
 So entstehen maßgeschneiderte Lösungen, die nachhaltig wirken und den Erfolg unserer Kunden unterstützen.  
 
----
-
 ## Weiterführende Seiten
 
 - [Ausgewählte Projekte]({{ site.baseurl }}/references/featured-projects/)  

@@ -26,12 +26,10 @@ Christian Storb
 
 **Kontakt:**  
 📱 Telefon: +49 1590 6810 667  
-✉️ E‑Mail: [mail2storb@gmail.com](mailto:mail2storb@gmail.com)  
+✉️ E‑Mail: [{{ site.email }}](mailto:{{ site.email }})  
 
 **Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG:**  
 Nicht vorhanden – Kleinunternehmer gemäß § 19 UStG  
-
----
 
 ## Streitbeilegung
 Die EU‑Kommission stellt seit dem 15. Februar 2016 eine Plattform für außergerichtliche Streitschlichtung bereit.  
@@ -40,11 +38,9 @@ Verbraucher können darüber Streitigkeiten im Zusammenhang mit Online‑Bestell
 👉 Plattform: [https://consumer-redress.ec.europa.eu/index_de](https://consumer-redress.ec.europa.eu/index_de)  
 
 Wir sind gesetzlich verpflichtet, auf unsere E‑Mail‑Adresse hinzuweisen:  
-**[mail2storb@gmail.com](mailto:mail2storb@gmail.com)**  
+**[{{ site.email }}](mailto:{{ site.email }})**  
 
 Wir bemühen uns, Meinungsverschiedenheiten aus Verträgen einvernehmlich beizulegen.  
-
----
 
 ## Hinweis zu Inhalten
 Alle Texte, Bilder, Grafiken sowie Ton‑, Video‑ und Animationsdateien unterliegen dem Urheberrecht und anderen Gesetzen zum Schutz geistigen Eigentums.  
@@ -55,11 +51,7 @@ Die Gewährleistungsbedingungen entnehmen Sie bitte unseren Allgemeinen Geschäf
 
 **STC STORB Consulting** übernimmt keine Verantwortung für Inhalte externer Seiten, die über Links erreichbar sind.  
 
----
-
 ## Bildnachweise
 - [Pixabay](https://pixabay.com)  
-
----
 
 *Dieses Impressum gilt für alle Dienste und Online‑Auftritte von STC STORB Consulting.*

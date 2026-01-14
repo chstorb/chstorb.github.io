@@ -41,8 +41,6 @@ Nur eingeschränkt möglich bei:
 - Artikel, die beschädigt oder unvollständig zurückgesendet werden  
 - Rücksendungen nach Ablauf der 14‑Tage‑Frist  
 
----
-
 ## Rückerstattungen
 Nach Eingang und Prüfung Ihrer Rücksendung informieren wir Sie per E‑Mail über Genehmigung oder Ablehnung.  
 Bei Genehmigung erfolgt die Rückerstattung automatisch auf Ihre ursprüngliche Zahlungsmethode.  
@@ -72,7 +70,5 @@ Rücksendungen bitte an:
 - Bei Rückerstattung werden Rücksendekosten abgezogen.  
 - Für Artikel über 75 € empfehlen wir einen Versanddienst mit Sendungsverfolgung oder eine Versandversicherung.  
 - Wir können den Erhalt einer Rücksendung ohne Sendungsverfolgung nicht garantieren.  
-
----
 
 *Diese Rückgabebedingungen gelten für alle Dienste und Online‑Auftritte von STC STORB Consulting.*

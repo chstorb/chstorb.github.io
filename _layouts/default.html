@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de" class="h-100">
+<html lang="de" class="h-100" data-bs-theme="dark">
 
 <head>
   <!-- Character encoding -->
@@ -24,7 +24,7 @@
   <link href="{{ '/assets/css/custom.css' | relative_url }}?v={{ site.time | date: '%s' }}" rel="stylesheet">
 </head>
 
-<body class="d-flex flex-column h-100 bg-light">
+<body class="d-flex flex-column h-100">
 
   {% include navbar.html %}
 
@@ -32,7 +32,7 @@
     <div class="container py-5">
 
       <!-- Page Title (Visually Hidden by default, accessible for Screen Readers) -->
-      <h1 class="{% if page.title == nil or page.title == '' %} visually-hidden{% endif %} mb-4 fw-bold text-dark">
+      <h1 class="{% if page.title == nil or page.title == '' %} visually-hidden{% endif %} mb-4 fw-bold">
         {{- page.title | default: "" -}}
       </h1>
 
@@ -45,6 +45,7 @@
 
   <!-- Scripts -->
   <script src="{{ '/assets/js/bootstrap.bundle.min.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
+  <script src="https://www.dwin2.com/pub.1933231.min.js"></script>
 
 </body>
 

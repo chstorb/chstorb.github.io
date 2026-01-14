@@ -6,7 +6,7 @@ layout: default
     {% for post in site.posts %}
     <div class="col">
         <article class="stc-card h-100 position-relative">
-            <div class="stc-card-img-wrapper bg-light">
+            <div class="stc-card-img-wrapper border-bottom">
                 {% if post.image %}
                 <img src="{{ post.image }}" class="stc-card-img" alt="{{ post.title }}">
                 {% else %}
@@ -19,7 +19,7 @@ layout: default
 
             <div class="stc-card-body d-flex flex-column h-100">
                 <div class="mb-2">
-                    <span class="badge bg-light text-secondary border fw-normal">
+                    <span class="badge bg-body-tertiary text-secondary border fw-normal">
                         {{ post.date | date: "%d.%m.%Y" }}
                     </span>
                     {% if post.categories.size > 0 %}
@@ -29,7 +29,7 @@ layout: default
                     {% endif %}
                 </div>
 
-                <h2 class="stc-card-title fw-bold text-dark mb-2">
+                <h2 class="stc-card-title fw-bold mb-2">
                     <a href="{{ post.url }}" class="text-decoration-none text-reset stretched-link">
                         {{ post.title }}
                     </a>
@@ -39,7 +39,7 @@ layout: default
                     {{ post.excerpt | strip_html | truncatewords: 20 }}
                 </p>
 
-                <div class="mt-auto pt-3 border-top border-light d-flex align-items-center text-primary fw-medium">
+                <div class="mt-auto pt-3 border-top d-flex align-items-center text-primary fw-medium">
                     Mehr lesen <span class="material-symbols-outlined ms-1"
                         style="font-size: 1.25em;">arrow_right_alt</span>
                 </div>

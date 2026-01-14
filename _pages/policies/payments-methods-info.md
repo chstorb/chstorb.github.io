@@ -18,25 +18,21 @@ tags: [Versand, Lieferung, Shipping Policy, Consulting, Deutschland]
 
 Wir bieten Ihnen verschiedene sichere Zahlungsmethoden an. Um den Bestellprozess abzuschließen, wählen Sie die für Sie passende Methode im Checkout.  
 
----
-
-## **1. PayPal**
+## **PayPal**
 
 Sie bezahlen den Rechnungsbetrag über den Online-Anbieter PayPal (PayPal (Europe) S.à r.l. et Cie, S.C.A., 22–24 Boulevard Royal, L-2449 Luxembourg). Sie werden im Bestellprozess auf die Website von PayPal weitergeleitet, wo Sie Ihre Zahlung bestätigen können.
 
-## 2. **Kreditkarte / Debitkarte**  
+## **Kreditkarte / Debitkarte**  
 
 Sie bezahlen bequem mit Ihrer Kredit- oder Debitkarte. Unterstützt werden gängige Anbieter wie Visa, Mastercard und American Express. Die Belastung Ihres Kontos erfolgt unmittelbar nach Abschluss der Bestellung.
 
-## 3. **Apple Pay / Google Pay**  
+## **Apple Pay / Google Pay**  
 
 Nutzen Sie Ihr Smartphone oder Tablet für eine schnelle und sichere Zahlung. Sie bestätigen die Transaktion direkt über Ihr Gerät.
 
-## 4. **Offline-Zahlung**  
+## **Offline-Zahlung**  
 
 Für Testkäufe oder individuelle Vereinbarungen bieten wir die Möglichkeit einer manuellen Abwicklung. Bitte beachten Sie, dass die Bestellung  erst nach Zahlungseingang bearbeitet wird.
-
----
 
 ### 🔒 Hinweise zur Datenverarbeitung (DSGVO)
 
@@ -46,7 +42,5 @@ Die Weitergabe ist für die Durchführung der Zahlung und damit zur Erfüllung d
 Weitere Informationen zur Verarbeitung Ihrer Daten finden Sie in den Datenschutzerklärungen der jeweiligen Anbieter.
 
 * [Datenschutzerklärung von PayPal](https://www.paypal.com/de/webapps/mpp/ua/privacy-full).
-
----
 
 *Diese Zahlungsinformationen gelten für alle Dienste und Online‑Auftritte von STC STORB Consulting.*

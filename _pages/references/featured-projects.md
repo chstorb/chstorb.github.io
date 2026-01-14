@@ -23,27 +23,19 @@ tags: [Projekte, Referenzen, Consulting, IT, E-Government, Industrie]
 - Grundlage für die Umsetzung der Hartz‑IV‑Reform (2005)  
 - Elektronische Erfassung, Auszahlung, Versicherungsanmeldung und Beitragsabführung für Langzeitarbeitslose  
 
----
-
 ## ABIT Kredit
 Leistungsfähige Softwarelösung für den gesamten Kreditprozess:  
 - Kreditantrags- und Kreditsachbearbeitung für alle Engagementgrößen und Institutsgruppen  
 - Zentraler und dezentraler Einsatz möglich  
 - Hohe Flexibilität bei Konfiguration von Kreditprodukten, Sicherheiten und Geschäftsprozessen  
 
----
-
 ## ARTEMIS
 High‑Speed‑Analyse‑Werkzeug für W‑CDMA (UMTS Trace Tool).  
-
----
 
 ## CASQ‑it APQP
 Advanced Product Quality Planning (APQP) – Projektmanagement nach ISO/TS 16949:  
 - Strukturierte Projektverfolgung mit Checklisten  
 - Kompakte Statusreports für jederzeitige Übersicht  
-
----
 
 ## POLADIS‑neu
 Polizeiliches Anwenderorientiertes Dezentrales InformationsSystem für Rheinland‑Pfalz:  
@@ -52,13 +44,9 @@ Polizeiliches Anwenderorientiertes Dezentrales InformationsSystem für Rheinland
 - Elektronischer Vorgangsaustausch zwischen Polizeidienststellen  
 - Integrierte Schnittstelle zum Landesfahndungssystem POLIS  
 
----
-
 ## proKOM
 Informationsverarbeitungssystem für die Datenredaktion der T‑Com:  
 - Erfassung, Austausch und Nutzung von Teilnehmerdaten  
-
----
 
 ## X‑Pact®
 Metallurgische Prozessmodelle für die Stahlwerksautomation:  

@@ -26,15 +26,11 @@ Bitte lesen Sie diese Bedingungen sorgfältig. Wenn Sie nicht einverstanden sind
 
 Neue Funktionen oder Tools unterliegen ebenfalls diesen AGB. Änderungen werden durch Veröffentlichung auf dieser Seite bekanntgegeben. Die Nutzung nach Änderungen gilt als Zustimmung.  
 
----
-
 ## Abschnitt 1 – Bedingungen für den Onlineshop
 - Sie bestätigen, dass Sie volljährig sind oder die Zustimmung Ihrer Erziehungsberechtigten haben.  
 - Unsere Produkte dürfen nicht für illegale oder nicht autorisierte Zwecke genutzt werden.  
 - Das Übertragen von Viren, Würmern oder destruktivem Code ist untersagt.  
 - Verstöße führen zur sofortigen Kündigung der Serviceleistung.  
-
----
 
 ## Abschnitt 2 – Allgemeine Bedingungen
 - Wir behalten uns vor, Leistungen jederzeit und ohne Angabe von Gründen zu verweigern.  
@@ -43,22 +39,16 @@ Neue Funktionen oder Tools unterliegen ebenfalls diesen AGB. Änderungen werden 
 - Ohne schriftliche Genehmigung dürfen Leistungen nicht reproduziert, kopiert, verkauft oder weiterverwertet werden.  
 - Überschriften dienen nur der Übersichtlichkeit und haben keine rechtliche Wirkung.  
 
----
-
 ## Abschnitt 3 – Genauigkeit und Aktualität der Informationen
 - Wir übernehmen keine Gewähr für die Vollständigkeit, Genauigkeit oder Aktualität der Inhalte.  
 - Inhalte dienen nur allgemeinen Informationszwecken.  
 - Historische Informationen sind nicht zwingend aktuell.  
 - Wir behalten uns Änderungen vor, sind jedoch nicht verpflichtet, Inhalte zu aktualisieren.  
 
----
-
 ## Abschnitt 4 – Änderungen an Leistung und Preisen
 - Preise können jederzeit ohne Vorankündigung geändert werden.  
 - Wir behalten uns vor, Leistungen oder Teile davon jederzeit zu ändern oder einzustellen.  
 - Shopify haftet nicht für Änderungen, Preisänderungen oder Einstellung von Leistungen.  
-
----
 
 ## Abschnitt 5 – Produkte oder Dienstleistungen
 - Manche Produkte/Dienstleistungen sind ausschließlich online verfügbar und ggf. nur in begrenzten Mengen.  
@@ -68,16 +58,12 @@ Neue Funktionen oder Tools unterliegen ebenfalls diesen AGB. Änderungen werden 
 - Mengen können begrenzt werden. Produktbeschreibungen und Preise können jederzeit geändert werden.  
 - Wir garantieren nicht, dass die Qualität von Produkten oder Dienstleistungen Ihren Erwartungen entspricht.  
 
----
-
 ## Abschnitt 6 – Rechnungs- und Kontoinformationen
 - Wir behalten uns vor, Bestellungen abzulehnen oder Mengen pro Person/Haushalt zu begrenzen.  
 - Änderungen oder Stornierungen werden per E‑Mail oder Telefon mitgeteilt.  
 - Bestellungen von Händlern oder Wiederverkäufern können untersagt werden.  
 - Sie verpflichten sich, vollständige und aktuelle Kauf‑ und Kontoinformationen anzugeben und diese regelmäßig zu aktualisieren.  
 - Für Details beachten Sie bitte unsere [Rückgabebedingungen]({{ site.baseurl }}/policies/withdrawal-policy/).  
-
----
 
 ## Abschnitt 7 – Zusätzliche Tools
 
@@ -88,8 +74,6 @@ Bitte machen Sie sich mit den Bedingungen der jeweiligen Drittanbieter vertraut 
 
 Zukünftig bereitgestellte neue Funktionen oder Services (einschließlich Tools und Ressourcen) unterliegen ebenfalls diesen AGB.  
 
----
-
 ## Abschnitt 8 – Drittanbieter-Links
 
 Unsere Website kann Inhalte, Produkte oder Services von Drittanbietern enthalten.  
@@ -98,8 +82,6 @@ Wir übernehmen keine Verantwortung für die Prüfung, Richtigkeit oder Inhalte 
 
 Bitte lesen Sie die Richtlinien der jeweiligen Drittanbieter sorgfältig, bevor Sie eine Transaktion durchführen.  
 Reklamationen oder Fragen zu Produkten von Drittanbietern sind direkt an diese zu richten.  
-
----
 
 ## Abschnitt 9 – Benutzerkommentare, Feedback und Einsendungen
 
@@ -116,14 +98,10 @@ Sie sichern zu, dass Ihre Einsendungen keine Rechte Dritter verletzen (Urheber�
 Sie dürfen keine falsche Identität verwenden oder die Herkunft von Einsendungen verschleiern.  
 Für die Richtigkeit und Rechtmäßigkeit Ihrer Beiträge tragen Sie allein die Verantwortung.  
 
----
-
 ## Abschnitt 10 – Personenbezogene Daten
 
 Die Übermittlung personenbezogener Daten über unseren Shop unterliegt unserer [Datenschutzerklärung]({{ site.baseurl }}/policies/privacy-policy/).  
 Bitte lesen Sie diese sorgfältig.  
-
----
 
 ## Abschnitt 11 – Fehler, Ungenauigkeiten und Auslassungen
 
@@ -132,8 +110,6 @@ Wir behalten uns das Recht vor, jederzeit und ohne Vorankündigung (auch nach Be
 
 Wir sind nicht verpflichtet, Inhalte oder Preise zu aktualisieren, es sei denn, dies ist gesetzlich vorgeschrieben.  
 Datumsangaben zu Aktualisierungen dürfen nicht als Hinweis verstanden werden, dass sämtliche Informationen geändert oder aktualisiert wurden.  
-
----
 
 ## Abschnitt 12 – Verbotene Anwendungen
 
@@ -153,8 +129,6 @@ Zusätzlich zu den in diesen AGB genannten Einschränkungen ist es untersagt, un
 
 Wir behalten uns vor, Ihre Nutzung der Website oder Services bei Verstößen sofort zu beenden.  
 
----
-
 ## Abschnitt 13 – Haftungsausschluss und Haftungsbeschränkung
 
 Wir übernehmen keine Garantie, dass unsere Services ununterbrochen, fehlerfrei, sicher oder zeitgerecht verfügbar sind.  
@@ -169,19 +143,13 @@ Dies gilt unabhängig von Rechtsgrundlagen (Vertrag, unerlaubte Handlung, Fahrl�
 
 Da bestimmte Länder oder Jurisdiktionen den Ausschluss oder die Beschränkung von Haftung nicht zulassen, gilt unsere Haftung dort nur im gesetzlich maximal zulässigen Umfang.  
 
----
-
 ## Abschnitt 14 – Entschädigung
 
 Sie verpflichten sich, **STC STORB Consulting** sowie unsere verbundenen Unternehmen, Partner, Führungskräfte, Vertreter, Auftragnehmer, Lizenzgeber, Dienstleister, Subunternehmer, Lieferanten, Praktikanten und Mitarbeiter von sämtlichen Ansprüchen oder Forderungen Dritter – einschließlich angemessener Anwaltskosten – freizustellen, zu verteidigen und schadlos zu halten, sofern diese aus Ihrer Verletzung dieser AGB, der darin genannten Dokumente, geltender Gesetze oder Rechte Dritter entstehen.  
 
----
-
 ## Abschnitt 15 – Salvatorische Klausel
 
 Sollte eine Bestimmung dieser AGB rechtswidrig, nichtig oder nicht durchsetzbar sein, bleibt sie im gesetzlich zulässigen Umfang wirksam. Der nicht durchsetzbare Teil gilt als abgetrennt, ohne die Gültigkeit und Durchsetzbarkeit der übrigen Bestimmungen zu beeinträchtigen.  
-
----
 
 ## Abschnitt 16 – Kündigung
 
@@ -191,8 +159,6 @@ Sie können die Vereinbarung jederzeit beenden, indem Sie uns mitteilen, dass Si
 Wir behalten uns vor, diese Vereinbarung fristlos zu kündigen, wenn Sie gegen Bestimmungen verstoßen oder wir dies vermuten. In diesem Fall bleiben Sie für alle bis zum Kündigungsdatum fälligen Beträge haftbar. Zudem können wir Ihnen den Zugang zu unseren Services ganz oder teilweise verweigern.  
 Verpflichtungen und Verbindlichkeiten, die vor der Kündigung entstanden sind, bestehen fort.  
 
----
-
 ## Abschnitt 17 – Gesamte Vereinbarung
 
 Das Unterlassen der Durchsetzung einer Bestimmung stellt keinen Verzicht auf dieses Recht dar.  
@@ -200,14 +166,10 @@ Das Unterlassen der Durchsetzung einer Bestimmung stellt keinen Verzicht auf die
 Diese AGB sowie alle auf unserer Website veröffentlichten Richtlinien und Betriebsvorschriften bilden die gesamte Vereinbarung zwischen Ihnen und uns. Sie regeln Ihre Nutzung unserer Services und ersetzen alle vorherigen oder gleichzeitigen Vereinbarungen, Mitteilungen und Angebote – mündlich oder schriftlich.  
 Unklarheiten bei der Auslegung dieser AGB sind nicht gegen die verfassende Partei auszulegen.  
 
----
-
 ## Abschnitt 18 – Geltendes Recht
 
 Diese AGB und alle separaten Vereinbarungen im Rahmen unserer Services unterliegen dem Recht der Bundesrepublik Deutschland und sind nach diesem auszulegen.  
 Gerichtsstand ist Nottuln, Nordrhein‑Westfalen.  
-
----
 
 ## Abschnitt 19 – Änderungen der AGB
 
@@ -215,13 +177,9 @@ Die jeweils aktuelle Version der AGB ist jederzeit auf dieser Seite einsehbar.
 Wir behalten uns vor, Teile dieser Bedingungen nach eigenem Ermessen zu aktualisieren, zu ändern oder zu ersetzen. Änderungen werden durch Veröffentlichung auf unserer Website bekanntgegeben.  
 Die fortgesetzte Nutzung unserer Website oder Services nach Veröffentlichung gilt als Zustimmung zu den Änderungen.  
 
----
-
 ## Abschnitt 20 – Kontaktdaten
 
 Fragen zu diesen AGB richten Sie bitte an:  
 ✉️ [mail2storb@gmail.com](mailto:mail2storb@gmail.com)  
-
----
 
 *Diese Allgemeinen Geschäftsbedingungen gelten für alle Dienste und Online‑Auftritte von STC STORB Consulting.*  

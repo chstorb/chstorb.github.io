@@ -69,11 +69,26 @@
   --stc-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+[data-bs-theme="dark"] :root {
+  --stc-primary: #f8fafc;
+  /* Slate 50 */
+  --stc-secondary: #cbd5e1;
+  /* Slate 300 */
+  --stc-accent: #3b82f6;
+  /* Blue 500 */
+  --stc-accent-hover: #60a5fa;
+  /* Blue 400 */
+  --stc-bg-light: #0f172a;
+  /* Slate 900 */
+  --stc-text-main: #f1f5f9;
+  /* Slate 100 */
+  --stc-text-muted: #94a3b8;
+  /* Slate 400 */
+}
+
 /* Base Typography */
 body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  color: var(--stc-text-main);
-  background-color: var(--stc-bg-light);
   line-height: 1.6;
 }
 
@@ -85,7 +100,7 @@ h5,
 h6,
 .navbar-brand {
   font-family: 'Montserrat', sans-serif;
-  color: var(--stc-primary);
+  color: var(--bs-heading-color);
   font-weight: 700;
   letter-spacing: -0.025em;
   line-height: 1.2;
@@ -107,16 +122,16 @@ a:hover {
 
 /* Navbar */
 .navbar {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: var(--bs-body-bg);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid var(--bs-border-color-translucent);
   box-shadow: var(--stc-shadow-sm);
 }
 
 .navbar-brand {
   font-weight: 800;
   letter-spacing: -0.02em;
-  color: var(--stc-primary);
+  color: var(--bs-heading-color);
   display: flex;
   align-items: center;
 }
@@ -136,7 +151,7 @@ a:hover {
 
 .nav-link {
   font-weight: 500;
-  color: var(--stc-secondary);
+  color: var(--bs-nav-link-color);
 }
 
 .nav-link:hover,
@@ -146,8 +161,8 @@ a:hover {
 
 /* Cards (Modern & "Lego-like" modularity) */
 .stc-card {
-  background: white;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: var(--bs-body-bg);
+  border: 1px solid var(--bs-border-color-translucent);
   border-radius: var(--stc-radius);
   transition: var(--stc-transition);
   height: 100%;
@@ -230,8 +245,8 @@ a:hover {
 
 /* Footer */
 footer {
-  background-color: white !important;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  background-color: var(--bs-body-bg);
+  border-top: 1px solid var(--bs-border-color-translucent);
   font-size: 0.9rem;
 }
 

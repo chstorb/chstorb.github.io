@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de" class="h-100">
+<html lang="de" class="h-100" data-bs-theme="dark">
 
 <head>
   <!-- Character encoding -->
@@ -24,14 +24,14 @@
   <link href="{{ '/assets/css/custom.css' | relative_url }}?v={{ site.time | date: '%s' }}" rel="stylesheet">
 </head>
 
-<body class="d-flex flex-column h-100 bg-light">
+<body class="d-flex flex-column h-100">
 
   {% include navbar.html %}
 
   <main class="flex-shrink-0" role="main">
 
     <!-- Hero / Header Section for Post -->
-    <div class="bg-white border-bottom py-5 mb-5">
+    <div class="border-bottom py-5 mb-5">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
@@ -69,14 +69,14 @@
         {% endif %}
 
         <div class="col-lg-8">
-          <div class="bg-white p-4 p-md-5 rounded-4 shadow-sm">
+          <div class="p-4 p-md-5 rounded-4 shadow-sm border">
             <div class="article-content" style="font-size: 1.1rem; line-height: 1.8;">
               {{ content }}
             </div>
           </div>
 
           <!-- Navigation between posts -->
-          <div class="d-flex justify-content-between mt-5 pt-4 border-top">
+          <div class="d-flex justify-content-between py-4 mb-5">
             {% if page.previous.url %}
             <a class="btn btn-outline-secondary rounded-pill px-4" href="{{ page.previous.url }}">
               &larr; Vorheriger
@@ -101,6 +101,7 @@
 
   <!-- Scripts -->
   <script src="{{ '/assets/js/bootstrap.bundle.min.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
+  <script src="https://www.dwin2.com/pub.1933231.min.js"></script>
 
 </body>
 

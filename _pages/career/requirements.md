@@ -50,8 +50,6 @@ Zusätzlich sind Kenntnisse in folgenden Bereichen von Vorteil:
 - Ein spannendes Arbeitsumfeld mit täglich neuen Herausforderungen  
 - Die Möglichkeit, Ihr Talent voll zu entfalten – unterstützt durch kontinuierliche Weiterbildung  
 
----
-
 Gern beantwortet Ihnen Herr Christian Storb weitere Fragen.  
 📱 Mobil: +49 (0) 1590 6810 667  
 

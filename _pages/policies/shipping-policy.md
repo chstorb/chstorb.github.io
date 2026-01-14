@@ -39,6 +39,4 @@ Sollte Ihre Bestellung beschädigt eintreffen oder verloren gehen, kontaktieren 
 ## Zoll- und Einfuhrsteuern
 Da wir ausschließlich innerhalb Deutschlands liefern, fallen keine zusätzlichen Zoll‑ oder Einfuhrsteuern an.  
 
----
-
 *Diese Versandbedingungen gelten für alle Dienste und Online‑Auftritte von STC STORB Consulting.*

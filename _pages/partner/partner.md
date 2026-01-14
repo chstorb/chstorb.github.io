@@ -22,8 +22,6 @@ Gemeinsam mit unseren Kooperationspartnern bilden wir einen interdisziplinären 
 
 Unter einer idealen Partnerschaft verstehen wir die Kooperation mit Unternehmen, die unsere Leistungen und Produkte mit ihren Kompetenzen ergänzen. So entstehen Lösungskonzepte, die unterschiedlichste Kundenanforderungen optimal erfüllen.  
 
----
-
 ## 4Unit Systems Integration
 
 Die 4Unit Systems Integration GmbH bietet ein breites Spektrum an IT‑Dienstleistungen und begleitet anspruchsvolle Projekte in allen Phasen:  
