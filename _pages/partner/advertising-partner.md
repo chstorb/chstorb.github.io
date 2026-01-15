@@ -43,7 +43,7 @@ Wir arbeiten unter anderem mit folgenden Advertisern aus dem Awin‑Netzwerk zus
 
 Eine Auswahl unserer aktiven Partnerprogramme: 
 
-- <a rel="sponsored" href="https://www.awin1.com/cread.php?s=3178366&v=29865&q=440907&r=1933231">Air Baltic</a>
+- <a rel="sponsored" href="https://tidd.ly/4qhEC9o">Air Baltic</a>
 - <a rel="sponsored" href="https://www.awin1.com/cread.php?s=4658264&v=14964&q=372437&r=1933231">bahn.de</a>
 - <a rel="sponsored" href="https://www.awin1.com/cread.php?s=2888542&v=23469&q=413866&r=1933231">Eurowings Holidays</a>
 - <a rel="sponsored" href="https://www.awin1.com/cread.php?s=4029161&v=15034&q=374559&r=1933231">Flightright</a>

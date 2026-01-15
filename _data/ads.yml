@@ -1,0 +1,54 @@
+partners:
+  - name: "airbalticde"
+    publisher_id: 29865
+    category: "flight"
+    include: "airbalticde.html"
+    active: true
+
+  - name: "awolvisioneu"
+    publisher_id: 102513
+    category: "shopping"
+    include: "awolvisioneu.html"
+    active: true
+
+  - name: "bahnde"
+    publisher_id: 194964
+    category: "train"
+    include: "bahnde.html"
+    active: true
+
+  - name: "eurowingsholidaysde"
+    publisher_id: 23469
+    category: "flight"
+    include: "eurowingsholidaysde.html"
+    active: true
+
+  - name: "flightrightde"
+    publisher_id: 15034
+    category: "legal"
+    include: "flightrightde.html"
+    active: true
+
+  - name: "gobusi"
+    publisher_id: 113964
+    category: "bus"
+    include: "gobusi.html"
+    active: true
+
+  - name: "gurado"
+    publisher_id: 112830
+    category: "shopping"
+    include: "gurado.html"
+    active: true
+
+  - name: "houseofsneakersde"
+    publisher_id: 114336
+    category: "shopping"
+    include: "houseofsneakersde.html"
+    active: true
+
+  - name: "zenhotelseu"
+    publisher_id: 115953
+    category: "hotel"
+    include: "zenhotelseu.html"
+    active: true

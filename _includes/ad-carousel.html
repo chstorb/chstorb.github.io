@@ -1,0 +1,23 @@
+<div id="adCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+    <span
+        style="position: absolute; top: 0; left: 45%; z-index: 1000; color: lightgray; font-size: 0.7rem;">Werbung</span>
+    <div class="carousel-inner">
+
+        {% for ad in site.data.ads.partners %}
+        <div class="carousel-item {% if forloop.first %}active{% endif %}">
+            {% include ads/{{ ad.include }} %}
+        </div>
+        {% endfor %}
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#adCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Zurück</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#adCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Weiter</span>
+    </button>
+</div>
