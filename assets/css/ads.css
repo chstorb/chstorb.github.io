@@ -1,3 +1,11 @@
+.ad-banner {
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
 .ad-banner img {
   max-width: 100%;
   height: auto;
@@ -27,4 +35,15 @@
 
 .carousel-inner {
   padding: 0 3rem;
+}
+
+.ad-badge {
+  position: absolute;
+  top: 0.05rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  color: lightgray;
+  font-size: 0.6rem;
+  pointer-events: none;
 }
