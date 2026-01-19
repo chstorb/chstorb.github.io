@@ -16,20 +16,60 @@ categories: [references, consulting]
 tags: [Referenzen, Projekte, Consulting, Branchenexpertise]
 ---
 
-Gute Consultants zeichnen sich durch ihre Referenzen aus.  
+<div class="container">
+  <!-- Intro -->
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-9 text-center">
+      <h1 class="display-5 fw-bold mb-4">{{ site.data.references.intro.headline }}</h1>
+      <p class="lead fw-normal mb-4">
+        {{ site.data.references.intro.lead }}
+      </p>
+      <p class="text-muted mb-4 col-lg-10 mx-auto">
+        {{ site.data.references.intro.text }}
+      </p>
+      
+      <div class="d-flex flex-wrap justify-content-center gap-2 mt-4">
+        {% for highlight in site.data.references.highlights %}
+          <span class="badge bg-body-tertiary text-body-secondary border px-3 py-2 rounded-pill fw-normal">
+            <span class="material-symbols-outlined align-middle fs-6 me-1">check</span>
+            {{ highlight }}
+          </span>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
 
-## Machen Sie sich ein Bild von unserer Arbeit – ausgewählte Projekte zeigen unsere Kompetenz.  
+  <hr class="my-5 opacity-10">
 
-Unsere Beratungspraxis verdeutlicht: Das breite Spektrum unserer Auftraggeber stärkt unsere Lösungskompetenz. Davon profitieren sowohl große Unternehmen als auch kleine Kunden.  
+  <!-- Navigation Cards -->
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    {% for item in site.data.references.navigation %}
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0 transition-hover">
+          <div class="card-body text-center p-4 p-md-5">
+            <div class="mb-4 text-primary">
+               {% include icon.html icon=item.icon type=item.type %}
+            </div>
+            <h3 class="h4 card-title fw-bold mb-3">{{ item.title }}</h3>
+            <p class="card-text text-muted mb-4">
+              {{ item.description }}
+            </p>
+            <a href="{{ item.url | relative_url }}" class="btn btn-outline-primary stretched-link">
+              Ansehen
+            </a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
 
-Wir bringen Expertise aus zahlreichen Branchen mit:  
-- **Branchenerfahrene Consultants** sichern praxisnahe Lösungen.  
-- **Branchenübergreifendes Wissen** eröffnet neue Perspektiven und innovative Ansätze.  
-
-So entstehen maßgeschneiderte Lösungen, die nachhaltig wirken und den Erfolg unserer Kunden unterstützen.  
-
-## Weiterführende Seiten
-
-- [Ausgewählte Projekte]({{ site.baseurl }}/references/featured-projects/)  
-- [Ausgewählte Referenzen]({{ site.baseurl }}/references/featured-references/)  
-- [Ausgewählte Unternehmen]({{ site.baseurl }}/references/featured-companies/)  
+<style>
+.transition-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.transition-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+</style>

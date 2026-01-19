@@ -16,16 +16,67 @@ categories: [contact, consulting]
 tags: [Kontakt, Consulting, Cloud, Architektur, Blazor, Azure]
 ---
 
-Wir freuen uns, Sie auf unserer Website begrüßen zu dürfen.  
+<div class="container">
+  <!-- Intro -->
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-8 text-center">
+      <h1 class="display-5 fw-bold mb-4">{{ site.data.contact.intro.headline }}</h1>
+      <p class="lead text-muted mb-4">
+        {{ site.data.contact.intro.text }}
+      </p>
+      <p class="text-body-secondary">
+        {{ site.data.contact.intro.subtext }}
+      </p>
+    </div>
+  </div>
 
-Als Beratungs‑ und Serviceunternehmen im IT‑Markt unterstützen wir Projekte von der Planung über die Entwicklung bis zur Markteinführung und den Betrieb.  
+  <!-- Contact Cards -->
+  <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center mb-5">
+    
+    <!-- Phone -->
+    <div class="col">
+      <div class="card h-100 shadow-sm border-0 text-center hover-lift">
+        <div class="card-body p-4">
+          <div class="mb-3 text-primary">
+            {% include icon.html icon=site.data.contact.contact_info.mobile.icon type="material" %}
+          </div>
+          <h5 class="card-title">{{ site.data.contact.contact_info.mobile.label }}</h5>
+          <p class="card-text text-muted mb-4">{{ site.data.contact.contact_info.mobile.value }}</p>
+          <a href="{{ site.data.contact.contact_info.mobile.href }}" class="btn btn-outline-primary stretched-link">
+            Anrufen
+          </a>
+        </div>
+      </div>
+    </div>
 
-Haben Sie Fragen zu unseren Leistungen oder zu unserem Unternehmen?  
-Sie erreichen uns direkt per E‑Mail oder Telefon.    
+    <!-- Email -->
+    <div class="col">
+      <div class="card h-100 shadow-sm border-0 text-center hover-lift">
+        <div class="card-body p-4">
+          <div class="mb-3 text-primary">
+             {% include icon.html icon=site.data.contact.contact_info.email.icon type="material" %}
+          </div>
+          <h5 class="card-title">{{ site.data.contact.contact_info.email.label }}</h5>
+          <p class="card-text text-muted mb-4">{{ site.data.contact.contact_info.email.value }}</p>
+          <a href="{{ site.data.contact.contact_info.email.href }}" class="btn btn-primary stretched-link">
+            E-Mail schreiben
+          </a>
+        </div>
+      </div>
+    </div>
 
-**STC STORB Consulting**  
-📱 Mobil: +49 (0) 1590 6810 667  
-✉️ E‑Mail: [mail2storb@gmail.com](mailto:mail2storb@gmail.com)  
-🌐 Internet: [https://chstorb.github.io](https://chstorb.github.io)
+  </div>
 
-[Ansprechpartner]({{ site.baseurl }}/contact/contacts/)  
+  <!-- Links -->
+  <div class="row justify-content-center">
+      <div class="col-lg-6 text-center">
+         {% for link in site.data.contact.links %}
+            <a href="{{ link.url | relative_url }}" class="btn btn-link text-decoration-none btn-lg">
+                <span class="material-symbols-outlined align-middle me-2">arrow_forward</span>
+                {{ link.title }}
+            </a>
+         {% endfor %}
+      </div>
+  </div>
+
+</div>

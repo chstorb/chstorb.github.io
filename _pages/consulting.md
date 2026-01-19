@@ -16,17 +16,45 @@ categories: [consulting, company]
 tags: [Über uns, Consulting, Projekte, Unternehmen, Beratung, Erfolg]
 ---
 
-Seit unserer Gründung im Dezember 2000 lösen wir erfolgreich die Aufgaben unserer Kunden.  
-Die Bandbreite unserer Projekte ist groß – viele Auftraggeber begleiten wir seit den ersten Tagen und arbeiten langfristig mit ihnen zusammen.  
+<div class="container">
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-9 text-center">
+      <div class="mb-3">
+        <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill px-3 py-2 fs-6">
+          {{ site.data.consulting.intro.badge }}
+        </span>
+      </div>
+      <h2 class="display-6 fw-bold mb-3">{{ site.data.consulting.intro.headline }}</h2>
+      <p class="lead text-muted">
+        {{ site.data.consulting.intro.text }}
+      </p>
+    </div>
+  </div>
 
-Wir beraten sowohl **Großunternehmen** als auch **mittelständische und kleinere Betriebe**:  
-- In komplexen Umfeldern liefern wir schnell belastbare Ergebnisse.  
-- Bei kleineren Unternehmen achten wir besonders auf einen raschen Return on Investment.  
-- Unternehmen unterschiedlicher Größen profitieren vom gegenseitigen Erfahrungsaustausch.  
-
-Als erfahrener Partner sind wir für alle Beratungs‑ und Serviceaufgaben rund um Ihr Unternehmen etabliert.  
-Die **Nachhaltigkeit unserer Projekterfolge** bildet die Basis für langjährige, vertrauensvolle Kundenbeziehungen.  
-
-Unsere Arbeitsweise ist leistungs‑ und zielorientiert, stets angepasst an den sich wandelnden Beratungsbedarf.  
-Der kontinuierliche Erfahrungsaustausch mit unseren Kunden schafft eine solide Grundlage für die erfolgreiche Umsetzung unserer Projekte.  
-
+  <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+    {% for feature in site.data.consulting.features %}
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body text-center p-4">
+            <div class="text-primary mb-3">
+              {% include icon.html icon=feature.icon type=feature.type %}
+            </div>
+            <h3 class="h5 card-title fw-bold mb-3">{{ feature.title }}</h3>
+            <p class="card-text text-muted">
+              {{ feature.description }}
+            </p>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  
+  <div class="row justify-content-center">
+    <div class="col-lg-8 text-center">
+      <p>
+        Als erfahrener Partner sind wir für alle Beratungs- und Serviceaufgaben rund um Ihr Unternehmen etabliert.
+        Der kontinuierliche Erfahrungsaustausch mit unseren Kunden schafft eine solide Grundlage für die erfolgreiche Umsetzung unserer Projekte.
+      </p>
+    </div>
+  </div>
+</div>

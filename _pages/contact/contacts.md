@@ -16,59 +16,113 @@ categories: [contact, consulting, profile]
 tags: [Ansprechpartner, Consulting, Organisation, Controlling, IT, Karriere]
 ---
 
-Eine fundierte kaufmännische und betriebswirtschaftliche Ausbildung sowie langjährige praktische Berufserfahrung bilden die Basis unseres Geschäfts.  
-Methoden mit Augenmaß einzusetzen, das Know‑how unserer Kunden einzubinden und Umsetzungshürden abzubauen sind zentrale Elemente unseres Erfolges.  
-So erzielen wir bestmögliche Ergebnisse bei effizientem Ressourceneinsatz. Partnerschaft, Wertschätzung, Verbindlichkeit und Vertrauen prägen unseren Umgang mit Kunden und Kollegen.  
+<div class="container">
+  
+  <div class="row g-5">
+    <!-- Left Column: Profile & Philosophy -->
+    <div class="col-lg-5">
+      <div class="sticky-lg-top" style="top: 2rem; z-index: 1;">
+        <!-- Profile Card -->
+        <div class="card border-0 shadow-sm bg-body-tertiary mb-4">
+          <div class="card-body p-4 text-center">
+             <div class="mb-3 mx-auto d-flex align-items-center justify-content-center bg-primary text-white rounded-circle" style="width: 80px; height: 80px; font-size: 2.5rem;">
+                CS
+             </div>
+             <h1 class="h3 fw-bold mb-1">{{ site.data.contacts.profile.name }}</h1>
+             <p class="text-primary fw-medium mb-3">{{ site.data.contacts.profile.role }}</p>
+             
+             <hr class="my-4 opacity-10">
 
----
+             <div class="text-start">
+               <h6 class="text-uppercase text-muted small fw-bold mb-3">Qualifikation</h6>
+               <ul class="list-unstyled mb-4">
+                 {% for qual in site.data.contacts.qualifications %}
+                   <li class="d-flex align-items-center mb-2">
+                     <span class="material-symbols-outlined text-success me-2 fs-6">check_circle</span>
+                     {{ qual }}
+                   </li>
+                 {% endfor %}
+               </ul>
 
-**Christian Storb**  
-Inhaber von STC STORB Consulting  
+               <h6 class="text-uppercase text-muted small fw-bold mb-3">Schwerpunkte</h6>
+               <div class="d-flex flex-wrap gap-2">
+                 {% for focus in site.data.contacts.focus_areas %}
+                   <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill fw-normal px-3 py-2">
+                     {{ focus }}
+                   </span>
+                 {% endfor %}
+               </div>
+             </div>
+          </div>
+        </div>
 
-**Qualifikation**  
-- Diplom‑Betriebswirt (FH)  
-- Industriekaufmann  
+        <!-- Philosophy -->
+        <div class="card border-0 shadow-sm">
+           <div class="card-body p-4">
+              <h5 class="card-title fw-bold mb-3">Unsere Philosophie</h5>
+              {% for para in site.data.contacts.profile.philosophy %}
+                <p class="text-muted small mb-3 last-mb-0">{{ para }}</p>
+              {% endfor %}
+           </div>
+        </div>
+      </div>
+    </div>
 
-**Tätigkeitsschwerpunkte**  
-- Organisation  
-- Datenverarbeitung  
-- Rechnungswesen / Controlling  
+    <!-- Right Column: Career Timeline -->
+    <div class="col-lg-7">
+      <h2 class="h4 border-bottom pb-3 mb-4">Beruflicher Werdegang</h2>
+      
+      <div class="timeline">
+        {% for item in site.data.contacts.career %}
+          <div class="timeline-item position-relative ps-4 pb-5 last-pb-0">
+             <!-- Dot -->
+             <div class="position-absolute start-0 top-0 translate-middle-x bg-primary rounded-circle border border-4 border-body" style="width: 16px; height: 16px; margin-top: 0.4rem;"></div>
+             <!-- Content -->
+             <div class="card border-0 shadow-sm h-100">
+               <div class="card-body p-4">
+                 <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
+                    <h3 class="h5 fw-bold mb-0">{{ item.role }}</h3>
+                    <span class="badge bg-secondary-subtle text-body-secondary">{{ item.year }}</span>
+                 </div>
+                 <div class="mb-3">
+                   {% if item.link %}
+                     <a href="{{ item.link }}" target="_blank" rel="noopener" class="text-decoration-none fw-medium d-inline-flex align-items-center">
+                       {{ item.company }}
+                       <span class="material-symbols-outlined fs-6 ms-1">open_in_new</span>
+                     </a>
+                   {% else %}
+                     <span class="fw-medium text-body">{{ item.company }}</span>
+                   {% endif %}
+                 </div>
 
----
+                 {% if item.details %}
+                    <p class="small text-muted mb-2">
+                      <span class="material-symbols-outlined fs-6 align-text-bottom me-1">domain</span>
+                      {{ item.details.industry }}
+                    </p>
+                    {% if item.details.description %}
+                      <p class="card-text mt-3">{{ item.details.description }}</p>
+                    {% endif %}
+                 {% endif %}
+               </div>
+             </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
 
-## Beruflicher Werdegang
+</div>
 
-### 2000  
-Gründung von storb / Consulting  
-
-### 1999 – 2000  
-**Systemberater**  
-rola Security Solutions ([rola.com](http://www.rola.com))  
-Branche: IT‑Dienste, privat, 11–50 Mitarbeiter  
-Entwicklung von Polizeiapplikationen: Feinkonzeption, Entwicklung und Test von Vorgangsbearbeitungssystemen im Rahmen von Großprojekten.  
-
-### 1996 – 1999  
-**Organisationsprogrammierer**  
-Roller GmbH & Co. KG ([roller.de](http://www.roller.de))  
-Branche: Möbel, privat, 1001–5000 Mitarbeiter  
-Projekt zur Verbesserung der Warenwirtschaft, Projektleitung Bilddatenbank, Anwendungsentwicklung.  
-
-### 1994 – 1996  
-**Controller**  
-Dr. Otto Suwelack Nachf. GmbH & Co. KG ([suwelack.de](http://www.suwelack.de))  
-Branche: Lebensmittel, privat, 201–500 Mitarbeiter  
-
-### 1993  
-**Werksstudent**  
-BOG Siemens‑Nixdorf Informationssysteme GmbH ([bog.de](http://www.bog.de))  
-Branche: IT‑Dienste, privat, 201–500 Mitarbeiter  
-
-### 1990 – 1991  
-**Fachberater**  
-BOG Siemens‑Nixdorf Informationssysteme GmbH ([bog.de](http://www.bog.de))  
-Branche: IT‑Dienste, privat, 51–200 Mitarbeiter  
-
-### 1989  
-**Kaufmännischer Angestellter**  
-M Rump Industriewerbung GmbH ([rump-werbung.de](http://www.rump-werbung.de))  
-Branche: Marketing & Werbung, privat, 1–10 Mitarbeiter  
+<style>
+.timeline {
+  border-left: 2px solid var(--bs-border-color);
+  margin-left: 0.5rem;
+}
+.last-mb-0:last-child {
+  margin-bottom: 0 !important;
+}
+.last-pb-0:last-child {
+  padding-bottom: 0 !important;
+}
+</style>

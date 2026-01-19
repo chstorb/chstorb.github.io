@@ -16,46 +16,63 @@ categories: [references, projects, consulting]
 tags: [Projekte, Referenzen, Consulting, IT, E-Government, Industrie]
 ---
 
-## A2LL
-„Arbeitslosengeld 2, Leistungen zum Lebensunterhalt“ – das größte webgestützte Transaktionssystem Deutschlands.  
-- Bis zu 40.000 gleichzeitige Nutzer, ca. 800.000 Buchungen pro Tag  
-- Eine der größten E‑Government‑Lösungen Europas  
-- Grundlage für die Umsetzung der Hartz‑IV‑Reform (2005)  
-- Elektronische Erfassung, Auszahlung, Versicherungsanmeldung und Beitragsabführung für Langzeitarbeitslose  
+<div class="container">
+  <!-- Intro -->
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-10 text-center">
+      <h1 class="display-5 fw-bold mb-4">{{ site.data.featured_projects.intro.headline }}</h1>
+      <p class="lead text-muted col-lg-8 mx-auto">
+        {{ site.data.featured_projects.intro.text }}
+      </p>
+    </div>
+  </div>
 
-## ABIT Kredit
-Leistungsfähige Softwarelösung für den gesamten Kreditprozess:  
-- Kreditantrags- und Kreditsachbearbeitung für alle Engagementgrößen und Institutsgruppen  
-- Zentraler und dezentraler Einsatz möglich  
-- Hohe Flexibilität bei Konfiguration von Kreditprodukten, Sicherheiten und Geschäftsprozessen  
+  <!-- Project Grid -->
+  <div class="row row-cols-1 row-cols-lg-2 g-4 mb-5">
+    {% for project in site.data.featured_projects.projects %}
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-header bg-transparent border-0 d-flex align-items-center gap-3 pt-4 px-4">
+             <div class="p-3 bg-primary-subtle text-primary rounded-3">
+                {% include icon.html icon=project.icon type=project.type %}
+             </div>
+             <div>
+               <h2 class="h5 fw-bold mb-1">{{ project.title }}</h2>
+               <p class="mb-0 text-muted small text-uppercase">{{ project.subtitle }}</p>
+             </div>
+          </div>
+          <div class="card-body px-4 pb-4">
+            <p class="card-text mb-4">{{ project.description }}</p>
+            
+            {% if project.highlights %}
+              <ul class="list-unstyled mb-0 bg-body-tertiary p-3 rounded-3">
+                {% for highlight in project.highlights %}
+                  <li class="d-flex align-items-start gap-2 mb-2 last-mb-0">
+                    <span class="material-symbols-outlined fs-6 mt-1 text-primary">arrow_right</span>
+                    <span class="small">{{ highlight }}</span>
+                  </li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
 
-## ARTEMIS
-High‑Speed‑Analyse‑Werkzeug für W‑CDMA (UMTS Trace Tool).  
+  <!-- Back Link -->
+  <div class="row justify-content-center text-center">
+    <div class="col-12">
+      <a href="{{ '/references/references/' | relative_url }}" class="btn btn-link text-decoration-none">
+        <span class="material-symbols-outlined align-middle me-1">arrow_back</span>
+        Zurück zur Übersicht
+      </a>
+    </div>
+  </div>
+</div>
 
-## CASQ‑it APQP
-Advanced Product Quality Planning (APQP) – Projektmanagement nach ISO/TS 16949:  
-- Strukturierte Projektverfolgung mit Checklisten  
-- Kompakte Statusreports für jederzeitige Übersicht  
-
-## POLADIS‑neu
-Polizeiliches Anwenderorientiertes Dezentrales InformationsSystem für Rheinland‑Pfalz:  
-- Vorgangsbearbeitungssystem für alle Dienststellen  
-- Schnittstellen zur Justiz und zur Polizeilichen Kriminalstatistik (PKS)  
-- Elektronischer Vorgangsaustausch zwischen Polizeidienststellen  
-- Integrierte Schnittstelle zum Landesfahndungssystem POLIS  
-
-## proKOM
-Informationsverarbeitungssystem für die Datenredaktion der T‑Com:  
-- Erfassung, Austausch und Nutzung von Teilnehmerdaten  
-
-## X‑Pact®
-Metallurgische Prozessmodelle für die Stahlwerksautomation:  
-- Energie‑ und Materialmanagement abgestimmt auf Schmelzverhalten  
-- Mess‑, Steuerungs‑ und Regeltechnik für effiziente Prozesse  
-- Berechnungen zu Energieeinsatz, Einsatzstoffen und Legierungen  
-- Ergebnisse: Kostenreduktion, Produktivitätssteigerung, Qualitätssicherung  
-
-Level‑2 Stahlwerks‑Computer‑System:  
-- Einsatzstoff‑ und Legierungsmittelberechnung  
-- Massen‑ und Energiebilanzen  
-- Prozessverlauf und Sollwertvorgaben für die Steuerung  
+<style>
+.last-mb-0:last-child {
+  margin-bottom: 0 !important;
+}
+</style>

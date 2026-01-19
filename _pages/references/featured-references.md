@@ -16,22 +16,56 @@ categories: [references, testimonials, consulting]
 tags: [Referenzen, Projekte, Consulting, Bewertungen, Testimonials]
 ---
 
-## Multithreading-Servermodule mit VC++ und Oracle (10/2004 – 01/2005)  
-**Referenz:** Entwicklungskoordinator Kredit, ABIT AG, 16.02.2005  
+<div class="container">
+  <!-- Intro -->
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-10 text-center">
+      <h1 class="display-5 fw-bold mb-4">{{ site.data.featured_references.intro.headline }}</h1>
+      <p class="lead text-muted col-lg-8 mx-auto">
+        {{ site.data.featured_references.intro.text }}
+      </p>
+    </div>
+  </div>
 
-> „Der Consultant ist ein innovativer, flexibler Mitarbeiter, der sich sehr schnell in neue Sachgebiete einarbeitet. Seine außergewöhnliche Einsatzbereitschaft unterstützte unseren engen Projektrahmen. Fundierte VC++-Kenntnisse und fachlicher Background waren überdurchschnittlich. Wir haben ihn als kommunikativen Mitarbeiter kennengelernt, der sich durch seine persönliche Art gut ins Team eingefunden hat.“
+  <!-- Testimonials -->
+  <div class="row g-4 mb-5">
+    {% for ref in site.data.featured_references.references %}
+      <div class="col-12">
+        <div class="card h-100 shadow-sm border-0 bg-body-tertiary">
+          <div class="card-body p-4 p-lg-5">
+            <div class="d-flex flex-column flex-lg-row align-items-start gap-4">
+              <!-- Icon -->
+              <div class="flex-shrink-0 text-primary opacity-25">
+                <span class="material-symbols-outlined display-3">format_quote</span>
+              </div>
+              
+              <!-- Content -->
+              <div class="flex-grow-1">
+                <figure class="mb-0">
+                  <blockquote class="blockquote mb-4">
+                    <p class="fs-5 fst-italic lh-lg">"{{ ref.quote }}"</p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer mb-0 fs-6 text-body-secondary mt-3">
+                    <strong class="text-body fw-bold d-block mb-1">{{ ref.role }}</strong>
+                    <span class="d-block text-muted mb-2">Projekt: {{ ref.title }}</span>
+                    <cite title="Source Title" class="small text-muted border-top pt-2 d-inline-block">{{ ref.date }}</cite>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
 
-## OOA, Microsoft Visual Studio, Rational Rose, MFC-Anwendung (12/2000 – 02/2002)  
-**Referenz:** Geschäftsführer IT-Dienstleistungsunternehmen (>350 MA), 15.03.2002  
-
-> „Der Consultant verfügt über umfassende Fachkenntnisse in objektorientierter Software-Technologie und setzt diese sicher und zielgerichtet ein. Dank seiner schnellen Auffassungsgabe durchdrang er auch komplexe Situationen vollständig. Sein analytisches Denkvermögen führte stets zu zutreffenden Urteilen. Er identifizierte sich voll mit seinen Aufgaben, arbeitete über die geregelte Zeit hinaus und übernahm Verantwortung. Auch unter schwierigsten Bedingungen erzielte er hervorragende Ergebnisse. Wir waren mit seinen Leistungen jederzeit außerordentlich zufrieden.“
-
-## Anwendungsentwickler für Client-Server-Systeme (10/1999 – 12/2000)  
-**Referenz:** Geschäftsführer, Hard- und Softwarefirma, 31.12.2000  
-
-> „Aufgrund seiner überdurchschnittlichen Einsatzbereitschaft hatte der Consultant maßgeblichen Anteil an der termingerechten Fertigstellung verschiedener Projekte. Wir lernten ihn als qualifizierten, engagierten und absolut zuverlässigen Mitarbeiter kennen. Alle Aufgaben erledigte er selbstständig und gewissenhaft stets zu unserer vollsten Zufriedenheit. Sein vorbildliches Auftreten und seine Fachkenntnisse sicherten ihm die Wertschätzung von Vorgesetzten, Mitarbeitern und Kunden.“
-
-## Warenwirtschaft, Projektleitung Bilddatenbank (07/1996 – 09/1999)  
-**Referenz:** Personalleiter, großer Möbelanbieter in Europa (>3.000 MA), 21.02.2005  
-
-> „Wir beurteilen den Consultant als kreativ, vielseitig, engagiert, flexibel, belastbar und einsatzbereit. Er überzeugte durch Kommunikations- und Informationsverhalten, Serviceorientierung, Fachwissen und Organisationskenntnisse. Seine teamorientierte Arbeitsweise führte stets zu Ergebnissen von höchster Qualität. Der Consultant war integer, loyal, ehrlich, fleißig und pünktlich – sein Verhalten gegenüber Vorgesetzten, Mitarbeitern und externen Personen war jederzeit einwandfrei.“
+  <!-- Back Link -->
+  <div class="row justify-content-center text-center">
+    <div class="col-12">
+      <a href="{{ '/references/references/' | relative_url }}" class="btn btn-link text-decoration-none">
+        <span class="material-symbols-outlined align-middle me-1">arrow_back</span>
+        Zurück zur Übersicht
+      </a>
+    </div>
+  </div>
+</div>
