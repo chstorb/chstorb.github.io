@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
+
 Sitemap: https://chstorb.github.io/sitemap.xml
