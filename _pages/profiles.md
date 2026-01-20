@@ -30,7 +30,7 @@ tags: [Profile, Consulting, Social Media, Musik, Projekte]
   <div class="row mb-4">
     <div class="col-lg-8">
       <p class="lead">
-        STC STORB Consulting ist auf verschiedenen Plattformen vertreten. <br>
+        STORB Consulting ist auf verschiedenen Plattformen vertreten. <br>
         Hier finden Sie eine Übersicht unserer Profile, Projekte und Netzwerke.
       </p>
     </div>

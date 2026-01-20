@@ -1,5 +1,5 @@
 intro:
-  text: "STC unterstützt Ihr Projekt bei Kunden und Geschäftspartnern vor Ort über den gesamten Lebenszyklus."
+  text: "STORB Consulting unterstützt Ihr Projekt bei Kunden und Geschäftspartnern vor Ort über den gesamten Lebenszyklus."
 
 lifecycle:
   - title: "Planung"
@@ -15,7 +15,7 @@ lifecycle:
     icon: "settings"
     type: "material"
 
-benefits_intro: "Warum STC?"
+benefits_intro: "Warum STORB Consulting?"
 benefits:
   - title: "Know-how Transfer"
     description: "Der Aufbau eigenen Spezialwissens ist oft zu aufwendig und langwierig. Wir bringen die Expertise direkt mit."

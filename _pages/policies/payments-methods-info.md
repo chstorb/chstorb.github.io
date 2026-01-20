@@ -43,4 +43,4 @@ Weitere Informationen zur Verarbeitung Ihrer Daten finden Sie in den Datenschutz
 
 * [Datenschutzerklärung von PayPal](https://www.paypal.com/de/webapps/mpp/ua/privacy-full).
 
-*Diese Zahlungsinformationen gelten für alle Dienste und Online‑Auftritte von STC STORB Consulting.*
+*Diese Zahlungsinformationen gelten für alle Dienste und Online‑Auftritte von STORB Consulting.*

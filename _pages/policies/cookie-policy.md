@@ -18,7 +18,7 @@ tags: [Cookie-Richtlinie, Datenschutz, Consulting, IT, Rechtssicherheit]
 
 **Letzte Aktualisierung:** 19. Oktober 2025  
 
-Diese Cookie-Richtlinie erläutert, wie **STC STORB Consulting** („wir“, „uns“, „unser“) Cookies und ähnliche Technologien auf unserer Website [`https://chstorb.github.io`](https://chstorb.github.io) verwendet.
+Diese Cookie-Richtlinie erläutert, wie **STORB Consulting** („wir“, „uns“, „unser“) Cookies und ähnliche Technologien auf unserer Website [`https://chstorb.github.io`](https://chstorb.github.io) verwendet.
 
 ## Was sind Cookies?
 Cookies sind kleine Textdateien, die von Websites auf Ihrem Gerät gespeichert werden. Sie verbessern die Benutzererfahrung, ermöglichen Funktionen und liefern statistische Informationen.
@@ -45,12 +45,12 @@ Bitte beachten Sie: Dies kann die Funktionalität unserer Website einschränken.
 ## Kontakt
 Bei Fragen zur Verwendung von Cookies oder zum Datenschutz wenden Sie sich bitte an:
 
-**STC STORB Consulting**  
+**STORB Consulting**  
 Christian Storb  
 Humboldtweg 3  
 D-48301 Nottuln  
 
-📱 Telefon: +49 1590 6810 667  
+📱 Telefon: +49 (0) 1590 6810 667  
 ✉️ E-Mail: [mail2storb@gmail.com](mailto:mail2storb@gmail.com)
 
-*Diese Cookie-Richtlinie gilt für alle Online-Auftritte von STC STORB Consulting.*
+*Diese Cookie-Richtlinie gilt für alle Online-Auftritte von STORB Consulting.*

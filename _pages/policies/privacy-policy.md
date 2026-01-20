@@ -18,10 +18,10 @@ tags: [Datenschutz, Privacy Policy, Consulting, Rechtssicherheit, Cookies]
 
 **Letzte Aktualisierung:** 31. Oktober 2024  
 
-Diese Datenschutzrichtlinie beschreibt, wie **STC STORB Consulting** („wir“, „uns“, „unser“) personenbezogene Daten sammelt, verwendet und weitergibt, wenn Sie unsere Website besuchen, unsere Dienste nutzen oder mit uns kommunizieren.
+Diese Datenschutzrichtlinie beschreibt, wie **STORB Consulting** („wir“, „uns“, „unser“) personenbezogene Daten sammelt, verwendet und weitergibt, wenn Sie unsere Website besuchen, unsere Dienste nutzen oder mit uns kommunizieren.
 
 ## Verantwortlicher
-**STC STORB Consulting**  
+**STORB Consulting**  
 Christian Storb  
 Humboldtweg 3  
 D‑48301 Nottuln  
@@ -102,12 +102,12 @@ Alternativ können Sie Ihre lokale Datenschutzbehörde kontaktieren.
 Daten können außerhalb Europas verarbeitet werden. Wir nutzen Standardvertragsklauseln oder gleichwertige Mechanismen, sofern kein angemessenes Schutzniveau festgestellt wurde.
 
 ## Kontakt
-**STC STORB Consulting**  
+**STORB Consulting**  
 Christian Storb  
 Humboldtweg 3  
 D‑48301 Nottuln  
 
-📱 Telefon: +49 1590 6810 667  
+📱 Telefon: +49 (0) 1590 6810 667  
 ✉️ E‑Mail: [mail2storb@gmail.com](mailto:mail2storb@gmail.com)  
 
-*Diese Datenschutzerklärung gilt für alle Dienste und Online‑Auftritte von STC STORB Consulting.*
+*Diese Datenschutzerklärung gilt für alle Dienste und Online‑Auftritte von STORB Consulting.*

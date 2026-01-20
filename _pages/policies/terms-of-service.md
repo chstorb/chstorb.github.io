@@ -17,8 +17,8 @@ tags: [AGB, Terms of Service, Consulting, Recht, Online-Shop]
 ---
 
 ## Übersicht
-Diese Website wird von **STC STORB Consulting** betrieben.  
-Die Begriffe „wir“, „uns“ und „unser(e)“ beziehen sich auf STC STORB Consulting.  
+Diese Website wird von **STORB Consulting** betrieben.  
+Die Begriffe „wir“, „uns“ und „unser(e)“ beziehen sich auf STORB Consulting.  
 Mit dem Besuch unserer Website oder dem Kauf unserer Produkte („Dienst“) erklären Sie sich mit diesen Allgemeinen Geschäftsbedingungen („AGB“) einverstanden.  
 
 Die AGB gelten für alle Nutzer der Website – Besucher, Anbieter, Kunden, Händler und Inhaltsautoren.  
@@ -182,4 +182,4 @@ Die fortgesetzte Nutzung unserer Website oder Services nach Veröffentlichung gi
 Fragen zu diesen AGB richten Sie bitte an:  
 ✉️ [mail2storb@gmail.com](mailto:mail2storb@gmail.com)  
 
-*Diese Allgemeinen Geschäftsbedingungen gelten für alle Dienste und Online‑Auftritte von STC STORB Consulting.*  
+*Diese Allgemeinen Geschäftsbedingungen gelten für alle Dienste und Online‑Auftritte von STORB Consulting.*  

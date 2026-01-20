@@ -71,4 +71,4 @@ Rücksendungen bitte an:
 - Für Artikel über 75 € empfehlen wir einen Versanddienst mit Sendungsverfolgung oder eine Versandversicherung.  
 - Wir können den Erhalt einer Rücksendung ohne Sendungsverfolgung nicht garantieren.  
 
-*Diese Rückgabebedingungen gelten für alle Dienste und Online‑Auftritte von STC STORB Consulting.*
+*Diese Rückgabebedingungen gelten für alle Dienste und Online‑Auftritte von STORB Consulting.*

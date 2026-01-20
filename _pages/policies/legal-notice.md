@@ -16,7 +16,7 @@ categories: [policies, legal, consulting]
 tags: [Impressum, Recht, Consulting, Kleinunternehmer, Datenschutz]
 ---
 
-**STC STORB Consulting**  
+**STORB Consulting**  
 Christian Storb  
 Humboldtweg 3  
 D‑48301 Nottuln  
@@ -49,9 +49,9 @@ Sie dürfen weder für Handelszwecke oder zur Weitergabe kopiert, noch veränder
 Einige Seiten enthalten Bilder, die dem Urheberrecht Dritter unterliegen.  
 Die Gewährleistungsbedingungen entnehmen Sie bitte unseren Allgemeinen Geschäftsbedingungen.  
 
-**STC STORB Consulting** übernimmt keine Verantwortung für Inhalte externer Seiten, die über Links erreichbar sind.  
+**STORB Consulting** übernimmt keine Verantwortung für Inhalte externer Seiten, die über Links erreichbar sind.  
 
 ## Bildnachweise
 - [Pixabay](https://pixabay.com)  
 
-*Dieses Impressum gilt für alle Dienste und Online‑Auftritte von STC STORB Consulting.*
+*Dieses Impressum gilt für alle Dienste und Online‑Auftritte von STORB Consulting.*
