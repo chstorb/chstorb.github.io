@@ -1,10 +1,13 @@
 ---
 layout: default
 title: "Impressum"
-description: "Rechtliche Angaben zu STC STORB Consulting – Verantwortlich: Christian Storb, Nottuln."
+description: "Rechtliche Angaben zu STORB Consulting – Verantwortlich: Christian Storb, Nottuln."
 permalink: /policies/legal-notice/
 author: "Christian Storb"
-
+locale: "de_DE"
+seo: 
+  type: WebPage
+  
 # Open Graph / Twitter Cards
 image: "/assets/images/consulting/og-image.png"
 twitter:
@@ -16,10 +19,13 @@ categories: [policies, legal, consulting]
 tags: [Impressum, Recht, Consulting, Kleinunternehmer, Datenschutz]
 ---
 
-**STORB Consulting**  
-Christian Storb  
-Humboldtweg 3  
-D‑48301 Nottuln  
+<address itemscope itemtype="https://schema.org/PostalAddress">
+  <strong>STORB Consulting</strong><br>
+  <span itemprop="name">Christian Storb</span><br>
+  <span itemprop="streetAddress">Humboldtweg 3</span><br>
+  <span itemprop="postalCode">48301</span> <span itemprop="addressLocality">Nottuln</span><br>
+  <span itemprop="addressCountry">Deutschland</span>
+</address>
 
 **Vertreten durch:**  
 Christian Storb  

@@ -1,9 +1,12 @@
 ---
 layout: default
 title: "Unternehmensgrundsätze"
-description: "Die Unternehmensgrundsätze von STC STORB Consulting – Unabhängigkeit, Objektivität, Kompetenz und Vertraulichkeit."
+description: "Die Unternehmensgrundsätze von STORB Consulting – Unabhängigkeit, Objektivität, Kompetenz und Vertraulichkeit."
 permalink: /principles/
 author: "Christian Storb"
+locale: "de_DE"
+seo: 
+  type: WebPage
 
 # Open Graph / Twitter Cards
 image: "/assets/images/consulting/og-image.png"

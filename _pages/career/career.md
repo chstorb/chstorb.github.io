@@ -1,10 +1,13 @@
 ---
 layout: default
-title: "Ihre Karriere bei STC STORB Consulting"
+title: "Ihre Karriere bei STORB Consulting"
 description: "Gestalten Sie mit uns modulare, rechtssichere Weblösungen – wir suchen erfahrene Persönlichkeiten mit Unternehmergeist."
 permalink: /career/career/
 author: "Christian Storb"
-
+locale: "de_DE"
+seo: 
+  type: WebPage
+  
 # Open Graph / Twitter Cards
 image: "/assets/images/consulting/og-image.png"
 twitter:

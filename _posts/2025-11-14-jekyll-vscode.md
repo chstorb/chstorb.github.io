@@ -5,6 +5,10 @@ date: 2025-11-14 19:23:35 +0100
 categories: [Jekyll, Ruby, GitHub Pages, VS Code]
 description: "Eine Anleitung zur effizienten Erstellung von Jekyll-Websites mit Visual Studio Code."
 image: /assets/images/consulting/blog/jekyll+vscode.png
+author: "Christian Storb"
+locale: "de_DE"
+seo: 
+  type: WebPage
 ---
 
 Jekyll ist ein statischer Site-Generator, der besonders gut mit GitHub Pages harmoniert.  

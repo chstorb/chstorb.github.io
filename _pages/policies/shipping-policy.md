@@ -1,10 +1,13 @@
 ---
 layout: default
 title: "Versandbedingungen"
-description: "Informationen zu Versand, Lieferzeiten und Kosten bei STC STORB Consulting."
+description: "Informationen zu Versand, Lieferzeiten und Kosten bei STORB Consulting."
 permalink: /policies/shipping-policy/
 author: "Christian Storb"
-
+locale: "de_DE"
+seo: 
+  type: WebPage
+  
 # Open Graph / Twitter Cards
 image: "/assets/images/consulting/og-image.png"
 twitter:

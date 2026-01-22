@@ -1,10 +1,13 @@
 ---
 layout: default
 title: "Allgemeine Geschäftsbedingungen (AGB)"
-description: "Allgemeine Geschäftsbedingungen von STC STORB Consulting – rechtliche Grundlagen für Nutzung und Einkauf."
+description: "Allgemeine Geschäftsbedingungen von STORB Consulting – rechtliche Grundlagen für Nutzung und Einkauf."
 permalink: /policies/terms-of-service/
 author: "Christian Storb"
-
+locale: "de_DE"
+seo: 
+  type: WebPage
+  
 # Open Graph / Twitter Cards
 image: "/assets/images/consulting/og-image.png"
 twitter:
@@ -138,14 +141,14 @@ Die Nutzung erfolgt ausdrücklich auf eigenes Risiko.
 Alle Services und Produkte werden „wie besehen“ und „wie verfügbar“ bereitgestellt – ohne Zusicherungen oder Gewährleistungen, weder ausdrücklich noch stillschweigend, einschließlich stillschweigender Garantien zur Handelsüblichkeit, Qualität, Eignung für bestimmte Zwecke, Rechtsmängelfreiheit oder Nichtverletzung von Rechten Dritter.  
 
 **Haftungsbeschränkung:**  
-STC STORB Consulting sowie deren Mitarbeiter, Vertreter, Lieferanten oder Lizenzgeber haften nicht für direkte, indirekte, zufällige, strafende oder Folgeschäden jeglicher Art – einschließlich entgangener Gewinne, Einnahmen, Einsparungen, Datenverlust oder Wiederbeschaffungskosten.  
+STORB Consulting sowie deren Mitarbeiter, Vertreter, Lieferanten oder Lizenzgeber haften nicht für direkte, indirekte, zufällige, strafende oder Folgeschäden jeglicher Art – einschließlich entgangener Gewinne, Einnahmen, Einsparungen, Datenverlust oder Wiederbeschaffungskosten.  
 Dies gilt unabhängig von Rechtsgrundlagen (Vertrag, unerlaubte Handlung, Fahrlässigkeit, verschuldensunabhängige Haftung).  
 
 Da bestimmte Länder oder Jurisdiktionen den Ausschluss oder die Beschränkung von Haftung nicht zulassen, gilt unsere Haftung dort nur im gesetzlich maximal zulässigen Umfang.  
 
 ## Abschnitt 14 – Entschädigung
 
-Sie verpflichten sich, **STC STORB Consulting** sowie unsere verbundenen Unternehmen, Partner, Führungskräfte, Vertreter, Auftragnehmer, Lizenzgeber, Dienstleister, Subunternehmer, Lieferanten, Praktikanten und Mitarbeiter von sämtlichen Ansprüchen oder Forderungen Dritter – einschließlich angemessener Anwaltskosten – freizustellen, zu verteidigen und schadlos zu halten, sofern diese aus Ihrer Verletzung dieser AGB, der darin genannten Dokumente, geltender Gesetze oder Rechte Dritter entstehen.  
+Sie verpflichten sich, **STORB Consulting** sowie unsere verbundenen Unternehmen, Partner, Führungskräfte, Vertreter, Auftragnehmer, Lizenzgeber, Dienstleister, Subunternehmer, Lieferanten, Praktikanten und Mitarbeiter von sämtlichen Ansprüchen oder Forderungen Dritter – einschließlich angemessener Anwaltskosten – freizustellen, zu verteidigen und schadlos zu halten, sofern diese aus Ihrer Verletzung dieser AGB, der darin genannten Dokumente, geltender Gesetze oder Rechte Dritter entstehen.  
 
 ## Abschnitt 15 – Salvatorische Klausel
 

@@ -1,9 +1,12 @@
 ---
 layout: default
 title: "Referenzen"
-description: "Referenzen und ausgewählte Projekte von STC STORB Consulting – Expertise aus verschiedenen Branchen."
+description: "Referenzen und ausgewählte Projekte von STORB Consulting – Expertise aus verschiedenen Branchen."
 permalink: /references/references/
 author: "Christian Storb"
+locale: "de_DE"
+seo: 
+  type: WebPage
 
 # Open Graph / Twitter Cards
 image: "/assets/images/consulting/og-image.png"

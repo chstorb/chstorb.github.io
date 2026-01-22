@@ -1,10 +1,13 @@
 ---
 layout: default
 title: "Ansprechpartner"
-description: "Christian Storb – Inhaber von STC STORB Consulting. Fundierte Ausbildung, langjährige Erfahrung und klare Schwerpunkte."
+description: "Christian Storb – Inhaber von STORB Consulting. Fundierte Ausbildung, langjährige Erfahrung und klare Schwerpunkte."
 permalink: /contact/contacts/
 author: "Christian Storb"
-
+locale: "de_DE"
+seo: 
+  type: WebPage
+  
 # Open Graph / Twitter Cards
 image: "/assets/images/consulting/og-image.png"
 twitter:

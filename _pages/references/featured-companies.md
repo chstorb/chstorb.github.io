@@ -1,9 +1,12 @@
 ---
 layout: default
 title: "Ausgewählte Unternehmen"
-description: "Referenzen: Ausgewählte Unternehmen, mit denen STC STORB Consulting zusammengearbeitet hat."
+description: "Referenzen: Ausgewählte Unternehmen, mit denen STORB Consulting zusammengearbeitet hat."
 permalink: /references/featured-companies/
 author: "Christian Storb"
+locale: "de_DE"
+seo: 
+  type: WebPage
 
 # Open Graph / Twitter Cards
 image: "/assets/images/consulting/og-image.png"

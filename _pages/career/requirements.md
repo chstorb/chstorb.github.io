@@ -1,10 +1,13 @@
 ---
 layout: default
 title: "Anforderungen"
-description: "Ihre Erfahrung und Fachkompetenz sind gefragt – werden Sie Teil von STC STORB Consulting."
+description: "Ihre Erfahrung und Fachkompetenz sind gefragt – werden Sie Teil von STORB Consulting."
 permalink: /career/requirements/
 author: "Christian Storb"
-
+locale: "de_DE"
+seo: 
+  type: WebPage
+  
 # Open Graph / Twitter Cards
 image: "/assets/images/consulting/og-image.png"
 twitter:

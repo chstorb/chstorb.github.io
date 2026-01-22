@@ -19,30 +19,39 @@
 # in the templates via {{ site.myvariable }}.
 
 title: STORB Consulting
+tagline: "STORB Consulting unterstützt Ihr Projekt bei Kunden und Geschäftspartnern vor Ort."
 email: mail2storb@gmail.com
 description: >-
-  STC STORB Consulting unterstützt Ihr Projekt bei Kunden und Geschäftspartnern vor Ort – von der Planung über die Entwicklung bis zur Markteinführung und den Betrieb.
+  STORB Consulting unterstützt Ihr Projekt bei Kunden und Geschäftspartnern vor Ort – von der Planung über die Entwicklung bis zur Markteinführung und den Betrieb.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://chstorb.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 author:
   name: Christian Storb
   email: mail2storb@gmail.com
-
-# Social Media / SEO
-twitter_username: "ChristianStorb"   # without @
-github_username: "chstorb"
-
-# Default image for Open Graph & Twitter Cards
+  url: https://chstorb.github.io
+facebook:
+  publisher: https://www.facebook.com/storb.christian/
+github:
+  username: chstorb
+twitter:
+  card: summary
+  username: ChristianStorb   # without @
+logo: "/assets/images/consulting/og-image.png"
 image: "/assets/images/consulting/og-image.png"
+social:
+  name: Christian Storb
+  links:
+    - https://twitter.com/ChristianStorb
+    - https://www.facebook.com/storb.christian
+    - https://www.linkedin.com/in/ChristianStorb
+    - https://github.com/chstorb
+locale: "de_DE"
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-
-url: "https://chstorb.github.io"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

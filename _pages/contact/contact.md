@@ -1,10 +1,13 @@
 ---
 layout: default
 title: "Kontakt"
-description: "Nehmen Sie Kontakt mit STC STORB Consulting auf – wir beraten Sie von der Planung bis zum Betrieb."
+description: "Nehmen Sie Kontakt mit STORB Consulting auf – wir beraten Sie von der Planung bis zum Betrieb."
 permalink: /contact/contact/
 author: "Christian Storb"
-
+locale: "de_DE"
+seo: 
+  type: WebPage
+  
 # Open Graph / Twitter Cards
 image: "/assets/images/consulting/og-image.png"
 twitter:

@@ -1,10 +1,13 @@
 ---
 layout: default
 title: "Zahlungsarten"
-description: "Informationen zu Zahlungsarten bei STC STORB Consulting."
+description: "Informationen zu Zahlungsarten bei STORB Consulting."
 permalink: /policies/payments-methods-info/
 author: "Christian Storb"
-
+locale: "de_DE"
+seo: 
+  type: WebPage
+  
 # Open Graph / Twitter Cards
 image: "/assets/images/consulting/og-image.png"
 twitter:

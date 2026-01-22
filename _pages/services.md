@@ -1,9 +1,12 @@
 ---
 layout: default
 title: "Unsere Services"
-description: "STC STORB Consulting – Projektunterstützung von der Planung über die Entwicklung bis zur Markteinführung und den Betrieb."
+description: "STORB Consulting – Projektunterstützung von der Planung über die Entwicklung bis zur Markteinführung und den Betrieb."
 permalink: /services/
 author: "Christian Storb"
+locale: "de_DE"
+seo: 
+  type: WebPage
 
 # Open Graph / Twitter Cards
 image: "/assets/images/consulting/og-image.png"

@@ -1,10 +1,13 @@
 ---
 layout: default
 title: "Rücksendungen"
-description: "Informationen zu Rückgabe, Umtausch und Erstattung bei STC STORB Consulting."
+description: "Informationen zu Rückgabe, Umtausch und Erstattung bei STORB Consulting."
 permalink: /policies/withdrawal-policy/
 author: "Christian Storb"
-
+locale: "de_DE"
+seo: 
+  type: WebPage
+  
 # Open Graph / Twitter Cards
 image: "/assets/images/consulting/og-image.png"
 twitter:

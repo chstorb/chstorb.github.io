@@ -1,9 +1,12 @@
 ---
 layout: default
 title: "Über uns"
-description: "STC STORB Consulting – seit 2000 unabhängige Beratung und erfolgreiche Projekte für Unternehmen jeder Größe."
+description: "STORB Consulting – seit 2000 unabhängige Beratung und erfolgreiche Projekte für Unternehmen jeder Größe."
 permalink: /consulting/
 author: "Christian Storb"
+locale: "de_DE"
+seo: 
+  type: WebPage
 
 # Open Graph / Twitter Cards
 image: "/assets/images/consulting/og-image.png"

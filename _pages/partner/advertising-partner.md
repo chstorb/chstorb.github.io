@@ -1,10 +1,13 @@
 ---
 layout: default
 title: "Werbepartner"
-description: "STC STORB Consulting arbeitet mit starken Partnern zusammen."
+description: "STORB Consulting arbeitet mit starken Partnern zusammen."
 permalink: /partner/advertising-partner/
 author: "Christian Storb"
-
+locale: "de_DE"
+seo: 
+  type: WebPage
+  
 # Open Graph / Twitter Cards
 image: "/assets/images/consulting/og-image.png"
 twitter:

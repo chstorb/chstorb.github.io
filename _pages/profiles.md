@@ -1,10 +1,13 @@
 ---
 layout: default
 title: "STC im Web"
-description: "STC STORB Consulting – Profile und Auftritte auf verschiedenen Plattformen im Web."
+description: "STORB Consulting – Profile und Auftritte auf verschiedenen Plattformen im Web."
 permalink: /profiles/
 author: "Christian Storb"
-
+locale: "de_DE"
+seo: 
+  type: WebPage
+  
 # Open Graph / Twitter Cards
 image: "/assets/images/consulting/og-image.png"
 twitter:

@@ -1,6 +1,6 @@
 profile:
   name: "Christian Storb"
-  role: "Inhaber von STC STORB Consulting"
+  role: "Inhaber von STORB Consulting"
   image: "/assets/images/consulting/christian-storb.jpg" # Placeholder path, assuming usage or generic avatar
   philosophy:
     - "Eine fundierte kaufmännische und betriebswirtschaftliche Ausbildung sowie langjährige praktische Berufserfahrung bilden die Basis unseres Geschäfts."
@@ -19,7 +19,7 @@ focus_areas:
 career:
   - year: "2000"
     role: "Gründung"
-    company: "storb / Consulting"
+    company: "STORB Consulting"
     
   - year: "1999 – 2000"
     role: "Systemberater"

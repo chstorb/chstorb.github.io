@@ -1,9 +1,12 @@
 ---
 layout: default
 title: "Ausgewählte Projekte"
-description: "Referenzen: Ausgewählte Projekte von STC STORB Consulting in IT, E-Government und Industrie."
+description: "Referenzen: Ausgewählte Projekte von STORB Consulting in IT, E-Government und Industrie."
 permalink: /references/featured-projects/
 author: "Christian Storb"
+locale: "de_DE"
+seo: 
+  type: WebPage
 
 # Open Graph / Twitter Cards
 image: "/assets/images/consulting/og-image.png"

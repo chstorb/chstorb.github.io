@@ -1,9 +1,12 @@
 ---
 layout: default
 title: "Cookie-Richtlinie"
-description: "Informationen zur Verwendung von Cookies bei STC STORB Consulting – transparent und rechtssicher."
+description: "Informationen zur Verwendung von Cookies bei STORB Consulting – transparent und rechtssicher."
 permalink: /policies/cookie-policy/
 author: "Christian Storb"
+locale: "de_DE"
+seo: 
+  type: WebPage
 
 # Open Graph / Twitter Cards
 image: "/assets/images/consulting/og-image.png"
