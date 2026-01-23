@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de" class="h-100" data-bs-theme="dark">
+<html lang="{{ site.lang }}" class="h-100" data-bs-theme="dark">
 
 <head>
   <!-- Character encoding -->
@@ -8,7 +8,8 @@
 
   <!-- SEO & Social -->
   {% seo %}
-  {% include json-ld.html %}
+  {% include schema-person.html %}
+  {% include schema-organization.html %}
   <meta name="robots" content="index, follow">
 
   <!-- Verification -->

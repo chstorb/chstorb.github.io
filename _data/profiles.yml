@@ -69,7 +69,7 @@
   description: "Vernetzen Sie sich mit uns."
   items:
     - title: "LinkedIn"
-      url: "https://www.linkedin.com/in/christian-storb-326249aa"
+      url: "https://www.linkedin.com/in/christian-storb-326249aa/"
       icon: "linkedin"
       type: "brand"
       description: "Berufliches Netzwerk."

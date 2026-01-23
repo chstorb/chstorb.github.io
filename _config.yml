@@ -25,10 +25,14 @@ description: >-
   STORB Consulting unterstützt Ihr Projekt bei Kunden und Geschäftspartnern vor Ort – von der Planung über die Entwicklung bis zur Markteinführung und den Betrieb.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://chstorb.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-author:
-  name: Christian Storb
-  email: mail2storb@gmail.com
-  url: https://chstorb.github.io
+author: 
+  name: "Christian Storb" 
+  email: "mail2storb@gmail.com" 
+  url: "https://chstorb.github.io" 
+  github: "https://github.com/chstorb" 
+  linkedin: "https://www.linkedin.com/in/christian-storb-326249aa/" 
+  twitter: "https://twitter.com/ChristianStorb" 
+  instagram: "https://www.instagram.com/storbconsulting" 
 facebook:
   publisher: https://www.facebook.com/storb.christian/
 github:
@@ -43,9 +47,11 @@ social:
   links:
     - https://twitter.com/ChristianStorb
     - https://www.facebook.com/storb.christian
-    - https://www.linkedin.com/in/ChristianStorb
+    - https://www.instagram.com/storbconsulting
+    - https://www.linkedin.com/in/christian-storb-326249aa/
     - https://github.com/chstorb
 locale: "de_DE"
+lang: "de"
 
 # Build settings
 plugins:
@@ -73,12 +79,12 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-include:
-  - pages
+#include:
+#  - pages
 
-collections:
-  pages:
-    output: true
-    permalink: /:name/
-    layout: default
+#collections:
+#  pages:
+#    output: true
+#    permalink: /:name/
+#    layout: default
 
