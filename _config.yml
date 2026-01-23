@@ -79,12 +79,9 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-#include:
-#  - pages
-
-#collections:
-#  pages:
-#    output: true
-#    permalink: /:name/
-#    layout: default
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+    layout: default
 
