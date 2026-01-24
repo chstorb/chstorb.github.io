@@ -1,39 +1,129 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="de"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://chstorb.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://chstorb.github.io/" rel="alternate" type="text/html" hreflang="de" /><updated>2026-01-24T12:49:32+00:00</updated><id>https://chstorb.github.io/feed.xml</id><title type="html">STORB Consulting</title><subtitle>STORB Consulting unterstützt Ihr Projekt bei Kunden und Geschäftspartnern vor Ort – von der Planung über die Entwicklung bis zur Markteinführung und den Betrieb.</subtitle><author><name>Christian Storb</name><email>mail2storb@gmail.com</email></author><entry><title type="html">Resiliente Anwendungen mit Polly in C#</title><link href="https://chstorb.github.io/.net/cloud-technologie/microservices/open%20source/programmierung/softwareentwicklung/2025/11/18/resiliente-anwendungen-mit-polly.html" rel="alternate" type="text/html" title="Resiliente Anwendungen mit Polly in C#" /><published>2025-11-18T00:00:00+00:00</published><updated>2025-11-18T00:00:00+00:00</updated><id>https://chstorb.github.io/.net/cloud-technologie/microservices/open%20source/programmierung/softwareentwicklung/2025/11/18/resiliente-anwendungen-mit-polly</id><content type="html" xml:base="https://chstorb.github.io/.net/cloud-technologie/microservices/open%20source/programmierung/softwareentwicklung/2025/11/18/resiliente-anwendungen-mit-polly.html"><![CDATA[<p>In der modernen Softwareentwicklung sind <strong>Fehlertoleranz</strong> und <strong>Resilienz</strong> entscheidende Faktoren für stabile Anwendungen.<br />
-<strong>Polly</strong>, eine leistungsstarke Resilience-Bibliothek für .NET, hilft Entwicklern, transiente Fehler elegant zu bewältigen und zuverlässige Systeme zu bauen.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="de"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://chstorb.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://chstorb.github.io/" rel="alternate" type="text/html" hreflang="de" /><updated>2026-01-24T14:54:49+00:00</updated><id>https://chstorb.github.io/feed.xml</id><title type="html">STORB Consulting</title><subtitle>STORB Consulting unterstützt Ihr Projekt bei Kunden und Geschäftspartnern vor Ort – von der Planung über die Entwicklung bis zur Markteinführung und den Betrieb.</subtitle><author><name>Christian Storb</name><email>mail2storb@gmail.com</email></author><entry><title type="html">Azure IoT Edge Modul mit .NET Worker Service auf dem Raspberry Pi 4: Praktische Beispiele</title><link href="https://chstorb.github.io/.net/azure%20iot/cloud-technologie/raspberry%20pi/softwareentwicklung/2025/05/17/azure-iot-edge-modul-mit-net-worker-service-auf-dem-raspberry-pi-4-praktische-beispiele.html" rel="alternate" type="text/html" title="Azure IoT Edge Modul mit .NET Worker Service auf dem Raspberry Pi 4: Praktische Beispiele" /><published>2025-05-17T12:10:43+00:00</published><updated>2025-05-17T12:10:43+00:00</updated><id>https://chstorb.github.io/.net/azure%20iot/cloud-technologie/raspberry%20pi/softwareentwicklung/2025/05/17/azure-iot-edge-modul-mit-net-worker-service-auf-dem-raspberry-pi-4-praktische-beispiele</id><content type="html" xml:base="https://chstorb.github.io/.net/azure%20iot/cloud-technologie/raspberry%20pi/softwareentwicklung/2025/05/17/azure-iot-edge-modul-mit-net-worker-service-auf-dem-raspberry-pi-4-praktische-beispiele.html"><![CDATA[<p>
+Azure IoT Edge ermöglicht es, Container-basierte Module auf Geräten wie dem Raspberry Pi 4 auszuführen. Mit .NET 6 und dem Worker Service-Template lassen sich robuste Hintergrunddienste für Edge-Szenarien entwickeln. In diesem Beitrag zeigen wir, wie ein IoT Edge Modul als Worker Service implementiert wird, das zu festgelegten Zeiten an bestimmten Wochentagen einen REST-API-Endpunkt per POST aufruft – ideal für Automatisierung und Integration von Cloud- und Edge-Workflows. Dieser Artikel konzentriert sich auf praktische Beispiele mit minimaler Erläuterung.
+</p>
 
-<h2 id="was-ist-polly">Was ist Polly?</h2>
-<p>Polly ist eine Open-Source-Bibliothek für Fehlermanagement und Resilienzstrategien in .NET-Anwendungen.<br />
-Sie ermöglicht es Entwicklern, Wiederholungen, Circuit Breakers, Timeouts, Fallbacks, Rate Limiting und andere Schutzmechanismen in ihren Code zu integrieren.</p>
+<h2 id="projekt-anlegen-und-vorbereiten">Projekt anlegen und vorbereiten</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dotnet new worker <span class="nt">-n</span> EdgeRestScheduler
+</code></pre></div></div>
+<p>
+Füge ein `Dockerfile` hinzu und aktiviere Docker-Unterstützung in Visual Studio oder per Hand.
+</p>
 
-<p>Gerade in Cloud- und Microservices-Architekturen kommt es häufig zu transienten Fehlern – vorübergehenden Problemen wie Netzwerkunterbrechungen oder überlasteten Servern.<br />
-Polly hilft dabei, diese Fehler abzufangen und intelligent zu behandeln.</p>
+<h2 id="zeitgesteuerte-rest-api-aufrufe-im-worker-service">Zeitgesteuerte REST-API-Aufrufe im Worker Service</h2>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">using</span> <span class="nn">System.Net.Http</span><span class="p">;</span>
 
-<h2 id="die-wichtigsten-resilience-strategien-mit-polly">Die wichtigsten Resilience-Strategien mit Polly</h2>
+<span class="k">public</span> <span class="k">class</span> <span class="nc">TimedRestWorker</span> <span class="p">:</span> <span class="n">BackgroundService</span>
+<span class="p">{</span>
+    <span class="k">private</span> <span class="k">readonly</span> <span class="n">ILogger</span> <span class="n">_logger</span><span class="p">;</span>
+    <span class="k">private</span> <span class="k">readonly</span> <span class="n">HttpClient</span> <span class="n">_httpClient</span> <span class="p">=</span> <span class="k">new</span><span class="p">();</span>
+    <span class="k">private</span> <span class="k">readonly</span> <span class="kt">string</span> <span class="n">_apiUrl</span> <span class="p">=</span> <span class="s">$"https://script.google.com/macros/s/</span><span class="p">{</span><span class="n">provisioningId</span><span class="p">}</span><span class="s">/exec?x-functions-key=</span><span class="p">{</span><span class="n">apiKey</span><span class="p">}</span><span class="s">"</span><span class="p">;</span>
 
-<h3 id="retry-mechanismus">Retry-Mechanismus</h3>
+    <span class="c1">// Beispiel: Mo-Fr, 08:00 und 16:00 Uhr</span>
+    <span class="k">private</span> <span class="k">readonly</span> <span class="n">Dictionary</span><span class="p">&lt;</span><span class="n">DayOfWeek</span><span class="p">,</span> <span class="n">List</span><span class="p">&gt;</span> <span class="n">_schedule</span> <span class="p">=</span> <span class="k">new</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="p">{</span> <span class="n">DayOfWeek</span><span class="p">.</span><span class="n">Monday</span><span class="p">,</span>    <span class="k">new</span><span class="p">()</span> <span class="p">{</span> <span class="k">new</span> <span class="nf">TimeSpan</span><span class="p">(</span><span class="m">8</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">),</span> <span class="k">new</span> <span class="nf">TimeSpan</span><span class="p">(</span><span class="m">16</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">)</span> <span class="p">}</span> <span class="p">},</span>
+        <span class="p">{</span> <span class="n">DayOfWeek</span><span class="p">.</span><span class="n">Tuesday</span><span class="p">,</span>   <span class="k">new</span><span class="p">()</span> <span class="p">{</span> <span class="k">new</span> <span class="nf">TimeSpan</span><span class="p">(</span><span class="m">8</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">),</span> <span class="k">new</span> <span class="nf">TimeSpan</span><span class="p">(</span><span class="m">16</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">)</span> <span class="p">}</span> <span class="p">},</span>
+        <span class="p">{</span> <span class="n">DayOfWeek</span><span class="p">.</span><span class="n">Wednesday</span><span class="p">,</span> <span class="k">new</span><span class="p">()</span> <span class="p">{</span> <span class="k">new</span> <span class="nf">TimeSpan</span><span class="p">(</span><span class="m">8</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">),</span> <span class="k">new</span> <span class="nf">TimeSpan</span><span class="p">(</span><span class="m">16</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">)</span> <span class="p">}</span> <span class="p">},</span>
+        <span class="p">{</span> <span class="n">DayOfWeek</span><span class="p">.</span><span class="n">Thursday</span><span class="p">,</span>  <span class="k">new</span><span class="p">()</span> <span class="p">{</span> <span class="k">new</span> <span class="nf">TimeSpan</span><span class="p">(</span><span class="m">8</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">),</span> <span class="k">new</span> <span class="nf">TimeSpan</span><span class="p">(</span><span class="m">16</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">)</span> <span class="p">}</span> <span class="p">},</span>
+        <span class="p">{</span> <span class="n">DayOfWeek</span><span class="p">.</span><span class="n">Friday</span><span class="p">,</span>    <span class="k">new</span><span class="p">()</span> <span class="p">{</span> <span class="k">new</span> <span class="nf">TimeSpan</span><span class="p">(</span><span class="m">8</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">),</span> <span class="k">new</span> <span class="nf">TimeSpan</span><span class="p">(</span><span class="m">16</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">)</span> <span class="p">}</span> <span class="p">}</span>
+    <span class="p">};</span>
+
+    <span class="k">protected</span> <span class="k">override</span> <span class="k">async</span> <span class="n">Task</span> <span class="nf">ExecuteAsync</span><span class="p">(</span><span class="n">CancellationToken</span> <span class="n">stoppingToken</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="kt">var</span> <span class="n">alreadyTriggered</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">HashSet</span><span class="p">();</span>
+        <span class="k">while</span> <span class="p">(!</span><span class="n">stoppingToken</span><span class="p">.</span><span class="n">IsCancellationRequested</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="kt">var</span> <span class="n">now</span> <span class="p">=</span> <span class="n">DateTime</span><span class="p">.</span><span class="n">Now</span><span class="p">;</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">_schedule</span><span class="p">.</span><span class="nf">TryGetValue</span><span class="p">(</span><span class="n">now</span><span class="p">.</span><span class="n">DayOfWeek</span><span class="p">,</span> <span class="k">out</span> <span class="kt">var</span> <span class="n">times</span><span class="p">))</span>
+            <span class="p">{</span>
+                <span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">time</span> <span class="k">in</span> <span class="n">times</span><span class="p">)</span>
+                <span class="p">{</span>
+                    <span class="kt">var</span> <span class="n">triggerKey</span> <span class="p">=</span> <span class="s">$"</span><span class="p">{</span><span class="n">now</span><span class="p">:</span><span class="n">yyyyMMdd</span><span class="p">}</span><span class="s">_</span><span class="p">{</span><span class="n">time</span><span class="p">}</span><span class="s">"</span><span class="p">;</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="n">now</span><span class="p">.</span><span class="n">TimeOfDay</span> <span class="p">&gt;=</span> <span class="n">time</span> <span class="p">&amp;&amp;</span> <span class="p">!</span><span class="n">alreadyTriggered</span><span class="p">.</span><span class="nf">Contains</span><span class="p">(</span><span class="n">triggerKey</span><span class="p">)</span> <span class="p">&amp;&amp;</span> <span class="n">now</span><span class="p">.</span><span class="n">TimeOfDay</span> <span class="p">&lt;</span><span class="n">time</span><span class="p">&gt;</span> <span class="m">0</span> <span class="p">&amp;&amp;</span> <span class="n">now</span><span class="p">.</span><span class="n">TimeOfDay</span> <span class="p">&lt;</span> <span class="n">TimeSpan</span><span class="p">.</span><span class="nf">FromHours</span><span class="p">(</span><span class="m">1</span><span class="p">))</span>
+                    <span class="n">alreadyTriggered</span><span class="p">.</span><span class="nf">Clear</span><span class="p">();</span>
+                    <span class="k">await</span> <span class="nf">CallRestApiAsync</span><span class="p">(</span><span class="n">stoppingToken</span><span class="p">);</span>
+                    <span class="k">await</span> <span class="n">Task</span><span class="p">.</span><span class="nf">Delay</span><span class="p">(</span><span class="n">TimeSpan</span><span class="p">.</span><span class="nf">FromSeconds</span><span class="p">(</span><span class="m">20</span><span class="p">),</span> <span class="n">stoppingToken</span><span class="p">);</span>
+                    <span class="n">_logger</span><span class="p">.</span><span class="nf">LogInformation</span><span class="p">(</span><span class="s">"API-Call um {0} an {1} ausgelöst."</span><span class="p">,</span> <span class="n">time</span><span class="p">,</span> <span class="n">now</span><span class="p">.</span><span class="n">DayOfWeek</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">private</span> <span class="k">async</span> <span class="n">Task</span> <span class="nf">CallRestApiAsync</span><span class="p">(</span><span class="n">CancellationToken</span> <span class="n">cancellationToken</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">try</span>
+    <span class="p">{</span>
+        <span class="kt">var</span> <span class="n">response</span> <span class="p">=</span> <span class="k">await</span> <span class="n">_httpClient</span><span class="p">.</span><span class="nf">PostAsync</span><span class="p">(</span><span class="n">_apiUrl</span><span class="p">,</span> <span class="k">null</span><span class="p">,</span> <span class="n">cancellationToken</span><span class="p">);</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="n">IsSuccessStatusCode</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">_logger</span><span class="p">.</span><span class="nf">LogInformation</span><span class="p">(</span><span class="s">"REST API erfolgreich aufgerufen."</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="k">else</span>
+        <span class="p">{</span>
+            <span class="n">_logger</span><span class="p">.</span><span class="nf">LogWarning</span><span class="p">(</span><span class="s">"REST API Fehler: {0}"</span><span class="p">,</span> <span class="n">response</span><span class="p">.</span><span class="n">StatusCode</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">ex</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">_logger</span><span class="p">.</span><span class="nf">LogError</span><span class="p">(</span><span class="s">"Fehler beim Aufruf der REST API: {0}"</span><span class="p">,</span> <span class="n">ex</span><span class="p">.</span><span class="n">Message</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="c1">// ... (restlicher Code)</span>
+</code></pre></div></div>
+
+<h2 id="konfiguration-und-deployment">Konfiguration und Deployment</h2>
+
+<ul>
+  <li>API-URL, Zeiten und Schlüssel sollten über <code class="language-plaintext highlighter-rouge">appsettings.json</code> oder Umgebungsvariablen konfigurierbar sein.</li>
+  <li>Das fertige Docker-Image kann als IoT Edge Modul auf dem Raspberry Pi 4 bereitgestellt werden.</li>
+</ul>
+
+<h2 id="fazit">Fazit</h2>
+<p>
+Mit wenigen Schritten lässt sich ein zeitgesteuertes Azure IoT Edge Modul auf Basis von .NET Worker Service realisieren. Die Lösung ist flexibel, robust und ideal für Automatisierungsaufgaben am Edge.
+</p>
+<p>
+Falls du eine **individuelle Beratung** benötigst, um die beste Lösung für dein Projekt zu finden, lass es uns wissen und kontaktiere uns noch heute: **STC ist dein Partner!**
+</p>]]></content><author><name>Christian Storb</name></author><category term=".NET" /><category term="Azure IOT" /><category term="Cloud-Technologie" /><category term="Raspberry Pi" /><category term="Softwareentwicklung" /><category term=".NET 6" /><category term="Azure IoT Edge" /><category term="BackgroundService" /><category term="C#" /><category term="Docker" /><category term="Edge Computing" /><category term="Edge Deployment" /><category term="IoT Modul" /><category term="Raspberry Pi 4" /><category term="REST API" /><category term="Worker Service" /><summary type="html"><![CDATA[Azure IoT Edge ermöglicht es, Container-basierte Module auf Geräten wie dem Raspberry Pi 4 auszuführen. Mit .NET 6 und dem Worker Service-Template lassen ...]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://chstorb.github.io/assets/images/consulting/blog/azureiotedgeundnetworker.png" /><media:content medium="image" url="https://chstorb.github.io/assets/images/consulting/blog/azureiotedgeundnetworker.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Resiliente Anwendungen mit Polly in C#</title><link href="https://chstorb.github.io/.net/cloud-technologie/open%20source/performance%20optimierung/programmierung/softwareentwicklung/2025/05/03/resiliente-anwendungen-mit-polly-in-c.html" rel="alternate" type="text/html" title="Resiliente Anwendungen mit Polly in C#" /><published>2025-05-03T11:13:00+00:00</published><updated>2025-05-03T11:13:00+00:00</updated><id>https://chstorb.github.io/.net/cloud-technologie/open%20source/performance%20optimierung/programmierung/softwareentwicklung/2025/05/03/resiliente-anwendungen-mit-polly-in-c</id><content type="html" xml:base="https://chstorb.github.io/.net/cloud-technologie/open%20source/performance%20optimierung/programmierung/softwareentwicklung/2025/05/03/resiliente-anwendungen-mit-polly-in-c.html"><![CDATA[<p>In der modernen Softwareentwicklung sind <strong>Fehlertoleranz</strong> und <strong>Resilienz</strong> entscheidende Faktoren für stabile Anwendungen. <strong>Polly</strong>, eine leistungsstarke Resilience-Bibliothek für .NET, hilft Entwicklern, <strong>transiente Fehler</strong> elegant zu bewältigen und zuverlässige Systeme zu bauen. In diesem Artikel erfährst du, wie Polly funktioniert und wie du es effektiv in deinem C#-Projekt einsetzt.</p>
+
+<h3 id="was-ist-polly"><strong>Was ist Polly?</strong></h3>
+
+<p>Polly ist eine Open-Source-Bibliothek für <strong>Fehlermanagement und Resilienzstrategien</strong> in .NET-Anwendungen. Sie ermöglicht es Entwicklern, <strong>Wiederholungen</strong>, <strong>Circuit Breakers</strong>, <strong>Timeouts</strong>, <strong>Fallbacks</strong>, <strong>Rate Limiting</strong> und andere <strong>Schutzmechanismen</strong> in ihren Code zu integrieren.</p>
+
+<p>Gerade in <strong>Cloud- und Microservices-Architekturen</strong> kommt es häufig zu <strong>transienten Fehlern</strong> – vorübergehenden Problemen wie Netzwerkunterbrechungen oder überlasteten Servern. Polly hilft dabei, diese Fehler abzufangen und intelligent zu behandeln.</p>
+
+<h3 id="die-wichtigsten-resilience-strategien-mit-polly"><strong>Die wichtigsten Resilience-Strategien mit Polly</strong></h3>
+
+<p>Polly bietet eine Vielzahl von Strategien, um die Fehlerbehandlung flexibel zu gestalten.</p>
+
+<p><strong>Retry-Mechanismus</strong></p>
+
 <div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">var</span> <span class="n">retryPolicy</span> <span class="p">=</span> <span class="n">Policy</span>
     <span class="p">.</span><span class="n">Handle</span><span class="p">&lt;</span><span class="n">HttpRequestException</span><span class="p">&gt;()</span>
     <span class="p">.</span><span class="nf">Retry</span><span class="p">(</span><span class="m">3</span><span class="p">);</span> <span class="c1">// Wiederhole die Aktion bis zu 3-mal</span>
 </code></pre></div></div>
 
-<h3 id="circuit-breaker">Circuit Breaker</h3>
+<p><strong>Circuit Breaker – Schutz vor wiederholten Fehlern</strong></p>
+
 <div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">var</span> <span class="n">circuitBreakerPolicy</span> <span class="p">=</span> <span class="n">Policy</span>
     <span class="p">.</span><span class="n">Handle</span><span class="p">&lt;</span><span class="n">Exception</span><span class="p">&gt;()</span>
     <span class="p">.</span><span class="nf">CircuitBreaker</span><span class="p">(</span><span class="m">2</span><span class="p">,</span> <span class="n">TimeSpan</span><span class="p">.</span><span class="nf">FromMinutes</span><span class="p">(</span><span class="m">1</span><span class="p">));</span> <span class="c1">// Unterbricht nach 2 Fehlern für 1 Minute</span>
 </code></pre></div></div>
 
-<h3 id="timeout">Timeout</h3>
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">var</span> <span class="n">timeoutPolicy</span> <span class="p">=</span> <span class="n">Policy</span><span class="p">.</span><span class="nf">Timeout</span><span class="p">(</span><span class="n">TimeSpan</span><span class="p">.</span><span class="nf">FromSeconds</span><span class="p">(</span><span class="m">5</span><span class="p">));</span> <span class="c1">// Abbruch nach 5 Sekunden</span>
-</code></pre></div></div>
+<p><strong>Timeout – Abbruch bei langen Wartezeiten</strong></p>
 
-<h3 id="fallback">Fallback</h3>
+<pre class="wp-block-syntaxhighlighter-code">var timeoutPolicy = Policy.Timeout(TimeSpan.FromSeconds(5)); // Abbruch nach 5 Sekunden
+</pre>
+
+<p><strong>Fallback – Alternative Lösung bei Fehlern</strong></p>
+
 <div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">var</span> <span class="n">fallbackPolicy</span> <span class="p">=</span> <span class="n">Policy</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;</span>
     <span class="p">.</span><span class="n">Handle</span><span class="p">&lt;</span><span class="n">Exception</span><span class="p">&gt;()</span>
     <span class="p">.</span><span class="nf">Fallback</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="s">"Standardantwort bei Fehlern"</span><span class="p">);</span>
 </code></pre></div></div>
 
-<p>Warum Polly für deine Projekte nutzen?
-Durch die Integration von Polly in deine C#-Anwendungen kannst du:</p>
+<h3 id="warum-polly-für-deine-projekte-nutzen"><strong>Warum Polly für deine Projekte nutzen?</strong></h3>
+
+<p>Durch die Integration von Polly in deine C#-Anwendungen kannst du:</p>
 
 <p>✅ <strong>Fehlertoleranz verbessern</strong></p>
 
@@ -47,154 +137,626 @@ Durch die Integration von Polly in deine C#-Anwendungen kannst du:</p>
 
 <p>Ob für Webanwendungen, Microservices oder API-Clients – Polly ist ein unverzichtbares Werkzeug für Entwickler, die ihre Software widerstandsfähiger machen möchten.</p>
 
-<h3 id="fazit">Fazit</h3>
+<h3 id="fazit"><strong>Fazit</strong></h3>
+
 <p>Polly ist eine unverzichtbare Bibliothek für alle, die robuste und fehlertolerante Anwendungen entwickeln. Mit ihren vielseitigen Resilience-Strategien hilft sie, Software zuverlässiger zu machen und die Auswirkungen von transienten Fehlern zu minimieren.</p>
 
+<p>Falls du eine <strong>individuelle Beratung</strong> benötigst, um die beste Lösung für dein Projekt zu finden, lass es uns wissen und kontaktiere uns noch heute: <strong>STC ist dein Partner!</strong></p>
+
 <h3 id="referenzen">Referenzen</h3>
+
 <ul>
   <li><a href="https://github.com/App-vNext/Polly">Polly</a></li>
-</ul>]]></content><author><name>STORB Consulting</name></author><category term=".NET" /><category term="Cloud-Technologie" /><category term="Microservices" /><category term="Open Source" /><category term="Programmierung" /><category term="Softwareentwicklung" /><category term="C#" /><category term="Polly" /><category term="Resilienz" /><category term="Fehlertoleranz" /><category term="Retry" /><category term="Circuit Breaker" /><category term="Timeout" /><category term="Fallback" /><category term="Rate Limiting" /><summary type="html"><![CDATA[Erfahren Sie, wie Sie mit der Polly-Bibliothek in C# robuste und fehlertolerante Anwendungen entwickeln.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://chstorb.github.io/assets/images/consulting/blog/polly.webp" /><media:content medium="image" url="https://chstorb.github.io/assets/images/consulting/blog/polly.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Eine Website mit Jekyll und VS Code erstellen</title><link href="https://chstorb.github.io/jekyll/ruby/github%20pages/vs%20code/2025/11/14/jekyll-vscode.html" rel="alternate" type="text/html" title="Eine Website mit Jekyll und VS Code erstellen" /><published>2025-11-14T18:23:35+00:00</published><updated>2025-11-14T18:23:35+00:00</updated><id>https://chstorb.github.io/jekyll/ruby/github%20pages/vs%20code/2025/11/14/jekyll-vscode</id><content type="html" xml:base="https://chstorb.github.io/jekyll/ruby/github%20pages/vs%20code/2025/11/14/jekyll-vscode.html"><![CDATA[<p>Jekyll ist ein statischer Site-Generator, der besonders gut mit GitHub Pages harmoniert.<br />
-In diesem Artikel zeige ich allgemein, wie man eine eigene Website mit Jekyll erstellt und dabei <strong>Visual Studio Code (VS Code)</strong> als Entwicklungsumgebung nutzt.</p>
+</ul>]]></content><author><name>Christian Storb</name></author><category term=".NET" /><category term="Cloud-Technologie" /><category term="Open Source" /><category term="Performance Optimierung" /><category term="Programmierung" /><category term="Softwareentwicklung" /><category term="API-Fehler" /><category term="C#" /><category term="Circuit Breaker" /><category term="Cloud-Architektur" /><category term="Fallback" /><category term="Fehlertoleranz" /><category term="Microservices" /><category term="Netzwerkstabilität" /><category term="Polly" /><category term="Rate Limiting" /><category term="Resilienz" /><category term="Retry" /><category term="Robuste Anwendungen" /><category term="Timeout" /><summary type="html"><![CDATA[In der modernen Softwareentwicklung sind Fehlertoleranz und Resilienz entscheidende Faktoren für stabile Anwendungen. Polly, eine leistungsstarke Resilience-B...]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://chstorb.github.io/assets/images/consulting/blog/polly.webp" /><media:content medium="image" url="https://chstorb.github.io/assets/images/consulting/blog/polly.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Semantischen Versionierung</title><link href="https://chstorb.github.io/open%20source/programmierung/softwareentwicklung/systemadministration/technologie/2025/05/01/semantischen-versionierung.html" rel="alternate" type="text/html" title="Semantischen Versionierung" /><published>2025-05-01T11:22:00+00:00</published><updated>2025-05-01T11:22:00+00:00</updated><id>https://chstorb.github.io/open%20source/programmierung/softwareentwicklung/systemadministration/technologie/2025/05/01/semantischen-versionierung</id><content type="html" xml:base="https://chstorb.github.io/open%20source/programmierung/softwareentwicklung/systemadministration/technologie/2025/05/01/semantischen-versionierung.html"><![CDATA[<h2 id="änderung-der-versionsnummer-nach-einem-bugfix">Änderung der Versionsnummer nach einem Bugfix</h2>
 
-<h2 id="-voraussetzungen">🚀 Voraussetzungen</h2>
+<p>Die Änderung der Versionsnummer nach einem Bugfix folgt in der Regel dem Prinzip der <a href="https://semver.org">Semantischen Versionierung (SemVer)</a>. Dabei wird die Versionsnummer in der Form <strong>MAJOR.MINOR.PATCH</strong> dargestellt.</p>
 
-<p>Um mit Jekyll zu starten, benötigt man:</p>
+<p>Da ein Bugfix eine <strong>rückwärtskompatible Fehlerbehebung</strong> ist und keine neuen Funktionen oder breaking changes einführt, sollte üblicherweise <strong>nur die PATCH-Nummer erhöht werden</strong>. Beispiel:</p>
+
 <ul>
-  <li><strong>Ruby</strong> (unter Windows am besten mit RubyInstaller inkl. MSYS2).</li>
-  <li><strong>Bundler</strong> und <strong>Jekyll</strong>, installiert über <code class="language-plaintext highlighter-rouge">gem install bundler jekyll</code>.</li>
-  <li><strong>VS Code</strong> als IDE mit Extensions wie <em>Ruby LSP</em> und <em>Jekyll Helper</em>.</li>
-  <li>Ein GitHub Repository, z. B. <code class="language-plaintext highlighter-rouge">username.github.io</code>.</li>
+  <li>
+    <p>Vor dem Bugfix: <code class="language-plaintext highlighter-rouge">1.2.3</code></p>
+  </li>
+  <li>
+    <p>Nach dem Bugfix: <code class="language-plaintext highlighter-rouge">1.2.4</code></p>
+  </li>
 </ul>
 
-<h2 id="-projekt-starten">📂 Projekt starten</h2>
+<p>Falls das Bugfix jedoch mit einer <strong>wesentlichen Änderung oder einem notwendigen Anpassungsschritt für die Nutzer</strong> einhergeht, könnte auch die MINOR-Version erhöht werden (<code class="language-plaintext highlighter-rouge">1.3.0</code>).</p>
 
-<p>Ein neues Projekt wird mit folgendem Befehl angelegt:</p>
+<p>Viele Projekte verwenden außerdem zusätzliche <strong>Build- und Release-Tags</strong> (<code class="language-plaintext highlighter-rouge">1.2.4-beta</code>, <code class="language-plaintext highlighter-rouge">1.2.4+20250501</code>), um den genauen Zustand einer Version zu kennzeichnen.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll new mysite
+<h2 id="referenzen">Referenzen</h2>
+<ul>
+  <li><a href="https://semver.org">Semantische Versionierung</a></li>
+</ul>]]></content><author><name>Christian Storb</name></author><category term="Open Source" /><category term="Programmierung" /><category term="Softwareentwicklung" /><category term="Systemadministration" /><category term="Technologie" /><category term="API-Kompatibilität" /><category term="Bugfix" /><category term="Code-Qualität" /><category term="Entwicklung" /><category term="Git" /><category term="GitHub" /><category term="Major-Update" /><category term="Minor-Update" /><category term="Patch-Update" /><category term="Release-Management" /><category term="Semantische Versionierung" /><category term="SemVer" /><category term="Software-Wartung" /><category term="Versionierungsstrategie" /><category term="Versionsverwaltung" /><summary type="html"><![CDATA[Änderung der Versionsnummer nach einem Bugfix Die Änderung der Versionsnummer nach einem Bugfix folgt in der Regel dem Prinzip der . Dabei wird die Versionsnu...]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://chstorb.github.io/assets/images/consulting/blog/softwareentwicklerin.webp" /><media:content medium="image" url="https://chstorb.github.io/assets/images/consulting/blog/softwareentwicklerin.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Google Sheets vs. Azure Table Storage: Welche Lösung passt zu deinem Projekt?</title><link href="https://chstorb.github.io/.net/automatisierung/cloud-technologie/datenverwaltung/performance%20optimierung/programmierung/softwareentwicklung/technologie/2025/05/01/google-sheets-vs-azure-table-storage-welche-losung-passt-zu-deinem-projekt.html" rel="alternate" type="text/html" title="Google Sheets vs. Azure Table Storage: Welche Lösung passt zu deinem Projekt?" /><published>2025-05-01T09:57:02+00:00</published><updated>2025-05-01T09:57:02+00:00</updated><id>https://chstorb.github.io/.net/automatisierung/cloud-technologie/datenverwaltung/performance%20optimierung/programmierung/softwareentwicklung/technologie/2025/05/01/google-sheets-vs-azure-table-storage-welche-losung-passt-zu-deinem-projekt</id><content type="html" xml:base="https://chstorb.github.io/.net/automatisierung/cloud-technologie/datenverwaltung/performance%20optimierung/programmierung/softwareentwicklung/technologie/2025/05/01/google-sheets-vs-azure-table-storage-welche-losung-passt-zu-deinem-projekt.html"><![CDATA[<p>Die Wahl der richtigen Datenverwaltungslösung kann entscheidend für die Effizienz und Skalierbarkeit eines Projekts sein. Während <strong>Azure Table Storage</strong> eine leistungsstarke NoSQL-Datenbank für große Datenmengen bietet, kann <strong>Google Sheets mit der SheetsService API</strong> eine flexible Alternative für kleinere Anwendungen sein. Doch welche Lösung passt besser zu deinem Anwendungsfall?</p>
+
+<h2 id="google-sheets-mit-der-sheetsservice-api"><strong>Google Sheets mit der SheetsService API</strong></h2>
+
+<p>Google Sheets ist eine weit verbreitete Tabellenkalkulationslösung, die mit der <strong>SheetsService API</strong> automatisiert und in Anwendungen integriert werden kann. Diese Lösung eignet sich besonders für:</p>
+
+<p>✅ <strong>Kollaborative Datenverwaltung</strong> – Mehrere Nutzer können gleichzeitig Daten bearbeiten.</p>
+
+<p>✅ <strong>Einfache Automatisierung</strong> – Skripte und Apps können Daten abrufen und aktualisieren.</p>
+
+<p>✅ <strong>Kostenlose Nutzung</strong> – Keine direkten Kosten für die API-Nutzung innerhalb der Limits.</p>
+
+<h3 id="vorteile-von-google-sheets"><strong>Vorteile von Google Sheets</strong></h3>
+
+<ul>
+  <li>
+    <p><strong>Intuitive Bedienung</strong> – Keine komplexe Datenbankverwaltung erforderlich.</p>
+  </li>
+  <li>
+    <p><strong>Echtzeit-Kollaboration</strong> – Ideal für Teams und kleine Unternehmen.</p>
+  </li>
+  <li>
+    <p><strong>Integration mit anderen Google-Diensten</strong> – Verknüpfung mit Google Drive, Apps Script und mehr.</p>
+  </li>
+</ul>
+
+<h3 id="nachteile-von-google-sheets"><strong>Nachteile von Google Sheets</strong></h3>
+
+<ul>
+  <li>
+    <p><strong>Begrenzte Skalierbarkeit</strong> – Nicht geeignet für große Datenmengen oder hohe Performance-Anforderungen.</p>
+  </li>
+  <li>
+    <p><strong>Langsame API-Abfragen</strong> – Bei vielen Datensätzen kann die Performance leiden.</p>
+  </li>
+</ul>
+
+<h2 id="azure-table-storage"><strong>Azure Table Storage</strong></h2>
+
+<p>Azure Table Storage ist eine <strong>NoSQL-Datenbank</strong>, die für skalierbare Anwendungen entwickelt wurde. Sie eignet sich besonders für:</p>
+
+<p>✅ <strong>Große Datenmengen</strong> – Speicherung von Millionen von Datensätzen.</p>
+
+<p>✅ <strong>Hohe Performance</strong> – Schnelle Abfragen und Skalierbarkeit.</p>
+
+<p>✅ <strong>Cloud-native Anwendungen</strong> – Integration mit Azure-Diensten wie Functions und Logic Apps.</p>
+
+<h3 id="vorteile-von-azure-table-storage"><strong>Vorteile von Azure Table Storage</strong></h3>
+
+<ul>
+  <li>
+    <p><strong>Optimiert für große Datenmengen</strong> – Ideal für Anwendungen mit hohem Datenaufkommen.</p>
+  </li>
+  <li>
+    <p><strong>Geringe Kosten</strong> – Preisgestaltung basierend auf Speicher- und Transaktionsvolumen.</p>
+  </li>
+  <li>
+    <p><strong>Schnelle API-Zugriffe</strong> – Hohe Performance für datenintensive Anwendungen.</p>
+  </li>
+</ul>
+
+<h3 id="nachteile-von-azure-table-storage"><strong>Nachteile von Azure Table Storage</strong></h3>
+
+<ul>
+  <li>
+    <p><strong>Komplexere Verwaltung</strong> – Erfordert Kenntnisse in Cloud-Datenbanken.</p>
+  </li>
+  <li>
+    <p><strong>Keine direkte Tabellenbearbeitung</strong> – Kein UI wie bei Google Sheets.</p>
+  </li>
+</ul>
+
+<h2 id="vergleich-zwischen-google-sheets-und-azure-table-storage"><strong>Vergleich zwischen Google Sheets und Azure Table Storage</strong></h2>
+
+<p>Hier eine direkte Gegenüberstellung der beiden Lösungen:</p>
+
+<figure class="wp-block-table">
+<table class="has-fixed-layout">
+<thead><tr><th>Merkmal</th><th>Google Sheets (SheetsService API)</th><th>Azure Table Storage</th></tr></thead>
+<tbody><tr><td>Datenstruktur</td><td>Tabellen mit flexiblen Spalten</td><td>NoSQL-Wide-Column-Store</td></tr><tr><td>Skalierbarkeit</td><td>Begrenzte Skalierbarkeit, für kleine Datenmengen geeignet</td><td>Hoch skalierbar für große Datenmengen</td></tr><tr><td>Zugriff</td><td>Über Web-Interface oder API</td><td>API-Zugriff über Azure SDKs</td></tr><tr><td>Kosten</td><td>Kostenlos bis zu bestimmten Limits</td><td>Kosten abhängig von Speicher- und Transaktionsvolumen</td></tr><tr><td>Performance</td><td>Langsamer bei großen Datenmengen</td><td>Optimiert für schnelle Abfragen</td></tr><tr><td>Einsatzbereich</td><td>Kollaborative Tabellen, einfache Datenverwaltung</td><td>Speicherung von strukturierten Daten für Anwendungen</td></tr>
+</tbody></table></figure>
+
+<h3 id="wann-ist-google-sheets-eine-alternative"><strong>Wann ist Google Sheets eine Alternative?</strong></h3>
+
+<p>✅ <strong>Für kleine Datenmengen</strong> – Wenn du nur eine begrenzte Anzahl von Datensätzen verwalten musst.</p>
+
+<p>✅ <strong>Für kollaborative Nutzung</strong> – Wenn mehrere Nutzer gleichzeitig Daten bearbeiten sollen.</p>
+
+<p>✅ <strong>Für einfache Automatisierungen</strong> – Wenn du Skripte oder Apps erstellst, die mit Tabellen arbeiten.</p>
+
+<h3 id="wann-ist-azure-table-storage-besser"><strong>Wann ist Azure Table Storage besser?</strong></h3>
+
+<p>✅ <strong>Für große Datenmengen</strong> – Wenn du Millionen von Datensätzen speichern und abrufen musst.</p>
+
+<p>✅ <strong>Für hohe Performance</strong> – Wenn du schnelle Abfragen und Skalierbarkeit benötigst.</p>
+
+<p>✅ <strong>Für Cloud-Anwendungen</strong> – Wenn du eine robuste Backend-Datenbank für Apps brauchst.</p>
+
+<p>Falls du eine individuelle Beratung benötigst, um die beste Lösung für dein Projekt zu finden, lass es uns wissen und kontaktiere uns noch heute: STC ist dein Partner!</p>]]></content><author><name>Christian Storb</name></author><category term=".NET" /><category term="Automatisierung" /><category term="Cloud-Technologie" /><category term="Datenverwaltung" /><category term="Performance Optimierung" /><category term="Programmierung" /><category term="Softwareentwicklung" /><category term="Technologie" /><category term="API" /><category term="Azure Table Storage" /><category term="Cloud Speicher" /><category term="Cloud-Technologie" /><category term="Datenbanken" /><category term="Datenintegration" /><category term="Datenmanagement" /><category term="Datenverwaltung" /><category term="Google Cloud" /><category term="Google Sheets" /><category term="Kollaboration" /><category term="Kosten" /><category term="Microsoft Azure" /><category term="NoSQL" /><category term="Performance" /><category term="SheetsService API" /><category term="Skalierbarkeit" /><category term="Vergleich" /><category term="Webentwicklung" /><summary type="html"><![CDATA[Die Wahl der richtigen Datenverwaltungslösung kann entscheidend für die Effizienz und Skalierbarkeit eines Projekts sein. Während Azure Table Storage eine lei...]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://chstorb.github.io/assets/images/consulting/blog/googlesheetsvsazuretablestorage.webp" /><media:content medium="image" url="https://chstorb.github.io/assets/images/consulting/blog/googlesheetsvsazuretablestorage.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">E-Mail-Dienste in Blazor: Kontobestätigung und Passwortwiederherstellung mit Twilio SendGrid</title><link href="https://chstorb.github.io/.net/azure/blazor/programmierung/softwareentwicklung/visual%20studio/webentwicklung/2025/04/06/405.html" rel="alternate" type="text/html" title="E-Mail-Dienste in Blazor: Kontobestätigung und Passwortwiederherstellung mit Twilio SendGrid" /><published>2025-04-06T12:20:52+00:00</published><updated>2025-04-06T12:20:52+00:00</updated><id>https://chstorb.github.io/.net/azure/blazor/programmierung/softwareentwicklung/visual%20studio/webentwicklung/2025/04/06/405</id><content type="html" xml:base="https://chstorb.github.io/.net/azure/blazor/programmierung/softwareentwicklung/visual%20studio/webentwicklung/2025/04/06/405.html"><![CDATA[<p>Im Folgenden wird erläutert, wie Sie in Visual Studio 2022 Funktionen für Kontobestätigung und Kennwortwiederherstellung in einer ASP.NET Core Blazor-Webanwendung implementieren können. Dabei nutzen wir Twilio SendGrid mit dem SendGrid NuGet Package. Das Package kann sowohl über den dotnet-Befehl als auch den NuGet Package Manager in Visual Studio installiert werden.</p>
+
+<p><strong>Dieser Artikel konzentriert sich auf praktische Beispiele mit minimaler Erläuterung.</strong></p>
+
+<h2 id="1-einrichtung-von-twilio-sendgrid">1. Einrichtung von Twilio SendGrid</h2>
+
+<ul>
+  <li>Installieren Sie das <code class="language-plaintext highlighter-rouge">SendGrid</code>-NuGet-Paket mit einem der folgenden Befehle:<br /><br /></li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dotnet add package SendGrid
 </code></pre></div></div>
 
-<p>Wenn man bereits ein Repository hat, kann man die Struktur auch direkt dort erzeugen:</p>
+<p>oder</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll new <span class="nb">.</span> <span class="nt">--force</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Install-Package SendGrid
+</code></pre></div></div>
+<p><br /><br /></p>
+<ul>
+  <li>Erstellen Sie einen API-Schlüssel in Ihrem Twilio SendGrid-Konto und speichern Sie ihn sicher. Der API-Schlüssel sollte während der Entwicklung als geheimer Benutzerschlüssel gespeichert werden. Für produktive Umgebungen empfiehlt es sich jedoch, den Schlüssel sicherer zu verwalten. Dies kann in Azure App Service durch Verwendung von Umgebungsvariablen oder durch Speicherung in der Azure App Configuration erfolgen. Eine noch sicherere Option ist die Verwendung von Azure Key Vault, um sensible Daten wie API-Schlüssel zu schützen und den Zugriff darauf besser zu kontrollieren.</li>
+</ul>
+
+<h2 id="2-konfiguration-der-authmessagesenderoptions">2. Konfiguration der AuthMessageSenderOptions</h2>
+
+<p>Fügen Sie eine die Klasse <code class="language-plaintext highlighter-rouge">AuthMessageSenderOptions</code> hinzu. Die Klasse wird verwendet, um den API-Schlüssel aus der Konfiguration auszulesen.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">namespace</span> <span class="nn">BlazorWebApp</span><span class="p">;</span>
+<span class="k">public</span> <span class="k">class</span> <span class="nc">AuthMessageSenderOptions</span> <span class="p">{</span>
+    <span class="k">public</span> <span class="kt">string</span><span class="p">?</span> <span class="n">SendGridKey</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">}</span>
 </code></pre></div></div>
 
-<p>Zur lokalen Vorschau startet man den eingebauten Server:</p>
+<h2 id="3-registrierung-der-konfiguration-in-programcs">3. Registrierung der Konfiguration in <code class="language-plaintext highlighter-rouge">Program.cs</code></h2>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">exec </span>jekyll serve
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">builder</span><span class="p">.</span><span class="n">Services</span><span class="p">.</span><span class="n">Configure</span><span class="p">&lt;</span><span class="n">AuthMessageSenderOptions</span><span class="p">&gt;(</span><span class="n">builder</span><span class="p">.</span><span class="n">Configuration</span><span class="p">);</span>
 </code></pre></div></div>
 
-<p>Die Seite läuft dann unter http://localhost:4000.</p>
+<h2 id="4-implementierung-von-iemailsender">4. Implementierung von <code class="language-plaintext highlighter-rouge">IEmailSender</code></h2>
 
-<h2 id="-arbeiten-mit-vs-code">🛠 Arbeiten mit VS Code</h2>
+<p>Erstellen Sie eine Klasse <code class="language-plaintext highlighter-rouge">EmailSender</code>, um das Senden von E-Mails zu implementieren:</p>
 
-<p>Die typische Struktur einer Jekyll-Seite umfasst:</p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">namespace</span> <span class="nn">BlazorWebApp.Components.Account</span><span class="p">;</span>
 
-<p>_posts/ für Blogartikel</p>
+<span class="k">using</span> <span class="nn">BlazorWebApp.Data</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.AspNetCore.Identity</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Extensions.Options</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">SendGrid</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">SendGrid.Helpers.Mail</span><span class="p">;</span>
 
-<p>pages/ für statische Seiten</p>
+<span class="k">internal</span> <span class="k">class</span> <span class="nc">EmailSender</span><span class="p">(</span><span class="n">IOptions</span><span class="p">&lt;</span><span class="n">AuthMessageSenderOptions</span><span class="p">&gt;</span> <span class="n">optionsAccessor</span><span class="p">,</span>
+    <span class="n">ILogger</span><span class="p">&lt;</span><span class="n">EmailSender</span><span class="p">&gt;</span> <span class="n">logger</span><span class="p">)</span> <span class="p">:</span> <span class="n">IEmailSender</span><span class="p">&lt;</span><span class="n">ApplicationUser</span><span class="p">&gt;</span>
+<span class="p">{</span>
+    <span class="k">private</span> <span class="k">readonly</span> <span class="n">ILogger</span> <span class="n">logger</span> <span class="p">=</span> <span class="n">logger</span><span class="p">;</span>
 
-<p>_layouts/ für Layouts</p>
+    <span class="k">public</span> <span class="n">AuthMessageSenderOptions</span> <span class="n">Options</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="p">}</span> <span class="p">=</span> <span class="n">optionsAccessor</span><span class="p">.</span><span class="n">Value</span><span class="p">;</span>
 
-<p>_includes/ für wiederverwendbare Teile (z. B. Navigation, Footer)</p>
+    <span class="k">public</span> <span class="n">Task</span> <span class="nf">SendConfirmationLinkAsync</span><span class="p">(</span><span class="n">ApplicationUser</span> <span class="n">user</span><span class="p">,</span> <span class="kt">string</span> <span class="n">email</span><span class="p">,</span> <span class="kt">string</span> <span class="n">confirmationLink</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nf">SendEmailAsync</span><span class="p">(</span><span class="n">email</span><span class="p">,</span>
+            <span class="s">"Confirm your email"</span><span class="p">,</span>
+            <span class="s">$"Please confirm your account by opening the following link in your browser '</span><span class="p">{</span><span class="n">confirmationLink</span><span class="p">}</span><span class="s">'."</span><span class="p">,</span>
+            <span class="s">$"&lt;html lang=\"en\"&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;Please confirm your account by &lt;a href='</span><span class="p">{</span><span class="n">confirmationLink</span><span class="p">}</span><span class="s">'&gt;clicking here&lt;/a&gt;.&lt;/body&gt;&lt;/html&gt;"</span><span class="p">);</span>
 
-<p>assets/ für CSS und Bilder</p>
+    <span class="k">public</span> <span class="n">Task</span> <span class="nf">SendPasswordResetLinkAsync</span><span class="p">(</span><span class="n">ApplicationUser</span> <span class="n">user</span><span class="p">,</span> <span class="kt">string</span> <span class="n">email</span><span class="p">,</span> <span class="kt">string</span> <span class="n">resetLink</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nf">SendEmailAsync</span><span class="p">(</span><span class="n">email</span><span class="p">,</span>
+            <span class="s">"Reset your password"</span><span class="p">,</span>
+            <span class="s">$"Please reset your password by opening the following link in your browser '</span><span class="p">{</span><span class="n">resetLink</span><span class="p">}</span><span class="s">'."</span><span class="p">,</span>
+            <span class="s">"&lt;html lang=\"en\"&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;Please reset your password by "</span> <span class="p">+</span> <span class="s">$"&lt;a href='</span><span class="p">{</span><span class="n">resetLink</span><span class="p">}</span><span class="s">'&gt;clicking here&lt;/a&gt;.&lt;/body&gt;&lt;/html&gt;"</span><span class="p">);</span>
 
-<p>Hilfreiche Extensions in VS Code:</p>
+    <span class="k">public</span> <span class="n">Task</span> <span class="nf">SendPasswordResetCodeAsync</span><span class="p">(</span><span class="n">ApplicationUser</span> <span class="n">user</span><span class="p">,</span> <span class="kt">string</span> <span class="n">email</span><span class="p">,</span> <span class="kt">string</span> <span class="n">resetCode</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nf">SendEmailAsync</span><span class="p">(</span><span class="n">email</span><span class="p">,</span>
+            <span class="s">"Reset your password"</span><span class="p">,</span>
+            <span class="s">$"Please reset your password using the following code: </span><span class="p">{</span><span class="n">resetCode</span><span class="p">}</span><span class="s">"</span><span class="p">,</span>
+            <span class="s">"&lt;html lang=\"en\"&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;Please reset your password "</span> <span class="p">+</span> <span class="s">$"using the following code:&lt;br&gt;</span><span class="p">{</span><span class="n">resetCode</span><span class="p">}</span><span class="s">&lt;/body&gt;&lt;/html&gt;"</span><span class="p">);</span>
 
-<p>Ruby LSP für Syntax und Autocomplete.</p>
+    <span class="k">public</span> <span class="k">async</span> <span class="n">Task</span> <span class="nf">SendEmailAsync</span><span class="p">(</span><span class="kt">string</span> <span class="n">toEmail</span><span class="p">,</span> <span class="kt">string</span> <span class="n">subject</span><span class="p">,</span> <span class="kt">string</span> <span class="n">plainTextContent</span><span class="p">,</span> <span class="kt">string</span> <span class="n">htmlContent</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="kt">string</span><span class="p">.</span><span class="nf">IsNullOrEmpty</span><span class="p">(</span><span class="n">Options</span><span class="p">.</span><span class="n">EmailAuthKey</span><span class="p">))</span>
+        <span class="p">{</span>
+            <span class="k">throw</span> <span class="k">new</span> <span class="nf">Exception</span><span class="p">(</span><span class="s">"Null EmailAuthKey"</span><span class="p">);</span>
+        <span class="p">}</span>
 
-<p>Jekyll Helper zum Erstellen neuer Posts direkt in VS Code.</p>
+        <span class="k">await</span> <span class="nf">Execute</span><span class="p">(</span><span class="n">Options</span><span class="p">.</span><span class="n">EmailAuthKey</span><span class="p">,</span> <span class="n">subject</span><span class="p">,</span> <span class="n">plainTextContent</span><span class="p">,</span> <span class="n">htmlContent</span><span class="p">,</span> <span class="n">toEmail</span><span class="p">);</span>
+    <span class="p">}</span>
 
-<p>Jekyll Snippets für Liquid-Templates und Front Matter.</p>
+    <span class="k">public</span> <span class="k">async</span> <span class="n">Task</span> <span class="nf">Execute</span><span class="p">(</span><span class="kt">string</span> <span class="n">apiKey</span><span class="p">,</span> <span class="kt">string</span> <span class="n">subject</span><span class="p">,</span> <span class="kt">string</span> <span class="n">plainTextContent</span><span class="p">,</span> <span class="kt">string</span> <span class="n">htmlContent</span><span class="p">,</span> <span class="kt">string</span> <span class="n">toEmail</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="kt">var</span> <span class="n">client</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">SendGridClient</span><span class="p">(</span><span class="n">apiKey</span><span class="p">);</span>
+        <span class="kt">var</span> <span class="k">from</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">EmailAddress</span><span class="p">(</span><span class="s">"info@storbconsulting.de"</span><span class="p">,</span> <span class="s">"STC STORB Consulting"</span><span class="p">);</span>
+        <span class="kt">var</span> <span class="n">to</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">EmailAddress</span><span class="p">(</span><span class="n">toEmail</span><span class="p">,</span> <span class="n">toEmail</span><span class="p">);</span>
 
-<h2 id="-konfiguration">🔧 Konfiguration</h2>
+        <span class="kt">var</span> <span class="n">msg</span> <span class="p">=</span> <span class="n">MailHelper</span><span class="p">.</span><span class="nf">CreateSingleEmail</span><span class="p">(</span><span class="k">from</span><span class="p">,</span> <span class="n">to</span><span class="p">,</span> <span class="n">subject</span><span class="p">,</span> <span class="n">plainTextContent</span><span class="p">,</span> <span class="n">htmlContent</span><span class="p">);</span>
+        <span class="kt">var</span> <span class="n">response</span> <span class="p">=</span> <span class="k">await</span> <span class="n">client</span><span class="p">.</span><span class="nf">SendEmailAsync</span><span class="p">(</span><span class="n">msg</span><span class="p">).</span><span class="nf">ConfigureAwait</span><span class="p">(</span><span class="k">false</span><span class="p">);</span>
 
-<p>In der Datei _config.yml werden zentrale Einstellungen gepflegt:</p>
-
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Meine</span><span class="nv"> </span><span class="s">Jekyll</span><span class="nv"> </span><span class="s">Seite"</span>
-<span class="na">description</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Einfach</span><span class="nv"> </span><span class="s">und</span><span class="nv"> </span><span class="s">schnell</span><span class="nv"> </span><span class="s">mit</span><span class="nv"> </span><span class="s">VS</span><span class="nv"> </span><span class="s">Code</span><span class="nv"> </span><span class="s">erstellt."</span>
-<span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://username.github.io"</span>
-<span class="na">lang</span><span class="pi">:</span> <span class="s2">"</span><span class="s">de"</span>
-<span class="na">plugins</span><span class="pi">:</span>
-  <span class="pi">-</span> <span class="s">jekyll-sitemap</span>
-  <span class="pi">-</span> <span class="s">jekyll-seo-tag</span>
+        <span class="n">logger</span><span class="p">.</span><span class="nf">LogInformation</span><span class="p">(</span><span class="s">"Email to {EmailAddress} sent!"</span><span class="p">,</span> <span class="n">toEmail</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 </code></pre></div></div>
 
-<h2 id="-seo-und-sitemap">📈 SEO und Sitemap</h2>
+<h2 id="5-konfiguration-in-programcs">5. Konfiguration in <code class="language-plaintext highlighter-rouge">Program.cs</code></h2>
 
-<p>Für Suchmaschinenoptimierung sind zwei Plugins besonders wichtig:</p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">builder</span><span class="p">.</span><span class="n">Services</span><span class="p">.</span><span class="n">AddSingleton</span><span class="p">&lt;</span><span class="n">IEmailSender</span><span class="p">,</span> <span class="n">EmailSender</span><span class="p">&gt;();</span>
+</code></pre></div></div>
 
-<p>jekyll-sitemap: erzeugt automatisch eine sitemap.xml.</p>
+<p>Mit diesen Schritten können Sie E-Mails für Kontobestätigung und Kennwortwiederherstellung in Ihrer Blazor-Webanwendung implementieren.</p>
 
-<p>jekyll-seo-tag: fügt Meta-Tags für Suchmaschinen und Social Media hinzu.</p>
+<h2 id="referenzen">Referenzen</h2>
 
-<p>Zusätzlich empfiehlt sich eine robots.txt im Root:</p>
+<ul>
+  <li>
+    <p><a href="https://learn.microsoft.com/de-de/aspnet/core/blazor/security/account-confirmation-and-password-recovery?view=aspnetcore-9.0">Kontobestätigung und Kennwortwiederherstellung in ASP.NET Core Blazor</a></p>
+  </li>
+  <li>
+    <p><a href="https://github.com/sendgrid/sendgrid-csharp">TWILIO SendGrid</a></p>
+  </li>
+</ul>]]></content><author><name>Christian Storb</name></author><category term=".NET" /><category term="Azure" /><category term="Blazor" /><category term="Programmierung" /><category term="Softwareentwicklung" /><category term="Visual Studio" /><category term="Webentwicklung" /><category term="ASP.NET Core" /><category term="E-Mail-Dienst" /><category term="Kennwortwiederherstellung" /><category term="Kontobestätigung" /><category term="NuGet Package" /><category term="SendGrid" /><category term="Visual Studio 2022" /><summary type="html"><![CDATA[Im Folgenden wird erläutert, wie Sie in Visual Studio 2022 Funktionen für Kontobestätigung und Kennwortwiederherstellung in einer ASP.NET Core Blazor-Webanwen...]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://chstorb.github.io/assets/images/consulting/blog/kontobestaetigung-identity.jpg" /><media:content medium="image" url="https://chstorb.github.io/assets/images/consulting/blog/kontobestaetigung-identity.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Ubuntu beim Start von Windows automatisch starten: Ein Leitfaden</title><link href="https://chstorb.github.io/automatisierung/iot/linux/open%20source/softwareentwicklung/technologie/windows/wsl%20(windows%20subsystem%20for%20linux)/2025/03/15/ubuntu-beim-start-von-windows-automatisch-starten-ein-leitfaden.html" rel="alternate" type="text/html" title="Ubuntu beim Start von Windows automatisch starten: Ein Leitfaden" /><published>2025-03-15T13:53:13+00:00</published><updated>2025-03-15T13:53:13+00:00</updated><id>https://chstorb.github.io/automatisierung/iot/linux/open%20source/softwareentwicklung/technologie/windows/wsl%20(windows%20subsystem%20for%20linux)/2025/03/15/ubuntu-beim-start-von-windows-automatisch-starten-ein-leitfaden</id><content type="html" xml:base="https://chstorb.github.io/automatisierung/iot/linux/open%20source/softwareentwicklung/technologie/windows/wsl%20(windows%20subsystem%20for%20linux)/2025/03/15/ubuntu-beim-start-von-windows-automatisch-starten-ein-leitfaden.html"><![CDATA[<p>Wenn du häufig mit Ubuntu unter Windows Subsystem for Linux (WSL) arbeitest, kann es praktisch sein, die Linux-Distribution automatisch mit dem Start von Windows zu laden. Durch das automatische Starten sparst du Zeit und kannst direkt nach dem Hochfahren deines PCs in deiner bevorzugten Arbeitsumgebung loslegen. Dieser Artikel konzentriert sich auf praktische Beispiele mit minimaler Erläuterung, um dir eine klare und einfache Anleitung zu bieten.</p>
 
-<pre><code class="language-txt">User-agent: *
-Allow: /
-Sitemap: https://username.github.io/sitemap.xml
+<h3 id="schritt-1-standard-distribution-auf-ubuntu-setzen">Schritt 1: Standard-Distribution auf Ubuntu setzen</h3>
+
+<p>Bevor Ubuntu automatisch gestartet werden kann, solltest du sicherstellen, dass es als Standard-Distribution eingerichtet ist.</p>
+
+<ul>
+  <li>
+    <p>Öffne die <strong>PowerShell</strong> oder die Eingabeaufforderung.</p>
+  </li>
+  <li>
+    <p>Führe folgenden Befehl aus:<br /><code class="language-plaintext highlighter-rouge">wsl --set-default Ubuntu-24.04</code><br />Dadurch wird garantiert, dass Ubuntu die Standard-Distribution ist, die gestartet wird.</p>
+  </li>
+</ul>
+
+<h3 id="schritt-2-eine-verknüpfung-für-den-autostart-erstellen">Schritt 2: Eine Verknüpfung für den Autostart erstellen</h3>
+
+<p>Um Ubuntu beim Start von Windows auszuführen, kannst du eine Verknüpfung im Autostart-Ordner erstellen.</p>
+
+<ul>
+  <li>
+    <p>Drücke <code class="language-plaintext highlighter-rouge">Win + R</code>, um den <strong>Ausführen-Dialog</strong> zu öffnen.</p>
+  </li>
+  <li>
+    <p>Gib <code class="language-plaintext highlighter-rouge">shell:startup</code> ein und klicke auf <strong>OK</strong>. Dies öffnet den Autostart-Ordner.</p>
+  </li>
+  <li>
+    <p>Erstelle eine Verknüpfung:</p>
+  </li>
+  <li>
+    <p>Rechtsklick im Ordner → <strong>Neu</strong> → <strong>Verknüpfung</strong>.</p>
+  </li>
+  <li>
+    <p>Gib den folgenden Befehl ein:<br /><code class="language-plaintext highlighter-rouge">wsl -d Ubuntu-24.04</code></p>
+  </li>
+  <li>
+    <p>Klicke auf <strong>Weiter</strong> und gib der Verknüpfung einen Namen, z. B. „Ubuntu starten“.</p>
+  </li>
+  <li>
+    <p>Speichere die Verknüpfung.</p>
+  </li>
+</ul>
+
+<h3 id="schritt-3-testen">Schritt 3: Testen</h3>
+
+<p>Starte deinen Computer neu und überprüfe, ob Ubuntu automatisch startet. Wenn alles korrekt eingerichtet ist, sollte beim Hochfahren ein WSL-Fenster mit deiner Ubuntu-Distribution erscheinen.</p>
+
+<h3 id="optional-verdecktes-starten-einrichten">Optional: Verdecktes Starten einrichten</h3>
+
+<p>Falls dich das sichtbare Startfenster stört, kannst du ein Skript erstellen, das Ubuntu im Hintergrund startet:</p>
+
+<ul>
+  <li>
+    <p>Erstelle ein PowerShell-Skript mit folgendem Inhalt:<br /><code class="language-plaintext highlighter-rouge">Start-Process wsl -ArgumentList "-d Ubuntu-24.04" -WindowStyle Hidden</code></p>
+  </li>
+  <li>
+    <p>Speichere dieses Skript und erstelle eine Verknüpfung im Autostart-Ordner, die dieses Skript aufruft.</p>
+  </li>
+</ul>
+
+<h3 id="fazit">Fazit</h3>
+
+<p>Mit diesen einfachen Schritten startet Ubuntu automatisch mit Windows, sodass du direkt nach dem Hochfahren loslegen kannst. Diese Lösung ist besonders effizient, wenn du WSL und Ubuntu regelmäßig nutzt. Probiere es aus und genieße den nahtlosen Start!</p>
+
+<h3 id="referenzen">Referenzen</h3>
+
+<ul>
+  <li><a href="https://storbconsulting.wordpress.com/2025/03/15/ubuntu-24-04-auf-wsl-unter-windows-installieren-ein-leitfaden/">Ubuntu 24.04 auf WSL unter Windows installieren: Ein Leitfaden</a></li>
+</ul>]]></content><author><name>Christian Storb</name></author><category term="Automatisierung" /><category term="IoT" /><category term="Linux" /><category term="Open Source" /><category term="Softwareentwicklung" /><category term="Technologie" /><category term="Windows" /><category term="WSL (Windows Subsystem for Linux)" /><category term="Autostart Ubuntu" /><category term="Entwicklung" /><category term="Linux auf Windows" /><category term="Linux-Befehle" /><category term="Linux-Integration" /><category term="PowerShell" /><category term="shell:startup" /><category term="Software-Entwicklung" /><category term="Ubuntu 24.04" /><category term="Ubuntu automatisch starten" /><category term="Ubuntu Distribution" /><category term="Ubuntu im Hintergrund starten" /><category term="Windows Subsystem for Linux" /><category term="Windows-Automatisierung" /><category term="WSL" /><category term="wsl --set-default" /><category term="WSL 2" /><summary type="html"><![CDATA[Wenn du häufig mit Ubuntu unter Windows Subsystem for Linux (WSL) arbeitest, kann es praktisch sein, die Linux-Distribution automatisch mit dem Start von Wind...]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://chstorb.github.io/assets/images/consulting/blog/ubuntu-und-wsl.jpg" /><media:content medium="image" url="https://chstorb.github.io/assets/images/consulting/blog/ubuntu-und-wsl.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Ubuntu 24.04 auf WSL unter Windows installieren: Ein Leitfaden</title><link href="https://chstorb.github.io/.net/iot/linux/open%20source/programmierung/softwareentwicklung/tech%20tips/technologie/windows/2025/03/14/ubuntu-24-04-auf-wsl-unter-windows-installieren-ein-leitfaden.html" rel="alternate" type="text/html" title="Ubuntu 24.04 auf WSL unter Windows installieren: Ein Leitfaden" /><published>2025-03-14T13:33:43+00:00</published><updated>2025-03-14T13:33:43+00:00</updated><id>https://chstorb.github.io/.net/iot/linux/open%20source/programmierung/softwareentwicklung/tech%20tips/technologie/windows/2025/03/14/ubuntu-24-04-auf-wsl-unter-windows-installieren-ein-leitfaden</id><content type="html" xml:base="https://chstorb.github.io/.net/iot/linux/open%20source/programmierung/softwareentwicklung/tech%20tips/technologie/windows/2025/03/14/ubuntu-24-04-auf-wsl-unter-windows-installieren-ein-leitfaden.html"><![CDATA[<p>Die Kombination von Windows und Linux in einem System bietet unschätzbare Flexibilität. Mit Windows Subsystem for Linux (WSL) kannst du Linux direkt auf deinem Windows-Rechner ausführen. <strong>Dieser Artikel konzentriert sich auf praktische Beispiele mit minimaler Erläuterung</strong>, um dir eine klare und einfache Anleitung zu bieten.</p>
+
+<h3 id="warum-wsl">Warum WSL?</h3>
+
+<p>WSL ermöglicht die Ausführung eines vollständigen Linux-Subsystems direkt auf Windows – ohne Dual-Boot oder virtuelle Maschinen. Es ist ideal für Entwickler und Power-User, die die nahtlose Integration beider Betriebssysteme nutzen möchten.</p>
+
+<h3 id="schritt-1-wsl-über-die-benutzeroberfläche-aktivieren"><strong>Schritt 1: WSL über die Benutzeroberfläche aktivieren</strong></h3>
+
+<ul>
+  <li>
+    <p>Öffne das <strong>Startmenü</strong> und suche nach „Windows-Features“.</p>
+  </li>
+  <li>
+    <p>Klicke auf <strong>Windows-Features aktivieren oder deaktivieren</strong>.</p>
+  </li>
+  <li>
+    <p>Scrolle nach unten und setze ein Häkchen bei <strong>Windows-Subsystem für Linux</strong>.</p>
+  </li>
+  <li>
+    <p>Aktiviere auch <strong>Plattform für virtuelle Computer</strong>, um WSL 2 zu unterstützen.</p>
+  </li>
+  <li>
+    <p>Bestätige mit <strong>OK</strong> und lasse die Änderungen installieren.</p>
+  </li>
+  <li>
+    <p>Starte deinen PC neu.</p>
+  </li>
+</ul>
+
+<h3 id="schritt-2-wsl-2-aktivieren"><strong>Schritt 2: WSL 2 aktivieren</strong></h3>
+
+<p>Die Version 2 von WSL bietet signifikante Leistungsverbesserungen. So aktivierst du sie:</p>
+
+<ul>
+  <li>
+    <p>Öffne PowerShell als Administrator.</p>
+  </li>
+  <li>
+    <p>Gib diesen Befehl ein:<br /><code class="language-plaintext highlighter-rouge">wsl --set-default-version 2 </code><br />Falls eine Fehlermeldung erscheint, installiere das WSL 2-Kernel-Update von Microsoft.</p>
+  </li>
+</ul>
+
+<h3 id="schritt-3-ubuntu-2404-aus-dem-microsoft-store-installieren"><strong>Schritt 3: Ubuntu 24.04 aus dem Microsoft Store installieren</strong></h3>
+
+<ul>
+  <li>
+    <p>Öffne den <strong>Microsoft Store</strong>.</p>
+  </li>
+  <li>
+    <p>Suche nach „Ubuntu“ und wähle die Version „Ubuntu 24.04“.</p>
+  </li>
+  <li>
+    <p>Klicke auf <strong>Installieren</strong> und warte, bis der Prozess abgeschlossen ist.</p>
+  </li>
+  <li>
+    <p>Starte anschließend Ubuntu über das Startmenü oder gib <code class="language-plaintext highlighter-rouge">wsl</code> in die Suchleiste ein.</p>
+  </li>
+</ul>
+
+<h3 id="schritt-4-erste-einrichtung-von-ubuntu"><strong>Schritt 4: Erste Einrichtung von Ubuntu</strong></h3>
+
+<p>Beim ersten Start wirst du aufgefordert, einen Benutzernamen und ein Passwort zu erstellen. Diese gelten nur für dein Linux-System.</p>
+
+<h3 id="schritt-5-ubuntu-einrichten"><strong>Schritt 5: Ubuntu einrichten</strong></h3>
+
+<ul>
+  <li>
+    <p>Aktualisiere die Paketquellen:<br /><code class="language-plaintext highlighter-rouge">sudo apt update &amp;&amp; sudo apt upgrade -y</code></p>
+  </li>
+  <li>
+    <p>Installiere wichtige Tools wie <code class="language-plaintext highlighter-rouge">git</code>:<br /><code class="language-plaintext highlighter-rouge">sudo apt install git</code></p>
+  </li>
+</ul>
+
+<h3 id="schritt-6-überprüfe-deine-internetverbindung"><strong>Schritt 6: Überprüfe deine Internetverbindung</strong></h3>
+
+<ul>
+  <li>
+    <p>Stelle sicher, dass dein System mit dem Internet verbunden ist.</p>
+  </li>
+  <li>
+    <p>Teste die Verbindung mit einem einfachen Befehl wie:<br /><code class="language-plaintext highlighter-rouge">ping google.com</code></p>
+  </li>
+</ul>
+
+<h3 id="schritt-7-dsn-server-überprüfen"><strong>Schritt 7: DSN-Server überprüfen</strong></h3>
+
+<p>Falls ein Problem mit der Internetverbindung besteht, könnte es an deinem DNS-Server liegen. Du kannst temporär auf einen öffentlichen DNS-Server wie Google DNS wechseln:<br />`sudo nano /etc/resolv.conf`<br /><br />Füge folgende Zeile hinzu:<br />`nameserver 8.8.8.8`
+</p>
+
+<h3 id="fazit"><strong>Fazit</strong></h3>
+
+<p>Mit WSL und Ubuntu 24.04 kannst du die Vorteile von Linux nutzen, ohne Windows verlassen zu müssen. Diese Kombination ist perfekt für Entwicklung, Experimentieren und produktives Arbeiten. Ich hoffe, dieser Leitfaden erleichtert dir den Einstieg – viel Erfolg!</p>
+
+<h3 id="referenzen">Referenzen</h3>
+
+<ul>
+  <li><a href="https://storbconsulting.wordpress.com/2025/03/15/ubuntu-beim-start-von-windows-automatisch-starten-ein-leitfaden/">Ubuntu beim Start von Windows automatisch starten: Ein Leitfaden</a></li>
+</ul>]]></content><author><name>Christian Storb</name></author><category term=".NET" /><category term="IoT" /><category term="Linux" /><category term="Open Source" /><category term="Programmierung" /><category term="Softwareentwicklung" /><category term="Tech Tips" /><category term="Technologie" /><category term="Windows" /><category term="Entwicklung" /><category term="Git installieren" /><category term="Linux auf Windows" /><category term="Linux-Anleitung" /><category term="Linux-Integration" /><category term="Microsoft Store" /><category term="Paketquellen aktualisieren" /><category term="Software-Entwicklung" /><category term="Ubuntu 24.04" /><category term="Ubuntu Einrichtung" /><category term="Ubuntu installieren" /><category term="VirtualMachinePlatform" /><category term="Windows Subsystem for Linux" /><category term="Windows-Features aktivieren" /><category term="WSL" /><category term="WSL 2" /><summary type="html"><![CDATA[Die Kombination von Windows und Linux in einem System bietet unschätzbare Flexibilität. Mit Windows Subsystem for Linux (WSL) kannst du Linux direkt auf deine...]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://chstorb.github.io/assets/images/consulting/blog/wsl-auf-windows.jpg" /><media:content medium="image" url="https://chstorb.github.io/assets/images/consulting/blog/wsl-auf-windows.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Moby-Engine auf Ubuntu 24.04 in WSL installieren: Ein praktischer Leitfaden</title><link href="https://chstorb.github.io/container-technologie/linux/softwareentwicklung/systemadministration/technologie/wsl/2025/03/10/moby-engine-auf-ubuntu-24-04-in-wsl-installieren-ein-praktischer-leitfaden.html" rel="alternate" type="text/html" title="Moby-Engine auf Ubuntu 24.04 in WSL installieren: Ein praktischer Leitfaden" /><published>2025-03-10T14:35:47+00:00</published><updated>2025-03-10T14:35:47+00:00</updated><id>https://chstorb.github.io/container-technologie/linux/softwareentwicklung/systemadministration/technologie/wsl/2025/03/10/moby-engine-auf-ubuntu-24-04-in-wsl-installieren-ein-praktischer-leitfaden</id><content type="html" xml:base="https://chstorb.github.io/container-technologie/linux/softwareentwicklung/systemadministration/technologie/wsl/2025/03/10/moby-engine-auf-ubuntu-24-04-in-wsl-installieren-ein-praktischer-leitfaden.html"><![CDATA[<p>Dieser Artikel konzentriert sich auf praktische Beispiele mit minimaler Erläuterung, um dir eine klare und einfache Anleitung zur Installation der Moby-Engine auf Ubuntu 24.04 in Windows Subsystem for Linux (WSL) zu geben.</p>
+
+<h3 id="warum-die-moby-engine">Warum die Moby-Engine?</h3>
+
+<p>Die Moby-Engine ist eine leichtgewichtige, OCI-kompatible Container-Engine, die für Produktionsumgebungen optimiert ist. Sie ist die offizielle Container-Engine für Azure IoT Edge und mit Docker-Containern kompatibel.</p>
+
+<h3 id="schritt-1-voraussetzungen-prüfen">Schritt 1: Voraussetzungen prüfen</h3>
+
+<p>Bevor du die Moby-Engine installierst, stelle sicher, dass folgende Voraussetzungen erfüllt sind:</p>
+
+<ul>
+  <li>
+    <p><strong>WSL 2 ist aktiviert:</strong> Du kannst die neueste Version von WSL verwenden, indem du den folgenden Befehl ausführst:<br /><code class="language-plaintext highlighter-rouge">wsl --set-default-version 2</code></p>
+  </li>
+  <li>
+    <p><strong>Ubuntu 24.04 ist installiert:</strong> Falls nicht, kannst du es über den Microsoft Store hinzufügen.</p>
+  </li>
+</ul>
+
+<h3 id="schritt-2-microsoft-paketquellen-hinzufügen">Schritt 2: Microsoft-Paketquellen hinzufügen</h3>
+
+<p>Um die Moby-Engine zu installieren, musst du die Microsoft-Paketquellen zu deinem Ubuntu hinzufügen:</p>
+
+<ul>
+  <li>
+    <p>Öffne ein Terminal in WSL und führe folgende Befehle aus:<br /><code class="language-plaintext highlighter-rouge">wget https://packages.microsoft.com/config/ubuntu/24.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb 
+sudo dpkg -i packages-microsoft-prod.deb 
+rm packages-microsoft-prod.deb</code></p>
+  </li>
+  <li>
+    <p>Aktualisiere anschließend die Paketliste:<br /><code class="language-plaintext highlighter-rouge">sudo apt-get update</code></p>
+  </li>
+</ul>
+
+<h3 id="schritt-3-moby-engine-installieren">Schritt 3: Moby-Engine installieren</h3>
+
+<ul>
+  <li>
+    <p>Installiere die Moby-Engine mit folgendem Befehl:<br /><code class="language-plaintext highlighter-rouge">sudo apt-get install moby-engine</code></p>
+  </li>
+  <li>
+    <p>Starte den Moby-Daemon neu, um sicherzustellen, dass die Änderungen wirksam werden:<br /><code class="language-plaintext highlighter-rouge">sudo systemctl restart docker</code></p>
+  </li>
+</ul>
+
+<h3 id="optional-protokollierung-konfigurieren">Optional: Protokollierung konfigurieren</h3>
+
+<p>Standardmäßig speichert die Moby-Engine Containerprotokolle ohne Größenlimit. Um Speicherplatz zu sparen, kannst du die Protokollierung auf “local” setzen:</p>
+
+<ul>
+  <li>
+    <p>Bearbeite die Konfigurationsdatei:<br /><code class="language-plaintext highlighter-rouge">sudo nano /etc/docker/daemon.json</code></p>
+  </li>
+  <li>
+    <p>Füge folgenden Inhalt hinzu:<br /><code class="language-plaintext highlighter-rouge">{ 
+ "log-driver": "local" 
+}</code></p>
+  </li>
+  <li>
+    <p>Speichere die Datei und starte die Moby-Engine neu:<br /><code class="language-plaintext highlighter-rouge">sudo systemctl restart docker</code></p>
+  </li>
+</ul>
+
+<h3 id="fazit">Fazit</h3>
+
+<p>Mit der Installation der Moby-Engine auf Ubuntu 24.04 unter WSL hast du eine leistungsstarke Container-Engine eingerichtet, die für lokale Entwicklung und Produktionsszenarien gleichermaßen geeignet ist. Dieser Leitfaden hat dir hoffentlich geholfen, die Einrichtung einfach und effizient durchzuführen.</p>
+
+<h3 id="referenzen">Referenzen</h3>
+
+<ul>
+  <li>
+    <p><a href="https://storbconsulting.wordpress.com/2025/03/15/ubuntu-beim-start-von-windows-automatisch-starten-ein-leitfaden/">Ubuntu beim Start von Windows automatisch starten: Ein Leitfaden</a></p>
+  </li>
+  <li>
+    <p><a href="https://storbconsulting.wordpress.com/2025/03/15/ubuntu-24-04-auf-wsl-unter-windows-installieren-ein-leitfaden/">Ubuntu 24.04 auf WSL unter Windows installieren: Ein Leitfaden</a></p>
+  </li>
+  <li>
+    <p><a href="https://learn.microsoft.com/de-de/azure/iot-edge/how-to-provision-single-device-linux-symmetric?tabs=azure-portal%2Cubuntu">Erstellen und Bereitstellen eines IoT Edge-Geräts unter Linux mithilfe von symmetrischen Schlüsseln</a></p>
+  </li>
+</ul>]]></content><author><name>Christian Storb</name></author><category term="Container-Technologie" /><category term="Linux" /><category term="Softwareentwicklung" /><category term="Systemadministration" /><category term="Technologie" /><category term="WSL" /><category term="Azure IoT Edge" /><category term="Docker-Kompatibilität" /><category term="Linux auf Windows" /><category term="Linux-Anleitung" /><category term="Linux-Container" /><category term="Microsoft-Paketquellen" /><category term="Moby-Daemon" /><category term="Moby-Engine" /><category term="Ubuntu 24.04" /><category term="Ubuntu installieren" /><category term="Windows Subsystem for Linux" /><category term="WSL" /><summary type="html"><![CDATA[Dieser Artikel konzentriert sich auf praktische Beispiele mit minimaler Erläuterung, um dir eine klare und einfache Anleitung zur Installation der Moby-Engine...]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://chstorb.github.io/assets/images/consulting/blog/moby-engine-auf-ubuntu-24.04-in-wsl.jpg" /><media:content medium="image" url="https://chstorb.github.io/assets/images/consulting/blog/moby-engine-auf-ubuntu-24.04-in-wsl.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">In-Memory Caching in ASP.NET Core: Ein Überblick</title><link href="https://chstorb.github.io/.net/performance%20optimierung/programmierung/tech%20tips/webentwicklung/2025/03/08/in-memory-caching-in-asp-net-core-ein-uberblick.html" rel="alternate" type="text/html" title="In-Memory Caching in ASP.NET Core: Ein Überblick" /><published>2025-03-08T10:25:19+00:00</published><updated>2025-03-08T10:25:19+00:00</updated><id>https://chstorb.github.io/.net/performance%20optimierung/programmierung/tech%20tips/webentwicklung/2025/03/08/in-memory-caching-in-asp-net-core-ein-uberblick</id><content type="html" xml:base="https://chstorb.github.io/.net/performance%20optimierung/programmierung/tech%20tips/webentwicklung/2025/03/08/in-memory-caching-in-asp-net-core-ein-uberblick.html"><![CDATA[<p>In der heutigen digitalen Welt ist die Leistungsfähigkeit einer Anwendung entscheidend für ihren Erfolg. Eine effektive Methode, um die Geschwindigkeit und Skalierbarkeit einer Anwendung zu verbessern, ist das In-Memory-Caching. In diesem Artikel geben wir einen Überblick über das In-Memory-Caching in ASP.NET Core und wie es implementiert werden kann.</p>
+
+<h3 id="was-ist-in-memory-caching">Was ist In-Memory-Caching?</h3>
+
+<p>In-Memory-Caching ist eine Technik, bei der Daten im Arbeitsspeicher des Webservers gespeichert werden, um die Leistung und Skalierbarkeit einer Anwendung zu verbessern. Dies ist besonders nützlich für Daten, die sich selten ändern und deren Abruf teuer ist. Durch das Caching wird eine Kopie der Daten erstellt, die wesentlich schneller zurückgegeben werden kann, als wenn sie erneut aus der Quelle abgerufen würden.</p>
+
+<h3 id="einführung-in-das-imemorycache-interface">Einführung in das <code class="language-plaintext highlighter-rouge">IMemoryCache</code> Interface</h3>
+
+<p>Das <code class="language-plaintext highlighter-rouge">IMemoryCache</code> Interface ist der Kern des In-Memory-Cachings in ASP.NET Core. Es repräsentiert einen Cache, der im Arbeitsspeicher des Webservers gespeichert ist. Dies ist ideal für häufig abgerufene Daten, die schnell verfügbar sein müssen.</p>
+
+<h3 id="vorteile-des-in-memory-cachings">Vorteile des In-Memory-Cachings</h3>
+
+<ul>
+  <li>
+    <p><strong>Leistungsverbesserung</strong>: Durch das Speichern häufig abgerufener Daten im Arbeitsspeicher kann die Anwendungsleistung erheblich verbessert werden.</p>
+  </li>
+  <li>
+    <p><strong>Skalierbarkeit</strong>: Da der Zugriff auf den Arbeitsspeicher schneller ist als der Zugriff auf externe Datenquellen, kann das Caching die Skalierbarkeit der Anwendung erhöhen.</p>
+  </li>
+  <li>
+    <p><strong>Einfache Implementierung</strong>: Das <code class="language-plaintext highlighter-rouge">IMemoryCache</code> Interface ist einfach zu implementieren und bietet flexible Optionen zur Verwaltung des Caches.</p>
+  </li>
+</ul>
+
+<h3 id="implementierung-von-in-memory-caching-in-aspnet-core">Implementierung von In-Memory-Caching in ASP.NET Core</h3>
+
+<p>Hier ist ein grundlegendes Beispiel, wie <code class="language-plaintext highlighter-rouge">IMemoryCache</code> in einer ASP.NET Core-Anwendung verwendet wird:</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">MyService</span>
+<span class="p">{</span>
+    <span class="k">private</span> <span class="k">readonly</span> <span class="n">IMemoryCache</span> <span class="n">_cache</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="nf">MyService</span><span class="p">(</span><span class="n">IMemoryCache</span> <span class="n">cache</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">_cache</span> <span class="p">=</span> <span class="n">cache</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="kt">string</span> <span class="nf">GetCachedData</span><span class="p">(</span><span class="kt">string</span> <span class="n">key</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(!</span><span class="n">_cache</span><span class="p">.</span><span class="nf">TryGetValue</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="k">out</span> <span class="kt">string</span> <span class="n">cachedData</span><span class="p">))</span>
+        <span class="p">{</span>
+            <span class="c1">// Daten nicht im Cache, daher aus der Quelle abrufen</span>
+            <span class="n">cachedData</span> <span class="p">=</span> <span class="s">"Dies sind die zu cachenden Daten"</span><span class="p">;</span>
+
+            <span class="c1">// Cache-Optionen festlegen</span>
+            <span class="kt">var</span> <span class="n">cacheEntryOptions</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">MemoryCacheEntryOptions</span><span class="p">()</span>
+                <span class="p">.</span><span class="nf">SetSlidingExpiration</span><span class="p">(</span><span class="n">TimeSpan</span><span class="p">.</span><span class="nf">FromMinutes</span><span class="p">(</span><span class="m">5</span><span class="p">));</span>
+
+            <span class="c1">// Daten im Cache speichern</span>
+            <span class="n">_cache</span><span class="p">.</span><span class="nf">Set</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">cachedData</span><span class="p">,</span> <span class="n">cacheEntryOptions</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="k">return</span> <span class="n">cachedData</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>In diesem Beispiel verwenden wir das <code class="language-plaintext highlighter-rouge">IMemoryCache</code> Interface, um Daten mit einer Ablaufzeit von 5 Minuten im Cache zu speichern. Wenn die Daten nicht im Cache gefunden werden, werden sie aus der Quelle abgerufen und im Cache gespeichert.</p>
+
+<h3 id="best-practices-für-das-in-memory-caching">Best Practices für das In-Memory-Caching</h3>
+
+<ul>
+  <li>
+    <p><strong>Fallback-Optionen</strong>: Stellen Sie sicher, dass immer eine Fallback-Option zum Abrufen der Daten vorhanden ist und verlassen Sie sich nicht ausschließlich auf den Cache.</p>
+  </li>
+  <li>
+    <p><strong>Cache-Wachstum begrenzen</strong>: Verwenden Sie Ablaufzeiten und Größenbeschränkungen, um das Wachstum des Caches zu begrenzen.</p>
+  </li>
+  <li>
+    <p><strong>Sicherheitsüberlegungen</strong>: Vermeiden Sie das Einfügen externer Eingaben in den Cache, um unvorhersehbaren Speicherverbrauch zu verhindern.</p>
+  </li>
+</ul>
+
+<h3 id="fazit">Fazit</h3>
+
+<p>In-Memory-Caching ist eine leistungsstarke Technik zur Verbesserung der Leistung und Skalierbarkeit Ihrer ASP.NET Core-Anwendung. Durch die Implementierung von <code class="language-plaintext highlighter-rouge">IMemoryCache</code> können Sie sicherstellen, dass häufig abgerufene Daten schnell und effizient verfügbar sind.</p>
+
+<h3 id="refrenzen">Refrenzen</h3>
+
+<ul>
+  <li><a href="https://learn.microsoft.com/de-de/aspnet/core/performance/caching/memory?view=aspnetcore-9.0">Zwischenspeichern im Arbeitsspeicher in ASP.NET Core</a></li>
+</ul>]]></content><author><name>Christian Storb</name></author><category term=".NET" /><category term="Performance Optimierung" /><category term="Programmierung" /><category term="Tech Tips" /><category term="Webentwicklung" /><category term="ASP.NET Core" /><category term="Cache Verwaltung" /><category term="Caching Techniken" /><category term="Daten Zwischenspeicherung" /><category term="IMemoryCache" /><category term="In-Memory Caching" /><category term="Leistungsverbesserung" /><category term="Skalierbarkeit" /><summary type="html"><![CDATA[In der heutigen digitalen Welt ist die Leistungsfähigkeit einer Anwendung entscheidend für ihren Erfolg. Eine effektive Methode, um die Geschwindigkeit und Sk...]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://chstorb.github.io/assets/images/consulting/blog/in-memory-caching-in-asp.net-core.jpg" /><media:content medium="image" url="https://chstorb.github.io/assets/images/consulting/blog/in-memory-caching-in-asp.net-core.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Wie man einen iframe in einer Blazor-Seite vollständig anpasst und einen Parameter für die Webseite hinzufügt</title><link href="https://chstorb.github.io/.net/blazor/frontend-entwicklung/programmierung/softwareentwicklung/tech%20tips/webentwicklung/2025/02/08/wie-man-einen-iframe-in-einer-blazor-seite-vollstandig-anpasst-und-einen-parameter-fur-die-webseite-hinzufugt.html" rel="alternate" type="text/html" title="Wie man einen iframe in einer Blazor-Seite vollständig anpasst und einen Parameter für die Webseite hinzufügt" /><published>2025-02-08T14:53:39+00:00</published><updated>2025-02-08T14:53:39+00:00</updated><id>https://chstorb.github.io/.net/blazor/frontend-entwicklung/programmierung/softwareentwicklung/tech%20tips/webentwicklung/2025/02/08/wie-man-einen-iframe-in-einer-blazor-seite-vollstandig-anpasst-und-einen-parameter-fur-die-webseite-hinzufugt</id><content type="html" xml:base="https://chstorb.github.io/.net/blazor/frontend-entwicklung/programmierung/softwareentwicklung/tech%20tips/webentwicklung/2025/02/08/wie-man-einen-iframe-in-einer-blazor-seite-vollstandig-anpasst-und-einen-parameter-fur-die-webseite-hinzufugt.html"><![CDATA[<p><strong>Einleitung</strong></p>
+
+<p>In diesem Artikel zeigen wir, wie man einen <code class="language-plaintext highlighter-rouge">iframe</code> in einer Blazor-Anwendung so konfiguriert, dass er die gesamte verfügbare Fläche in einem Seitenbereich einnimmt und dabei einen erforderlichen Parameter für die Webseite verwendet. Zusätzlich werden wir scoped CSS verwenden, um das Styling auf die spezifische Komponente zu beschränken.</p>
+
+<p><strong>Schritt 1: Erstellen der Blazor-Komponente mit erforderlichem Parameter</strong></p>
+
+<p>Erstellen Sie eine neue Blazor-Komponente (<code class="language-plaintext highlighter-rouge">.razor</code>-Datei), zum Beispiel <code class="language-plaintext highlighter-rouge">IframeComponent.razor</code>, und fügen Sie einen erforderlichen Parameter für die Webseite hinzu.</p>
+
+<pre><code class="language-razor">&lt;div class="iframe-container"&gt;
+    &lt;iframe src="@Url"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+@code {
+    [Parameter]
+    public required string Url { get; set; }
+}
 </code></pre>
 
-<h2 id="-fazit">🎯 Fazit</h2>
+<p><strong>Schritt 2: Scoped CSS hinzufügen</strong></p>
 
-<p>Mit Jekyll, Ruby und VS Code lässt sich schnell eine statische Website erstellen. Die Kombination aus klarer Projektstruktur, hilfreichen Extensions und automatischer SEO-Optimierung macht den Einstieg einfach. GitHub Pages übernimmt das Hosting, sodass die Seite sofort online verfügbar ist.</p>]]></content><author><name>Christian Storb</name></author><category term="Jekyll" /><category term="Ruby" /><category term="GitHub Pages" /><category term="VS Code" /><summary type="html"><![CDATA[Eine Anleitung zur effizienten Erstellung von Jekyll-Websites mit Visual Studio Code.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://chstorb.github.io/assets/images/consulting/blog/jekyll+vscode.png" /><media:content medium="image" url="https://chstorb.github.io/assets/images/consulting/blog/jekyll+vscode.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Welcome to Jekyll!</title><link href="https://chstorb.github.io/jekyll/2025/11/14/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2025-11-14T18:22:35+00:00</published><updated>2025-11-14T18:22:35+00:00</updated><id>https://chstorb.github.io/jekyll/2025/11/14/welcome-to-jekyll</id><content type="html" xml:base="https://chstorb.github.io/jekyll/2025/11/14/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<p>Erstellen Sie eine CSS-Datei mit dem gleichen Namen wie Ihre Komponente, aber mit der Endung <code class="language-plaintext highlighter-rouge">.razor.css</code> (zum Beispiel <code class="language-plaintext highlighter-rouge">IframeComponent.razor.css</code>). Dieses CSS wird nur auf Ihre Komponente angewendet.</p>
 
-<p>Jekyll requires blog post files to be named according to the following format:</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* IframeComponent.razor.css */</span>
+<span class="nc">.iframe-container</span> <span class="p">{</span>
+    <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="m">100vh</span><span class="p">;</span> <span class="c">/* oder eine andere Höhe, die Sie benötigen */</span>
+    <span class="nl">overflow</span><span class="p">:</span> <span class="nb">hidden</span><span class="p">;</span>
+<span class="p">}</span>
 
-<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+<span class="nc">.iframe-container</span> <span class="nt">iframe</span> <span class="p">{</span>
+    <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+    <span class="nl">top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+    <span class="nl">border</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
-<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+<p><strong>Schritt 3: Erstellen einer Blazor-Seite und Einbinden der Komponente</strong></p>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<p>Erstellen Sie eine neue Blazor-Seite (<code class="language-plaintext highlighter-rouge">.razor</code>-Datei), zum Beispiel <code class="language-plaintext highlighter-rouge">IframePage.razor</code>, und fügen Sie die erstellte Komponente in diese Seite ein. Übergeben Sie den gewünschten URL-Parameter.</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+<pre><code class="language-razor">@page "/iframepage"
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name>Christian Storb</name></author><category term="jekyll" /><summary type="html"><![CDATA[Willkommen zu Jekyll! Entdecken Sie, wie einfach Sie statische Webseiten erstellen können.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://chstorb.github.io/assets/images/consulting/blog/welcome2jekyll.png" /><media:content medium="image" url="https://chstorb.github.io/assets/images/consulting/blog/welcome2jekyll.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Exploring Azure Data Explorer: A Free Cluster Guide</title><link href="https://chstorb.github.io/2023/10/15/exploring-azure-data-explorer-a-free-cluster-guide.html" rel="alternate" type="text/html" title="Exploring Azure Data Explorer: A Free Cluster Guide" /><published>2023-10-15T00:00:00+00:00</published><updated>2023-10-15T00:00:00+00:00</updated><id>https://chstorb.github.io/2023/10/15/exploring-azure-data-explorer-a-free-cluster-guide</id><content type="html" xml:base="https://chstorb.github.io/2023/10/15/exploring-azure-data-explorer-a-free-cluster-guide.html"><![CDATA[<p>Azure Data Explorer (ADX) offers powerful data exploration capabilities for log and telemetry data. In this guide, we'll walk you through creating your own <strong>free ADX cluster</strong> and getting started with data analysis.</p>
+&lt;PageTitle&gt;Iframe Beispiel&lt;/PageTitle&gt;
 
-<h2>1. Creating Your Free Cluster</h2>
+&lt;div class="container"&gt;
+    &lt;IframeComponent Url="https://jsfiddle.net/u/chstorb/fiddles/" /&gt;
+&lt;/div&gt;
+</code></pre>
 
-<ul>
-<li>You don't need an Azure subscription or a credit card to create a free cluster.</li>
-<li>Use your Microsoft account or Microsoft Entra user identity.</li>
-<li>Fill out the cluster details in the "Create a free cluster" dialog.</li>
-<li>Accept the terms of service and provision the cluster (usually takes a few minutes).</li>
-</ul>
+<p><strong>Fazit</strong></p>
 
-<h2>2. Key Features of Your Free Cluster</h2>
-
-<ul>
-<li><strong>Fast and Scalable:</strong> ADX provides lightning-fast data exploration for log and telemetry data.</li>
-<li><strong>Kusto Query Language (KQL):</strong> Use KQL to gain business insights into your data.</li>
-<li><strong>No Cost:</strong> Enjoy the benefits without any charges.</li>
-</ul>
-
-<h2>3. Getting Started with Your Cluster</h2>
-
-<ul>
-<li>Explore quick actions: Create databases, ingest data, or run queries.</li>
-<li>Ingest data: Load your data into the cluster using the ingestion wizard.</li>
-<li>Query data: Use KQL to analyze and gain insights.</li>
-</ul>
-
-<p><a href="https://dataexplorer.azure.com/publicfreecluster" target="_blank">Start your ADX journey with a free cluster today! 🚀</a></p>]]></content><author><name>STORB Consulting</name></author><summary type="html"><![CDATA[Azure Data Explorer (ADX) offers powerful data exploration capabilities for log and telemetry data. In this guide, we'll walk you through creating your own free ADX cluster and getting started with data analysis.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://chstorb.github.io/assets/images/consulting/blog/artificial-intelligence-3382507_1920.jpg" /><media:content medium="image" url="https://chstorb.github.io/assets/images/consulting/blog/artificial-intelligence-3382507_1920.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">How to Create an Azure Event Hub in the Azure Portal</title><link href="https://chstorb.github.io/2023/10/15/how-to-create-an-azure-event-hub-in-the-azure-portal.html" rel="alternate" type="text/html" title="How to Create an Azure Event Hub in the Azure Portal" /><published>2023-10-15T00:00:00+00:00</published><updated>2023-10-15T00:00:00+00:00</updated><id>https://chstorb.github.io/2023/10/15/how-to-create-an-azure-event-hub-in-the-azure-portal</id><content type="html" xml:base="https://chstorb.github.io/2023/10/15/how-to-create-an-azure-event-hub-in-the-azure-portal.html"><![CDATA[<ul>
-  <li>Sign in to the Azure portal.</li>
-  <li>Create a resource group by selecting <strong>Resource groups</strong> from the left navigation pane, then selecting <strong>Create</strong>.</li>
-  <li>Enter a unique name for the resource group and select a region for it.</li>
-  <li>Create an Event Hubs namespace by selecting <strong>All services</strong> from the left navigation pane, then typing “Event Hubs” in the search bar and selecting <strong>Event Hubs</strong> from the results.</li>
-  <li>Select <strong>Create</strong> on the toolbar, then enter a name for the namespace and select a region for it.</li>
-  <li>Choose the pricing tier (Basic or Standard) and leave the throughput units settings as they are.</li>
-  <li>Create an event hub within the namespace by selecting <strong>+ Event hub</strong> on the command bar of the Overview page for your namespace.</li>
-  <li>Enter a name for your event hub and select <strong>Review + create</strong>.</li>
-</ul>
-
-<p>That’s it! You have successfully created an Azure Event Hub in the Azure portal. If you need more information about Event Hubs, you can check out <a href="https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-about" target="_blank">Microsoft’s documentation</a>.</p>]]></content><author><name>STORB Consulting</name></author><summary type="html"><![CDATA[Sign in to the Azure portal. Create a resource group by selecting Resource groups from the left navigation pane, then selecting Create. Enter a unique name for the resource group and select a region for it. Create an Event Hubs namespace by selecting All services from the left navigation pane, then typing “Event Hubs” in the search bar and selecting Event Hubs from the results. Select Create on the toolbar, then enter a name for the namespace and select a region for it. Choose the pricing tier (Basic or Standard) and leave the throughput units settings as they are. Create an event hub within the namespace by selecting + Event hub on the command bar of the Overview page for your namespace. Enter a name for your event hub and select Review + create.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://chstorb.github.io/assets/images/consulting/blog/artificial-intelligence-3382507_1920.jpg" /><media:content medium="image" url="https://chstorb.github.io/assets/images/consulting/blog/artificial-intelligence-3382507_1920.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">View my verified achievement from Microsoft.</title><link href="https://chstorb.github.io/2022/06/23/view-my-verified-achievement-from-microsoft.html" rel="alternate" type="text/html" title="View my verified achievement from Microsoft." /><published>2022-06-23T00:00:00+00:00</published><updated>2022-06-23T00:00:00+00:00</updated><id>https://chstorb.github.io/2022/06/23/view-my-verified-achievement-from-microsoft</id><content type="html" xml:base="https://chstorb.github.io/2022/06/23/view-my-verified-achievement-from-microsoft.html"><![CDATA[<p>Microsoft Certified: Azure IoT Developer Specialty was issued by Microsoft to Christian Storb.</p>
-<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="2e1116d8-140e-46d5-9f77-c31e2863eaf4" data-share-badge-host="https://www.credly.com"></div>
-<script type="text/javascript" async="" src="//cdn.credly.com/assets/utilities/embed.js"></script>]]></content><author><name>STORB Consulting</name></author><summary type="html"><![CDATA[Microsoft Certified: Azure IoT Developer Specialty was issued by Microsoft to Christian Storb.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://chstorb.github.io/assets/images/consulting/blog/artificial-intelligence-3382507_1920.jpg" /><media:content medium="image" url="https://chstorb.github.io/assets/images/consulting/blog/artificial-intelligence-3382507_1920.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Modernize Your ASP.NET Web Forms Application to .NET Core, Blazor, and the Cloud</title><link href="https://chstorb.github.io/cloud/web%20forms/asp.net/blazor/2020/08/11/modernize-your-aspnet-web-forms-application-to-net-core-blazor-and-the-cloud.html" rel="alternate" type="text/html" title="Modernize Your ASP.NET Web Forms Application to .NET Core, Blazor, and the Cloud" /><published>2020-08-11T00:00:00+00:00</published><updated>2020-08-11T00:00:00+00:00</updated><id>https://chstorb.github.io/cloud/web%20forms/asp.net/blazor/2020/08/11/modernize-your-aspnet-web-forms-application-to-net-core-blazor-and-the-cloud</id><content type="html" xml:base="https://chstorb.github.io/cloud/web%20forms/asp.net/blazor/2020/08/11/modernize-your-aspnet-web-forms-application-to-net-core-blazor-and-the-cloud.html"><![CDATA[<p><b>Workshop:</b> Modernize Your ASP.NET Web Forms Application to .NET Core, Blazor, and the Cloud &lt;/div&gt;&lt;div&gt;<br />&lt;/div&gt;<a href="https://bit.ly/33SjWgP" target="_blank">https://bit.ly/33SjWgP</a></p>]]></content><author><name>STORB Consulting</name></author><category term="Cloud" /><category term="Web Forms" /><category term="ASP.NET" /><category term="Blazor" /><summary type="html"><![CDATA[Workshop: Modernize Your ASP.NET Web Forms Application to .NET Core, Blazor, and the Cloud &lt;/div&gt;&lt;div&gt;&lt;/div&gt;https://bit.ly/33SjWgP]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://chstorb.github.io/assets/images/consulting/blog/artificial-intelligence-3382507_1920.jpg" /><media:content medium="image" url="https://chstorb.github.io/assets/images/consulting/blog/artificial-intelligence-3382507_1920.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Use Google Material icons in the toolbar command buttons of the jQuery Grid by Kendo UI</title><link href="https://chstorb.github.io/2020/07/16/use-google-material-icons-in-the-toolbar-command-buttons-of-the-jquery-grid-by-kendo-ui.html" rel="alternate" type="text/html" title="Use Google Material icons in the toolbar command buttons of the jQuery Grid by Kendo UI" /><published>2020-07-16T00:00:00+00:00</published><updated>2020-07-16T00:00:00+00:00</updated><id>https://chstorb.github.io/2020/07/16/use-google-material-icons-in-the-toolbar-command-buttons-of-the-jquery-grid-by-kendo-ui</id><content type="html" xml:base="https://chstorb.github.io/2020/07/16/use-google-material-icons-in-the-toolbar-command-buttons-of-the-jquery-grid-by-kendo-ui.html"><![CDATA[<p>Google Material icons require specific HTML to be rendered in the toolbar. You can use a command template and declare the needed HTML to work around this issue. <a href="https://jsfiddle.net/chstorb/d6eakc9w/" target="_blank">https://jsfiddle.net/chstorb/d6eakc9w/</a></p>]]></content><author><name>STORB Consulting</name></author><category term="jquery" /><category term="KendoUI" /><category term="materialicons" /><summary type="html"><![CDATA[Google Material icons require specific HTML to be rendered in the toolbar. You can use a command template and declare the needed HTML to work around this issue. https://jsfiddle.net/chstorb/d6eakc9w/]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://chstorb.github.io/assets/images/consulting/blog/artificial-intelligence-3382507_1920.jpg" /><media:content medium="image" url="https://chstorb.github.io/assets/images/consulting/blog/artificial-intelligence-3382507_1920.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Pixabay: Kostenlose Bilder und Videos für Deine kreativen Projekte</title><link href="https://chstorb.github.io/2020/07/11/pixabay-kostenlose-bilder-und-videos-fr-deine-kreativen-projekte.html" rel="alternate" type="text/html" title="Pixabay: Kostenlose Bilder und Videos für Deine kreativen Projekte" /><published>2020-07-11T00:00:00+00:00</published><updated>2020-07-11T00:00:00+00:00</updated><id>https://chstorb.github.io/2020/07/11/pixabay-kostenlose-bilder-und-videos-fr-deine-kreativen-projekte</id><content type="html" xml:base="https://chstorb.github.io/2020/07/11/pixabay-kostenlose-bilder-und-videos-fr-deine-kreativen-projekte.html"><![CDATA[<p><b><a href="https://pixabay.com" target="_blank">Pixabay.com</a></b> ist eine internationale Website für kostenlose und lizenzfreie Fotos, Illustrationen, Vektorgrafiken und Videos.</p>
-
-<p><a href="https://pixabay.com/de" target="_blank"><img border="0" data-original-height="788" data-original-width="1301" height="389" src="/assets/images/consulting/blog/pixabay.jpg" width="640" /></a></p>
-
-<p>Auf der Seite teilt die Online-Community aktuell mehr als 2 Millionen hochwertige Stock-Bilder und -Videos. Alle Inhalte werden frei von Urheberrechten unter der Pixabay Lizenz veröffentlicht. Dies ermöglicht eine sichere Verwendung selbst für kommerzielle Zwecke. Eine Quellenangabe ist freiwillig.</p>]]></content><author><name>STORB Consulting</name></author><category term="imagedatabase" /><summary type="html"><![CDATA[Pixabay.com ist eine internationale Website für kostenlose und lizenzfreie Fotos, Illustrationen, Vektorgrafiken und Videos.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://chstorb.github.io/assets/images/consulting/blog/pixabay.jpg" /><media:content medium="image" url="https://chstorb.github.io/assets/images/consulting/blog/pixabay.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">CodeMirror</title><link href="https://chstorb.github.io/2020/07/07/codemirror.html" rel="alternate" type="text/html" title="CodeMirror" /><published>2020-07-07T00:00:00+00:00</published><updated>2020-07-07T00:00:00+00:00</updated><id>https://chstorb.github.io/2020/07/07/codemirror</id><content type="html" xml:base="https://chstorb.github.io/2020/07/07/codemirror.html"><![CDATA[<p><b><a href="https://codemirror.net" target="_blank">CodeMirror</a></b> ist ein universeller Quellcode-Editor, der in JavaScript für Browser implementiert ist. Er ist auf die Codebearbeitung spezialisiert und verfügt über eine Vielzahl von Sprachmodi und Add-Ons, die erweiterte Bearbeitungsfunktionen implementieren. <a href="https://codemirror.net" target="_blank">https://codemirror.net</a></p>]]></content><author><name>STORB Consulting</name></author><category term="editor" /><category term="javascript" /><summary type="html"><![CDATA[CodeMirror ist ein universeller Quellcode-Editor, der in JavaScript für Browser implementiert ist. Er ist auf die Codebearbeitung spezialisiert und verfügt über eine Vielzahl von Sprachmodi und Add-Ons, die erweiterte Bearbeitungsfunktionen implementieren. https://codemirror.net]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://chstorb.github.io/assets/images/consulting/blog/artificial-intelligence-3382507_1920.jpg" /><media:content medium="image" url="https://chstorb.github.io/assets/images/consulting/blog/artificial-intelligence-3382507_1920.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<p>Mit diesen einfachen Schritten können Sie einen <code class="language-plaintext highlighter-rouge">iframe</code> in Ihrer Blazor-Anwendung so konfigurieren, dass er die gesamte verfügbare Fläche in einem Seitenbereich einnimmt und dabei einen erforderlichen Parameter für die Webseite verwendet. Durch die Verwendung von scoped CSS stellen Sie sicher, dass das Styling nur auf die spezifische Komponente angewendet wird, wodurch mögliche Konflikte mit anderen Stilen vermieden werden.</p>]]></content><author><name>Christian Storb</name></author><category term=".NET" /><category term="Blazor" /><category term="Frontend-Entwicklung" /><category term="Programmierung" /><category term="Softwareentwicklung" /><category term="Tech Tips" /><category term="Webentwicklung" /><category term="Blazor-Komponente" /><category term="CSS" /><category term="HTML" /><category term="Iframe" /><category term="Parameter" /><category term="Scoped CSS" /><summary type="html"><![CDATA[Einleitung In diesem Artikel zeigen wir, wie man einen iframe in einer Blazor-Anwendung so konfiguriert, dass er die gesamte verfügbare Fläche in einem Seiten...]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://chstorb.github.io/assets/images/consulting/blog/coding-924920_1280.webp" /><media:content medium="image" url="https://chstorb.github.io/assets/images/consulting/blog/coding-924920_1280.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
