@@ -1,41 +1,23 @@
-﻿---
+---
 layout: post
 title: "Exploring Azure Data Explorer: A Free Cluster Guide"
-date: 2023-10-15
-categories: []
-tags: []
-author: STORB Consulting
-image: /assets/images/consulting/blog/artificial-intelligence-3382507_1920.jpg
-locale: "de_DE"
-seo: 
-  type: BlogPosting  
+date: 2023-10-15 16:29:00 +0100
+categories: [Azure] 
+description: "Azure Data Explorer (ADX) offers powerful data exploration capabilities for log and telemetry data. In this guide, we'll walk you through creating your own free ADX cluster and getting started with data analysis."
+tags: [Azure, DataExplorer]
+author: "Christian Storb"
+locale: "en_US"
+image: /assets/images/consulting/blog/wsl-auf-windows.jpg
+seo:
+  type: BlogPosting
 ---
-<p>Azure Data Explorer (ADX) offers powerful data exploration capabilities for log and telemetry data. In this guide, we'll walk you through creating your own <strong>free ADX cluster</strong> and getting started with data analysis.</p>
 
-<h2>1. Creating Your Free Cluster</h2>
+Azure Data Explorer (ADX) offers powerful data exploration capabilities for log and telemetry data. In this guide, we'll walk you through creating your own free ADX cluster and getting started with data analysis.
 
-<ul>
-<li>You don't need an Azure subscription or a credit card to create a free cluster.</li>
-<li>Use your Microsoft account or Microsoft Entra user identity.</li>
-<li>Fill out the cluster details in the "Create a free cluster" dialog.</li>
-<li>Accept the terms of service and provision the cluster (usually takes a few minutes).</li>
-</ul>
+- Creating Your Free Cluster<br>You don't need an Azure subscription or a credit card to create a free cluster.<br>Use your Microsoft account or Microsoft Entra user identity.<br>Fill out the cluster details in the "Create a free cluster" dialog.<br>Accept the terms of service and provision the cluster (usually takes a few minutes).
 
-<h2>2. Key Features of Your Free Cluster</h2>
+- Key Features of Your Free Cluster<br>Fast and Scalable: ADX provides lightning-fast data exploration for log and telemetry data.<br>Kusto Query Language (KQL): Use KQL to gain business insights into your data.<br>No Cost: Enjoy the benefits without any charges.
 
-<ul>
-<li><strong>Fast and Scalable:</strong> ADX provides lightning-fast data exploration for log and telemetry data.</li>
-<li><strong>Kusto Query Language (KQL):</strong> Use KQL to gain business insights into your data.</li>
-<li><strong>No Cost:</strong> Enjoy the benefits without any charges.</li>
-</ul>
+- Getting Started with Your Cluster<br>Explore quick actions: Create databases, ingest data, or run queries.<br>Ingest data: Load your data into the cluster using the ingestion wizard.<br>Query data: Use KQL to analyze and gain insights.
 
-<h2>3. Getting Started with Your Cluster</h2>
-
-<ul>
-<li>Explore quick actions: Create databases, ingest data, or run queries.</li>
-<li>Ingest data: Load your data into the cluster using the ingestion wizard.</li>
-<li>Query data: Use KQL to analyze and gain insights.</li>
-</ul>
-
-<p><a href="https://dataexplorer.azure.com/publicfreecluster" target="_blank">Start your ADX journey with a free cluster today! 🚀</a></p>
-
+[Start your ADX journey with a free cluster today! 🚀](https://dataexplorer.azure.com/publicfreecluster)

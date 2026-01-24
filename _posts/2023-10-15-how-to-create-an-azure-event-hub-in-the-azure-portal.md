@@ -2,14 +2,17 @@
 layout: post
 title: "How to Create an Azure Event Hub in the Azure Portal"
 date: 2023-10-15
-categories: []
-tags: []
-author: STORB Consulting
+categories: [Azure]
+tags: [Azure Event Hubs]
+description: "To create an Azure Event Hub in the Azure portal, follow these steps."
+author: "Christian Storb"
 image: /assets/images/consulting/blog/artificial-intelligence-3382507_1920.jpg
-locale: "de_DE"
+locale: "en_US"
 seo: 
   type: BlogPosting  
 ---
+
+To create an Azure Event Hub in the Azure portal, follow these steps:
 
 - Sign in to the Azure portal.
 - Create a resource group by selecting <strong>Resource groups</strong> from the left navigation pane, then selecting <strong>Create</strong>.
@@ -22,3 +25,7 @@ seo:
 
 
 That's it! You have successfully created an Azure Event Hub in the Azure portal. If you need more information about Event Hubs, you can check out <a href="https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-about" target="_blank">Microsoft's documentation</a>.
+
+## References
+
+- [How to create an Azure Event Hub in the Azure portal - Microsoft Learn](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-create-portal).

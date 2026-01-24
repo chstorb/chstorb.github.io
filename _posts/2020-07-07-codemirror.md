@@ -2,9 +2,10 @@
 layout: post
 title: "CodeMirror"
 date: 2020-07-07
-categories: []
+categories: [CodeMirror]
+description: "CodeMirror is a versatile code editor that can be used to edit code in the browser. It is based on the CodeMirror library and is available as a NuGet package."
 tags: [editor, javascript]
-author: STORB Consulting
+author: "Christian Storb"
 image: /assets/images/consulting/blog/artificial-intelligence-3382507_1920.jpg
 locale: "de_DE"
 seo: 

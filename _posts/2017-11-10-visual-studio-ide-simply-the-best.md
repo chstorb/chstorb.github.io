@@ -2,11 +2,12 @@
 layout: post
 title: "Visual Studio IDE - Simply the Best"
 date: 2017-11-10
-categories: []
+categories: [Visual Studio,TrustRadius]
+description: "Read my review of Visual Studio IDE on @TrustRadius"
 tags: [VisualStudio, TrustRadius]
-author: STORB Consulting
+author: "Christian Storb"
+locale: "en_US"
 image: /assets/images/consulting/blog/artificial-intelligence-3382507_1920.jpg
-locale: "de_DE"
 seo: 
   type: BlogPosting  
 ---

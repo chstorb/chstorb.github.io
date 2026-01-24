@@ -3,10 +3,11 @@ layout: post
 title: "Modernize Your ASP.NET Web Forms Application to .NET Core, Blazor, and the Cloud "
 date: 2020-08-11
 categories: [Cloud, Web Forms, ASP.NET, Blazor]
-tags: []
-author: STORB Consulting
+tags: [ASP.NET, Blazor, Cloud, Web Forms]
+description: "Modernize Your ASP.NET Web Forms Application to .NET Core, Blazor, and the Cloud"
+author: "Christian Storb"
 image: /assets/images/consulting/blog/artificial-intelligence-3382507_1920.jpg
-locale: "de_DE"
+locale: "en_US"
 seo: 
   type: BlogPosting  
 ---

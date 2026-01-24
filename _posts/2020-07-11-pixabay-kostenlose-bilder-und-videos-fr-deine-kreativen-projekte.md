@@ -2,9 +2,10 @@
 layout: post
 title: "Pixabay: Kostenlose Bilder und Videos für Deine kreativen Projekte"
 date: 2020-07-11
-categories: []
+categories: [Pixabay]
+description: "Pixabay ist eine kostenlose Bild- und Video-Datenbank, die von der Online-Community beigetragen wird."
 tags: [imagedatabase]
-author: STORB Consulting
+author: "Christian Storb"
 image: /assets/images/consulting/blog/pixabay.jpg
 locale: "de_DE"
 seo: 

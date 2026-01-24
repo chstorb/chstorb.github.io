@@ -2,11 +2,12 @@
 layout: post
 title: "View my verified achievement from Microsoft."
 date: 2022-06-23
-categories: []
-tags: []
-author: STORB Consulting
+categories: [Microsoft]
+tags: [Microsoft]
+description: "Microsoft Certified: Azure IoT Developer Specialty was issued by Microsoft to Christian Storb."
+author: "Christian Storb"
 image: /assets/images/consulting/blog/artificial-intelligence-3382507_1920.jpg
-locale: "de_DE"
+locale: "en_US"
 seo: 
   type: BlogPosting  
 ---

@@ -2,11 +2,12 @@
 layout: post
 title: "Use Google Material icons in the toolbar command buttons of the jQuery Grid by Kendo UI"
 date: 2020-07-16
-categories: []
+categories: [KendoUI, jQuery]
+description: "Google Material icons require specific HTML to be rendered in the toolbar. You can use a command template and declare the needed HTML to work around this issue."
 tags: [jquery, KendoUI, materialicons]
-author: STORB Consulting
+author: "Christian Storb"
 image: /assets/images/consulting/blog/artificial-intelligence-3382507_1920.jpg
-locale: "de_DE"
+locale: "en_US"
 seo: 
   type: BlogPosting  
 ---
