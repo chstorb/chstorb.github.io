@@ -271,3 +271,27 @@ footer {
 .hover-primary:hover {
   color: var(--stc-accent) !important;
 }
+
+/* Code Blocks */
+pre {
+  background: #0b0b0b;
+  color: #e6e6e6;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Courier New", monospace;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.code-copy {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  pre {
+    font-size: 0.85rem;
+  }
+}
