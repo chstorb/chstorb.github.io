@@ -5,7 +5,9 @@ date: 2023-10-18 14:23:27 +0100
 categories: [Azure]
 description: "Azure Functions provides a wide range of triggers that can be used to run your functions. Here are some of the most commonly used triggers"
 tags: [Azure Functions]
-author: "Christian Storb"
+author: 
+  name: "Christian Storb" 
+  url: "/author/christian-storb/"
 image: /assets/images/consulting/blog/artificial-intelligence-3382507_1920.jpg
 locale: "en_US"
 seo:

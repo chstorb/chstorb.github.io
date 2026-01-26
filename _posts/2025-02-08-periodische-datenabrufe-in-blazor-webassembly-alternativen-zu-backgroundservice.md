@@ -6,7 +6,9 @@ permalink: /blog/2025/02/08/periodische-datenabrufe-blazor-webassembly-backgroun
 categories: [.NET, Blazor, Echtzeit-Kommunikation, Frontend-Entwicklung, JavaScript, Programmierung, SignalR, Softwareentwicklung, Tech Tips, Webentwicklung]
 description: "Blazor WebAssembly bietet eine erstaunliche Möglichkeit, Client-seitige Webanwendungen mit C# und .NET zu entwickeln. Doch es gibt einige Unterschiede zu Blazor Server..."
 tags: [".NET Core", "ASP.NET Core", "BackgroundService", "Blazor WebAssembly", "C#", "Client-seitige Entwicklung", "Datenübertragung", "Echtzeit-Daten", "Hub", "IJSRuntime", "Live-Daten", "Periodische Aufrufe", "SignalR Hub", "Timer", "Webanwendungen"]
-author: "Christian Storb"
+author: 
+  name: "Christian Storb" 
+  url: "/author/christian-storb/"
 locale: "de_DE"
 image: /assets/images/consulting/blog/network-4774766_1280.webp
 seo:

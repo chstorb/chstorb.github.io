@@ -5,7 +5,9 @@ date: 2024-12-24 09:27:00 +0100
 categories: [Security, Tech Tips]
 description: "This article emphasizes the importance of verifying the integrity of the KeePass installer by calculating its file hash using PowerShell. It describes KeePass as a secure, customizable password manager and explains how to check the hash value to ensure the downloaded file remains unaltered. Proper hash verification is crucial for file security."
 tags: [KeePass, PowerShell]
-author: "Christian Storb"
+author: 
+  name: "Christian Storb" 
+  url: "/author/christian-storb/"
 image: /assets/images/consulting/blog/technology-6701509_1280.webp  
 locale: "en_US"
 seo:

@@ -5,7 +5,9 @@ date: 2024-11-15 19:23:35 +0100
 categories: [Jekyll, Ruby, GitHub Pages, VS Code]
 description: "Eine Anleitung zur effizienten Erstellung von Jekyll-Websites mit Visual Studio Code."
 tags: [Jekyll, Ruby, GitHub Pages, VS Code]
-author: "Christian Storb"
+author: 
+  name: "Christian Storb" 
+  url: "/author/christian-storb/"
 image: /assets/images/consulting/blog/jekyll+vscode.png
 locale: "de_DE"
 seo: 

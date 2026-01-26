@@ -1,11 +1,13 @@
-﻿---
+---
 layout: post
 title: "How to Create an Azure Event Hub in the Azure Portal"
 date: 2023-10-15
 categories: [Azure]
 tags: [Azure Event Hubs]
 description: "To create an Azure Event Hub in the Azure portal, follow these steps."
-author: "Christian Storb"
+author: 
+  name: "Christian Storb" 
+  url: "/author/christian-storb/"
 image: /assets/images/consulting/blog/artificial-intelligence-3382507_1920.jpg
 locale: "en_US"
 seo: 

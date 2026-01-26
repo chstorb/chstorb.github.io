@@ -5,7 +5,9 @@ date: 2025-03-10 15:35:47 +0100
 categories: [Container-Technologie, Linux, Softwareentwicklung, Systemadministration, Technologie, WSL]
 description: "Dieser Artikel konzentriert sich auf praktische Beispiele mit minimaler Erläuterung, um dir eine klare und einfache Anleitung zur Installation der Moby-Engine..."
 tags: [Azure IoT Edge, Docker-Kompatibilität, Linux auf Windows, Linux-Anleitung, Linux-Container, Microsoft-Paketquellen, Moby-Daemon, Moby-Engine, Ubuntu 24.04, Ubuntu installieren, Windows Subsystem for Linux, WSL]
-author: "Christian Storb"
+author: 
+  name: "Christian Storb" 
+  url: "/author/christian-storb/"
 locale: "de_DE"
 image: /assets/images/consulting/blog/moby-engine-auf-ubuntu-24.04-in-wsl.jpg
 seo:

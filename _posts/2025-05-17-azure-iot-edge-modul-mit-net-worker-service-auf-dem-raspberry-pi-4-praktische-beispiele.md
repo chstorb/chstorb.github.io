@@ -5,7 +5,9 @@ date: 2025-05-17 13:10:43 +0100
 categories: [.NET, Azure IOT, Cloud-Technologie, Raspberry Pi, Softwareentwicklung]
 description: "<p> Azure IoT Edge ermöglicht es, Container-basierte Module auf Geräten wie dem Raspberry Pi 4 auszuführen. Mit .NET 6 und dem Worker Service-Template lassen ..."
 tags: [.NET 6, Azure IoT Edge, BackgroundService, C#, Docker, Edge Computing, Edge Deployment, IoT Modul, Raspberry Pi 4, REST API, Worker Service]
-author: "Christian Storb"
+author: 
+  name: "Christian Storb" 
+  url: "/author/christian-storb/"
 image: /assets/images/consulting/blog/azureiotedgeundnetworker.png
 locale: "de_DE"
 seo:

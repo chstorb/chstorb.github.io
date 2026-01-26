@@ -5,7 +5,9 @@ date: 2024-01-04 09:43:53 +0100
 categories: [.NET]
 description: "WebApplicationFactory is a powerful tool that can help you write integration tests for your .NET applications. It allows you to create an in-memory instance o..."
 tags: [.NET, architecture, automation, continuous-integration, testing]
-author: "Christian Storb"
+author: 
+  name: "Christian Storb" 
+  url: "/author/christian-storb/"
 locale: "en_US"
 image: /assets/images/consulting/blog/kontobestaetigung-identity.jpg
 seo:

@@ -5,7 +5,9 @@ date: 2025-01-05 15:32:30 +0100
 categories: [Visual Studio]
 description: "Das Leeren des Caches in Visual Studio 2022 kann helfen, die Leistung zu verbessern und Probleme zu vermeiden. Temporäre Dateien können im Laufe der Zeit veraltet oder beschädigt werden. Der Artikel beschreibt, wie man den Komponenten-Cache, Temp-Ordner, Roslyn-Ordner, temporäre ASP.NET-Dateien, Website-Cache, Sicherungsdateien und Projekt-Assemblies leeren kann, um eine stabile und effiziente Entwicklungsumgebung zu gewährleisten."
 tags: [ASP.NET-Dateien, Cache leeren, Effizienz, Entwicklungsumgebung, Komponenten-Cache, Leistungsverbesserung, Projekt-Assemblies, Roslyn-Ordner, Sicherungsdateien, Stabilität, Temp-Ordner, temporäre Dateien, Visual Studio 2022, Website-Cache]
-author: "Christian Storb"
+author: 
+  name: "Christian Storb" 
+  url: "/author/christian-storb/"
 locale: "de_DE"
 image: /assets/images/consulting/blog/coding-924920_1280.webp 
 seo:

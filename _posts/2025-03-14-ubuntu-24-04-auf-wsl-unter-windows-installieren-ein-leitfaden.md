@@ -5,7 +5,9 @@ date: 2025-03-14 14:33:43 +0100
 categories: [.NET, IoT, Linux, Open Source, Programmierung, Softwareentwicklung, Tech Tips, Technologie, Windows]
 description: "Die Kombination von Windows und Linux in einem System bietet unschätzbare Flexibilität. Mit Windows Subsystem for Linux (WSL) kannst du Linux direkt auf deine..."
 tags: [Entwicklung, Git installieren, Linux auf Windows, Linux-Anleitung, Linux-Integration, Microsoft Store, Paketquellen aktualisieren, Software-Entwicklung, Ubuntu 24.04, Ubuntu Einrichtung, Ubuntu installieren, VirtualMachinePlatform, Windows Subsystem for Linux, Windows-Features aktivieren, WSL, WSL 2]
-author: "Christian Storb"
+author: 
+  name: "Christian Storb" 
+  url: "/author/christian-storb/"
 image: /assets/images/consulting/blog/wsl-auf-windows.jpg
 locale: "de_DE"
 seo:

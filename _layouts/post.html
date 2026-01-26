@@ -48,11 +48,26 @@
                 <span class="material-symbols-outlined me-1 fs-5">calendar_today</span>
                 {{ page.date | date: "%d. %B %Y" }}
               </span>
-              {% if page.author %}
+
+              {% assign author_name = page.author.name | default: page.author %}
+              {% assign author_url = page.author.url %}
+
+              {% if author_url == nil %}
+              {% if author_name == site.author.name and site.author.url %}
+              {% assign author_url = site.author.url %}
+              {% endif %}
+              {% endif %}
+
+              {% if author_name %}
               <span class="mx-2">•</span>
               <span class="d-flex align-items-center">
                 <span class="material-symbols-outlined me-1 fs-5">person</span>
-                {{ page.author }}
+                {% if author_url %}
+                <a href="{{ author_url }}"
+                  class="text-reset text-decoration-none border-bottom border-dark-subtle pb-0">{{ author_name }}</a>
+                {% else %}
+                {{ author_name }}
+                {% endif %}
               </span>
               {% endif %}
             </div>

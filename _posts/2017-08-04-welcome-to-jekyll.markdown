@@ -5,7 +5,9 @@ date:   2017-08-04 19:22:35 +0100
 categories: [jekyll]
 description: "Willkommen zu Jekyll! Entdecken Sie, wie einfach Sie statische Webseiten erstellen können."
 image: /assets/images/consulting/blog/welcome2jekyll.png
-author: "Christian Storb"
+author: 
+  name: "Christian Storb" 
+  url: "/author/christian-storb/"
 locale: "en_EN"
 seo: 
   type: BlogPosting  

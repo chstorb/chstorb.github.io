@@ -5,7 +5,9 @@ date: 2025-05-01 10:57:02 +0100
 categories: [.NET, Automatisierung, Cloud-Technologie, Datenverwaltung, Performance Optimierung, Programmierung, Softwareentwicklung, Technologie]
 description: "Die Wahl der richtigen Datenverwaltungslösung kann entscheidend für die Effizienz und Skalierbarkeit eines Projekts sein. Während Azure Table Storage eine lei..."
 tags: [API, Azure Table Storage, Cloud Speicher, Cloud-Technologie, Datenbanken, Datenintegration, Datenmanagement, Datenverwaltung, Google Cloud, Google Sheets, Kollaboration, Kosten, Microsoft Azure, NoSQL, Performance, SheetsService API, Skalierbarkeit, Vergleich, Webentwicklung]
-author: "Christian Storb"
+author: 
+  name: "Christian Storb" 
+  url: "/author/christian-storb/"
 image: /assets/images/consulting/blog/googlesheetsvsazuretablestorage.webp
 locale: "de_DE"
 seo:

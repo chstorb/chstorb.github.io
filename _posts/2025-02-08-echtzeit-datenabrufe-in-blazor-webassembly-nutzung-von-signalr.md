@@ -6,7 +6,9 @@ permalink: /blog/2025/02/08/echtzeit-datenabrufe-blazor-webassembly-signalr/
 categories: [.NET, Blazor, Frontend-Entwicklung, Programmierung, Softwareentwicklung, Tech Tips, Webentwicklung]
 description: "Blazor WebAssembly eröffnet spannende Möglichkeiten für die Entwicklung von Client-seitigen Webanwendungen mit C# und .NET. Doch es gibt einige Unterschiede zu Blazor Server..."
 tags: [".NET Core", "ASP.NET Core", "BackgroundService", "Blazor WebAssembly", "C#", "Client-seitige Entwicklung", "Datenübertragung", "Echtzeit-Daten", "Echtzeit-Kommunikation", "Hub", "IJSRuntime", "Live-Daten", "Periodische Aufrufe", "SignalR", "SignalR Hub", "Timer", "Webanwendungen"]
-author: "Christian Storb"
+author: 
+  name: "Christian Storb" 
+  url: "/author/christian-storb/"
 image: /assets/images/consulting/blog/signalr.webp
 locale: "de_DE"
 seo:

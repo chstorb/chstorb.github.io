@@ -6,7 +6,9 @@ categories: [Raspberry Pi, Tech Tips]
 description: "PuTTY ist ein leistungsstarkes und vielseitiges Terminal-Emulator-Programm, das es dir ermöglicht, sichere Verbindungen zu Remote-Servern herzustellen. Besonders nü..."
 tags: [Netzwerkadministration, PuTTY]
 image: /assets/images/consulting/blog/putty.png
-author: "Christian Storb"
+author: 
+  name: "Christian Storb" 
+  url: "/author/christian-storb/"
 image: /assets/images/consulting/blog/connections-4393377_1280.webp
 locale: "de_DE"
 seo:

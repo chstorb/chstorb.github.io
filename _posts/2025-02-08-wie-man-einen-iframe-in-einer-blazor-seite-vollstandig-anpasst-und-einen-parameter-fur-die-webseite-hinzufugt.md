@@ -5,7 +5,9 @@ date: 2025-02-08 15:53:39 +0100
 categories: [.NET, Blazor, Frontend-Entwicklung, Programmierung, Softwareentwicklung, Tech Tips, Webentwicklung]
 description: "Einleitung In diesem Artikel zeigen wir, wie man einen iframe in einer Blazor-Anwendung so konfiguriert, dass er die gesamte verfügbare Fläche in einem Seiten..."
 tags: [Blazor-Komponente, CSS, HTML, Iframe, Parameter, Scoped CSS]
-author: "Christian Storb"
+author: 
+  name: "Christian Storb" 
+  url: "/author/christian-storb/"
 image: /assets/images/consulting/blog/coding-924920_1280.webp
 locale: "de_DE"
 seo:

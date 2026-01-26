@@ -4,7 +4,9 @@ title: "Connect to Raspberry Pi via SSH"
 date: 2023-10-15 20:00:30 +0100
 categories: [Raspberry Pi]
 description: "To connect to your Raspberry Pi via SSH, you need to enable SSH on your Raspberry Pi and then use the command prompt on your computer to connect to it. Here a..."
-author: "Christian Storb"
+author: 
+  name: "Christian Storb" 
+  url: "/author/christian-storb/"
 locale: "en_US"
 image: /assets/images/consulting/blog/computer-8045000_1280.webp
 seo:

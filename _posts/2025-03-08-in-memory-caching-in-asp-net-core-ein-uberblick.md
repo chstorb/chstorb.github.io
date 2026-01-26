@@ -5,7 +5,9 @@ date: 2025-03-08 11:25:19 +0100
 categories: [.NET, Performance Optimierung, Programmierung, Tech Tips, Webentwicklung]
 description: "In der heutigen digitalen Welt ist die Leistungsfähigkeit einer Anwendung entscheidend für ihren Erfolg. Eine effektive Methode, um die Geschwindigkeit und Sk..."
 tags: [ASP.NET Core, Cache Verwaltung, Caching Techniken, Daten Zwischenspeicherung, IMemoryCache, In-Memory Caching, Leistungsverbesserung, Skalierbarkeit]
-author: "Christian Storb"
+author: 
+  name: "Christian Storb" 
+  url: "/author/christian-storb/"
 image: /assets/images/consulting/blog/in-memory-caching-in-asp.net-core.jpg
 locale: "de_DE"
 seo:

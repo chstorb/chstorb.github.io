@@ -5,7 +5,9 @@ date: 2024-12-25 15:34:53 +0100
 categories: [Azure, Raspberry Pi]
 description: "In der heutigen vernetzten Welt ist das Internet der Dinge (IoT) nicht mehr wegzudenken. Mit  kannst du deine IoT-Geräte intelligent und effizient verwalten. ..."
 tags: [devops, IoT, IoT Edge, Moby]
-author: "Christian Storb"
+author: 
+  name: "Christian Storb" 
+  url: "/author/christian-storb/"
 image: /assets/images/consulting/blog/computer-8045000_1280.webp
 locale: "de_DE"
 seo:

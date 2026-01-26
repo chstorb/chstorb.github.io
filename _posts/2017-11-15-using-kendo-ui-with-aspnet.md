@@ -1,11 +1,13 @@
-﻿---
+---
 layout: post
 title: "Using Kendo UI with ASP.NET"
 date: 2017-11-15 16:29:00 +0100
 categories: [KendoUI, ASP.NET]
 description: "Read my review of Kendo UI for jQuery on @TrustRadius"
 tags: [TrustRadius, KendoUI]
-author: "Christian Storb"
+author: 
+  name: "Christian Storb" 
+  url: "/author/christian-storb/"
 image: /assets/images/consulting/blog/artificial-intelligence-3382507_1920.jpg
 locale: "en_US"
 seo: 

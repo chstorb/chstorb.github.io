@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: STORB Consulting
+title: "STORB Consulting"
 tagline: "STORB Consulting unterstützt Ihr Projekt bei Kunden und Geschäftspartnern vor Ort."
 email: mail2storb@gmail.com
 description: >-
@@ -28,7 +28,8 @@ url: "https://chstorb.github.io" # the base hostname & protocol for your site, e
 author: 
   name: "Christian Storb" 
   email: "mail2storb@gmail.com" 
-  url: "https://chstorb.github.io" 
+  url: "https://chstorb.github.io/author/christian-storb/"
+  avatar: "/assets/images/authors/christian-storb.jpg"
   github: "https://github.com/chstorb" 
   linkedin: "https://www.linkedin.com/in/christian-storb-326249aa/" 
   twitter: "https://twitter.com/ChristianStorb" 

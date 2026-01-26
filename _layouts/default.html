@@ -35,9 +35,8 @@
     <div class="container py-5">
 
       <!-- Page Title (Visually Hidden by default, accessible for Screen Readers) -->
-      <h1 class="visually-hidden mb-4 fw-bold">
-        {{- page.title | default: "" -}}
-      </h1>
+      <h1 class="visually-hidden mb-4 fw-bold">Christian Storb - STORB Consulting{% if page.title %} - {{ page.title
+        }}{% endif %}</h1>
 
       {{ content }}
 
@@ -48,6 +47,7 @@
 
   <!-- Scripts -->
   <script src="{{ '/assets/js/bootstrap.bundle.min.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
+  <script src="{{ '/assets/js/copy-code.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
   <script src="https://www.dwin2.com/pub.1933231.min.js"></script>
 
 </body>

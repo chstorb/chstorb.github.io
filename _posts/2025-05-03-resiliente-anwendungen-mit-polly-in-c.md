@@ -5,7 +5,9 @@ date: 2025-05-03 12:13:00 +0100
 categories: [.NET, Cloud-Technologie, Open Source, Performance Optimierung, Programmierung, Softwareentwicklung]
 description: "In der modernen Softwareentwicklung sind Fehlertoleranz und Resilienz entscheidende Faktoren für stabile Anwendungen. Polly, eine leistungsstarke Resilience-B..."
 tags: [API-Fehler, C#, Circuit Breaker, Cloud-Architektur, Fallback, Fehlertoleranz, Microservices, Netzwerkstabilität, Polly, Rate Limiting, Resilienz, Retry, Robuste Anwendungen, Timeout]
-author: "Christian Storb"
+author: 
+  name: "Christian Storb" 
+  url: "/author/christian-storb/"
 image: /assets/images/consulting/blog/polly.webp
 locale: "de_DE"
 seo:

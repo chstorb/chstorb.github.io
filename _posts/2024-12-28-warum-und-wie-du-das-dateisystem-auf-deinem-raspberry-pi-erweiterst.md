@@ -6,7 +6,9 @@ categories: [Raspberry Pi, Tech Tips]
 description: "Wenn du einen  einrichtest, ist es wichtig, das Dateisystem zu erweitern, um den gesamten verfügbaren Speicherplatz auf deiner SD-Karte zu nutzen. Hier erfähr..."
 tags: [Filesystem]
 image: /assets/images/consulting/blog/digital-data-carriers-1443484_1280.webp
-author: "Christian Storb"
+author: 
+  name: "Christian Storb" 
+  url: "/author/christian-storb/"
 locale: "de_DE"
 seo:
   type: BlogPosting

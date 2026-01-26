@@ -5,7 +5,9 @@ date: 2025-05-01 12:22:00 +0100
 categories: [Open Source, Programmierung, Softwareentwicklung, Systemadministration, Technologie]
 description: "Änderung der Versionsnummer nach einem Bugfix Die Änderung der Versionsnummer nach einem Bugfix folgt in der Regel dem Prinzip der . Dabei wird die Versionsnu..."
 tags: [API-Kompatibilität, Bugfix, Code-Qualität, Entwicklung, Git, GitHub, Major-Update, Minor-Update, Patch-Update, Release-Management, Semantische Versionierung, SemVer, Software-Wartung, Versionierungsstrategie, Versionsverwaltung]
-author: "Christian Storb"
+author: 
+  name: "Christian Storb" 
+  url: "/author/christian-storb/"
 image: /assets/images/consulting/blog/softwareentwicklerin.webp
 locale: "de_DE"
 seo:

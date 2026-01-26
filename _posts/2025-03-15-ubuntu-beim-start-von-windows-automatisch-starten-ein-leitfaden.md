@@ -5,7 +5,9 @@ date: 2025-03-15 14:53:13 +0100
 categories: [Automatisierung, IoT, Linux, Open Source, Softwareentwicklung, Technologie, Windows, WSL (Windows Subsystem for Linux)]
 description: "Wenn du häufig mit Ubuntu unter Windows Subsystem for Linux (WSL) arbeitest, kann es praktisch sein, die Linux-Distribution automatisch mit dem Start von Wind..."
 tags: [Autostart Ubuntu, Entwicklung, Linux auf Windows, Linux-Befehle, Linux-Integration, PowerShell, shell:startup, Software-Entwicklung, Ubuntu 24.04, Ubuntu automatisch starten, Ubuntu Distribution, Ubuntu im Hintergrund starten, Windows Subsystem for Linux, Windows-Automatisierung, WSL, wsl --set-default, WSL 2]
-author: "Christian Storb"
+author: 
+  name: "Christian Storb" 
+  url: "/author/christian-storb/"
 image: /assets/images/consulting/blog/ubuntu-und-wsl.jpg
 locale: "de_DE"
 seo:

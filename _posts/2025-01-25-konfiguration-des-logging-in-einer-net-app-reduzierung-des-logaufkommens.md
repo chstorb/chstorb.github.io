@@ -4,7 +4,9 @@ title: "Konfiguration des Logging in einer .NET-App: Reduzierung des Logaufkomme
 date: 2025-01-25 17:51:35 +0100
 categories: [.NET, Azure, Logging, Visual Studio]
 description: "In einer .NET-Anwendung ist das Logging ein wesentlicher Bestandteil zur Überwachung und Fehlerdiagnose. Allerdings kann ein übermäßiges Logaufkommen die Perf..."
-author: "Christian Storb"
+author: 
+  name: "Christian Storb" 
+  url: "/author/christian-storb/"
 image: /assets/images/consulting/blog/dotnet-logging.webp 
 locale: "de_DE"
 seo:

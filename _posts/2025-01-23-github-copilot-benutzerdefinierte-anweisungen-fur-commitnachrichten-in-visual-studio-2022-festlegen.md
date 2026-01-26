@@ -5,7 +5,9 @@ date: 2025-01-23 23:06:00 +0100
 categories: [GitHub Copilot, Visual Studio]
 description: "Commitnachrichten sind ein wesentlicher Bestandteil der Versionskontrolle. Sie helfen dabei, Änderungen im Code nachvollziehbar zu dokumentieren. Um sicherzus..."
 tags: [Copilot, GitHub]
-author: "Christian Storb"
+author: 
+  name: "Christian Storb" 
+  url: "/author/christian-storb/"
 image: /assets/images/consulting/blog/copilot-instructions-1.webp   
 locale: "de_DE"
 seo:

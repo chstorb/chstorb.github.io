@@ -5,7 +5,9 @@ date: 2023-10-18 15:36:01 +0100
 categories: [Azure]
 description: "To query Azure Digital Twins by model, you can use the Azure Digital Twins query language. The query language allows you to filter based on the twin's model, ..."
 tags: [digital twins, query]
-author: "Christian Storb"
+author: 
+  name: "Christian Storb" 
+  url: "/author/christian-storb/"
 image: /assets/images/consulting/blog/kontobestaetigung-identity.jpg
 locale: "en_US"
 seo:

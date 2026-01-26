@@ -5,7 +5,9 @@ date: 2023-10-15 16:29:00 +0100
 categories: [Azure] 
 description: "Azure Data Explorer (ADX) offers powerful data exploration capabilities for log and telemetry data. In this guide, we'll walk you through creating your own free ADX cluster and getting started with data analysis."
 tags: [Azure, DataExplorer]
-author: "Christian Storb"
+author: 
+  name: "Christian Storb" 
+  url: "/author/christian-storb/"
 locale: "en_US"
 image: /assets/images/consulting/blog/wsl-auf-windows.jpg
 seo:
