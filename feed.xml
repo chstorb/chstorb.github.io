@@ -1,4 +1,121 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="de"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://chstorb.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://chstorb.github.io/" rel="alternate" type="text/html" hreflang="de" /><updated>2026-01-26T22:14:26+00:00</updated><id>https://chstorb.github.io/feed.xml</id><title type="html">STORB Consulting</title><subtitle>STORB Consulting unterstützt Ihr Projekt bei Kunden und Geschäftspartnern vor Ort – von der Planung über die Entwicklung bis zur Markteinführung und den Betrieb.</subtitle><author><name>Christian Storb</name><email>mail2storb@gmail.com</email></author><entry><title type="html">Azure IoT Edge Modul mit .NET Worker Service auf dem Raspberry Pi 4: Praktische Beispiele</title><link href="https://chstorb.github.io/.net/azure%20iot/cloud-technologie/raspberry%20pi/softwareentwicklung/2025/05/17/azure-iot-edge-modul-mit-net-worker-service-auf-dem-raspberry-pi-4-praktische-beispiele.html" rel="alternate" type="text/html" title="Azure IoT Edge Modul mit .NET Worker Service auf dem Raspberry Pi 4: Praktische Beispiele" /><published>2025-05-17T12:10:43+00:00</published><updated>2025-05-17T12:10:43+00:00</updated><id>https://chstorb.github.io/.net/azure%20iot/cloud-technologie/raspberry%20pi/softwareentwicklung/2025/05/17/azure-iot-edge-modul-mit-net-worker-service-auf-dem-raspberry-pi-4-praktische-beispiele</id><content type="html" xml:base="https://chstorb.github.io/.net/azure%20iot/cloud-technologie/raspberry%20pi/softwareentwicklung/2025/05/17/azure-iot-edge-modul-mit-net-worker-service-auf-dem-raspberry-pi-4-praktische-beispiele.html"><![CDATA[<p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="de"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://chstorb.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://chstorb.github.io/" rel="alternate" type="text/html" hreflang="de" /><updated>2026-01-27T10:23:22+00:00</updated><id>https://chstorb.github.io/feed.xml</id><title type="html">STORB Consulting</title><subtitle>STORB Consulting unterstützt Ihr Projekt bei Kunden und Geschäftspartnern vor Ort – von der Planung über die Entwicklung bis zur Markteinführung und den Betrieb.</subtitle><author><name>Christian Storb</name><email>mail2storb@gmail.com</email></author><entry><title type="html">Einen GitHub‑Copilot‑Skill entwickeln: Automatisierte Erstellung einer changes.txt</title><link href="https://chstorb.github.io/github%20copilot/automation/development/2026/01/27/github-copilot-skill-changes-txt.html" rel="alternate" type="text/html" title="Einen GitHub‑Copilot‑Skill entwickeln: Automatisierte Erstellung einer changes.txt" /><published>2026-01-27T00:00:00+00:00</published><updated>2026-01-27T00:00:00+00:00</updated><id>https://chstorb.github.io/github%20copilot/automation/development/2026/01/27/github-copilot-skill-changes-txt</id><content type="html" xml:base="https://chstorb.github.io/github%20copilot/automation/development/2026/01/27/github-copilot-skill-changes-txt.html"><![CDATA[<h2 id="einleitung">Einleitung</h2>
+
+<p>Mit der Einführung von GitHub‑Copilot‑Skills eröffnen sich neue Möglichkeiten, wiederkehrende Entwicklungsaufgaben zu automatisieren und direkt in den eigenen Workflow zu integrieren. Ein typisches Beispiel ist das Erzeugen einer <code class="language-plaintext highlighter-rouge">changes.txt</code>, die alle Änderungen zwischen dem aktuellen Branch und <code class="language-plaintext highlighter-rouge">main</code> dokumentiert. Dieser Artikel richtet sich an Entwicklerinnen und Entwickler, die Copilot‑Skills nutzen möchten, um Git‑Operationen zu automatisieren und ihre täglichen Abläufe effizienter zu gestalten.</p>
+
+<hr />
+
+<h2 id="was-ist-ein-githubcopilotskill">Was ist ein GitHub‑Copilot‑Skill?</h2>
+
+<p>Ein GitHub‑Copilot‑Skill ist eine deklarative Erweiterung, die Copilot befähigt, bestimmte Aufgaben automatisiert auszuführen. Skills definieren:</p>
+
+<ul>
+  <li><strong>Trigger</strong> (z. B. bestimmte Formulierungen)</li>
+  <li><strong>Aktionen</strong> (z. B. Skripte, Shell‑Kommandos, API‑Aufrufe)</li>
+  <li><strong>Parameter</strong> (z. B. Branch‑Namen, Dateipfade)</li>
+  <li><strong>Erwartete Ergebnisse</strong> (z. B. Dateien, Logs, Konsolenausgaben)</li>
+</ul>
+
+<p>Skills sind besonders nützlich, wenn wiederkehrende Aufgaben standardisiert werden sollen – etwa das Erzeugen einer <code class="language-plaintext highlighter-rouge">changes.txt</code> für Reviews, CI‑Pipelines oder Dokumentationszwecke.</p>
+
+<hr />
+
+<h2 id="warum-ist-ein-copilotskill-für-changestxt-wichtig">Warum ist ein Copilot‑Skill für changes.txt wichtig?</h2>
+
+<p>Ein solcher Skill bietet mehrere Vorteile:</p>
+
+<ul>
+  <li><strong>Reproduzierbarkeit</strong>: Der Diff wird immer nach demselben Muster erzeugt.</li>
+  <li><strong>Zeitersparnis</strong>: Kein manuelles Ausführen von Git‑Kommandos.</li>
+  <li><strong>Team‑Konsistenz</strong>: Alle Teammitglieder nutzen denselben Workflow.</li>
+  <li><strong>Automatisierung</strong>: Copilot kann den Skill auf Zuruf ausführen.</li>
+</ul>
+
+<p>Typische Herausforderungen, die ein Skill löst:</p>
+
+<ul>
+  <li>Vergessene <code class="language-plaintext highlighter-rouge">git fetch</code>‑Schritte</li>
+  <li>Unterschiedliche Diff‑Optionen</li>
+  <li>Manuelle Fehler bei der Dateierstellung</li>
+  <li>Fehlende Fehlerbehandlung</li>
+</ul>
+
+<hr />
+
+<h2 id="zentrale-konzepte-und-best-practices">Zentrale Konzepte und Best Practices</h2>
+
+<h3 id="-1-klare-trigger-definieren">🔹 1. Klare Trigger definieren</h3>
+<p>Ein Skill sollte eindeutig ausgelöst werden können, z. B.:</p>
+
+<ul>
+  <li>„Erzeuge changes.txt“</li>
+  <li>„Generate diff file“</li>
+  <li>„Create change report“</li>
+</ul>
+
+<p>Je klarer der Trigger, desto zuverlässiger reagiert Copilot.</p>
+
+<h3 id="-2-gitkommandos-robust-kapseln">🔹 2. Git‑Kommandos robust kapseln</h3>
+<p>Der Skill sollte die notwendigen Schritte enthalten:</p>
+
+<ul>
+  <li>Remote‑Referenzen aktualisieren</li>
+  <li>Drei‑Punkt‑Diff erzeugen</li>
+  <li>Ausgabe in Datei schreiben</li>
+  <li>Fehlerbehandlung durchführen</li>
+</ul>
+
+<h3 id="-3-skillstruktur-sauber-halten">🔹 3. Skill‑Struktur sauber halten</h3>
+<p>Ein Skill besteht typischerweise aus:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">name</code></li>
+  <li><code class="language-plaintext highlighter-rouge">description</code></li>
+  <li><code class="language-plaintext highlighter-rouge">triggers</code></li>
+  <li><code class="language-plaintext highlighter-rouge">actions</code></li>
+  <li><code class="language-plaintext highlighter-rouge">output</code></li>
+</ul>
+
+<h3 id="-4-fehlerbehandlung-integrieren">🔹 4. Fehlerbehandlung integrieren</h3>
+<p>Ein Skill sollte klar signalisieren, ob die Ausführung erfolgreich war.</p>
+
+<hr />
+
+<h2 id="beispiel">Beispiel</h2>
+
+<h3 id="beispiel-copilotskill-zur-erstellung-einer-changestxt">Beispiel: Copilot‑Skill zur Erstellung einer <code class="language-plaintext highlighter-rouge">changes.txt</code></h3>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">name</span><span class="pi">:</span> <span class="s">generate-changes-file</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Erzeugt</span><span class="nv"> </span><span class="s">eine</span><span class="nv"> </span><span class="s">changes.txt</span><span class="nv"> </span><span class="s">basierend</span><span class="nv"> </span><span class="s">auf</span><span class="nv"> </span><span class="s">dem</span><span class="nv"> </span><span class="s">Diff</span><span class="nv"> </span><span class="s">zwischen</span><span class="nv"> </span><span class="s">main</span><span class="nv"> </span><span class="s">und</span><span class="nv"> </span><span class="s">HEAD."</span>
+<span class="na">triggers</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s2">"</span><span class="s">erzeuge</span><span class="nv"> </span><span class="s">changes.txt"</span>
+  <span class="pi">-</span> <span class="s2">"</span><span class="s">generate</span><span class="nv"> </span><span class="s">changes</span><span class="nv"> </span><span class="s">file"</span>
+  <span class="pi">-</span> <span class="s2">"</span><span class="s">create</span><span class="nv"> </span><span class="s">diff</span><span class="nv"> </span><span class="s">report"</span>
+<span class="na">actions</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">run</span><span class="pi">:</span> <span class="pi">|</span>
+      <span class="s">git fetch origin main --quiet</span>
+      <span class="s">git diff --no-color main...HEAD &gt; changes.txt</span>
+      <span class="s">if [ $? -eq 0 ]; then</span>
+        <span class="s">echo "Diff written to changes.txt"</span>
+      <span class="s">else</span>
+        <span class="s">echo "Git command failed with exit code $?"</span>
+        <span class="s">exit $?</span>
+      <span class="s">fi</span>
+<span class="na">output</span><span class="pi">:</span>
+  <span class="na">files</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">changes.txt</span>
+</code></pre></div></div>
+
+<h2 id="erklärung">Erklärung</h2>
+<p>Trigger: Definiert, wann Copilot den Skill ausführt.</p>
+
+<p>run: Enthält die Git‑Kommandos zur Erzeugung der Datei.</p>
+
+<p>output: Informiert Copilot, welche Datei erzeugt wurde.</p>
+
+<p>Dieser Skill kann nun in Copilot Skills eingebunden und direkt per Sprach‑ oder Texteingabe ausgeführt werden.</p>
+
+<h2 id="fazit">Fazit</h2>
+<p>Ein GitHub‑Copilot‑Skill zur automatisierten Erstellung einer changes.txt ist ein kleiner, aber wirkungsvoller Baustein für moderne Entwicklungsprozesse. Er standardisiert wiederkehrende Aufgaben, reduziert Fehlerquellen und steigert die Effizienz im Team. Durch die Kombination aus Git‑Automatisierung und Copilot‑Integration entsteht ein flexibler Workflow, der sich nahtlos in bestehende Entwicklungsumgebungen einfügt.</p>]]></content><author><name>Christian Storb</name></author><category term="GitHub Copilot" /><category term="Automation" /><category term="Development" /><category term="github-copilot" /><category term="skills" /><category term="automation" /><category term="git" /><category term="workflow" /><summary type="html"><![CDATA[Ein praxisorientierter Leitfaden zur Entwicklung eines GitHub‑Copilot‑Skills, der automatisiert eine changes.txt erzeugt.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://chstorb.github.io/assets/images/consulting/blog/artificial-intelligence-3382507_1920.jpg" /><media:content medium="image" url="https://chstorb.github.io/assets/images/consulting/blog/artificial-intelligence-3382507_1920.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Azure IoT Edge Modul mit .NET Worker Service auf dem Raspberry Pi 4: Praktische Beispiele</title><link href="https://chstorb.github.io/.net/azure%20iot/cloud-technologie/raspberry%20pi/softwareentwicklung/2025/05/17/azure-iot-edge-modul-mit-net-worker-service-auf-dem-raspberry-pi-4-praktische-beispiele.html" rel="alternate" type="text/html" title="Azure IoT Edge Modul mit .NET Worker Service auf dem Raspberry Pi 4: Praktische Beispiele" /><published>2025-05-17T12:10:43+00:00</published><updated>2025-05-17T12:10:43+00:00</updated><id>https://chstorb.github.io/.net/azure%20iot/cloud-technologie/raspberry%20pi/softwareentwicklung/2025/05/17/azure-iot-edge-modul-mit-net-worker-service-auf-dem-raspberry-pi-4-praktische-beispiele</id><content type="html" xml:base="https://chstorb.github.io/.net/azure%20iot/cloud-technologie/raspberry%20pi/softwareentwicklung/2025/05/17/azure-iot-edge-modul-mit-net-worker-service-auf-dem-raspberry-pi-4-praktische-beispiele.html"><![CDATA[<p>
 Azure IoT Edge ermöglicht es, Container-basierte Module auf Geräten wie dem Raspberry Pi 4 auszuführen. Mit .NET 6 und dem Worker Service-Template lassen sich robuste Hintergrunddienste für Edge-Szenarien entwickeln. In diesem Beitrag zeigen wir, wie ein IoT Edge Modul als Worker Service implementiert wird, das zu festgelegten Zeiten an bestimmten Wochentagen einen REST-API-Endpunkt per POST aufruft – ideal für Automatisierung und Integration von Cloud- und Edge-Workflows. Dieser Artikel konzentriert sich auf praktische Beispiele mit minimaler Erläuterung.
 </p>
 
@@ -704,59 +821,4 @@ rm packages-microsoft-prod.deb</code></p>
 
 <ul>
   <li><a href="https://learn.microsoft.com/de-de/aspnet/core/performance/caching/memory?view=aspnetcore-9.0">Zwischenspeichern im Arbeitsspeicher in ASP.NET Core</a></li>
-</ul>]]></content><author><name>Christian Storb</name></author><category term=".NET" /><category term="Performance Optimierung" /><category term="Programmierung" /><category term="Tech Tips" /><category term="Webentwicklung" /><category term="ASP.NET Core" /><category term="Cache Verwaltung" /><category term="Caching Techniken" /><category term="Daten Zwischenspeicherung" /><category term="IMemoryCache" /><category term="In-Memory Caching" /><category term="Leistungsverbesserung" /><category term="Skalierbarkeit" /><summary type="html"><![CDATA[In der heutigen digitalen Welt ist die Leistungsfähigkeit einer Anwendung entscheidend für ihren Erfolg. Eine effektive Methode, um die Geschwindigkeit und Sk...]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://chstorb.github.io/assets/images/consulting/blog/in-memory-caching-in-asp.net-core.jpg" /><media:content medium="image" url="https://chstorb.github.io/assets/images/consulting/blog/in-memory-caching-in-asp.net-core.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Wie man einen iframe in einer Blazor-Seite vollständig anpasst und einen Parameter für die Webseite hinzufügt</title><link href="https://chstorb.github.io/.net/blazor/frontend-entwicklung/programmierung/softwareentwicklung/tech%20tips/webentwicklung/2025/02/08/wie-man-einen-iframe-in-einer-blazor-seite-vollstandig-anpasst-und-einen-parameter-fur-die-webseite-hinzufugt.html" rel="alternate" type="text/html" title="Wie man einen iframe in einer Blazor-Seite vollständig anpasst und einen Parameter für die Webseite hinzufügt" /><published>2025-02-08T14:53:39+00:00</published><updated>2025-02-08T14:53:39+00:00</updated><id>https://chstorb.github.io/.net/blazor/frontend-entwicklung/programmierung/softwareentwicklung/tech%20tips/webentwicklung/2025/02/08/wie-man-einen-iframe-in-einer-blazor-seite-vollstandig-anpasst-und-einen-parameter-fur-die-webseite-hinzufugt</id><content type="html" xml:base="https://chstorb.github.io/.net/blazor/frontend-entwicklung/programmierung/softwareentwicklung/tech%20tips/webentwicklung/2025/02/08/wie-man-einen-iframe-in-einer-blazor-seite-vollstandig-anpasst-und-einen-parameter-fur-die-webseite-hinzufugt.html"><![CDATA[<p><strong>Einleitung</strong></p>
-
-<p>In diesem Artikel zeigen wir, wie man einen <code class="language-plaintext highlighter-rouge">iframe</code> in einer Blazor-Anwendung so konfiguriert, dass er die gesamte verfügbare Fläche in einem Seitenbereich einnimmt und dabei einen erforderlichen Parameter für die Webseite verwendet. Zusätzlich werden wir scoped CSS verwenden, um das Styling auf die spezifische Komponente zu beschränken.</p>
-
-<p><strong>Schritt 1: Erstellen der Blazor-Komponente mit erforderlichem Parameter</strong></p>
-
-<p>Erstellen Sie eine neue Blazor-Komponente (<code class="language-plaintext highlighter-rouge">.razor</code>-Datei), zum Beispiel <code class="language-plaintext highlighter-rouge">IframeComponent.razor</code>, und fügen Sie einen erforderlichen Parameter für die Webseite hinzu.</p>
-
-<pre><code class="language-razor">&lt;div class="iframe-container"&gt;
-    &lt;iframe src="@Url"&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-@code {
-    [Parameter]
-    public required string Url { get; set; }
-}
-</code></pre>
-
-<p><strong>Schritt 2: Scoped CSS hinzufügen</strong></p>
-
-<p>Erstellen Sie eine CSS-Datei mit dem gleichen Namen wie Ihre Komponente, aber mit der Endung <code class="language-plaintext highlighter-rouge">.razor.css</code> (zum Beispiel <code class="language-plaintext highlighter-rouge">IframeComponent.razor.css</code>). Dieses CSS wird nur auf Ihre Komponente angewendet.</p>
-
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* IframeComponent.razor.css */</span>
-<span class="nc">.iframe-container</span> <span class="p">{</span>
-    <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
-    <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
-    <span class="nl">height</span><span class="p">:</span> <span class="m">100vh</span><span class="p">;</span> <span class="c">/* oder eine andere Höhe, die Sie benötigen */</span>
-    <span class="nl">overflow</span><span class="p">:</span> <span class="nb">hidden</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="nc">.iframe-container</span> <span class="nt">iframe</span> <span class="p">{</span>
-    <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
-    <span class="nl">top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
-    <span class="nl">left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
-    <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
-    <span class="nl">height</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
-    <span class="nl">border</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p><strong>Schritt 3: Erstellen einer Blazor-Seite und Einbinden der Komponente</strong></p>
-
-<p>Erstellen Sie eine neue Blazor-Seite (<code class="language-plaintext highlighter-rouge">.razor</code>-Datei), zum Beispiel <code class="language-plaintext highlighter-rouge">IframePage.razor</code>, und fügen Sie die erstellte Komponente in diese Seite ein. Übergeben Sie den gewünschten URL-Parameter.</p>
-
-<pre><code class="language-razor">@page "/iframepage"
-
-&lt;PageTitle&gt;Iframe Beispiel&lt;/PageTitle&gt;
-
-&lt;div class="container"&gt;
-    &lt;IframeComponent Url="https://jsfiddle.net/u/chstorb/fiddles/" /&gt;
-&lt;/div&gt;
-</code></pre>
-
-<p><strong>Fazit</strong></p>
-
-<p>Mit diesen einfachen Schritten können Sie einen <code class="language-plaintext highlighter-rouge">iframe</code> in Ihrer Blazor-Anwendung so konfigurieren, dass er die gesamte verfügbare Fläche in einem Seitenbereich einnimmt und dabei einen erforderlichen Parameter für die Webseite verwendet. Durch die Verwendung von scoped CSS stellen Sie sicher, dass das Styling nur auf die spezifische Komponente angewendet wird, wodurch mögliche Konflikte mit anderen Stilen vermieden werden.</p>]]></content><author><name>Christian Storb</name></author><category term=".NET" /><category term="Blazor" /><category term="Frontend-Entwicklung" /><category term="Programmierung" /><category term="Softwareentwicklung" /><category term="Tech Tips" /><category term="Webentwicklung" /><category term="Blazor-Komponente" /><category term="CSS" /><category term="HTML" /><category term="Iframe" /><category term="Parameter" /><category term="Scoped CSS" /><summary type="html"><![CDATA[Einleitung In diesem Artikel zeigen wir, wie man einen iframe in einer Blazor-Anwendung so konfiguriert, dass er die gesamte verfügbare Fläche in einem Seiten...]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://chstorb.github.io/assets/images/consulting/blog/coding-924920_1280.webp" /><media:content medium="image" url="https://chstorb.github.io/assets/images/consulting/blog/coding-924920_1280.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</ul>]]></content><author><name>Christian Storb</name></author><category term=".NET" /><category term="Performance Optimierung" /><category term="Programmierung" /><category term="Tech Tips" /><category term="Webentwicklung" /><category term="ASP.NET Core" /><category term="Cache Verwaltung" /><category term="Caching Techniken" /><category term="Daten Zwischenspeicherung" /><category term="IMemoryCache" /><category term="In-Memory Caching" /><category term="Leistungsverbesserung" /><category term="Skalierbarkeit" /><summary type="html"><![CDATA[In der heutigen digitalen Welt ist die Leistungsfähigkeit einer Anwendung entscheidend für ihren Erfolg. Eine effektive Methode, um die Geschwindigkeit und Sk...]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://chstorb.github.io/assets/images/consulting/blog/in-memory-caching-in-asp.net-core.jpg" /><media:content medium="image" url="https://chstorb.github.io/assets/images/consulting/blog/in-memory-caching-in-asp.net-core.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
