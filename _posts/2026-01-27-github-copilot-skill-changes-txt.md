@@ -54,6 +54,7 @@ Typische Herausforderungen, die ein Skill löst:
 ### 🔹 1. Klare Trigger definieren
 Ein Skill sollte eindeutig ausgelöst werden können, z. B.:
 
+- "run-skill: generate-diff-file"
 - „Erzeuge changes.txt“
 - „Generate diff file“
 - „Create change report“
@@ -84,9 +85,9 @@ Ein Skill sollte klar signalisieren, ob die Ausführung erfolgreich war.
 
 ## Beispiel
 
-### Beispiel: Copilot‑Skill zur Erstellung einer `changes.txt`
+### Copilot‑Skill zur Erstellung einer `changes.txt`
 
-{% gist USERNAME/GIST_ID generate-diff-file.yaml %}
+<script src="https://gist.github.com/chstorb/f6136d3da7918d69a6172466f13aeaa4.js"></script>
 
 ## Erklärung
 Trigger: Definiert, wann Copilot den Skill ausführt.
@@ -99,3 +100,8 @@ Dieser Skill kann nun in Copilot Skills eingebunden und direkt per Sprach‑ ode
 
 ## Fazit
 Ein GitHub‑Copilot‑Skill zur automatisierten Erstellung einer changes.txt ist ein kleiner, aber wirkungsvoller Baustein für moderne Entwicklungsprozesse. Er standardisiert wiederkehrende Aufgaben, reduziert Fehlerquellen und steigert die Effizienz im Team. Durch die Kombination aus Git‑Automatisierung und Copilot‑Integration entsteht ein flexibler Workflow, der sich nahtlos in bestehende Entwicklungsumgebungen einfügt.
+
+## Referenzen
+
+- [The complete guide to Agent Skills](https://youtu.be/fabAI1OKKww?si=wN8dVh0RHQ0TKVRP)
+- [GitHub Copilot Skills](https://docs.github.com/en/copilot/skills)  

@@ -13,4 +13,4 @@ locale: "de_DE"
 seo: 
   type: BlogPosting  
 ---
-<b><a href="https://codemirror.net" target="_blank">CodeMirror</a></b> ist ein universeller Quellcode-Editor, der in JavaScript für Browser implementiert ist. Er ist auf die Codebearbeitung spezialisiert und verfügt über eine Vielzahl von Sprachmodi und Add-Ons, die erweiterte Bearbeitungsfunktionen implementieren. <a href="https://codemirror.net" target="_blank">https://codemirror.net</a>
+<b><a href="https://codemirror.net" target="_blank">CodeMirror</a></b> ist ein universeller Quellcode-Editor, der in JavaScript fÃ¼r Browser implementiert ist. Er ist auf die Codebearbeitung spezialisiert und verfÃ¼gt Ã¼ber eine Vielzahl von Sprachmodi und Add-Ons, die erweiterte Bearbeitungsfunktionen implementieren. <a href="https://codemirror.net" target="_blank">https://codemirror.net</a>
