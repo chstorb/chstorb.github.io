@@ -103,10 +103,10 @@
   <link href="/assets/images/consulting/favicon.png" rel="icon" type="image/png">
 
   <!-- CSS -->
-  <link href="/assets/css/bootstrap.min.css?v=1769509598" rel="stylesheet">
-  <link href="/assets/css/material-symbols.css?v=1769509598" rel="stylesheet">
-  <link href="/assets/css/custom.css?v=1769509598" rel="stylesheet">
-  <link href="/assets/css/ads.css?v=1769509598" rel="stylesheet">
+  <link href="/assets/css/bootstrap.min.css?v=1769511184" rel="stylesheet">
+  <link href="/assets/css/material-symbols.css?v=1769511184" rel="stylesheet">
+  <link href="/assets/css/custom.css?v=1769511184" rel="stylesheet">
+  <link href="/assets/css/ads.css?v=1769511184" rel="stylesheet">
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -433,26 +433,8 @@
 
 <h3 id="beispiel-copilotskill-zur-erstellung-einer-changestxt">Beispiel: Copilot‑Skill zur Erstellung einer <code class="language-plaintext highlighter-rouge">changes.txt</code></h3>
 
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">name</span><span class="pi">:</span> <span class="s">generate-changes-file</span>
-<span class="na">description</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Erzeugt</span><span class="nv"> </span><span class="s">eine</span><span class="nv"> </span><span class="s">changes.txt</span><span class="nv"> </span><span class="s">basierend</span><span class="nv"> </span><span class="s">auf</span><span class="nv"> </span><span class="s">dem</span><span class="nv"> </span><span class="s">Diff</span><span class="nv"> </span><span class="s">zwischen</span><span class="nv"> </span><span class="s">main</span><span class="nv"> </span><span class="s">und</span><span class="nv"> </span><span class="s">HEAD."</span>
-<span class="na">triggers</span><span class="pi">:</span>
-  <span class="pi">-</span> <span class="s2">"</span><span class="s">erzeuge</span><span class="nv"> </span><span class="s">changes.txt"</span>
-  <span class="pi">-</span> <span class="s2">"</span><span class="s">generate</span><span class="nv"> </span><span class="s">changes</span><span class="nv"> </span><span class="s">file"</span>
-  <span class="pi">-</span> <span class="s2">"</span><span class="s">create</span><span class="nv"> </span><span class="s">diff</span><span class="nv"> </span><span class="s">report"</span>
-<span class="na">actions</span><span class="pi">:</span>
-  <span class="pi">-</span> <span class="na">run</span><span class="pi">:</span> <span class="pi">|</span>
-      <span class="s">git fetch origin main --quiet</span>
-      <span class="s">git diff --no-color main...HEAD &gt; changes.txt</span>
-      <span class="s">if [ $? -eq 0 ]; then</span>
-        <span class="s">echo "Diff written to changes.txt"</span>
-      <span class="s">else</span>
-        <span class="s">echo "Git command failed with exit code $?"</span>
-        <span class="s">exit $?</span>
-      <span class="s">fi</span>
-<span class="na">output</span><span class="pi">:</span>
-  <span class="na">files</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">changes.txt</span>
-</code></pre></div></div>
+<noscript><pre>404: Not Found</pre></noscript>
+<script src="https://gist.github.com/USERNAME/GIST_ID.js?file=generate-diff-file.yaml"> </script>
 
 <h2 id="erklärung">Erklärung</h2>
 <p>Trigger: Definiert, wann Copilot den Skill ausführt.</p>
@@ -559,7 +541,7 @@
 </footer>
 
   <!-- Scripts -->
-  <script src="/assets/js/bootstrap.bundle.min.js?v=1769509598"></script>
+  <script src="/assets/js/bootstrap.bundle.min.js?v=1769511184"></script>
   <script src="https://www.dwin2.com/pub.1933231.min.js"></script>
 
 </body>

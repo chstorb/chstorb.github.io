@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="de"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://chstorb.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://chstorb.github.io/" rel="alternate" type="text/html" hreflang="de" /><updated>2026-01-27T10:26:38+00:00</updated><id>https://chstorb.github.io/feed.xml</id><title type="html">STORB Consulting</title><subtitle>STORB Consulting unterstützt Ihr Projekt bei Kunden und Geschäftspartnern vor Ort – von der Planung über die Entwicklung bis zur Markteinführung und den Betrieb.</subtitle><author><name>Christian Storb</name><email>mail2storb@gmail.com</email></author><entry><title type="html">Einen GitHub‑Copilot‑Skill entwickeln: Automatisierte Erstellung einer changes.txt</title><link href="https://chstorb.github.io/github%20copilot/automation/development/2026/01/27/github-copilot-skill-changes-txt.html" rel="alternate" type="text/html" title="Einen GitHub‑Copilot‑Skill entwickeln: Automatisierte Erstellung einer changes.txt" /><published>2026-01-27T00:00:00+00:00</published><updated>2026-01-27T00:00:00+00:00</updated><id>https://chstorb.github.io/github%20copilot/automation/development/2026/01/27/github-copilot-skill-changes-txt</id><content type="html" xml:base="https://chstorb.github.io/github%20copilot/automation/development/2026/01/27/github-copilot-skill-changes-txt.html"><![CDATA[<p>Mit der Einführung von GitHub‑Copilot‑Skills eröffnen sich neue Möglichkeiten, wiederkehrende Entwicklungsaufgaben zu automatisieren und direkt in den eigenen Workflow zu integrieren. Ein typisches Beispiel ist das Erzeugen einer <code class="language-plaintext highlighter-rouge">changes.txt</code>, die alle Änderungen zwischen dem aktuellen Branch und <code class="language-plaintext highlighter-rouge">main</code> dokumentiert. Dieser Artikel richtet sich an Entwicklerinnen und Entwickler, die Copilot‑Skills nutzen möchten, um Git‑Operationen zu automatisieren und ihre täglichen Abläufe effizienter zu gestalten.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="de"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://chstorb.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://chstorb.github.io/" rel="alternate" type="text/html" hreflang="de" /><updated>2026-01-27T10:53:04+00:00</updated><id>https://chstorb.github.io/feed.xml</id><title type="html">STORB Consulting</title><subtitle>STORB Consulting unterstützt Ihr Projekt bei Kunden und Geschäftspartnern vor Ort – von der Planung über die Entwicklung bis zur Markteinführung und den Betrieb.</subtitle><author><name>Christian Storb</name><email>mail2storb@gmail.com</email></author><entry><title type="html">Einen GitHub‑Copilot‑Skill entwickeln: Automatisierte Erstellung einer changes.txt</title><link href="https://chstorb.github.io/github%20copilot/automation/development/2026/01/27/github-copilot-skill-changes-txt.html" rel="alternate" type="text/html" title="Einen GitHub‑Copilot‑Skill entwickeln: Automatisierte Erstellung einer changes.txt" /><published>2026-01-27T00:00:00+00:00</published><updated>2026-01-27T00:00:00+00:00</updated><id>https://chstorb.github.io/github%20copilot/automation/development/2026/01/27/github-copilot-skill-changes-txt</id><content type="html" xml:base="https://chstorb.github.io/github%20copilot/automation/development/2026/01/27/github-copilot-skill-changes-txt.html"><![CDATA[<p>Mit der Einführung von GitHub‑Copilot‑Skills eröffnen sich neue Möglichkeiten, wiederkehrende Entwicklungsaufgaben zu automatisieren und direkt in den eigenen Workflow zu integrieren. Ein typisches Beispiel ist das Erzeugen einer <code class="language-plaintext highlighter-rouge">changes.txt</code>, die alle Änderungen zwischen dem aktuellen Branch und <code class="language-plaintext highlighter-rouge">main</code> dokumentiert. Dieser Artikel richtet sich an Entwicklerinnen und Entwickler, die Copilot‑Skills nutzen möchten, um Git‑Operationen zu automatisieren und ihre täglichen Abläufe effizienter zu gestalten.</p>
 
 <hr />
 
@@ -82,26 +82,8 @@
 
 <h3 id="beispiel-copilotskill-zur-erstellung-einer-changestxt">Beispiel: Copilot‑Skill zur Erstellung einer <code class="language-plaintext highlighter-rouge">changes.txt</code></h3>
 
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">name</span><span class="pi">:</span> <span class="s">generate-changes-file</span>
-<span class="na">description</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Erzeugt</span><span class="nv"> </span><span class="s">eine</span><span class="nv"> </span><span class="s">changes.txt</span><span class="nv"> </span><span class="s">basierend</span><span class="nv"> </span><span class="s">auf</span><span class="nv"> </span><span class="s">dem</span><span class="nv"> </span><span class="s">Diff</span><span class="nv"> </span><span class="s">zwischen</span><span class="nv"> </span><span class="s">main</span><span class="nv"> </span><span class="s">und</span><span class="nv"> </span><span class="s">HEAD."</span>
-<span class="na">triggers</span><span class="pi">:</span>
-  <span class="pi">-</span> <span class="s2">"</span><span class="s">erzeuge</span><span class="nv"> </span><span class="s">changes.txt"</span>
-  <span class="pi">-</span> <span class="s2">"</span><span class="s">generate</span><span class="nv"> </span><span class="s">changes</span><span class="nv"> </span><span class="s">file"</span>
-  <span class="pi">-</span> <span class="s2">"</span><span class="s">create</span><span class="nv"> </span><span class="s">diff</span><span class="nv"> </span><span class="s">report"</span>
-<span class="na">actions</span><span class="pi">:</span>
-  <span class="pi">-</span> <span class="na">run</span><span class="pi">:</span> <span class="pi">|</span>
-      <span class="s">git fetch origin main --quiet</span>
-      <span class="s">git diff --no-color main...HEAD &gt; changes.txt</span>
-      <span class="s">if [ $? -eq 0 ]; then</span>
-        <span class="s">echo "Diff written to changes.txt"</span>
-      <span class="s">else</span>
-        <span class="s">echo "Git command failed with exit code $?"</span>
-        <span class="s">exit $?</span>
-      <span class="s">fi</span>
-<span class="na">output</span><span class="pi">:</span>
-  <span class="na">files</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">changes.txt</span>
-</code></pre></div></div>
+<noscript><pre>404: Not Found</pre></noscript>
+<script src="https://gist.github.com/USERNAME/GIST_ID.js?file=generate-diff-file.yaml"> </script>
 
 <h2 id="erklärung">Erklärung</h2>
 <p>Trigger: Definiert, wann Copilot den Skill ausführt.</p>
