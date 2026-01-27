@@ -14,8 +14,6 @@ seo:
   type: BlogPosting
 ---
 
-## Einleitung
-
 Mit der Einführung von GitHub‑Copilot‑Skills eröffnen sich neue Möglichkeiten, wiederkehrende Entwicklungsaufgaben zu automatisieren und direkt in den eigenen Workflow zu integrieren. Ein typisches Beispiel ist das Erzeugen einer `changes.txt`, die alle Änderungen zwischen dem aktuellen Branch und `main` dokumentiert. Dieser Artikel richtet sich an Entwicklerinnen und Entwickler, die Copilot‑Skills nutzen möchten, um Git‑Operationen zu automatisieren und ihre täglichen Abläufe effizienter zu gestalten.
 
 ---
