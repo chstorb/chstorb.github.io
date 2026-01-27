@@ -86,27 +86,7 @@ Ein Skill sollte klar signalisieren, ob die Ausführung erfolgreich war.
 
 ### Beispiel: Copilot‑Skill zur Erstellung einer `changes.txt`
 
-```yaml
-name: generate-changes-file
-description: "Erzeugt eine changes.txt basierend auf dem Diff zwischen main und HEAD."
-triggers:
-  - "erzeuge changes.txt"
-  - "generate changes file"
-  - "create diff report"
-actions:
-  - run: |
-      git fetch origin main --quiet
-      git diff --no-color main...HEAD > changes.txt
-      if [ $? -eq 0 ]; then
-        echo "Diff written to changes.txt"
-      else
-        echo "Git command failed with exit code $?"
-        exit $?
-      fi
-output:
-  files:
-    - changes.txt
-```
+{% gist USERNAME/GIST_ID generate-diff-file.yaml %}
 
 ## Erklärung
 Trigger: Definiert, wann Copilot den Skill ausführt.
