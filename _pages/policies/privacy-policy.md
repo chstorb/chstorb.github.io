@@ -19,21 +19,27 @@ categories: [policies, privacy, consulting]
 tags: [Datenschutz, Privacy Policy, Consulting, Rechtssicherheit, Cookies]
 ---
 
+## {{ page.title }}
+
 **Letzte Aktualisierung:** 31. Oktober 2024  
 
 Diese Datenschutzrichtlinie beschreibt, wie **STORB Consulting** („wir“, „uns“, „unser“) personenbezogene Daten sammelt, verwendet und weitergibt, wenn Sie unsere Website besuchen, unsere Dienste nutzen oder mit uns kommunizieren.
 
-## Verantwortlicher
-**STORB Consulting**  
-Christian Storb  
-Humboldtweg 3  
-D‑48301 Nottuln  
+### Verantwortlicher
+<address itemscope itemtype="https://schema.org/PostalAddress">
+  <strong>STORB Consulting</strong><br>
+  <span itemprop="name">Christian Storb</span><br>
+  <span itemprop="streetAddress">Humboldtweg 3</span><br>
+  <span itemprop="postalCode">48301</span> <span itemprop="addressLocality">Nottuln</span><br>
+  <span itemprop="addressCountry">Deutschland</span>
+</address>
+
 ✉️ E‑Mail: [mail2storb@gmail.com](mailto:mail2storb@gmail.com)  
 
-## Änderungen dieser Datenschutzrichtlinie
+### Änderungen dieser Datenschutzrichtlinie
 Wir können diese Richtlinie gelegentlich aktualisieren. Änderungen werden auf der Website veröffentlicht und das Datum „Letzte Aktualisierung“ angepasst.
 
-## Erhebung und Verwendung personenbezogener Daten
+### Erhebung und Verwendung personenbezogener Daten
 
 **A. Direkt von Ihnen bereitgestellt**  
 - Kontaktdaten (Name, Adresse, Telefonnummer, E‑Mail)  
@@ -52,21 +58,21 @@ Wir können diese Richtlinie gelegentlich aktualisieren. Änderungen werden auf 
 - Website‑Dienstleister  
 - Analyse‑ und Marketingpartner  
 
-## Verwendungszwecke
+### Verwendungszwecke
 - Bereitstellung und Verbesserung unserer Dienste  
 - Kommunikation mit Ihnen  
 - Marketing und Werbung  
 - Sicherheit und Betrugsprävention  
 - Erfüllung gesetzlicher Verpflichtungen  
 
-## Cookies
+### Cookies
 
 Wir verwenden Cookies zur Verbesserung der Website und für Analysezwecke.  
 Details zu Art, Umfang und Verwaltung unserer Cookies finden Sie in unserer [Cookie-Richtlinie]({{ site.baseurl }}/policies/cookie-policy/).  
 
 Bei eingebundenen Diensten Dritter (z. B. [YouTube](https://www.youtube.com/), [Spotify](https://www.spotify.com/)) können zusätzliche Cookies gesetzt werden. Diese unterliegen den Datenschutzbestimmungen der jeweiligen Anbieter.
 
-## Affiliate‑Programme / Werbepartner
+### Affiliate‑Programme / Werbepartner
 
 Unsere Website enthält Verlinkungen zu externen Partnern, insbesondere zu Anbietern aus dem Affiliate‑Netzwerk **[Awin](https://www.awin.com/de/)**. Wenn Sie auf einen solchen Link klicken und anschließend ein Produkt erwerben, erhalten wir möglicherweise eine Provision. Für Sie entstehen dadurch keine zusätzlichen Kosten.
 
@@ -76,14 +82,14 @@ Im Rahmen der Nutzung solcher Links können technische Informationen (z. B. IP
 
 Weitere Informationen finden Sie auf unserer Seite **[Werbepartner]({{ site.baseurl }}/partner/advertising-partner/)**.
 
-## Weitergabe personenbezogener Daten
+### Weitergabe personenbezogener Daten
 **Kategorien von Empfängern:**  
 - Dienstleister (IT, Zahlungsabwicklung, Versand, Support)  
 - Geschäfts‑ und Marketingpartner  
 - Tochtergesellschaften  
 - Behörden im Rahmen gesetzlicher Verpflichtungen  
 
-## Rechte der betroffenen Personen
+### Rechte der betroffenen Personen
 Je nach Wohnort haben Sie folgende Rechte:  
 - Auskunft  
 - Löschung  
@@ -94,21 +100,24 @@ Je nach Wohnort haben Sie folgende Rechte:
 - Widerruf einer Einwilligung  
 - Einspruch gegen abgelehnte Anträge  
 
-## Kommunikationseinstellungen
+### Kommunikationseinstellungen
 Sie können sich jederzeit von Werbe‑E‑Mails abmelden. Systemnachrichten (z. B. Bestellbestätigungen) bleiben davon unberührt.
 
-## Beschwerden
+### Beschwerden
 Bei Beschwerden wenden Sie sich bitte an [mail2storb@gmail.com](mailto:mail2storb@gmail.com).  
 Alternativ können Sie Ihre lokale Datenschutzbehörde kontaktieren.
 
-## Internationale Datenübermittlung
+### Internationale Datenübermittlung
 Daten können außerhalb Europas verarbeitet werden. Wir nutzen Standardvertragsklauseln oder gleichwertige Mechanismen, sofern kein angemessenes Schutzniveau festgestellt wurde.
 
-## Kontakt
-**STORB Consulting**  
-Christian Storb  
-Humboldtweg 3  
-D‑48301 Nottuln  
+### Kontakt
+<address itemscope itemtype="https://schema.org/PostalAddress">
+  <strong>STORB Consulting</strong><br>
+  <span itemprop="name">Christian Storb</span><br>
+  <span itemprop="streetAddress">Humboldtweg 3</span><br>
+  <span itemprop="postalCode">48301</span> <span itemprop="addressLocality">Nottuln</span><br>
+  <span itemprop="addressCountry">Deutschland</span>
+</address>
 
 📱 Telefon: +49 (0) 1590 6810 667  
 ✉️ E‑Mail: [mail2storb@gmail.com](mailto:mail2storb@gmail.com)  

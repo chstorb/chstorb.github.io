@@ -19,6 +19,8 @@ categories: [policies, legal, consulting]
 tags: [Impressum, Recht, Consulting, Kleinunternehmer, Datenschutz]
 ---
 
+## {{ page.title }}
+
 <address itemscope itemtype="https://schema.org/PostalAddress">
   <strong>STORB Consulting</strong><br>
   <span itemprop="name">Christian Storb</span><br>
@@ -37,7 +39,7 @@ Christian Storb
 **Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG:**  
 Nicht vorhanden – Kleinunternehmer gemäß § 19 UStG  
 
-## Streitbeilegung
+### Streitbeilegung
 Die EU‑Kommission stellt seit dem 15. Februar 2016 eine Plattform für außergerichtliche Streitschlichtung bereit.  
 Verbraucher können darüber Streitigkeiten im Zusammenhang mit Online‑Bestellungen zunächst ohne Gericht klären.  
 
@@ -48,7 +50,7 @@ Wir sind gesetzlich verpflichtet, auf unsere E‑Mail‑Adresse hinzuweisen:
 
 Wir bemühen uns, Meinungsverschiedenheiten aus Verträgen einvernehmlich beizulegen.  
 
-## Hinweis zu Inhalten
+### Hinweis zu Inhalten
 Alle Texte, Bilder, Grafiken sowie Ton‑, Video‑ und Animationsdateien unterliegen dem Urheberrecht und anderen Gesetzen zum Schutz geistigen Eigentums.  
 Sie dürfen weder für Handelszwecke oder zur Weitergabe kopiert, noch verändert oder auf anderen Websites genutzt werden.  
 
@@ -57,7 +59,7 @@ Die Gewährleistungsbedingungen entnehmen Sie bitte unseren Allgemeinen Geschäf
 
 **STORB Consulting** übernimmt keine Verantwortung für Inhalte externer Seiten, die über Links erreichbar sind.  
 
-## Bildnachweise
+### Bildnachweise
 - [Pixabay](https://pixabay.com)  
 
 *Dieses Impressum gilt für alle Dienste und Online‑Auftritte von STORB Consulting.*

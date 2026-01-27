@@ -19,16 +19,18 @@ categories: [policies, returns, consulting]
 tags: [Rücksendungen, Widerruf, Umtausch, Erstattung, Consulting]
 ---
 
+## {{ page.title }}
+
 Unser Rückgaberecht gilt für **14 Tage** ab Erhalt der Ware.  
 Nach Ablauf dieser Frist ist eine Rückerstattung oder ein Umtausch leider nicht mehr möglich.  
 
-## Hinweise
+### Hinweise
 - Die Ware darf zur Prüfung wie im Ladengeschäft getestet werden. Bei darüber hinausgehender Nutzung kann Wertersatz verlangt werden.  
 - Bitte senden Sie die Ware möglichst in der Originalverpackung zurück. Dies ist jedoch keine Voraussetzung für die wirksame Ausübung des Widerrufsrechts.  
 - Quittung oder Kaufbeleg erforderlich.   
 - Rücksendung bitte nicht direkt an den Hersteller senden. 
 
-## Ausschlüsse
+### Ausschlüsse
 Von der Rückgabe ausgeschlossen sind:  
 - Verderbliche Waren (Lebensmittel, Blumen, Zeitungen, Zeitschriften)  
 - Intim‑ und Hygieneartikel  
@@ -37,37 +39,44 @@ Von der Rückgabe ausgeschlossen sind:
 - Softwareprodukte zum Herunterladen  
 - Bestimmte Gesundheits‑ und Körperpflegeprodukte  
 
-## Teilweise Rückerstattung
+### Teilweise Rückerstattung
 Nur eingeschränkt möglich bei:  
 - Bücher mit deutlichen Gebrauchsspuren  
 - Geöffnete CDs, DVDs, VHS‑Kassetten, Software, Videospiele, Kassetten oder Vinylplatten  
 - Artikel, die beschädigt oder unvollständig zurückgesendet werden  
 - Rücksendungen nach Ablauf der 14‑Tage‑Frist  
 
-## Rückerstattungen
+### Rückerstattungen
 Nach Eingang und Prüfung Ihrer Rücksendung informieren wir Sie per E‑Mail über Genehmigung oder Ablehnung.  
 Bei Genehmigung erfolgt die Rückerstattung automatisch auf Ihre ursprüngliche Zahlungsmethode.  
 
-## Verspätete oder fehlende Rückerstattungen
+### Verspätete oder fehlende Rückerstattungen
 - Prüfen Sie Ihr Bankkonto und kontaktieren Sie ggf. Ihr Kreditkartenunternehmen oder Ihre Bank.  
 - Bearbeitungszeiten können variieren.  
 - Bei Problemen wenden Sie sich bitte an: [mail2storb@gmail.com](mailto:mail2storb@gmail.com).  
 
-## Angebotsartikel
+### Angebotsartikel
 Das Widerrufsrecht gilt auch für reduzierte Artikel. Ausgenommen sind lediglich Waren, die nach gesetzlichen Vorgaben nicht zurückgegeben werden können (z. B. Hygieneartikel, versiegelte Produkte nach Öffnung, digitale Inhalte nach Beginn der Ausführung).  
 
-## Umtausch
+### Umtausch
 Ein Umtausch ist nur bei defekten oder beschädigten Artikeln möglich.  
 Kontakt: [mail2storb@gmail.com](mailto:mail2storb@gmail.com)  
 Rücksendung an: Humboldtweg 3, 48301 Nottuln, Nordrhein‑Westfalen, Deutschland  
 
-## Geschenke
+### Geschenke
 - Bei als Geschenk gekennzeichneten Artikeln erhalten Sie einen Gutschein über den Einkaufswert.  
 - Bei nicht als Geschenk gekennzeichneten Artikeln erfolgt die Erstattung an die schenkende Person.  
 
-## Versand
+### Versand
 Rücksendungen bitte an:  
-**Humboldtweg 3, 48301 Nottuln, Nordrhein‑Westfalen, Deutschland**  
+
+<address itemscope itemtype="https://schema.org/PostalAddress">
+  <strong>STORB Consulting</strong><br>
+  <span itemprop="name">Christian Storb</span><br>
+  <span itemprop="streetAddress">Humboldtweg 3</span><br>
+  <span itemprop="postalCode">48301</span> <span itemprop="addressLocality">Nottuln</span><br>
+  <span itemprop="addressCountry">Deutschland</span>
+</address>
 
 - Rücksendekosten sind vom Käufer zu tragen und nicht erstattungsfähig.  
 - Bei Rückerstattung werden Rücksendekosten abgezogen.  

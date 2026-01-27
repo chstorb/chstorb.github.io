@@ -19,21 +19,23 @@ categories: [policies, shipping, consulting, payments]
 tags: [Versand, Lieferung, Shipping Policy, Consulting, Deutschland]
 ---
 
+## {{ page.title }}
+
 Wir bieten Ihnen verschiedene sichere Zahlungsmethoden an. Um den Bestellprozess abzuschließen, wählen Sie die für Sie passende Methode im Checkout.  
 
-## **PayPal**
+### **PayPal**
 
 Sie bezahlen den Rechnungsbetrag über den Online-Anbieter PayPal (PayPal (Europe) S.à r.l. et Cie, S.C.A., 22–24 Boulevard Royal, L-2449 Luxembourg). Sie werden im Bestellprozess auf die Website von PayPal weitergeleitet, wo Sie Ihre Zahlung bestätigen können.
 
-## **Kreditkarte / Debitkarte**  
+### **Kreditkarte / Debitkarte**  
 
 Sie bezahlen bequem mit Ihrer Kredit- oder Debitkarte. Unterstützt werden gängige Anbieter wie Visa, Mastercard und American Express. Die Belastung Ihres Kontos erfolgt unmittelbar nach Abschluss der Bestellung.
 
-## **Apple Pay / Google Pay**  
+### **Apple Pay / Google Pay**  
 
 Nutzen Sie Ihr Smartphone oder Tablet für eine schnelle und sichere Zahlung. Sie bestätigen die Transaktion direkt über Ihr Gerät.
 
-## **Offline-Zahlung**  
+### **Offline-Zahlung**  
 
 Für Testkäufe oder individuelle Vereinbarungen bieten wir die Möglichkeit einer manuellen Abwicklung. Bitte beachten Sie, dass die Bestellung  erst nach Zahlungseingang bearbeitet wird.
 

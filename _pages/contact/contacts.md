@@ -28,9 +28,7 @@ tags: [Ansprechpartner, Consulting, Organisation, Controlling, IT, Karriere]
         <!-- Profile Card -->
         <div class="card border-0 shadow-sm bg-body-tertiary mb-4">
           <div class="card-body p-4 text-center">
-             <div class="mb-3 mx-auto d-flex align-items-center justify-content-center bg-primary text-white rounded-circle" style="width: 80px; height: 80px; font-size: 2.5rem;">
-                CS
-             </div>
+             <img src="/assets/images/consulting/authors/christian-storb.jpg" alt="Christian Storb" class="mb-3 mx-auto rounded-circle shadow-sm" style="width: 80px; height: 80px; object-fit: cover;">
              <h1 class="h3 fw-bold mb-1">{{ site.data.contacts.profile.name }}</h1>
              <p class="text-primary fw-medium mb-3">{{ site.data.contacts.profile.role }}</p>
              
@@ -68,6 +66,34 @@ tags: [Ansprechpartner, Consulting, Organisation, Controlling, IT, Karriere]
               {% endfor %}
            </div>
         </div>
+
+        <!-- Contact Info -->
+         <div class="card border-0 shadow-sm">
+           <div class="card-body p-4">
+              <h5 class="card-title fw-bold mb-3">Kontakt</h5>
+              <ul class="list-unstyled mb-0">
+                  <li class="mb-2">
+                      <a href="mailto:{{ site.author.email }}" class="text-decoration-none d-flex align-items-center">
+                          <span class="material-symbols-outlined me-2 fs-5">mail</span>
+                          {{ site.author.email }}
+                      </a>
+                  </li>
+                  <li class="mb-2">
+                      <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener" class="text-decoration-none d-flex align-items-center">
+                          <span class="material-symbols-outlined me-2 fs-5">link</span>
+                          LinkedIn
+                      </a>
+                  </li>
+                   <li>
+                      <a href="{{ site.author.github }}" target="_blank" rel="noopener" class="text-decoration-none d-flex align-items-center">
+                          <span class="material-symbols-outlined me-2 fs-5">code</span>
+                          GitHub
+                      </a>
+                  </li>
+              </ul>
+           </div>
+        </div>
+
       </div>
     </div>
 

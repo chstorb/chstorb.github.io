@@ -19,14 +19,16 @@ categories: [policies, cookies, consulting]
 tags: [Cookie-Richtlinie, Datenschutz, Consulting, IT, Rechtssicherheit]
 ---
 
+## {{ page.title }}
+
 **Letzte Aktualisierung:** 19. Oktober 2025  
 
 Diese Cookie-Richtlinie erläutert, wie **STORB Consulting** („wir“, „uns“, „unser“) Cookies und ähnliche Technologien auf unserer Website [`https://chstorb.github.io`](https://chstorb.github.io) verwendet.
 
-## Was sind Cookies?
+### Was sind Cookies?
 Cookies sind kleine Textdateien, die von Websites auf Ihrem Gerät gespeichert werden. Sie verbessern die Benutzererfahrung, ermöglichen Funktionen und liefern statistische Informationen.
 
-## Welche Cookies verwenden wir?
+### Welche Cookies verwenden wir?
 Unsere Website setzt aktuell **keine Tracking-Cookies** oder personalisierte Analyse-Dienste ein.  
 Es können jedoch technisch notwendige Cookies gesetzt werden, um die Funktionalität sicherzustellen.
 
@@ -37,21 +39,24 @@ Es können jedoch technisch notwendige Cookies gesetzt werden, um die Funktional
 **Drittanbieter-Cookies**  
 Bei eingebundenen Inhalten (z. B. YouTube, Spotify) können externe Anbieter eigene Cookies setzen. Diese unterliegen den Datenschutzrichtlinien der jeweiligen Anbieter.
 
-## Cookie-Einwilligung
+### Cookie-Einwilligung
 Da wir keine nicht-notwendigen Cookies verwenden, ist derzeit **kein Cookie-Banner erforderlich**.  
 Sollte sich dies ändern (z. B. durch Analyse-Tools), informieren wir Sie transparent und holen Ihre Einwilligung ein.
 
-## Verwaltung von Cookies
+### Verwaltung von Cookies
 Sie können Cookies jederzeit über die Einstellungen Ihres Browsers löschen oder blockieren.  
 Bitte beachten Sie: Dies kann die Funktionalität unserer Website einschränken.
 
-## Kontakt
+### Kontakt
 Bei Fragen zur Verwendung von Cookies oder zum Datenschutz wenden Sie sich bitte an:
 
-**STORB Consulting**  
-Christian Storb  
-Humboldtweg 3  
-D-48301 Nottuln  
+<address itemscope itemtype="https://schema.org/PostalAddress">
+  <strong>STORB Consulting</strong><br>
+  <span itemprop="name">Christian Storb</span><br>
+  <span itemprop="streetAddress">Humboldtweg 3</span><br>
+  <span itemprop="postalCode">48301</span> <span itemprop="addressLocality">Nottuln</span><br>
+  <span itemprop="addressCountry">Deutschland</span>
+</address>
 
 📱 Telefon: +49 (0) 1590 6810 667  
 ✉️ E-Mail: [mail2storb@gmail.com](mailto:mail2storb@gmail.com)
