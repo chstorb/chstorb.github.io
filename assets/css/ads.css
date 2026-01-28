@@ -1,6 +1,6 @@
 .ad-banner {
   height: 15rem;
-  min-width: 39.375rem;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,6 +36,12 @@
 
 .carousel-inner {
   padding: 0 3rem;
+}
+
+@media (max-width: 576px) {
+  .carousel-inner {
+    padding: 0 1.5rem;
+  }
 }
 
 .ad-badge {
