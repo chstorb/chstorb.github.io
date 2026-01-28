@@ -35,12 +35,12 @@
 }
 
 .carousel-inner {
-  padding: 0 3rem;
+  padding: 1rem 2.5rem;
 }
 
 @media (max-width: 576px) {
   .carousel-inner {
-    padding: 0 1.5rem;
+    padding: 1 1.5rem;
   }
 }
 
