@@ -80,6 +80,9 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+include:
+  - audio
+
 collections:
   pages:
     output: true
