@@ -1,10 +1,11 @@
 ---
 layout: post
 title: "Update ECDSA Host Key"
+slug: "update-ecdsa-host-key"
 date: 2023-10-15 20:04:01 +0100
-categories: [Raspberry Pi]
+categories: [raspberry-pi]
 description: "To update the ECDSA host key, you can remove the cached key for the IP address of the server on your local machine using the following command: ssh-keygen -R ..."
-tags: [Raspberry Pi]
+tags: [raspberry-pi]
 author: 
   name: "Christian Storb" 
   url: "/author/christian-storb/"
@@ -12,8 +13,9 @@ locale: "en_US"
 image: /assets/images/consulting/blog/kontobestaetigung-identity.jpg
 seo:
   type: BlogPosting
+redirect_from:
+  - /Raspberry Pi/2023/10/15/update-ecdsa-host-key.html
 ---
-
 To update the ECDSA host key, you can remove the cached key for the IP address of the server on your local machine using the following command: 
 
 ```bash
