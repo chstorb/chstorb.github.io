@@ -43,7 +43,7 @@ redirect_from:
 
 - **Starte PuTTY**: Öffne [PuTTY](https://www.putty.org) auf deinem Computer.
 
-- **Verbindungseinstellungen**: Gib die IP-Adresse deines Raspberry Pi in das Feld "Host Name (or IP address)" ein. Stelle sicher, dass der Verbindungsport auf 22 (Standard-SSH-Port) eingestellt ist und die Verbindungstyp auf "SSH" gesetzt ist.<br><br><img src="/assets/images/consulting/blog/putty.png" alt=""><br>
+- **Verbindungseinstellungen**: Gib die IP-Adresse deines Raspberry Pi in das Feld "Host Name (or IP address)" ein. Stelle sicher, dass der Verbindungsport auf 22 (Standard-SSH-Port) eingestellt ist und die Verbindungstyp auf "SSH" gesetzt ist.<br><br><img src="/assets/images/consulting/blog/putty.png" alt="PuTTY Konfiguration Host Name und Port Einstellungen"><br>
 
 - **Verbindung herstellen**: Klicke auf "Open", um die Verbindung zu deinem [Raspberry Pi](https://www.raspberrypi.com) herzustellen.
 

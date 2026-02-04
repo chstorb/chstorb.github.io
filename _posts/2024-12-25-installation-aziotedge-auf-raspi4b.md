@@ -41,9 +41,9 @@ Installiere den Imager auf deinem Computer.
 - **Raspberry Pi OS auswählen**: 
 
 Öffne den Raspberry Pi Imager.<br><br>
-<img src="/assets/images/consulting/blog/raspberrypiimager.png" alt=""><br>
+<img src="/assets/images/consulting/blog/raspberrypiimager.png" alt="Raspberry Pi Imager Startbildschirm"><br>
 
-Wähle **Raspberry Pi 4** aus der Liste der verfügbaren Modelle.<br><br> <img src="/assets/images/consulting/blog/raspberrypi4modell-1.png" alt="">
+Wähle **Raspberry Pi 4** aus der Liste der verfügbaren Modelle.<br><br> <img src="/assets/images/consulting/blog/raspberrypi4modell-1.png" alt="Raspberry Pi 4 Modell Auswahl">
 
 Wähle aus der Liste der Betriebssysteme erst **Raspberry Pi OS (other)** und dann **Raspberry Pi OS (Legacy, 32-bit) Lite - A port of Debian Bullseye with security updates and no desktop environment** aus.<br><br><img src="/assets/images/consulting/blog/debian-bullseye-32-big.png" alt="Raspberry Pi OS Lite (32-bit)"><br>
 
@@ -51,17 +51,17 @@ Wähle aus der Liste der Betriebssysteme erst **Raspberry Pi OS (other)** und da
 
 Lege eine SD-Karte mit mindestens 8 GB Speicherplatz in deinen Computer ein. 
 
-Wähle die SD-Karte im Raspberry Pi Imager aus und klicke auf **Weiter**.<br><br><img src="/assets/images/consulting/blog/raspberrypiimagersdkarteauswaehlen.png" alt=""><br>
+Wähle die SD-Karte im Raspberry Pi Imager aus und klicke auf **Weiter**.<br><br><img src="/assets/images/consulting/blog/raspberrypiimagersdkarteauswaehlen.png" alt="SD-Karte im Raspberry Pi Imager auswählen"><br>
 
 Klicke auf **Einstellungen bearbeiten**.<br><br>
-<img src="/assets/images/consulting/blog/raspiimagereinstellungenbearbeiten.png" alt=""><br>
+<img src="/assets/images/consulting/blog/raspiimagereinstellungenbearbeiten.png" alt="Raspberry Pi Imager OS Anpassungen bearbeiten"><br>
 
-Gib einen Hostnamen, Benutzernamen und Passwort für dein Raspberry sowie den Namen deines WLANs (die SSID) und das Passwort für dein WLAN ein. Die anderen Einstellungen kannst du einfach übernehmen. Klicke auf **Speichern**, um deine Änderungen zu sichern.<br><br><img src="/assets/images/consulting/blog/raspieinstellungen.png" alt=""><br>
+Gib einen Hostnamen, Benutzernamen und Passwort für dein Raspberry sowie den Namen deines WLANs (die SSID) und das Passwort für dein WLAN ein. Die anderen Einstellungen kannst du einfach übernehmen. Klicke auf **Speichern**, um deine Änderungen zu sichern.<br><br><img src="/assets/images/consulting/blog/raspieinstellungen.png" alt="Raspberry Pi OS Einstellungen Hostname und WLAN"><br>
 
 Klicke dann auf **Ja**, um deine OS Anpassungen anzuwenden.<br><br>
-<img src="/assets/images/consulting/blog/raspiosanpassungenanwenden.png" alt=""><br>
+<img src="/assets/images/consulting/blog/raspiosanpassungenanwenden.png" alt="Raspberry Pi OS Anpassungen anwenden Bestätigung"><br>
 
-Bestätige die folgende Sicherheitsabfrage mit **Ja**, um den Schreibvorgang zu starten. Danach wird das OS auf die SD-Karte geschrieben.<br><br><img src="/assets/images/consulting/blog/raspiosschreiben.png" alt=""><br>
+Bestätige die folgende Sicherheitsabfrage mit **Ja**, um den Schreibvorgang zu starten. Danach wird das OS auf die SD-Karte geschrieben.<br><br><img src="/assets/images/consulting/blog/raspiosschreiben.png" alt="Schreibvorgang auf SD-Karte starten Bestätigungsdialog"><br>
 
 - **Raspberry Pi starten**:
 
@@ -77,7 +77,7 @@ Lade die Installationsdatei herunter und führe sie aus. Folge den Anweisungen d
 
 - **Über PuTTy mit dem Raspberry Pi verbinden:**
 
-Öffne PuTTY auf deinem Computer und gibt den Hostnamen in das Feld "Host Name (or IP address)" ein. Stelle scher, dass der Verbindungsport auf 22 (Standard-SSH-Pot) eingestellt ist und der Verbindungstyp auf "SSH" gesetzt ist. Klicke dann auf "Open", um die Verbindung zu deinem Raspberry Pi herzustellen.<br><br><img src="/assets/images/consulting/blog/putty.png" alt=""><br>
+Öffne PuTTY auf deinem Computer und gibt den Hostnamen in das Feld "Host Name (or IP address)" ein. Stelle scher, dass der Verbindungsport auf 22 (Standard-SSH-Pot) eingestellt ist und der Verbindungstyp auf "SSH" gesetzt ist. Klicke dann auf "Open", um die Verbindung zu deinem Raspberry Pi herzustellen.<br><br><img src="/assets/images/consulting/blog/putty.png" alt="PuTTY SSH Verbindungseinstellungen"><br>
 
 Du hast jetzt Zugriff auf die Kommandozeile deines Raspberry Pi und wirst aufgefordert, deinen Benutzernamen und dein Passwort einzugeben.
 
@@ -86,9 +86,9 @@ Du hast jetzt Zugriff auf die Kommandozeile deines Raspberry Pi und wirst aufgef
 Gibt in die Kommandozeile den folgenden Befehl ein um das raspi-config Tool zu starten:<br>`sudo raspi-config`<br>
 
 Menüpunkt 6 "Advanced Options" auswählen.<br><br>
-<img src="/assets/images/consulting/blog/raspiconfigadvancedoptions.png" alt=""><br>
+<img src="/assets/images/consulting/blog/raspiconfigadvancedoptions.png" alt="Raspberry Pi Configuration Advanced Options Menü"><br>
 
-Menüpunkt A1 "Expand Filesystem" auswählen.<br><br><img src="/assets/images/consulting/blog/raspiconfigexpandfilesystem.png" alt=""><br>
+Menüpunkt A1 "Expand Filesystem" auswählen.<br><br><img src="/assets/images/consulting/blog/raspiconfigexpandfilesystem.png" alt="Raspberry Pi Configuration Expand Filesystem Auswahl"><br>
 
 - Klicke später auf **<Ok>**, um das System zu rebooten.
 

@@ -34,7 +34,7 @@ Das Erweitern des Dateisystems ist ein einfacher Schritt, der in der Regel über
 
 - **Starte** `raspi-config`: Gib den folgenden Befehl ein, um das Konfigurationstool zu starten: `sudo raspi-config`
 
-- **Wähle die Option "Expand Filesystem"**: <br>Navigiere zu "Advanced Options" und wähle "Expand Filesystem".<br><br><img src="/assets/images/consulting/blog/raspiconfigadvancedoptions.png" alt=""><br><br><img src="/assets/images/consulting/blog/raspiconfigexpandfilesystem.png" alt=""><br><br>Dies wird das Dateisystem auf die gesamte Größe der SD-Karte erweitern.<br>
+- **Wähle die Option "Expand Filesystem"**: <br>Navigiere zu "Advanced Options" und wähle "Expand Filesystem".<br><br><img src="/assets/images/consulting/blog/raspiconfigadvancedoptions.png" alt="Raspberry Pi Configuration Advanced Options Menü"><br><br><img src="/assets/images/consulting/blog/raspiconfigexpandfilesystem.png" alt="Raspberry Pi Configuration Expand Filesystem Option"><br><br>Dies wird das Dateisystem auf die gesamte Größe der SD-Karte erweitern.<br>
 
 - **Neustart**: Starte deinen Raspberry Pi neu, damit die Änderungen wirksam werden.
 
