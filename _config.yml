@@ -60,7 +60,7 @@ slugify:
 # Build settings
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
+  #- jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-redirect-from
 
