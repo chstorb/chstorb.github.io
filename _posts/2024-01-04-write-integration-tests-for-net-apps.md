@@ -31,3 +31,6 @@ If you're interested in learning more about WebApplicationFactory, I recommend c
 (2) Steven Giesel. https://steven-giesel.com/blogPost/cd62475b-2c7d-4ce2-bd97-9670f91ebac8.
 
 (3) Advanced Integration Tests for .NET 7 API with WebApplicationFactory …. https://www.code4it.dev/blog/advanced-integration-tests-webapplicationfactory/.
+
+## Passende Dienstleistungen
+Sie möchten die Qualität Ihrer Software nachhaltig steigern? Erfahren Sie mehr über meine [Services im Bereich Software-Architektur und Qualitätssicherung](/services/).

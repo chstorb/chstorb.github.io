@@ -120,6 +120,9 @@ In diesem Beispiel verwenden wir `IJSRuntime`, um den `setInterval`-Aufruf zu st
 
 Während Blazor WebAssembly keine kontinuierlichen Hintergrunddienste unterstützt, gibt es dennoch effektive Methoden, um regelmäßig Daten abzurufen und an die Benutzeroberfläche zu senden. Die Verwendung von `Timer` und `IJSRuntime` bietet flexible und leistungsfähige Lösungen, um sicherzustellen, dass deine Anwendung stets mit den neuesten Daten aktualisiert wird.
 
+### Benötigen Sie Unterstützung bei Ihrer Blazor-Entwicklung?
+Als Experte für .NET und Webtechnologien unterstütze ich Sie bei der Umsetzung moderner Web-Anwendungen. [Entdecken Sie hier meine Services](/services/).
+
 Experimentiere mit diesen Ansätzen und finde heraus, welcher am besten zu deinem Projekt passt. Viel Erfolg bei der Implementierung!
 
 Bildnachweis: Bild von [Gerd Altmann](https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4774766) auf [Pixabay](https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4774766)

@@ -17,3 +17,6 @@ redirect_from:
   - /Cloud/Web Forms/ASP.NET/Blazor/2020/08/11/modernize-your-aspnet-web-forms-application-to-net-core-blazor-and-the-cloud.html
 ---
 <b>Workshop:</b> Modernize Your ASP.NET Web Forms Application to .NET Core, Blazor, and the Cloud&nbsp;</div><div><br /></div><a href="https://bit.ly/33SjWgP" target="_blank">https://bit.ly/33SjWgP</a>
+
+## Passende Dienstleistungen
+Planen Sie eine Modernisierung Ihrer Legacy-Anwendungen? Ich unterstütze Sie gerne dabei. [Hier finden Sie mein Dienstleistungsangebot](/services/).
