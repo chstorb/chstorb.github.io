@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "STORB Consulting"
+title: "Christian Storb"
 tagline: "STORB Consulting unterstützt Ihr Projekt bei Kunden und Geschäftspartnern vor Ort."
 email: mail2storb@gmail.com
 description: >-

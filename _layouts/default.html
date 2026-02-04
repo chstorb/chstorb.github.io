@@ -17,7 +17,18 @@
   <meta name="google-site-verification" content="v1IaICzb6Ve4AAMD6dPYhqWkk5TxQ5Aa6vRxUSs89aA" />
 
   <!-- Assets -->
-  <link href="{{ '/assets/images/consulting/favicon.png' | relative_url }}" rel="icon" type="image/png">
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}">
+  <link rel="icon" type="image/png" href="{{ '/assets/images/consulting/favicon.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="{{ '/assets/images/consulting/favicon-16x16.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="{{ '/assets/images/consulting/favicon-32x32.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="192x192"
+    href="{{ '/assets/images/consulting/android-chrome-192x192.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="512x512"
+    href="{{ '/assets/images/consulting/android-chrome-512x512.png' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/images/consulting/apple-touch-icon.png' | relative_url }}">
+  <link rel="manifest" href="{{ '/assets/images/consulting/site.webmanifest' | relative_url }}">
 
   <!-- CSS -->
   <link href="{{ '/assets/css/bootstrap.min.css' | relative_url }}?v={{ site.time | date: '%s' }}" rel="stylesheet">
@@ -44,7 +55,8 @@
     <div class="container py-5">
 
       <!-- Page Title (Visually Hidden by default, accessible for Screen Readers) -->
-      <h1 class="visually-hidden mb-4 fw-bold">Christian Storb - STORB Consulting{% if page.title %} - {{ page.title
+      <h1 class="visually-hidden mb-4 fw-bold">{{ site.title }} @ STORB Consulting{% if page.title %} - {{
+        page.title
         }}{% endif %}</h1>
 
       {{ content }}
