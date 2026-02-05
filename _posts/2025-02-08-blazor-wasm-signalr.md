@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Echtzeit-Datenabrufe in Blazor WebAssembly: Nutzung von SignalR"
+title: "Echtzeit-Daten in Blazor WebAssembly mit SignalR"
 slug: "blazor-wasm-signalr"
 date: 2025-02-08 11:44:55 +0100
 permalink: /blog/2025/02/08/echtzeit-datenabrufe-blazor-webassembly-signalr/

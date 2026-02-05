@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Use Google Material icons in the toolbar command buttons of the jQuery Grid by Kendo UI"
+title: "Google Material Icons in Kendo UI jQuery Grid Toolbar"
 slug: "gmi-toolbar-cmdbtn-grid-kendo-ui"
 date: 2020-07-16
 categories: [kendoui, jquery]

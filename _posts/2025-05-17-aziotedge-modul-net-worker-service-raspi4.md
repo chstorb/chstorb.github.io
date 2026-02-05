@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Azure IoT Edge Modul mit .NET Worker Service auf dem Raspberry Pi 4: Praktische Beispiele"
+title: "Azure IoT Edge Modul mit .NET auf Raspberry Pi 4"
 slug: "aziotedge-modul-net-worker-service-raspi4"
 date: 2025-05-17 13:10:43 +0100
 categories: [net, azure-iot, cloud-technologie, raspberry-pi, softwareentwicklung]

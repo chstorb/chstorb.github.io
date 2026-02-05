@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Google Sheets vs. Azure Table Storage: Welche Lösung passt zu deinem Projekt?"
+title: "Google Sheets vs. Azure Table Storage: Der Vergleich"
 slug: "google-sheets-vs-azure-table-storage"
 date: 2025-05-01 10:57:02 +0100
 categories: [net, automatisierung, cloud-technologie, datenverwaltung, performance-optimierung]

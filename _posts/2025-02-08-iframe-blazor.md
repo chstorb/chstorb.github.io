@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Wie man einen iframe in einer Blazor-Seite vollständig anpasst und einen Parameter für die Webseite hinzufügt"
+title: "iframes in Blazor-Seiten vollständig anpassen"
 slug: "iframe-blazor"
 date: 2025-02-08 15:53:39 +0100
 categories: [net, blazor, webentwicklung]
@@ -16,7 +16,6 @@ seo:
 redirect_from:
   - /.NET/Blazor/Frontend-Entwicklung/Programmierung/Softwareentwicklung/Tech Tips/Webentwicklung/2025/02/08/wie-man-einen-iframe-in-einer-blazor-seite-vollstandig-anpasst-und-einen-parameter-fur-die-webseite-hinzufugt.html
 ---
-**Einleitung**
 
 In diesem Artikel zeigen wir, wie man einen `iframe` in einer Blazor-Anwendung so konfiguriert, dass er die gesamte verfügbare Fläche in einem Seitenbereich einnimmt und dabei einen erforderlichen Parameter für die Webseite verwendet. Zusätzlich werden wir scoped CSS verwenden, um das Styling auf die spezifische Komponente zu beschränken.
 

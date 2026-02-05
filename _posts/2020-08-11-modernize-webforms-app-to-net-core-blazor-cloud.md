@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Modernize Your ASP.NET Web Forms Application to .NET Core, Blazor, and the Cloud"
+title: "Modernize ASP.NET Web Forms to .NET Core & Blazor"
 slug: "modernize-webforms-app-to-net-core-blazor-cloud"
 date: 2020-08-11
 categories: [web-forms, aspnet, blazor]
@@ -16,7 +16,9 @@ seo:
 redirect_from:
   - /Cloud/Web Forms/ASP.NET/Blazor/2020/08/11/modernize-your-aspnet-web-forms-application-to-net-core-blazor-and-the-cloud.html
 ---
-<b>Workshop:</b> Modernize Your ASP.NET Web Forms Application to .NET Core, Blazor, and the Cloud&nbsp;</div><div><br /></div><a href="https://bit.ly/33SjWgP" target="_blank">https://bit.ly/33SjWgP</a>
+Migrate from ASP.NET Web Forms to Blazor
+<br />
+<a href="https://learn.microsoft.com/en-us/dotnet/architecture/blazor-for-web-forms-developers/migration" target="_blank">https://learn.microsoft.com/en-us/dotnet/architecture/blazor-for-web-forms-developers/migration</a>
 
 ## Passende Dienstleistungen
 Planen Sie eine Modernisierung Ihrer Legacy-Anwendungen? Ich unterstütze Sie gerne dabei. [Hier finden Sie mein Dienstleistungsangebot](/services/).

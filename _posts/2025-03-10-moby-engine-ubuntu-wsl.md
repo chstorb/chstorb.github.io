@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Moby-Engine auf Ubuntu 24.04 in WSL installieren: Ein praktischer Leitfaden"
+title: "Moby-Engine auf Ubuntu 24.04 in WSL installieren"
 slug: "moby-engine-ubuntu-wsl"
 date: 2025-03-10 15:35:47 +0100
 categories: [container-technologie, linux, softwareentwicklung, wsl]

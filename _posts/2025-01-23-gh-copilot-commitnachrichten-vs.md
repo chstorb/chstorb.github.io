@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "GitHub Copilot: Benutzerdefinierte Anweisungen für Commitnachrichten in Visual Studio 2022 festlegen"
+title: "GitHub Copilot: Commitnachrichten in Visual Studio"
 slug: "gh-copilot-commitnachrichten-vs"
 date: 2025-01-23 23:06:00 +0100
 categories: [github-copilot, visual-studio]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Periodische Datenabrufe in Blazor WebAssembly: Alternativen zu BackgroundService"
+title: "Periodische Datenabrufe in Blazor WebAssembly"
 slug: "blazor-wasm-backgroundservice"
 date: 2025-02-08 11:39:09 +0100
 permalink: /blog/2025/02/08/periodische-datenabrufe-blazor-webassembly-backgroundservice/

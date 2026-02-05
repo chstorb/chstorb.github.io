@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Git Cheat Sheet – Die wichtigsten Git-Befehle im kompakten Überblick"
+title: "Git Cheat Sheet: Die wichtigsten Befehle"
 slug: "git-cheat-sheet"
 date: 2026-01-30
 categories: [git, development, tools]

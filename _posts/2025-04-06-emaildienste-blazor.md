@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "E-Mail-Dienste in Blazor: Kontobestätigung und Passwortwiederherstellung mit Twilio SendGrid"
+title: "E-Mail-Dienste in Blazor mit Twilio SendGrid"
 slug: "emaildienste-blazor"
 date: 2025-04-06 13:20:52 +0100
 categories: [net, azure, blazor, softwareentwicklung, visual-studio, webentwicklung]

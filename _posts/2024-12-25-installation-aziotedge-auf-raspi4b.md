@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Installation von Azure IoT Edge auf einem Raspberry Pi 4 B"
+title: "Azure IoT Edge auf Raspberry Pi 4 B installieren"
 slug: "installation-aziotedge-auf-raspi4b"
 date: 2024-12-25 15:34:53 +0100
 categories: [azure, raspberry-pi]

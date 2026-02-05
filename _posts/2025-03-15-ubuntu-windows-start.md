@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ubuntu beim Start von Windows automatisch starten: Ein Leitfaden"
+title: "Ubuntu beim Windows-Start automatisch starten"
 slug: "ubuntu-windows-start"
 date: 2025-03-15 14:53:13 +0100
 categories: [automatisierung, iot, open-source, softwareentwicklung, wsl]

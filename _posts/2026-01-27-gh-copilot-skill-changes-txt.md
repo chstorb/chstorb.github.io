@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Einen GitHub‑Copilot‑Skill entwickeln: Automatisierte Erstellung einer changes.txt"
+title: "GitHub Copilot Skill: Automatisierte changes.txt"
 slug: "gh-copilot-skill-changes-txt"
 date: 2026-01-27
 categories: [github-copilot, automation, development]

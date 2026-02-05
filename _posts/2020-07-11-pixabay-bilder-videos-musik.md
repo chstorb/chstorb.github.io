@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Pixabay: Kostenlose Bilder und Videos für Deine kreativen Projekte"
+title: "Pixabay: Kostenlose Bilder und Videos nutzen"
 slug: "pixabay-bilder-videos-musik"
 date: 2020-07-11
 categories: [pixabay]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ubuntu 24.04 auf WSL unter Windows installieren: Ein Leitfaden"
+title: "Ubuntu 24.04 auf WSL unter Windows installieren"
 slug: "ubuntu-wsl"
 date: 2025-03-14 14:33:43 +0100
 categories: [net, iot, linux, open-source, softwareentwicklung]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "PuTTY: Ein unverzichtbares Tool für die Verbindung mit deinem Raspberry Pi"
+title: "PuTTY: Verbindung zum Raspberry Pi einrichten"
 slug: "putty-tool-raspi"
 date: 2024-12-28 18:54:19 +0100
 categories: [raspberry-pi]

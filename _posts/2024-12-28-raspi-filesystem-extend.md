@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Warum und wie du das Dateisystem auf deinem Raspberry Pi erweiterst"
+title: "Raspberry Pi: Dateisystem erweitern - Anleitung"
 slug: "raspi-filesystem-extend"
 date: 2024-12-28 21:09:09 +0100
 categories: [raspberry-pi]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Konfiguration des Logging in einer .NET-App: Reduzierung des Logaufkommens"
+title: "Logging-Konfiguration in .NET: Logaufkommen reduzieren"
 slug: "konfiguration-logging-net-app"
 date: 2025-01-25 17:51:35 +0100
 categories: [net, azure, logging, visual-studio]
