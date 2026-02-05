@@ -23,7 +23,7 @@ tags: [Referenzen, Projekte, Consulting, Branchenexpertise]
   <!-- Intro -->
   <div class="row justify-content-center mb-5">
     <div class="col-lg-9 text-center">
-      <h1 class="display-5 fw-bold mb-4">{{ site.data.references.intro.headline }}</h1>
+      <h2 class="display-5 fw-bold mb-4">{{ site.data.references.intro.headline }}</h2>
       <p class="lead fw-normal mb-4">
         {{ site.data.references.intro.lead }}
       </p>

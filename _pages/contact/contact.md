@@ -23,7 +23,7 @@ tags: [Kontakt, Consulting, Cloud, Architektur, Blazor, Azure]
   <!-- Intro -->
   <div class="row justify-content-center mb-5">
     <div class="col-lg-8 text-center">
-      <h1 class="display-5 fw-bold mb-4">{{ site.data.contact.intro.headline }}</h1>
+      <h2 class="display-5 fw-bold mb-4">{{ site.data.contact.intro.headline }}</h2>
       <p class="lead text-muted mb-4">
         {{ site.data.contact.intro.text }}
       </p>

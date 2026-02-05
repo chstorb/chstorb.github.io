@@ -26,7 +26,7 @@ tags: [Partner, Kooperation, IT-Dienstleistungen, Consulting, ECM, Softwareentwi
       <div class="mb-3 text-primary">
          <span class="material-symbols-outlined display-4">hub</span>
       </div>
-      <h1 class="display-5 fw-bold mb-4">{{ site.data.partner.intro.headline }}</h1>
+      <h2 class="display-5 fw-bold mb-4">{{ site.data.partner.intro.headline }}</h2>
       <p class="lead mb-3">
         {{ site.data.partner.intro.text }}
       </p>

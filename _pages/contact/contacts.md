@@ -29,7 +29,7 @@ tags: [Ansprechpartner, Consulting, Organisation, Controlling, IT, Karriere]
         <div class="card border-0 shadow-sm bg-body-tertiary mb-4">
           <div class="card-body p-4 text-center">
              <img src="/assets/images/consulting/authors/christian-storb.jpg" alt="Christian Storb" class="mb-3 mx-auto rounded-circle shadow-sm" style="width: 80px; height: 80px; object-fit: cover;">
-             <h1 class="h3 fw-bold mb-1">{{ site.data.contacts.profile.name }}</h1>
+             <h2 class="h3 fw-bold mb-1">{{ site.data.contacts.profile.name }}</h2>
              <p class="text-primary fw-medium mb-3">{{ site.data.contacts.profile.role }}</p>
              
              <hr class="my-4 opacity-10">

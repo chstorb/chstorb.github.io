@@ -23,7 +23,7 @@ tags: [Karriere, Consulting, Cloud, Architektur, Blazor, Azure]
   <!-- Hero Section -->
   <div class="row justify-content-center text-center mb-5">
     <div class="col-lg-9">
-      <h1 class="display-5 fw-bold mb-3">{{ site.data.career.intro.headline }}</h1>
+      <h2 class="display-5 fw-bold mb-3">{{ site.data.career.intro.headline }}</h2>
       <p class="lead text-primary mb-4">
         {{ site.data.career.intro.subline }}
       </p>
