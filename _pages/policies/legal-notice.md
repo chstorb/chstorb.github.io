@@ -21,20 +21,19 @@ tags: [Impressum, Recht, Consulting, Kleinunternehmer, Datenschutz]
 
 ## {{ page.title }}
 
-<address itemscope itemtype="https://schema.org/PostalAddress">
-  <strong>STORB Consulting</strong><br>
-  <span itemprop="name">Christian Storb</span><br>
-  <span itemprop="streetAddress">Humboldtweg 3</span><br>
-  <span itemprop="postalCode">48301</span> <span itemprop="addressLocality">Nottuln</span><br>
-  <span itemprop="addressCountry">Deutschland</span>
-</address>
-
-**Vertreten durch:**  
-Christian Storb  
-
-**Kontakt:**  
-📱 Telefon: +49 1590 6810 667  
-✉️ E‑Mail: [{{ site.email }}](mailto:{{ site.email }})  
+<div class="py-4" itemscope itemtype="https://schema.org/Organization">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+    <strong><span itemprop="name">STORB Consulting</span></strong><br>
+    Christian Storb<br>
+    <span itemprop="streetAddress">Humboldtweg 3</span><br>
+    <span itemprop="postalCode">48301</span> <span itemprop="addressLocality">Nottuln</span><br>
+    <span itemprop="addressCountry">Deutschland</span>
+  </address>  
+  <strong>Kontakt:</strong><br>   
+  📱 Telefon: <span itemprop="telephone">+49 (0) 1590 6810 667</span><br>
+  ✉️ E‑Mail: <a itemprop="email" href="mailto:{{ site.email }}">{{ site.email }}</a><br>
+  🌐 Webseite: <a itemprop="url" href="{{ site.url }}">{{ site.url }}</a>
+</div>  
 
 **Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG:**  
 Nicht vorhanden – Kleinunternehmer gemäß § 19 UStG  
@@ -62,4 +61,4 @@ Die Gewährleistungsbedingungen entnehmen Sie bitte unseren Allgemeinen Geschäf
 ### Bildnachweise
 - [Pixabay](https://pixabay.com)  
 
-*Dieses Impressum gilt für alle Dienste und Online‑Auftritte von STORB Consulting.*
+*Dieses Impressum gilt für alle Dienste und Online‑Auftritte von {{ site.title }},  STORB Consulting und verbundene Unternehmen.*

@@ -85,14 +85,18 @@ Wir kommunizieren offen, wenn ein Link ein Affiliate‑Link ist, und halten uns 
 
 Unternehmen, die an einer Zusammenarbeit interessiert sind, können uns jederzeit kontaktieren:
 
-<address itemscope itemtype="https://schema.org/PostalAddress">
-  <strong>STORB Consulting</strong><br>
-  <span itemprop="name">Christian Storb</span><br>
-  <span itemprop="streetAddress">Humboldtweg 3</span><br>
-  <span itemprop="postalCode">48301</span> <span itemprop="addressLocality">Nottuln</span><br>
-  <span itemprop="addressCountry">Deutschland</span>
-</address>
+<div class="pb-4" itemscope itemtype="https://schema.org/Organization">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+    <strong><span itemprop="name">STORB Consulting</span></strong><br>
+    Christian Storb<br>
+    <span itemprop="streetAddress">Humboldtweg 3</span><br>
+    <span itemprop="postalCode">48301</span> <span itemprop="addressLocality">Nottuln</span><br>
+    <span itemprop="addressCountry">Deutschland</span>
+  </address>
 
-✉️ E‑Mail: [{{ site.email }}](mailto:{{ site.email }})  
+  📱 Telefon: <span itemprop="telephone">+49 (0) 1590 6810 667</span><br>
+  ✉️ E-Mail: <a itemprop="email" href="mailto:{{ site.email }}">{{ site.email }}</a><br>
+  🌐 Webseite: <a itemprop="url" href="{{ site.url }}">{{ site.url }}</a>
+</div>
 
 Wir prüfen jede Anfrage sorgfältig und orientieren uns an fachlicher Relevanz, Qualität und langfristiger Vertrauenswürdigkeit.

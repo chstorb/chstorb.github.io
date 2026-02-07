@@ -26,15 +26,19 @@ tags: [Datenschutz, Privacy Policy, Consulting, Rechtssicherheit, Cookies]
 Diese Datenschutzrichtlinie beschreibt, wie **STORB Consulting** („wir“, „uns“, „unser“) personenbezogene Daten sammelt, verwendet und weitergibt, wenn Sie unsere Website besuchen, unsere Dienste nutzen oder mit uns kommunizieren.
 
 ### Verantwortlicher
-<address itemscope itemtype="https://schema.org/PostalAddress">
-  <strong>STORB Consulting</strong><br>
-  <span itemprop="name">Christian Storb</span><br>
-  <span itemprop="streetAddress">Humboldtweg 3</span><br>
-  <span itemprop="postalCode">48301</span> <span itemprop="addressLocality">Nottuln</span><br>
-  <span itemprop="addressCountry">Deutschland</span>
-</address>
+<div class="pb-4" itemscope itemtype="https://schema.org/Organization">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+    <strong><span itemprop="name">STORB Consulting</span></strong><br>
+    Christian Storb<br>
+    <span itemprop="streetAddress">Humboldtweg 3</span><br>
+    <span itemprop="postalCode">48301</span> <span itemprop="addressLocality">Nottuln</span><br>
+    <span itemprop="addressCountry">Deutschland</span>
+  </address>
 
-✉️ E‑Mail: [mail2storb@gmail.com](mailto:mail2storb@gmail.com)  
+  📱 Telefon: <span itemprop="telephone">+49 (0) 1590 6810 667</span><br>
+  ✉️ E‑Mail: <a itemprop="email" href="mailto:{{ site.email }}">{{ site.email }}</a><br>
+  🌐 Webseite: <a itemprop="url" href="{{ site.url }}">{{ site.url }}</a>
+</div>  
 
 ### Änderungen dieser Datenschutzrichtlinie
 Wir können diese Richtlinie gelegentlich aktualisieren. Änderungen werden auf der Website veröffentlicht und das Datum „Letzte Aktualisierung“ angepasst.
@@ -111,15 +115,18 @@ Alternativ können Sie Ihre lokale Datenschutzbehörde kontaktieren.
 Daten können außerhalb Europas verarbeitet werden. Wir nutzen Standardvertragsklauseln oder gleichwertige Mechanismen, sofern kein angemessenes Schutzniveau festgestellt wurde.
 
 ### Kontakt
-<address itemscope itemtype="https://schema.org/PostalAddress">
-  <strong>STORB Consulting</strong><br>
-  <span itemprop="name">Christian Storb</span><br>
-  <span itemprop="streetAddress">Humboldtweg 3</span><br>
-  <span itemprop="postalCode">48301</span> <span itemprop="addressLocality">Nottuln</span><br>
-  <span itemprop="addressCountry">Deutschland</span>
-</address>
+<div class="pb-4" itemscope itemtype="https://schema.org/Organization">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+    <strong><span itemprop="name">STORB Consulting</span></strong><br>
+    Christian Storb<br>
+    <span itemprop="streetAddress">Humboldtweg 3</span><br>
+    <span itemprop="postalCode">48301</span> <span itemprop="addressLocality">Nottuln</span><br>
+    <span itemprop="addressCountry">Deutschland</span>
+  </address>
 
-📱 Telefon: +49 (0) 1590 6810 667  
-✉️ E‑Mail: [mail2storb@gmail.com](mailto:mail2storb@gmail.com)  
+  📱 Telefon: <span itemprop="telephone">+49 (0) 1590 6810 667</span><br>
+  ✉️ E‑Mail: <a itemprop="email" href="mailto:{{ site.email }}">{{ site.email }}</a><br>
+  🌐 Webseite: <a itemprop="url" href="{{ site.url }}">{{ site.url }}</a>
+</div>  
 
-*Diese Datenschutzerklärung gilt für alle Dienste und Online‑Auftritte von STORB Consulting.*
+*Diese Datenschutzerklärung gilt für alle Dienste und Online‑Auftritte von Christian Storb, STORB Consulting und verbundene Unternehmen.*

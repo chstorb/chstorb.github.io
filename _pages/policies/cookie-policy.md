@@ -23,7 +23,7 @@ tags: [Cookie-Richtlinie, Datenschutz, Consulting, IT, Rechtssicherheit]
 
 **Letzte Aktualisierung:** 19. Oktober 2025  
 
-Diese Cookie-Richtlinie erläutert, wie **STORB Consulting** („wir“, „uns“, „unser“) Cookies und ähnliche Technologien auf unserer Website [`https://chstorb.github.io`](https://chstorb.github.io) verwendet.
+Diese Cookie-Richtlinie erläutert, wie **STORB Consulting** („wir“, „uns“, „unser“) Cookies und ähnliche Technologien auf unserer Website [`{{ site.url }}`]({{ site.url }}) verwendet.
 
 ### Was sind Cookies?
 Cookies sind kleine Textdateien, die von Websites auf Ihrem Gerät gespeichert werden. Sie verbessern die Benutzererfahrung, ermöglichen Funktionen und liefern statistische Informationen.
@@ -50,15 +50,18 @@ Bitte beachten Sie: Dies kann die Funktionalität unserer Website einschränken.
 ### Kontakt
 Bei Fragen zur Verwendung von Cookies oder zum Datenschutz wenden Sie sich bitte an:
 
-<address itemscope itemtype="https://schema.org/PostalAddress">
-  <strong>STORB Consulting</strong><br>
-  <span itemprop="name">Christian Storb</span><br>
-  <span itemprop="streetAddress">Humboldtweg 3</span><br>
-  <span itemprop="postalCode">48301</span> <span itemprop="addressLocality">Nottuln</span><br>
-  <span itemprop="addressCountry">Deutschland</span>
-</address>
+<div class="pb-4" itemscope itemtype="https://schema.org/Organization">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+    <strong><span itemprop="name">STORB Consulting</span></strong><br>
+    Christian Storb<br>
+    <span itemprop="streetAddress">Humboldtweg 3</span><br>
+    <span itemprop="postalCode">48301</span> <span itemprop="addressLocality">Nottuln</span><br>
+    <span itemprop="addressCountry">Deutschland</span>
+  </address>
 
-📱 Telefon: +49 (0) 1590 6810 667  
-✉️ E-Mail: [mail2storb@gmail.com](mailto:mail2storb@gmail.com)
+  📱 Telefon: <span itemprop="telephone">+49 (0) 1590 6810 667</span><br>
+  ✉️ E-Mail: <a itemprop="email" href="mailto:{{ site.email }}">{{ site.email }}</a><br>
+  🌐 Webseite: <a itemprop="url" href="{{ site.url }}">{{ site.url }}</a>
+</div>
 
-*Diese Cookie-Richtlinie gilt für alle Online-Auftritte von STORB Consulting.*
+*Diese Cookie-Richtlinie gilt für alle Online-Auftritte von Chritian Storb, STORB Consulting und verbundene Unternehmen.*
