@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Ihre Karriere bei STORB Consulting"
-description: "Gestalten Sie mit uns modulare, rechtssichere Weblösungen – wir suchen erfahrene Persönlichkeiten mit Unternehmergeist."
+title: "Deine Karriere bei STORB Consulting"
+description: "Gestalte mit uns modulare, rechtssichere Weblösungen – wir suchen erfahrene Persönlichkeiten mit Unternehmergeist."
 permalink: /career/career/
 author: "Christian Storb"
 locale: "de_DE"

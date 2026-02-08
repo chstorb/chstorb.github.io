@@ -2,7 +2,7 @@
 layout: default
 title: "Christian Storb"
 permalink: /author/christian-storb/
-description: "Christian Storb – Inhaber von STORB Consulting. Fundierte Ausbildung, langjährige Erfahrung und klare Schwerpunkte."
+description: "Christian Storb – IT-Berater & Inhaber von STORB Consulting. Experte für .NET, Cloud & Azure mit über 20 Jahren Erfahrung. Erfahren Sie mehr über meine Projekte."
 locale: "de_DE"
 seo: 
   type: WebPage
@@ -16,17 +16,44 @@ categories: [author, profile, consulting]
   "@type": "ProfilePage",
   "mainEntity": {
     "@type": "Person",
-    "name": "Christian Storb",
     "@id": "https://chstorb.github.io/#person",
+    "name": "Christian Storb",
+    "jobTitle": "Softwareentwickler und IT-Berater",
     "description": "Christian Storb – Inhaber von STORB Consulting. Fundierte Ausbildung, langjährige Erfahrung und klare Schwerpunkte.",
     "image": "https://chstorb.github.io/assets/images/consulting/authors/christian-storb.jpg",
+    "url": "https://chstorb.github.io",
+    "email": "mail2storb@gmail.com",
+    "worksFor": [
+      {
+        "@type": "Organization",
+        "name": "STORB Consulting",
+        "url": "https://chstorb.github.io"
+      },
+      {
+        "@type": "Organization",
+        "name": "DBT Digital Building Technology",
+        "url": "https://www2.wibutler.com/"
+      }
+    ],
     "sameAs": [
       "https://github.com/chstorb",
       "https://www.linkedin.com/in/christian-storb-326249aa/",
       "https://twitter.com/ChristianStorb",
       "https://www.instagram.com/storbconsulting",
       "https://www.facebook.com/storb.christian"
-    ]
+    ],
+    "knowsAbout": [
+      ".NET Softwarearchitektur und -entwicklung",
+      "Cloud Computing (Azure)",
+      "IT-Strategy & Consulting",
+      "Microservices",
+      "Legacy System Modernization"
+    ],
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "FH Münster",
+      "url": "https://www.fh-muenster.de"
+    }
   }
 }
 </script>
@@ -40,7 +67,7 @@ categories: [author, profile, consulting]
         <!-- Profile Card -->
         <div class="card border-0 shadow-sm bg-body-tertiary mb-4">
           <div class="card-body p-4 text-center">
-             <img src="/assets/images/consulting/authors/christian-storb.jpg" alt="Christian Storb" class="mb-3 mx-auto rounded-circle shadow-sm" style="width: 80px; height: 80px; object-fit: cover;">
+             <img src="/assets/images/consulting/authors/christian-storb.jpg" alt="Christian Storb - IT Consultant und Softwareentwickler" class="mb-3 mx-auto rounded-circle shadow-sm" style="width: 80px; height: 80px; object-fit: cover;">
              <h2 class="h3 fw-bold mb-1">{{ site.data.contacts.profile.name }}</h2>
              <p class="text-primary fw-medium mb-3">{{ site.data.contacts.profile.role }}</p>
              

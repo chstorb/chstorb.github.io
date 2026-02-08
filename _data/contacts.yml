@@ -3,9 +3,8 @@ profile:
   role: "Inhaber von STORB Consulting"
   image: "/assets/images/consulting/christian-storb.jpg" # Placeholder path, assuming usage or generic avatar
   philosophy:
-    - "Eine fundierte kaufmännische und betriebswirtschaftliche Ausbildung sowie langjährige praktische Berufserfahrung bilden die Basis unseres Geschäfts."
-    - "Methoden mit Augenmaß einzusetzen, das Know-how unserer Kunden einzubinden und Umsetzungshürden abzubauen sind zentrale Elemente unseres Erfolges."
-    - "So erzielen wir bestmögliche Ergebnisse bei effizientem Ressourceneinsatz. Partnerschaft, Wertschätzung, Verbindlichkeit und Vertrauen prägen unseren Umgang mit Kunden und Kollegen."
+    - "Seit über 20 Jahren begleite ich Unternehmen dabei, komplexe Software-Herausforderungen in skalierbare Lösungen zu verwandeln."
+    - "Mein Fokus liegt auf nachhaltiger Architektur und einer unabhängigen Beratung, die den geschäftlichen Erfolg in den Mittelpunkt stellt."
 
 qualifications:
   - "Diplom-Betriebswirt (FH)"
