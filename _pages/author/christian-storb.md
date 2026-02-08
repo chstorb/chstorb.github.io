@@ -3,13 +3,33 @@ layout: default
 title: "Christian Storb"
 permalink: /author/christian-storb/
 description: "Christian Storb – Inhaber von STORB Consulting. Fundierte Ausbildung, langjährige Erfahrung und klare Schwerpunkte."
-author: "Christian Storb"
 locale: "de_DE"
 seo: 
-  type: ProfilePage
+  type: WebPage
 robots: "index, follow"
 categories: [author, profile, consulting]
 ---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Christian Storb",
+    "@id": "https://chstorb.github.io/#person",
+    "description": "Christian Storb – Inhaber von STORB Consulting. Fundierte Ausbildung, langjährige Erfahrung und klare Schwerpunkte.",
+    "image": "https://chstorb.github.io/assets/images/consulting/authors/christian-storb.jpg",
+    "sameAs": [
+      "https://github.com/chstorb",
+      "https://www.linkedin.com/in/christian-storb-326249aa/",
+      "https://twitter.com/ChristianStorb",
+      "https://www.instagram.com/storbconsulting",
+      "https://www.facebook.com/storb.christian"
+    ]
+  }
+}
+</script>
 
 <div class="container">
   
