@@ -2,7 +2,7 @@
 layout: default
 title: "Kontakt"
 description: "Nimm Kontakt mit STORB Consulting auf – wir beraten dich von der Planung bis zum Betrieb."
-permalink: /contact/contact/
+permalink: /contact/contact
 author: "Christian Storb"
 locale: "de_DE"
 seo: 

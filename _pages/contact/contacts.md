@@ -2,7 +2,7 @@
 layout: default
 title: "Ansprechpartner"
 description: "Christian Storb – Inhaber von STORB Consulting. Fundierte Ausbildung, langjährige Erfahrung und klare Schwerpunkte."
-permalink: /contact/contacts/
+permalink: /contact/contacts
 author: "Christian Storb"
 locale: "de_DE"
 seo: 

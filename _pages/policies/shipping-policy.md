@@ -2,7 +2,7 @@
 layout: default
 title: "Versandbedingungen"
 description: "Informationen zu Versand, Lieferzeiten und Kosten bei STORB Consulting."
-permalink: /policies/shipping-policy/
+permalink: /policies/shipping-policy
 author: "Christian Storb"
 locale: "de_DE"
 seo: 

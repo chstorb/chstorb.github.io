@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Christian Storb"
-permalink: /author/christian-storb/
+permalink: /author/christian-storb
 description: "Christian Storb – IT-Berater & Inhaber von STORB Consulting. Experte für .NET, Cloud & Azure mit über 20 Jahren Erfahrung. Erfahren Sie mehr über meine Projekte."
 locale: "de_DE"
 seo: 

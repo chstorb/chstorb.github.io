@@ -2,7 +2,7 @@
 layout: default
 title: "Synergy at Work"
 description: "STORB Consulting arbeitet mit starken Partnern wie 4Unit Systems Integration für ganzheitliche IT-Lösungen."
-permalink: /partner/partner/
+permalink: /partner/partner
 author: "Christian Storb"
 locale: "de_DE"
 seo: 

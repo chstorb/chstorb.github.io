@@ -90,6 +90,6 @@ include:
 collections:
   pages:
     output: true
-    permalink: /:name/
+    permalink: /:name
     layout: default
 

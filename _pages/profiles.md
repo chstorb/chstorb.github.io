@@ -2,7 +2,7 @@
 layout: default
 title: "STC im Web"
 description: "STORB Consulting – Profile und Auftritte auf verschiedenen Plattformen im Web."
-permalink: /profiles/
+permalink: /profiles
 author: "Christian Storb"
 locale: "de_DE"
 seo: 

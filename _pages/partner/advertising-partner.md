@@ -2,7 +2,7 @@
 layout: default
 title: "Werbepartner"
 description: "STORB Consulting arbeitet mit starken Partnern zusammen."
-permalink: /partner/advertising-partner/
+permalink: /partner/advertising-partner
 author: "Christian Storb"
 locale: "de_DE"
 seo: 

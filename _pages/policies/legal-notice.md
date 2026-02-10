@@ -2,7 +2,7 @@
 layout: default
 title: "Impressum & Rechtliche Informationen"
 description: "Impressum von STORB Consulting: Rechtliche Angaben, Kontakt zu Christian Storb (Nottuln) sowie wichtige Hinweise zur Online-Streitbeilegung und zum Urheberrecht."
-permalink: /policies/legal-notice/
+permalink: /policies/legal-notice
 author: "Christian Storb"
 locale: "de_DE"
 seo: 

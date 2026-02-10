@@ -2,7 +2,7 @@
 layout: default
 title: "Ausgewählte Projekte"
 description: "Referenzen: Ausgewählte Projekte von STORB Consulting in IT, E-Government und Industrie."
-permalink: /references/featured-projects/
+permalink: /references/featured-projects
 author: "Christian Storb"
 locale: "de_DE"
 seo: 
@@ -66,7 +66,7 @@ tags: [Projekte, Referenzen, Consulting, IT, E-Government, Industrie]
   <!-- Back Link -->
   <div class="row justify-content-center text-center">
     <div class="col-12">
-      <a href="{{ '/references/references/' | relative_url }}" class="btn btn-link text-decoration-none">
+      <a href="{{ '/references' | relative_url }}" class="btn btn-link text-decoration-none">
         <span class="material-symbols-outlined align-middle me-1">arrow_back</span>
         Zurück zur Übersicht
       </a>

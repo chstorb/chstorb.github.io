@@ -14,8 +14,8 @@ locale: "de_DE"
         Als erfahrener IT-Consultant unterstütze ich Sie bei der Realisierung komplexer Softwareprojekte. Von der strategischen Beratung bis zur operativen Umsetzung – ich begleite Ihr Team vor Ort oder Remote.
       </p>
       <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-        <a href="/author/christian-storb/" class="btn btn-primary btn-lg px-4 me-md-2">Mein Profil</a>
-        <a href="/contact/contacts/" class="btn btn-outline-secondary btn-lg px-4">Projekt anfragen</a>
+        <a href="/author/christian-storb" class="btn btn-primary btn-lg px-4 me-md-2">Mein Profil</a>
+        <a href="/contact/contacts" class="btn btn-outline-secondary btn-lg px-4">Projekt anfragen</a>
       </div>
     </div>
   </div>

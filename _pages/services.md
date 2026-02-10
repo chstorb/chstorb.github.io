@@ -2,7 +2,7 @@
 layout: default
 title: "Unsere Services"
 description: "STORB Consulting – Projektunterstützung von der Planung über die Entwicklung bis zur Markteinführung und den Betrieb."
-permalink: /services/
+permalink: /services
 author: "Christian Storb"
 locale: "de_DE"
 seo: 

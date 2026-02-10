@@ -2,7 +2,7 @@
 layout: default
 title: "Ausgewählte Unternehmen"
 description: "Referenzen von STORB Consulting: Sehen Sie hier eine Auswahl an Unternehmen und Partnern, mit denen wir erfolgreich IT- und Management-Projekte realisiert haben."
-permalink: /references/featured-companies/
+permalink: /references/featured-companies
 author: "Christian Storb"
 locale: "de_DE"
 seo: 
@@ -50,7 +50,7 @@ tags: [Unternehmen, Referenzen, Consulting, Projekte, Partnerschaften]
   <!-- Back Link -->
   <div class="row justify-content-center text-center">
     <div class="col-12">
-      <a href="{{ '/references/references/' | relative_url }}" class="btn btn-link text-decoration-none">
+      <a href="{{ '/references' | relative_url }}" class="btn btn-link text-decoration-none">
         <span class="material-symbols-outlined align-middle me-1">arrow_back</span>
         Zurück zur Übersicht
       </a>

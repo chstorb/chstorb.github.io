@@ -2,7 +2,7 @@
 layout: default
 title: "Cookie-Richtlinie"
 description: "Informationen zur Verwendung von Cookies bei STORB Consulting – transparent und rechtssicher."
-permalink: /policies/cookie-policy/
+permalink: /policies/cookie-policy
 author: "Christian Storb"
 locale: "de_DE"
 seo: 

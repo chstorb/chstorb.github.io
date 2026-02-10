@@ -2,7 +2,7 @@
 layout: default
 title: "Datenschutzerklärung"
 description: "Informationen zum Datenschutz bei STORB Consulting – transparent, rechtssicher und aktuell."
-permalink: /policies/privacy-policy/
+permalink: /policies/privacy-policy
 author: "Christian Storb"
 locale: "de_DE"
 seo: 

@@ -2,7 +2,7 @@
 layout: default
 title: "Zahlungsarten"
 description: "Informationen zu Zahlungsarten bei STORB Consulting."
-permalink: /policies/payments-methods-info/
+permalink: /policies/payments-methods-info
 author: "Christian Storb"
 locale: "de_DE"
 seo: 

@@ -11,18 +11,18 @@ highlights:
 navigation:
   - title: "Ausgewählte Projekte"
     description: "Einblicke in konkrete Projektbeispiele und Case Studies."
-    url: "/references/featured-projects/"
+    url: "/references/featured-projects"
     icon: "folder_special"
     type: "material"
 
   - title: "Ausgewählte Referenzen"
     description: "Stimmen und Bewertungen unserer Kunden."
-    url: "/references/featured-references/"
+    url: "/references/featured-references"
     icon: "verified"
     type: "material"
 
   - title: "Ausgewählte Unternehmen"
     description: "Eine Übersicht der Unternehmen, für die wir tätig waren."
-    url: "/references/featured-companies/"
+    url: "/references/featured-companies"
     icon: "domain"
     type: "material"

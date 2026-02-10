@@ -2,7 +2,7 @@
 layout: default
 title: "Referenzen"
 description: "Referenzen und ausgewählte Projekte von STORB Consulting – Expertise aus verschiedenen Branchen."
-permalink: /references/references/
+permalink: /references
 author: "Christian Storb"
 locale: "de_DE"
 seo: 
