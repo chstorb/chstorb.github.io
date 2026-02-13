@@ -20,7 +20,7 @@
 <meta property="og:site_name" content="Christian Storb" />
 <meta property="og:image" content="https://chstorb.github.io/assets/images/consulting/og-image.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2026-02-10T18:01:36+00:00" />
+<meta property="article:published_time" content="2026-02-13T18:01:27+00:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://chstorb.github.io/assets/images/consulting/og-image.png" />
 <meta property="twitter:title" content="Cookie-Richtlinie" />
@@ -28,7 +28,7 @@
 <meta name="twitter:creator" content="@Christian Storb" />
 <meta property="article:publisher" content="https://www.facebook.com/storb.christian/" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Christian Storb"},"dateModified":"2026-02-10T18:01:36+00:00","datePublished":"2026-02-10T18:01:36+00:00","description":"Informationen zur Verwendung von Cookies bei STORB Consulting – transparent und rechtssicher.","headline":"Cookie-Richtlinie","image":"https://chstorb.github.io/assets/images/consulting/og-image.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://chstorb.github.io/assets/images/consulting/og-image.png"},"name":"Christian Storb"},"url":"https://chstorb.github.io/policies/cookie-policy"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Christian Storb"},"dateModified":"2026-02-13T18:01:27+00:00","datePublished":"2026-02-13T18:01:27+00:00","description":"Informationen zur Verwendung von Cookies bei STORB Consulting – transparent und rechtssicher.","headline":"Cookie-Richtlinie","image":"https://chstorb.github.io/assets/images/consulting/og-image.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://chstorb.github.io/assets/images/consulting/og-image.png"},"name":"Christian Storb"},"url":"https://chstorb.github.io/policies/cookie-policy"}</script>
 <!-- End Jekyll SEO tag -->
 
   <script type="application/ld+json">
@@ -122,10 +122,10 @@
   <link rel="manifest" href="/assets/images/consulting/site.webmanifest">
 
   <!-- CSS -->
-  <link href="/assets/css/bootstrap.min.css?v=1770746496" rel="stylesheet">
-  <link href="/assets/css/material-symbols.css?v=1770746496" rel="stylesheet">
-  <link href="/assets/css/custom.css?v=1770746496" rel="stylesheet">
-  <link href="/assets/css/ads.css?v=1770746496" rel="stylesheet">
+  <link href="/assets/css/bootstrap.min.css?v=1771005687" rel="stylesheet">
+  <link href="/assets/css/material-symbols.css?v=1771005687" rel="stylesheet">
+  <link href="/assets/css/custom.css?v=1771005687" rel="stylesheet">
+  <link href="/assets/css/ads.css?v=1771005687" rel="stylesheet">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4ETH06PXMC"></script>
@@ -488,8 +488,106 @@ Bitte beachten Sie: Dies kann die Funktionalität unserer Website einschränken.
 </footer>
 
   <!-- Scripts -->
-  <script src="/assets/js/bootstrap.bundle.min.js?v=1770746496"></script>
-  <script src="/assets/js/copy-code.js?v=1770746496"></script>
+  <!-- Mermaid.js Support -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        console.log("Mermaid.js script loaded, initializing...");
+
+        mermaid.initialize({
+            startOnLoad: false,
+            theme: 'dark',
+            securityLevel: 'loose',
+            logLevel: 'debug',
+            sequence: {
+                showSequenceNumbers: true,
+                useMaxWidth: false,
+                stickyFont: true
+            }
+        });
+
+        // Find all potential Mermaid blocks
+        // Jekyll/Rouge usually produces <div class="language-mermaid highlighter-rouge">...</div>
+        // or <pre><code class="language-mermaid">...</code></pre>
+        let mermaidBlocks = document.querySelectorAll('div.language-mermaid, pre.mermaid, code.language-mermaid');
+
+        // If we still find nothing, let's look for anything that contains "mermaid" in the class
+        if (mermaidBlocks.length === 0) {
+            mermaidBlocks = document.querySelectorAll('[class*="mermaid"]');
+        }
+
+        console.log("Found " + mermaidBlocks.length + " potential mermaid blocks");
+
+        if (mermaidBlocks.length > 0) {
+            mermaidBlocks.forEach((el, index) => {
+                // We need to find the container that holds the raw code
+                let code = "";
+                let targetEl = el;
+
+                if (el.tagName === 'CODE' || el.tagName === 'PRE') {
+                    code = el.innerText.trim();
+                    // If it's a code tag, we want to replace its parent pre or the div wrapper
+                    targetEl = el.closest('div.highlighter-rouge') || el.closest('pre') || el;
+                } else {
+                    const codeEl = el.querySelector('code');
+                    code = codeEl ? codeEl.innerText.trim() : el.innerText.trim();
+                }
+
+                console.log("Processing block " + index + ", tag: " + el.tagName + ", classes: " + el.className);
+
+                // Create a new container for Mermaid
+                const mermaidDiv = document.createElement('pre');
+                mermaidDiv.className = 'mermaid';
+                mermaidDiv.textContent = code;
+
+                const container = document.createElement('div');
+                container.className = 'mermaid-container';
+                container.appendChild(mermaidDiv);
+
+                // Replace target element
+                targetEl.parentNode.replaceChild(container, targetEl);
+            });
+
+            console.log("Running mermaid.run()...");
+            mermaid.run().then(() => {
+                console.log("Mermaid rendering complete.");
+            }).catch(err => {
+                console.error("Mermaid rendering failed:", err);
+            });
+        } else {
+            // Log all code blocks to see what we are missing
+            const allCode = document.querySelectorAll('pre, code');
+            console.log("No mermaid blocks found. Total code/pre elements on page: " + allCode.length);
+            allCode.forEach((c, i) => {
+                if (i < 5) console.log("Code block " + i + " classes: ", c.className);
+            });
+        }
+    });
+</script>
+
+<style>
+    .mermaid-container {
+        display: flex;
+        justify-content: center;
+        padding: 1.5rem 0;
+        margin: 1.5rem 0;
+        background: transparent !important;
+    }
+
+    .mermaid {
+        background: transparent !important;
+        color: inherit;
+        font-family: inherit;
+    }
+
+    /* Ensure SVG is visible and centered */
+    .mermaid svg {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+</style>
+  <script src="/assets/js/bootstrap.bundle.min.js?v=1771005687"></script>
+  <script src="/assets/js/copy-code.js?v=1771005687"></script>
   <script src="https://www.dwin2.com/pub.1933231.min.js"></script>
 </body>
 

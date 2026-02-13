@@ -119,10 +119,10 @@
   <link rel="manifest" href="/assets/images/consulting/site.webmanifest">
 
   <!-- CSS -->
-  <link href="/assets/css/bootstrap.min.css?v=1770746496" rel="stylesheet">
-  <link href="/assets/css/material-symbols.css?v=1770746496" rel="stylesheet">
-  <link href="/assets/css/custom.css?v=1770746496" rel="stylesheet">
-  <link href="/assets/css/ads.css?v=1770746496" rel="stylesheet">
+  <link href="/assets/css/bootstrap.min.css?v=1771005687" rel="stylesheet">
+  <link href="/assets/css/material-symbols.css?v=1771005687" rel="stylesheet">
+  <link href="/assets/css/custom.css?v=1771005687" rel="stylesheet">
+  <link href="/assets/css/ads.css?v=1771005687" rel="stylesheet">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4ETH06PXMC"></script>
@@ -381,6 +381,44 @@
 
 
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    
+    <div class="col">
+        <article class="stc-card h-100 position-relative">
+            <div class="stc-card-img-wrapper border-bottom">
+                
+                <img src="/assets/images/consulting/blog/artificial-intelligence-3382507_1920.jpg" class="stc-card-img" alt="Agenten-Orchestrierung in der Praxis: Wie ein Orchestrator Ordnung in komplexe KI‑Workflows bringt">
+                
+            </div>
+
+            <div class="stc-card-body d-flex flex-column h-100">
+                <div class="mb-2">
+                    <span class="badge bg-body-tertiary text-secondary border fw-normal">
+                        13.02.2026
+                    </span>
+                    
+                    <span class="badge bg-primary-subtle text-primary border border-primary-subtle fw-normal ms-1">
+                        ai
+                    </span>
+                    
+                </div>
+
+                <h2 class="stc-card-title fw-bold mb-2">
+                    <a href="/ai/development/orchestration/agents/2026/02/13/agent-orchestrator-vscode.html" class="text-decoration-none text-reset stretched-link">
+                        Agenten-Orchestrierung in der Praxis: Wie ein Orchestrator Ordnung in komplexe KI‑Workflows bringt
+                    </a>
+                </h2>
+
+                <p class="stc-card-text flex-grow-1 mb-4">
+                    Moderne KI‑Werkzeuge versprechen Unterstützung in allen Bereichen der Softwareentwicklung. Doch je mehr Aufgaben wir an KI‑Modelle delegieren, desto deutlicher wird...
+                </p>
+
+                <div class="mt-auto pt-3 border-top d-flex align-items-center text-primary fw-medium">
+                    Mehr lesen <span class="material-symbols-outlined ms-1"
+                        style="font-size: 1.25em;">arrow_right_alt</span>
+                </div>
+            </div>
+        </article>
+    </div>
     
     <div class="col">
         <article class="stc-card h-100 position-relative">
@@ -1895,8 +1933,106 @@ https://learn.microsoft.com/en-us/dotnet/architecture/blazor-for-web-forms-devel
 </footer>
 
   <!-- Scripts -->
-  <script src="/assets/js/bootstrap.bundle.min.js?v=1770746496"></script>
-  <script src="/assets/js/copy-code.js?v=1770746496"></script>
+  <!-- Mermaid.js Support -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        console.log("Mermaid.js script loaded, initializing...");
+
+        mermaid.initialize({
+            startOnLoad: false,
+            theme: 'dark',
+            securityLevel: 'loose',
+            logLevel: 'debug',
+            sequence: {
+                showSequenceNumbers: true,
+                useMaxWidth: false,
+                stickyFont: true
+            }
+        });
+
+        // Find all potential Mermaid blocks
+        // Jekyll/Rouge usually produces <div class="language-mermaid highlighter-rouge">...</div>
+        // or <pre><code class="language-mermaid">...</code></pre>
+        let mermaidBlocks = document.querySelectorAll('div.language-mermaid, pre.mermaid, code.language-mermaid');
+
+        // If we still find nothing, let's look for anything that contains "mermaid" in the class
+        if (mermaidBlocks.length === 0) {
+            mermaidBlocks = document.querySelectorAll('[class*="mermaid"]');
+        }
+
+        console.log("Found " + mermaidBlocks.length + " potential mermaid blocks");
+
+        if (mermaidBlocks.length > 0) {
+            mermaidBlocks.forEach((el, index) => {
+                // We need to find the container that holds the raw code
+                let code = "";
+                let targetEl = el;
+
+                if (el.tagName === 'CODE' || el.tagName === 'PRE') {
+                    code = el.innerText.trim();
+                    // If it's a code tag, we want to replace its parent pre or the div wrapper
+                    targetEl = el.closest('div.highlighter-rouge') || el.closest('pre') || el;
+                } else {
+                    const codeEl = el.querySelector('code');
+                    code = codeEl ? codeEl.innerText.trim() : el.innerText.trim();
+                }
+
+                console.log("Processing block " + index + ", tag: " + el.tagName + ", classes: " + el.className);
+
+                // Create a new container for Mermaid
+                const mermaidDiv = document.createElement('pre');
+                mermaidDiv.className = 'mermaid';
+                mermaidDiv.textContent = code;
+
+                const container = document.createElement('div');
+                container.className = 'mermaid-container';
+                container.appendChild(mermaidDiv);
+
+                // Replace target element
+                targetEl.parentNode.replaceChild(container, targetEl);
+            });
+
+            console.log("Running mermaid.run()...");
+            mermaid.run().then(() => {
+                console.log("Mermaid rendering complete.");
+            }).catch(err => {
+                console.error("Mermaid rendering failed:", err);
+            });
+        } else {
+            // Log all code blocks to see what we are missing
+            const allCode = document.querySelectorAll('pre, code');
+            console.log("No mermaid blocks found. Total code/pre elements on page: " + allCode.length);
+            allCode.forEach((c, i) => {
+                if (i < 5) console.log("Code block " + i + " classes: ", c.className);
+            });
+        }
+    });
+</script>
+
+<style>
+    .mermaid-container {
+        display: flex;
+        justify-content: center;
+        padding: 1.5rem 0;
+        margin: 1.5rem 0;
+        background: transparent !important;
+    }
+
+    .mermaid {
+        background: transparent !important;
+        color: inherit;
+        font-family: inherit;
+    }
+
+    /* Ensure SVG is visible and centered */
+    .mermaid svg {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+</style>
+  <script src="/assets/js/bootstrap.bundle.min.js?v=1771005687"></script>
+  <script src="/assets/js/copy-code.js?v=1771005687"></script>
   <script src="https://www.dwin2.com/pub.1933231.min.js"></script>
 </body>
 
