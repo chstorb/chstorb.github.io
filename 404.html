@@ -18,9 +18,45 @@ layout: default
   }
 </style>
 
+
 <div class="container">
   <h1>404</h1>
 
   <p><strong>Page not found :(</strong></p>
   <p>The requested page could not be found.</p>
+  <p id="redirect-message" class="text-muted small mt-3"></p>
 </div>
+
+<script>
+  (function () {
+    var pathname = window.location.pathname;
+    var hash = window.location.hash;
+    var search = window.location.search;
+
+    // Check if the URL ends with a slash and is not the root
+    if (pathname.length > 1 && pathname.endsWith('/')) {
+      // Remove the trailing slash
+      var newPath = pathname.slice(0, -1);
+
+      // Redirect to the new URL immediately
+      window.location.replace(newPath + search + hash);
+    } else {
+      // If it's a genuine 404 (no trailing slash issue), redirect to home after a delay
+      var redirectMessage = document.getElementById('redirect-message');
+      var seconds = 5;
+
+      var updateMessage = function () {
+        if (seconds > 0) {
+          redirectMessage.textContent = "Redirecting to homepage in " + seconds + " seconds...";
+          seconds--;
+          setTimeout(updateMessage, 1000);
+        } else {
+          redirectMessage.textContent = "Redirecting...";
+          window.location.href = "{{ site.url }}";
+        }
+      };
+
+      updateMessage();
+    }
+  })();
+</script>

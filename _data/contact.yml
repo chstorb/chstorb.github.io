@@ -24,5 +24,5 @@ contact_info:
 
 links:
   - title: "Ansprechpartner"
-    url: "/contact/contacts/"
+    url: "/contact/contacts"
     icon: "badge"
