@@ -6,3 +6,6 @@ vendor
 
 # Ignore plans folder
 plans
+
+# Ignore agent folder
+.agent

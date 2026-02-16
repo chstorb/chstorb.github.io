@@ -2,7 +2,7 @@
 layout: default
 title: "Ausgewählte Referenzen"
 description: "Referenzen zu Projekten von STORB Consulting – Bewertungen durch namhafte Unternehmen und Führungskräfte."
-permalink: /references/featured-references
+permalink: /references/featured-references/
 author: "Christian Storb"
 locale: "de_DE"
 seo: 
