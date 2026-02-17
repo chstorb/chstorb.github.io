@@ -11,6 +11,12 @@ partners:
     include: "awolvisioneu.html"
     active: true
 
+  - name: "limacity"
+    publisher_id: 447478
+    category: "hosting"
+    include: "limacity.html"
+    active: true
+
   - name: "bahnde"
     publisher_id: 194964
     category: "train"
@@ -63,4 +69,16 @@ partners:
     publisher_id: 115953
     category: "hotel"
     include: "zenhotelseu.html"
+    active: true
+
+  - name: "100percentpure"
+    publisher_id: 13991
+    category: "shopping"
+    include: "100percentpure.html"
+    active: true
+  
+  - name: "instantdownload"
+    publisher_id: 118893
+    category: "shopping"
+    include: "instantdownload.html"
     active: true

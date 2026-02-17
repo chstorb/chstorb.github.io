@@ -1,13 +1,21 @@
 ---
 layout: default
-title: "Christian Storb"
-permalink: /author/christian-storb/
+title: "Über den Autor"
 description: "Christian Storb – IT-Berater & Inhaber von STORB Consulting. Experte für .NET, Cloud & Azure mit über 20 Jahren Erfahrung. Erfahren Sie mehr über meine Projekte."
+permalink: /author/christian-storb/
 locale: "de_DE"
 seo: 
   type: WebPage
+
+# Open Graph / Twitter Cards
+image: "/assets/images/consulting/og-image.png"
+twitter:
+  card: "summary_large_image"
+  creator: "@ChristianStorb"
+
 robots: "index, follow"
 categories: [author, profile, consulting]
+tags: [author, christian-storb]
 ---
 
 <script type="application/ld+json">

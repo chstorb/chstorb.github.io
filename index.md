@@ -4,6 +4,16 @@ title: null
 description: "Christian Storb, STORB Consulting unterstützt Ihr Projekt bei Kunden und Geschäftspartnern vor Ort – von der Planung über die Entwicklung bis zur Markteinführung und den Betrieb."
 author: "Christian Storb"
 locale: "de_DE"
+seo: 
+  type: WebPage
+
+# Open Graph / Twitter Cards
+image: "/assets/images/consulting/og-image.png"
+twitter:
+  card: "summary_large_image"
+  creator: "@ChristianStorb"
+
+robots: "index, follow"
 ---
 
 <section class="py-5 mb-5 border-bottom bg-body-tertiary rounded-4 px-4 px-md-5">

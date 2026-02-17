@@ -18,6 +18,18 @@ redirect_from:
 ---
 Die Kombination von Windows und Linux in einem System bietet unschätzbare Flexibilität. Mit Windows Subsystem for Linux (WSL) kannst du Linux direkt auf deinem Windows-Rechner ausführen. **Dieser Artikel konzentriert sich auf praktische Beispiele mit minimaler Erläuterung**, um dir eine klare und einfache Anleitung zu bieten.
 
+## Inhalt
+
+- [Warum WSL?](#warum-wsl)
+- [Schritt 1: WSL über die Benutzeroberfläche aktivieren](#schritt-1-wsl-über-die-benutzeroberfläche-aktivieren)
+- [Schritt 2: WSL 2 aktivieren](#schritt-2-wsl-2-aktivieren)
+- [Schritt 3: Ubuntu 24.04 aus dem Microsoft Store installieren](#schritt-3-ubuntu-2404-aus-dem-microsoft-store-installieren)
+- [Schritt 4: Erste Einrichtung von Ubuntu](#schritt-4-erste-einrichtung-von-ubuntu)
+- [Schritt 5: Ubuntu einrichten](#schritt-5-ubuntu-einrichten)
+- [Schritt 6: Überprüfe deine Internetverbindung](#schritt-6-überprüfe-deine-internetverbindung)
+- [Schritt 7: DNS-Server überprüfen](#schritt-7-dns-server-überprüfen)
+- [Fazit](#fazit)
+
 ### Warum WSL?
 
 WSL ermöglicht die Ausführung eines vollständigen Linux-Subsystems direkt auf Windows – ohne Dual-Boot oder virtuelle Maschinen. Es ist ideal für Entwickler und Power-User, die die nahtlose Integration beider Betriebssysteme nutzen möchten.
@@ -70,10 +82,20 @@ Beim ersten Start wirst du aufgefordert, einen Benutzernamen und ein Passwort zu
 
 - Teste die Verbindung mit einem einfachen Befehl wie:<br>`ping google.com`
 
+<div class="py-3 mb-3" style="padding: 1rem; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: var(--stc-radius);">
+  <p><strong>Hinweis:</strong> Wenn du Webspace oder Domains suchst, kann ich dir lima‑city empfehlen. Ich nutze es selbst für Hosting‑Projekte.</p>
+      <a rel="sponsored" href="https://www.lima-city.de/webhosting?cref=447478">
+        <img alt="lima-city: Webhosting, Domains und Cloud" src="https://www.lima-city.de/assets/banner/banner5.jpg"
+            border="0">
+    </a>
+</div>
+
 ### **Schritt 7: DSN-Server überprüfen**
 
-<p>Falls ein Problem mit der Internetverbindung besteht, könnte es an deinem DNS-Server liegen. Du kannst temporär auf einen öffentlichen DNS-Server wie Google DNS wechseln:<br>`sudo nano /etc/resolv.conf`<br><br>Füge folgende Zeile hinzu:<br>`nameserver 8.8.8.8`
-</p>
+Falls ein Problem mit der Internetverbindung besteht, könnte es an deinem DNS-Server liegen. Du kannst temporär auf einen öffentlichen DNS-Server wie Google DNS wechseln:<br>
+`sudo nano /etc/resolv.conf`<br>
+Füge folgende Zeile hinzu:<br>
+`nameserver 8.8.8.8`
 
 ### **Fazit**
 
@@ -81,4 +103,4 @@ Mit WSL und Ubuntu 24.04 kannst du die Vorteile von Linux nutzen, ohne Windows v
 
 ### Referenzen
 
-- [Ubuntu beim Start von Windows automatisch starten: Ein Leitfaden](https://storbconsulting.wordpress.com/2025/03/15/ubuntu-beim-start-von-windows-automatisch-starten-ein-leitfaden/)
+- [Ubuntu beim Start von Windows automatisch starten: Ein Leitfaden]({% link _posts/2025-03-15-ubuntu-windows-start.md %})
