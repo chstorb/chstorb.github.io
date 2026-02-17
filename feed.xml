@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="de"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://chstorb.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://chstorb.github.io/" rel="alternate" type="text/html" hreflang="de" /><updated>2026-02-16T23:33:46+00:00</updated><id>https://chstorb.github.io/feed.xml</id><title type="html">Christian Storb</title><subtitle>STORB Consulting unterstützt Ihr Projekt bei Kunden und Geschäftspartnern vor Ort – von der Planung über die Entwicklung bis zur Markteinführung und den Betrieb.</subtitle><author><name>Christian Storb</name><email>mail2storb@gmail.com</email></author><entry><title type="html">Agenten-Orchestrierung in der Praxis: Wie ein Orchestrator Ordnung in komplexe KI‑Workflows bringt</title><link href="https://chstorb.github.io/ai/development/orchestration/agents/2026/02/13/agent-orchestrator-vscode.html" rel="alternate" type="text/html" title="Agenten-Orchestrierung in der Praxis: Wie ein Orchestrator Ordnung in komplexe KI‑Workflows bringt" /><published>2026-02-13T00:00:00+00:00</published><updated>2026-02-13T00:00:00+00:00</updated><id>https://chstorb.github.io/ai/development/orchestration/agents/2026/02/13/agent-orchestrator-vscode</id><content type="html" xml:base="https://chstorb.github.io/ai/development/orchestration/agents/2026/02/13/agent-orchestrator-vscode.html"><![CDATA[<p>Moderne KI‑Werkzeuge versprechen Unterstützung in allen Bereichen der Softwareentwicklung. Doch je mehr Aufgaben wir an KI‑Modelle delegieren, desto deutlicher wird ein Problem: <strong>Komplexität entsteht nicht nur im Code, sondern auch in der Koordination der Werkzeuge selbst.</strong></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="de"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://chstorb.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://chstorb.github.io/" rel="alternate" type="text/html" hreflang="de" /><updated>2026-02-17T22:51:54+00:00</updated><id>https://chstorb.github.io/feed.xml</id><title type="html">Christian Storb</title><subtitle>STORB Consulting unterstützt Ihr Projekt bei Kunden und Geschäftspartnern vor Ort – von der Planung über die Entwicklung bis zur Markteinführung und den Betrieb.</subtitle><author><name>Christian Storb</name><email>mail2storb@gmail.com</email></author><entry><title type="html">Agenten-Orchestrierung in der Praxis: Wie ein Orchestrator Ordnung in komplexe KI‑Workflows bringt</title><link href="https://chstorb.github.io/ai/development/orchestration/agents/2026/02/13/agent-orchestrator-vscode.html" rel="alternate" type="text/html" title="Agenten-Orchestrierung in der Praxis: Wie ein Orchestrator Ordnung in komplexe KI‑Workflows bringt" /><published>2026-02-13T00:00:00+00:00</published><updated>2026-02-13T00:00:00+00:00</updated><id>https://chstorb.github.io/ai/development/orchestration/agents/2026/02/13/agent-orchestrator-vscode</id><content type="html" xml:base="https://chstorb.github.io/ai/development/orchestration/agents/2026/02/13/agent-orchestrator-vscode.html"><![CDATA[<p>Moderne KI‑Werkzeuge versprechen Unterstützung in allen Bereichen der Softwareentwicklung. Doch je mehr Aufgaben wir an KI‑Modelle delegieren, desto deutlicher wird ein Problem: <strong>Komplexität entsteht nicht nur im Code, sondern auch in der Koordination der Werkzeuge selbst.</strong></p>
 
 <p>Die Lösung ist kein größeres Modell, sondern eine <strong>bessere Organisation</strong>.<br />
 Im Zentrum steht ein Orchestrator, ein Agent, der nicht selbst arbeitet, sondern <strong>führt</strong>.</p>
@@ -948,6 +948,16 @@ Falls du eine **individuelle Beratung** benötigst, um die beste Lösung für de
   </li>
 </ul>]]></content><author><name>Christian Storb</name></author><category term="net" /><category term="azure" /><category term="blazor" /><category term="softwareentwicklung" /><category term="visual-studio" /><category term="webentwicklung" /><category term="e-mail-dienst" /><category term="sendgrid" /><summary type="html"><![CDATA[Im Folgenden wird erläutert, wie Sie in Visual Studio 2022 Funktionen für Kontobestätigung und Kennwortwiederherstellung in einer ASP.NET Core Blazor-Webanwen...]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://chstorb.github.io/assets/images/consulting/blog/kontobestaetigung-identity.jpg" /><media:content medium="image" url="https://chstorb.github.io/assets/images/consulting/blog/kontobestaetigung-identity.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Ubuntu beim Windows-Start automatisch starten</title><link href="https://chstorb.github.io/automatisierung/iot/open-source/softwareentwicklung/wsl/2025/03/15/ubuntu-windows-start.html" rel="alternate" type="text/html" title="Ubuntu beim Windows-Start automatisch starten" /><published>2025-03-15T13:53:13+00:00</published><updated>2025-03-15T13:53:13+00:00</updated><id>https://chstorb.github.io/automatisierung/iot/open-source/softwareentwicklung/wsl/2025/03/15/ubuntu-windows-start</id><content type="html" xml:base="https://chstorb.github.io/automatisierung/iot/open-source/softwareentwicklung/wsl/2025/03/15/ubuntu-windows-start.html"><![CDATA[<p>Wenn du häufig mit Ubuntu unter Windows Subsystem for Linux (WSL) arbeitest, kann es praktisch sein, die Linux-Distribution automatisch mit dem Start von Windows zu laden. Durch das automatische Starten sparst du Zeit und kannst direkt nach dem Hochfahren deines PCs in deiner bevorzugten Arbeitsumgebung loslegen. Dieser Artikel konzentriert sich auf praktische Beispiele mit minimaler Erläuterung, um dir eine klare und einfache Anleitung zu bieten.</p>
 
+<h2 id="inhalt">Inhalt</h2>
+
+<ul>
+  <li><a href="#schritt-1-standard-distribution-auf-ubuntu-setzen">Schritt 1: Standard-Distribution auf Ubuntu setzen</a></li>
+  <li><a href="#schritt-2-eine-verknüpfung-für-den-autostart-erstellen">Schritt 2: Eine Verknüpfung für den Autostart erstellen</a></li>
+  <li><a href="#schritt-3-testen">Schritt 3: Testen</a></li>
+  <li><a href="#optional-verdecktes-starten-einrichten">Optional: Verdecktes Starten einrichten</a></li>
+  <li><a href="#fazit">Fazit</a></li>
+</ul>
+
 <h3 id="schritt-1-standard-distribution-auf-ubuntu-setzen">Schritt 1: Standard-Distribution auf Ubuntu setzen</h3>
 
 <p>Bevor Ubuntu automatisch gestartet werden kann, solltest du sicherstellen, dass es als Standard-Distribution eingerichtet ist.</p>
@@ -1010,11 +1020,32 @@ Falls du eine **individuelle Beratung** benötigst, um die beste Lösung für de
 
 <p>Mit diesen einfachen Schritten startet Ubuntu automatisch mit Windows, sodass du direkt nach dem Hochfahren loslegen kannst. Diese Lösung ist besonders effizient, wenn du WSL und Ubuntu regelmäßig nutzt. Probiere es aus und genieße den nahtlosen Start!</p>
 
+<div class="py-3 mb-3" style="padding: 1rem; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: var(--stc-radius);">
+  <p><strong>Hinweis:</strong> Wenn du Webspace oder Domains suchst, kann ich dir lima‑city empfehlen. Ich nutze es selbst für Hosting‑Projekte.</p>
+      <a rel="sponsored" href="https://www.lima-city.de/webhosting?cref=447478">
+        <img alt="lima-city: Webhosting, Domains und Cloud" src="https://www.lima-city.de/assets/banner/banner5.jpg" border="0" />
+    </a>
+</div>
+
 <h3 id="referenzen">Referenzen</h3>
 
 <ul>
-  <li><a href="https://storbconsulting.wordpress.com/2025/03/15/ubuntu-24-04-auf-wsl-unter-windows-installieren-ein-leitfaden/">Ubuntu 24.04 auf WSL unter Windows installieren: Ein Leitfaden</a></li>
+  <li><a href="/net/iot/linux/open-source/softwareentwicklung/2025/03/14/ubuntu-wsl.html">Ubuntu 24.04 auf WSL unter Windows installieren: Ein Leitfaden</a></li>
 </ul>]]></content><author><name>Christian Storb</name></author><category term="automatisierung" /><category term="iot" /><category term="open-source" /><category term="softwareentwicklung" /><category term="wsl" /><category term="autostart-ubuntu" /><category term="entwicklung" /><category term="linux-auf-windows" /><category term="linux-befehle" /><category term="linux-integration" /><category term="powershell" /><category term="shellstartup" /><category term="software-entwicklung" /><category term="ubuntu-2404" /><category term="ubuntu-automatisch-starten" /><category term="ubuntu-distribution" /><category term="ubuntu-im-hintergrund-starten" /><category term="windows-subsystem-for-linux" /><category term="windows-automatisierung" /><category term="wsl" /><category term="wsl---set-default" /><category term="wsl-2" /><summary type="html"><![CDATA[Wenn du häufig mit Ubuntu unter Windows Subsystem for Linux (WSL) arbeitest, kann es praktisch sein, die Linux-Distribution automatisch mit dem Start von Wind...]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://chstorb.github.io/assets/images/consulting/blog/ubuntu-und-wsl.jpg" /><media:content medium="image" url="https://chstorb.github.io/assets/images/consulting/blog/ubuntu-und-wsl.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Ubuntu 24.04 auf WSL unter Windows installieren</title><link href="https://chstorb.github.io/net/iot/linux/open-source/softwareentwicklung/2025/03/14/ubuntu-wsl.html" rel="alternate" type="text/html" title="Ubuntu 24.04 auf WSL unter Windows installieren" /><published>2025-03-14T13:33:43+00:00</published><updated>2025-03-14T13:33:43+00:00</updated><id>https://chstorb.github.io/net/iot/linux/open-source/softwareentwicklung/2025/03/14/ubuntu-wsl</id><content type="html" xml:base="https://chstorb.github.io/net/iot/linux/open-source/softwareentwicklung/2025/03/14/ubuntu-wsl.html"><![CDATA[<p>Die Kombination von Windows und Linux in einem System bietet unschätzbare Flexibilität. Mit Windows Subsystem for Linux (WSL) kannst du Linux direkt auf deinem Windows-Rechner ausführen. <strong>Dieser Artikel konzentriert sich auf praktische Beispiele mit minimaler Erläuterung</strong>, um dir eine klare und einfache Anleitung zu bieten.</p>
+
+<h2 id="inhalt">Inhalt</h2>
+
+<ul>
+  <li><a href="#warum-wsl">Warum WSL?</a></li>
+  <li><a href="#schritt-1-wsl-über-die-benutzeroberfläche-aktivieren">Schritt 1: WSL über die Benutzeroberfläche aktivieren</a></li>
+  <li><a href="#schritt-2-wsl-2-aktivieren">Schritt 2: WSL 2 aktivieren</a></li>
+  <li><a href="#schritt-3-ubuntu-2404-aus-dem-microsoft-store-installieren">Schritt 3: Ubuntu 24.04 aus dem Microsoft Store installieren</a></li>
+  <li><a href="#schritt-4-erste-einrichtung-von-ubuntu">Schritt 4: Erste Einrichtung von Ubuntu</a></li>
+  <li><a href="#schritt-5-ubuntu-einrichten">Schritt 5: Ubuntu einrichten</a></li>
+  <li><a href="#schritt-6-überprüfe-deine-internetverbindung">Schritt 6: Überprüfe deine Internetverbindung</a></li>
+  <li><a href="#schritt-7-dns-server-überprüfen">Schritt 7: DNS-Server überprüfen</a></li>
+  <li><a href="#fazit">Fazit</a></li>
+</ul>
 
 <h3 id="warum-wsl">Warum WSL?</h3>
 
@@ -1099,10 +1130,19 @@ Falls du eine **individuelle Beratung** benötigst, um die beste Lösung für de
   </li>
 </ul>
 
+<div class="py-3 mb-3" style="padding: 1rem; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: var(--stc-radius);">
+  <p><strong>Hinweis:</strong> Wenn du Webspace oder Domains suchst, kann ich dir lima‑city empfehlen. Ich nutze es selbst für Hosting‑Projekte.</p>
+      <a rel="sponsored" href="https://www.lima-city.de/webhosting?cref=447478">
+        <img alt="lima-city: Webhosting, Domains und Cloud" src="https://www.lima-city.de/assets/banner/banner5.jpg" border="0" />
+    </a>
+</div>
+
 <h3 id="schritt-7-dsn-server-überprüfen"><strong>Schritt 7: DSN-Server überprüfen</strong></h3>
 
-<p>Falls ein Problem mit der Internetverbindung besteht, könnte es an deinem DNS-Server liegen. Du kannst temporär auf einen öffentlichen DNS-Server wie Google DNS wechseln:<br />`sudo nano /etc/resolv.conf`<br /><br />Füge folgende Zeile hinzu:<br />`nameserver 8.8.8.8`
-</p>
+<p>Falls ein Problem mit der Internetverbindung besteht, könnte es an deinem DNS-Server liegen. Du kannst temporär auf einen öffentlichen DNS-Server wie Google DNS wechseln:<br />
+<code class="language-plaintext highlighter-rouge">sudo nano /etc/resolv.conf</code><br />
+Füge folgende Zeile hinzu:<br />
+<code class="language-plaintext highlighter-rouge">nameserver 8.8.8.8</code></p>
 
 <h3 id="fazit"><strong>Fazit</strong></h3>
 
@@ -1111,5 +1151,5 @@ Falls du eine **individuelle Beratung** benötigst, um die beste Lösung für de
 <h3 id="referenzen">Referenzen</h3>
 
 <ul>
-  <li><a href="https://storbconsulting.wordpress.com/2025/03/15/ubuntu-beim-start-von-windows-automatisch-starten-ein-leitfaden/">Ubuntu beim Start von Windows automatisch starten: Ein Leitfaden</a></li>
+  <li><a href="/automatisierung/iot/open-source/softwareentwicklung/wsl/2025/03/15/ubuntu-windows-start.html">Ubuntu beim Start von Windows automatisch starten: Ein Leitfaden</a></li>
 </ul>]]></content><author><name>Christian Storb</name></author><category term="net" /><category term="iot" /><category term="linux" /><category term="open-source" /><category term="softwareentwicklung" /><category term="entwicklung" /><category term="git-installieren" /><category term="linux-auf-windows" /><category term="linux-anleitung" /><category term="linux-integration" /><category term="microsoft-store" /><category term="paketquellen-aktualisieren" /><category term="software-entwicklung" /><category term="ubuntu-2404" /><category term="ubuntu-einrichtung" /><category term="ubuntu-installieren" /><category term="virtualmachineplatform" /><category term="windows-subsystem-for-linux" /><category term="windows-features-aktivieren" /><category term="wsl" /><category term="wsl-2" /><summary type="html"><![CDATA[Die Kombination von Windows und Linux in einem System bietet unschätzbare Flexibilität. Mit Windows Subsystem for Linux (WSL) kannst du Linux direkt auf deine...]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://chstorb.github.io/assets/images/consulting/blog/wsl-auf-windows.jpg" /><media:content medium="image" url="https://chstorb.github.io/assets/images/consulting/blog/wsl-auf-windows.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
