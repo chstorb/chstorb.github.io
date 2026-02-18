@@ -1,4 +1,5 @@
-name: "stc-layout-redesign"
+---
+name: "layout-redesign"
 description: "Generate a modern, responsive Jekyll layout based on PRD"
 author: "Christian Storb"
 version: "1.0.0"

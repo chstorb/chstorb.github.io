@@ -1,0 +1,18 @@
+<div class="affiliate-box {{ include.class }}">
+  <style>
+    /* Fallback responsive styles — prefer zentrale Stylesheet-Integration */
+    .affiliate-box { box-sizing: border-box; padding: 1rem; border: 1px solid rgba(255,255,255,0.1); border-radius: var(--stc-radius); width: 100%; max-width: 900px; margin: 0.75rem auto; background: transparent; }
+    .affiliate-box p { margin: 0 0 0.5rem; font-size: 0.95rem; }
+    .affiliate-box a { display: block; text-align: center; }
+    .affiliate-box img { max-width: 100%; height: auto; display: block; margin: 0 auto; object-fit: contain; }
+    @media (max-width: 480px) { .affiliate-box { padding: 0.75rem; } }
+  </style>
+
+  {% if include.note %}
+    <p><strong>Hinweis:</strong> {{ include.note }}</p>
+  {% endif %}
+
+  <a rel="sponsored" href="{{ include.href }}">
+    <img src="{{ include.image }}" alt="{{ include.alt | default: '' }}" loading="lazy" decoding="async">
+  </a>
+</div>

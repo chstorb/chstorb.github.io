@@ -68,13 +68,12 @@ Falls dich das sichtbare Startfenster stört, kannst du ein Skript erstellen, da
 
 Mit diesen einfachen Schritten startet Ubuntu automatisch mit Windows, sodass du direkt nach dem Hochfahren loslegen kannst. Diese Lösung ist besonders effizient, wenn du WSL und Ubuntu regelmäßig nutzt. Probiere es aus und genieße den nahtlosen Start!
 
-<div class="py-3 mb-3" style="padding: 1rem; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: var(--stc-radius);">
-  <p><strong>Hinweis:</strong> Wenn du Webspace oder Domains suchst, kann ich dir lima‑city empfehlen. Ich nutze es selbst für Hosting‑Projekte.</p>
-      <a rel="sponsored" href="https://www.lima-city.de/webhosting?cref=447478">
-        <img alt="lima-city: Webhosting, Domains und Cloud" src="https://www.lima-city.de/assets/banner/banner5.jpg"
-            border="0">
-    </a>
-</div>
+{% include affiliate.html
+   href="https://www.lima-city.de/webhosting?cref=447478"
+   image="https://www.lima-city.de/assets/banner/banner5.jpg"
+   alt="lima-city: Webhosting, Domains und Cloud"
+   note="Wenn du Webspace oder Domains suchst, kann ich dir lima‑city empfehlen. Ich nutze es selbst für Hosting‑Projekte."
+%}
 
 ### Referenzen
 
