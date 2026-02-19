@@ -8,27 +8,25 @@
 
   <!-- SEO & Social -->
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Ubuntu 24.04 auf WSL unter Windows installieren | Christian Storb</title>
+<title>Money on GitHub | Christian Storb</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Ubuntu 24.04 auf WSL unter Windows installieren" />
+<meta property="og:title" content="Money on GitHub" />
 <meta name="author" content="Christian Storb" />
 <meta property="og:locale" content="de_DE" />
-<meta name="description" content="Die Kombination von Windows und Linux in einem System bietet unschätzbare Flexibilität. Mit Windows Subsystem for Linux (WSL) kannst du Linux direkt auf deine…" />
-<meta property="og:description" content="Die Kombination von Windows und Linux in einem System bietet unschätzbare Flexibilität. Mit Windows Subsystem for Linux (WSL) kannst du Linux direkt auf deine…" />
-<link rel="canonical" href="https://chstorb.github.io/net/iot/linux/open-source/softwareentwicklung/2025/03/14/ubuntu-wsl.html" />
-<meta property="og:url" content="https://chstorb.github.io/net/iot/linux/open-source/softwareentwicklung/2025/03/14/ubuntu-wsl.html" />
+<meta name="description" content=".NET‑Bibliothek zum Erstellen von SEPA‑Zahlungsdateien (pain.001) und zum Einlesen sowie Auswerten von Kontoauszügen.“" />
+<meta property="og:description" content=".NET‑Bibliothek zum Erstellen von SEPA‑Zahlungsdateien (pain.001) und zum Einlesen sowie Auswerten von Kontoauszügen.“" />
+<link rel="canonical" href="https://chstorb.github.io/projects/money/" />
+<meta property="og:url" content="https://chstorb.github.io/projects/money/" />
 <meta property="og:site_name" content="Christian Storb" />
-<meta property="og:image" content="https://chstorb.github.io/assets/images/consulting/blog/wsl-auf-windows.jpg" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-03-14T13:33:43+00:00" />
+<meta property="article:published_time" content="2024-01-01T11:00:00+00:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:image" content="https://chstorb.github.io/assets/images/consulting/blog/wsl-auf-windows.jpg" />
-<meta property="twitter:title" content="Ubuntu 24.04 auf WSL unter Windows installieren" />
+<meta property="twitter:title" content="Money on GitHub" />
 <meta name="twitter:site" content="@ChristianStorb" />
-<meta name="twitter:creator" content="@Christian Storb" />
+<meta name="twitter:creator" content="@https://twitter.com/ChristianStorb" />
 <meta property="article:publisher" content="https://www.facebook.com/storb.christian/" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Christian Storb","url":"/author/christian-storb/"},"dateModified":"2025-03-14T13:33:43+00:00","datePublished":"2025-03-14T13:33:43+00:00","description":"Die Kombination von Windows und Linux in einem System bietet unschätzbare Flexibilität. Mit Windows Subsystem for Linux (WSL) kannst du Linux direkt auf deine…","headline":"Ubuntu 24.04 auf WSL unter Windows installieren","image":"https://chstorb.github.io/assets/images/consulting/blog/wsl-auf-windows.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://chstorb.github.io/net/iot/linux/open-source/softwareentwicklung/2025/03/14/ubuntu-wsl.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://chstorb.github.io/assets/images/consulting/og-image.png"},"name":"Christian Storb"},"url":"https://chstorb.github.io/net/iot/linux/open-source/softwareentwicklung/2025/03/14/ubuntu-wsl.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Christian Storb","url":"https://chstorb.github.io/author/christian-storb/"},"dateModified":"2024-01-01T11:00:00+00:00","datePublished":"2024-01-01T11:00:00+00:00","description":".NET‑Bibliothek zum Erstellen von SEPA‑Zahlungsdateien (pain.001) und zum Einlesen sowie Auswerten von Kontoauszügen.“","headline":"Money on GitHub","mainEntityOfPage":{"@type":"WebPage","@id":"https://chstorb.github.io/projects/money/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://chstorb.github.io/assets/images/consulting/og-image.png"},"name":"Christian Storb"},"url":"https://chstorb.github.io/projects/money/"}</script>
 <!-- End Jekyll SEO tag -->
 
   <script type="application/ld+json">
@@ -108,17 +106,36 @@
   <meta name="google-site-verification" content="v1IaICzb6Ve4AAMD6dPYhqWkk5TxQ5Aa6vRxUSs89aA" />
 
   <!-- Assets -->
-  <link href="/assets/images/consulting/favicon.png" rel="icon" type="image/png">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" href="/assets/images/consulting/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="/assets/images/consulting/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="/assets/images/consulting/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192"
+    href="/assets/images/consulting/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512"
+    href="/assets/images/consulting/android-chrome-512x512.png">
+  <link rel="apple-touch-icon" href="/assets/images/consulting/apple-touch-icon.png">
+  <link rel="manifest" href="/assets/images/consulting/site.webmanifest">
 
   <!-- CSS -->
   <link href="/assets/css/bootstrap.min.css?v=1771540095" rel="stylesheet">
   <link href="/assets/css/material-symbols.css?v=1771540095" rel="stylesheet">
   <link href="/assets/css/custom.css?v=1771540095" rel="stylesheet">
   <link href="/assets/css/ads.css?v=1771540095" rel="stylesheet">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4ETH06PXMC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-4ETH06PXMC');
+  </script>
 </head>
 
 <body class="d-flex flex-column h-100">
-
   <div class="container">
     <div id="adCarousel" class="carousel slide" aria-label="Partneranzeigen" data-bs-ride="carousel"
         data-bs-pause="false">
@@ -387,212 +404,95 @@
 </nav>
 
   <main class="flex-shrink-0" role="main">
+    <div class="container py-5">
 
-    <!-- Hero / Header Section for Post -->
-    <div class="border-bottom py-5 mb-5">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 text-center">
-            <div class="mb-3 text-uppercase text-primary fw-bold small tracking-wider">
-              net • iot • linux • open-source • softwareentwicklung
-            </div>
-            <h1 class="display-4 fw-bold mb-4">Ubuntu 24.04 auf WSL unter Windows installieren</h1>
-            <div class="d-flex align-items-center justify-content-center text-muted">
-              <span class="d-flex align-items-center">
-                <span class="material-symbols-outlined me-1 fs-5">calendar_today</span>
-                14. March 2025
-              </span>
+      <!-- Page Title (Visually Hidden by default, accessible for Screen Readers) -->
+      <h1 class="visually-hidden mb-4 fw-bold">Christian Storb @ STORB Consulting - Money on GitHub</h1>
 
-              
-              
+      <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "name": "Money on GitHub",
+  "version": "0.9.0",
+  "description": ".NET‑Bibliothek zum Erstellen von SEPA‑Zahlungsdateien (pain.001) und zum Einlesen sowie Auswerten von Kontoauszügen.“",
+  "codeRepository": "https://github.com/chstorb/Money",
+  "license": "https://opensource.org/licenses/MIT",
+  "datePublished": "2024-01-01T11:00:00+00:00",
+  "programmingLanguage": {
+    "@type": "ComputerLanguage",
+    "name": "C#"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Christian Storb"
+  }
+}
+</script>
 
-              
 
-              
-              <span class="mx-2">•</span>
-              <span class="d-flex align-items-center">
-                <span class="material-symbols-outlined me-1 fs-5">person</span>
-                
-                <a href="/author/christian-storb/"
-                  class="text-reset text-decoration-none border-bottom border-dark-subtle pb-0">Christian Storb</a>
-                
-              </span>
-              
-            </div>
-          </div>
-        </div>
-      </div>
+<div class="row mb-4">
+    <div class="col">
+        <h2 class="fw-bold">Money on GitHub</h2>
+        <p class="text-muted small">
+            Version: <strong>0.9.0</strong>
+            
+            &bull; <a href="https://www.nuget.org/packages/Money.Unifi" target="_blank" rel="noopener">NuGet</a>
+            
+            
+            &bull; <a href="https://github.com/chstorb/Money" target="_blank" rel="noopener">GitHub</a>
+            
+        </p>
     </div>
-
-    <div class="container">
-      <div class="row justify-content-center">
-
-        
-        <div class="col-lg-8 mb-5">
-          <div class="rounded-4 overflow-hidden shadow-sm">
-            <img src="/assets/images/consulting/blog/wsl-auf-windows.jpg" class="img-fluid w-100" alt="Ubuntu 24.04 auf WSL unter Windows installieren">
-          </div>
-        </div>
-        
-
-        <div class="col-lg-8">
-          <div class="p-4 p-md-5 rounded-4 shadow-sm border">
-            <div class="article-content" style="font-size: 1.1rem; line-height: 1.8;">
-              <p>Die Kombination von Windows und Linux in einem System bietet unschätzbare Flexibilität. Mit Windows Subsystem for Linux (WSL) kannst du Linux direkt auf deinem Windows-Rechner ausführen. <strong>Dieser Artikel konzentriert sich auf praktische Beispiele mit minimaler Erläuterung</strong>, um dir eine klare und einfache Anleitung zu bieten.</p>
-
-<h2 id="inhalt">Inhalt</h2>
-
-<ul>
-  <li><a href="#warum-wsl">Warum WSL?</a></li>
-  <li><a href="#schritt-1-wsl-über-die-benutzeroberfläche-aktivieren">Schritt 1: WSL über die Benutzeroberfläche aktivieren</a></li>
-  <li><a href="#schritt-2-wsl-2-aktivieren">Schritt 2: WSL 2 aktivieren</a></li>
-  <li><a href="#schritt-3-ubuntu-2404-aus-dem-microsoft-store-installieren">Schritt 3: Ubuntu 24.04 aus dem Microsoft Store installieren</a></li>
-  <li><a href="#schritt-4-erste-einrichtung-von-ubuntu">Schritt 4: Erste Einrichtung von Ubuntu</a></li>
-  <li><a href="#schritt-5-ubuntu-einrichten">Schritt 5: Ubuntu einrichten</a></li>
-  <li><a href="#schritt-6-überprüfe-deine-internetverbindung">Schritt 6: Überprüfe deine Internetverbindung</a></li>
-  <li><a href="#schritt-7-dns-server-überprüfen">Schritt 7: DNS-Server überprüfen</a></li>
-  <li><a href="#fazit">Fazit</a></li>
-</ul>
-
-<h3 id="warum-wsl">Warum WSL?</h3>
-
-<p>WSL ermöglicht die Ausführung eines vollständigen Linux-Subsystems direkt auf Windows – ohne Dual-Boot oder virtuelle Maschinen. Es ist ideal für Entwickler und Power-User, die die nahtlose Integration beider Betriebssysteme nutzen möchten.</p>
-
-<h3 id="schritt-1-wsl-über-die-benutzeroberfläche-aktivieren"><strong>Schritt 1: WSL über die Benutzeroberfläche aktivieren</strong></h3>
-
-<ul>
-  <li>
-    <p>Öffne das <strong>Startmenü</strong> und suche nach „Windows-Features“.</p>
-  </li>
-  <li>
-    <p>Klicke auf <strong>Windows-Features aktivieren oder deaktivieren</strong>.</p>
-  </li>
-  <li>
-    <p>Scrolle nach unten und setze ein Häkchen bei <strong>Windows-Subsystem für Linux</strong>.</p>
-  </li>
-  <li>
-    <p>Aktiviere auch <strong>Plattform für virtuelle Computer</strong>, um WSL 2 zu unterstützen.</p>
-  </li>
-  <li>
-    <p>Bestätige mit <strong>OK</strong> und lasse die Änderungen installieren.</p>
-  </li>
-  <li>
-    <p>Starte deinen PC neu.</p>
-  </li>
-</ul>
-
-<h3 id="schritt-2-wsl-2-aktivieren"><strong>Schritt 2: WSL 2 aktivieren</strong></h3>
-
-<p>Die Version 2 von WSL bietet signifikante Leistungsverbesserungen. So aktivierst du sie:</p>
-
-<ul>
-  <li>
-    <p>Öffne PowerShell als Administrator.</p>
-  </li>
-  <li>
-    <p>Gib diesen Befehl ein:<br /><code class="language-plaintext highlighter-rouge">wsl --set-default-version 2 </code><br />Falls eine Fehlermeldung erscheint, installiere das WSL 2-Kernel-Update von Microsoft.</p>
-  </li>
-</ul>
-
-<h3 id="schritt-3-ubuntu-2404-aus-dem-microsoft-store-installieren"><strong>Schritt 3: Ubuntu 24.04 aus dem Microsoft Store installieren</strong></h3>
-
-<ul>
-  <li>
-    <p>Öffne den <strong>Microsoft Store</strong>.</p>
-  </li>
-  <li>
-    <p>Suche nach „Ubuntu“ und wähle die Version „Ubuntu 24.04“.</p>
-  </li>
-  <li>
-    <p>Klicke auf <strong>Installieren</strong> und warte, bis der Prozess abgeschlossen ist.</p>
-  </li>
-  <li>
-    <p>Starte anschließend Ubuntu über das Startmenü oder gib <code class="language-plaintext highlighter-rouge">wsl</code> in die Suchleiste ein.</p>
-  </li>
-</ul>
-
-<h3 id="schritt-4-erste-einrichtung-von-ubuntu"><strong>Schritt 4: Erste Einrichtung von Ubuntu</strong></h3>
-
-<p>Beim ersten Start wirst du aufgefordert, einen Benutzernamen und ein Passwort zu erstellen. Diese gelten nur für dein Linux-System.</p>
-
-<h3 id="schritt-5-ubuntu-einrichten"><strong>Schritt 5: Ubuntu einrichten</strong></h3>
-
-<ul>
-  <li>
-    <p>Aktualisiere die Paketquellen:<br /><code class="language-plaintext highlighter-rouge">sudo apt update &amp;&amp; sudo apt upgrade -y</code></p>
-  </li>
-  <li>
-    <p>Installiere wichtige Tools wie <code class="language-plaintext highlighter-rouge">git</code>:<br /><code class="language-plaintext highlighter-rouge">sudo apt install git</code></p>
-  </li>
-</ul>
-
-<h3 id="schritt-6-überprüfe-deine-internetverbindung"><strong>Schritt 6: Überprüfe deine Internetverbindung</strong></h3>
-
-<ul>
-  <li>
-    <p>Stelle sicher, dass dein System mit dem Internet verbunden ist.</p>
-  </li>
-  <li>
-    <p>Teste die Verbindung mit einem einfachen Befehl wie:<br /><code class="language-plaintext highlighter-rouge">ping google.com</code></p>
-  </li>
-</ul>
-
-<div class="affiliate-box ">
-  <style>
-    /* Fallback responsive styles — prefer zentrale Stylesheet-Integration */
-    .affiliate-box { box-sizing: border-box; padding: 1rem; border: 1px solid rgba(255,255,255,0.1); border-radius: var(--stc-radius); width: 100%; max-width: 900px; margin: 0.75rem auto; background: transparent; }
-    .affiliate-box p { margin: 0 0 0.5rem; font-size: 0.95rem; }
-    .affiliate-box a { display: block; text-align: center; }
-    .affiliate-box img { max-width: 100%; height: auto; display: block; margin: 0 auto; object-fit: contain; }
-    @media (max-width: 480px) { .affiliate-box { padding: 0.75rem; } }
-  </style>
-
-  
-    <p><strong>Hinweis:</strong> Wenn du Webspace oder Domains suchst, kann ich dir lima‑city empfehlen. Ich nutze es selbst für Hosting‑Projekte.</p>
-  
-
-  <a rel="sponsored" href="https://www.lima-city.de/webhosting?cref=447478">
-    <img src="https://www.lima-city.de/assets/banner/banner5.jpg" alt="lima-city: Webhosting, Domains und Cloud" loading="lazy" decoding="async" />
-  </a>
 </div>
 
-<h3 id="schritt-7-dsn-server-überprüfen"><strong>Schritt 7: DSN-Server überprüfen</strong></h3>
 
-<p>Falls ein Problem mit der Internetverbindung besteht, könnte es an deinem DNS-Server liegen. Du kannst temporär auf einen öffentlichen DNS-Server wie Google DNS wechseln:<br />
-<code class="language-plaintext highlighter-rouge">sudo nano /etc/resolv.conf</code><br />
-Füge folgende Zeile hinzu:<br />
-<code class="language-plaintext highlighter-rouge">nameserver 8.8.8.8</code></p>
+<div class="mb-4">
+    <img src="https://img.shields.io/nuget/v/Money.Unifi.svg" alt="NuGet Version" class="me-2">
+    <img src="https://img.shields.io/nuget/dt/Money.Unifi.svg" alt="NuGet Downloads" class="me-2">
+    <img src="https://img.shields.io/github/license/chstorb/Money on GitHub.svg" alt="License">
+</div>
 
-<h3 id="fazit"><strong>Fazit</strong></h3>
 
-<p>Mit WSL und Ubuntu 24.04 kannst du die Vorteile von Linux nutzen, ohne Windows verlassen zu müssen. Diese Kombination ist perfekt für Entwicklung, Experimentieren und produktives Arbeiten. Ich hoffe, dieser Leitfaden erleichtert dir den Einstieg – viel Erfolg!</p>
+<div class="mb-4">
+    <h3>Installation</h3>
+    <pre><code class="language-bash">dotnet add package Money.Unifi --version 0.9.0</code></pre>
+</div>
 
-<h3 id="referenzen">Referenzen</h3>
+<div class="post-content">
+    <h2 id="overview">Overview</h2>
 
-<ul>
-  <li><a href="/automatisierung/iot/open-source/softwareentwicklung/wsl/2025/03/15/ubuntu-windows-start.html">Ubuntu beim Start von Windows automatisch starten: Ein Leitfaden</a></li>
-</ul>
+<p>Money on GitHub provides a robust set of tools for working with financial data formats, specifically SEPA XML messages. It supports generating <code class="language-plaintext highlighter-rouge">pain.001</code> credit transfer files and can be extended for various banking needs.</p>
 
-            </div>
-          </div>
+<h2 id="quick-start">Quick Start</h2>
 
-          <!-- Navigation between posts -->
-          <div class="d-flex justify-content-between py-4 mb-5">
-            
-            <a class="btn btn-outline-secondary rounded-pill px-4" href="/container-technologie/linux/softwareentwicklung/wsl/2025/03/10/moby-engine-ubuntu-wsl.html">
-              &larr; Vorheriger
-            </a>
-            
+<p>Create a SEPA Credit Transfer (pain.001) file with just a few lines of code:</p>
 
-            
-            <a class="btn btn-outline-primary rounded-pill px-4" href="/automatisierung/iot/open-source/softwareentwicklung/wsl/2025/03/15/ubuntu-windows-start.html">
-              Nächster &rarr;
-            </a>
-            
-          </div>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">using</span> <span class="nn">Money.Unifi</span><span class="p">;</span>
+<span class="kt">var</span> <span class="n">payment</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">Pain001Builder</span><span class="p">()</span>
+    <span class="p">.</span><span class="nf">WithDebtor</span><span class="p">(</span><span class="s">"DE1234567890"</span><span class="p">,</span> <span class="s">"ACME GmbH"</span><span class="p">)</span>
+    <span class="p">.</span><span class="nf">AddCreditTransfer</span><span class="p">(</span><span class="s">"DE0987654321"</span><span class="p">,</span> <span class="m">100.00m</span><span class="p">,</span> <span class="s">"Invoice 123"</span><span class="p">)</span>
+    <span class="p">.</span><span class="nf">Build</span><span class="p">();</span>
+<span class="kt">var</span> <span class="n">xml</span> <span class="p">=</span> <span class="n">payment</span><span class="p">.</span><span class="nf">ToXml</span><span class="p">();</span>
+<span class="n">File</span><span class="p">.</span><span class="nf">WriteAllText</span><span class="p">(</span><span class="s">"pain.001.xml"</span><span class="p">,</span> <span class="n">xml</span><span class="p">);</span>
+</code></pre></div></div>
 
-        </div>
-      </div>
+<p>Check out the <a href="https://github.com/chstorb/Money">GitHub Repository</a> for full documentation.</p>
+
+</div>
+
+<div class="mt-4 d-flex gap-2 flex-wrap">
+    
+    <a href="https://github.com/chstorb/Money" target="_blank" rel="noopener" class="btn btn-outline-primary">GitHub ansehen</a>
+    <a href="https://github.com/chstorb/Money/issues/new" target="_blank" rel="noopener" class="btn btn-outline-secondary">Issue
+        erstellen</a>
+    
+    
+    <a href="https://www.nuget.org/packages/Money.Unifi" target="_blank" rel="noopener"
+        class="btn btn-outline-success">NuGet installieren</a>
+    
+</div>
+
     </div>
   </main>
 
@@ -779,8 +679,8 @@ Füge folgende Zeile hinzu:<br />
     }
 </style>
   <script src="/assets/js/bootstrap.bundle.min.js?v=1771540095"></script>
+  <script src="/assets/js/copy-code.js?v=1771540095"></script>
   <script src="https://www.dwin2.com/pub.1933231.min.js"></script>
-
 </body>
 
 </html>
