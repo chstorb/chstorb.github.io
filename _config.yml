@@ -93,3 +93,7 @@ collections:
     permalink: /:name
     layout: default
 
+  projects:
+    output: true
+    permalink: /projects/:slug/
+

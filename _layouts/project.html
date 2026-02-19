@@ -1,0 +1,48 @@
+---
+layout: default
+---
+{% include schema-software.html %}
+
+<div class="row mb-4">
+    <div class="col">
+        <h2 class="fw-bold">{{ page.title }}</h2>
+        <p class="text-muted small">
+            Version: <strong>{{ page.version }}</strong>
+            {% if page.nuget_id %}
+            &bull; <a href="https://www.nuget.org/packages/{{ page.nuget_id }}" target="_blank" rel="noopener">NuGet</a>
+            {% endif %}
+            {% if page.repo_url %}
+            &bull; <a href="{{ page.repo_url }}" target="_blank" rel="noopener">GitHub</a>
+            {% endif %}
+        </p>
+    </div>
+</div>
+
+{% if page.nuget_id %}
+<div class="mb-4">
+    <img src="https://img.shields.io/nuget/v/{{ page.nuget_id }}.svg" alt="NuGet Version" class="me-2">
+    <img src="https://img.shields.io/nuget/dt/{{ page.nuget_id }}.svg" alt="NuGet Downloads" class="me-2">
+    <img src="https://img.shields.io/github/license/chstorb/{{ page.title }}.svg" alt="License">
+</div>
+{% endif %}
+
+<div class="mb-4">
+    <h3>Installation</h3>
+    <pre><code class="language-bash">dotnet add package {{ page.nuget_id }} --version {{ page.version }}</code></pre>
+</div>
+
+<div class="post-content">
+    {{ content }}
+</div>
+
+<div class="mt-4 d-flex gap-2 flex-wrap">
+    {% if page.repo_url %}
+    <a href="{{ page.repo_url }}" target="_blank" rel="noopener" class="btn btn-outline-primary">GitHub ansehen</a>
+    <a href="{{ page.repo_url }}/issues/new" target="_blank" rel="noopener" class="btn btn-outline-secondary">Issue
+        erstellen</a>
+    {% endif %}
+    {% if page.nuget_id %}
+    <a href="https://www.nuget.org/packages/{{ page.nuget_id }}" target="_blank" rel="noopener"
+        class="btn btn-outline-success">NuGet installieren</a>
+    {% endif %}
+</div>

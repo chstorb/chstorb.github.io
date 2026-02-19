@@ -30,9 +30,11 @@ tags: [Profile, Consulting, Social Media, Musik, Projekte]
 </style>
 
 <div class="container">
-  <div class="row mb-4">
-    <div class="col-lg-8">
-      <p class="lead">
+
+  <!-- Intro -->
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-10 text-center">
+      <p class="lead mb-5 col-lg-8 mx-auto">
         STORB Consulting ist auf verschiedenen Plattformen vertreten. <br>
         Hier finden Sie eine Übersicht unserer Profile, Projekte und Netzwerke.
       </p>
