@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Allgemeine Geschäftsbedingungen (AGB)"
-description: "Allgemeine Geschäftsbedingungen von STORB Consulting – rechtliche Grundlagen für Nutzung und Einkauf."
+title: "Allgemeine Geschäftsbedingungen (AGB) von STORB Consulting"
+description: "Allgemeine Geschäftsbedingungen (AGB) von STORB Consulting – rechtliche Grundlagen für Nutzung und Einkauf."
 permalink: /policies/terms-of-service/
 author: "Christian Storb"
 locale: "de_DE"

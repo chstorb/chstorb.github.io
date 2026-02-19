@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Zahlungsarten"
+title: "Zahlungsarten bei STORB Consulting"
 description: "Informationen zu Zahlungsarten bei STORB Consulting."
 permalink: /policies/payments-methods-info/
 author: "Christian Storb"

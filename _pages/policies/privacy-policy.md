@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Datenschutzerklärung"
+title: "Datenschutzerklärung von STORB Consulting"
 description: "Informationen zum Datenschutz bei STORB Consulting – transparent, rechtssicher und aktuell."
 permalink: /policies/privacy-policy/
 author: "Christian Storb"

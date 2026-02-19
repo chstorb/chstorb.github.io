@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Anforderungen an IT-Experten & Berater"
-description: "Karriere bei STORB Consulting: Erfahre alles über unsere Anforderungen an Experten für IT-Consulting, Azure und Blazor. Werde jetzt Teil unseres Teams."
+title: "Anforderungen an IT-Experten & Berater bei STORB Consulting"
+description: "Karriere bei STORB Consulting. Erfahre alles über unsere Anforderungen an Experten: analytische Stärke, Branchenkompetenz und Verantwortung in anspruchsvollen Projekten. Werde jetzt Teil unseres Teams."
 permalink: /career/requirements/
 author: "Christian Storb"
 locale: "de_DE"

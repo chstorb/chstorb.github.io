@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Ansprechpartner"
+title: "Ansprechpartner bei STORB Consulting"
 description: "Christian Storb – Inhaber von STORB Consulting. Fundierte Ausbildung, langjährige Erfahrung und klare Schwerpunkte."
 permalink: /contact/contacts/
 author: "Christian Storb"

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Kontakt"
+title: "Kontakt mit STORB Consulting"
 description: "Nimm Kontakt mit STORB Consulting auf – wir beraten dich von der Planung bis zum Betrieb."
 permalink: /contact/contact/
 author: "Christian Storb"

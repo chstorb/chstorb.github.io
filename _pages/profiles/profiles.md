@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "STC im Web"
-description: "STORB Consulting – Profile und Auftritte auf verschiedenen Plattformen im Web."
+title: "Offizielle Profile & digitale Präsenz von STORB Consulting"
+description: "Offizielle Profile und digitale Präsenz von STORB Consulting - zentrale Anlaufstelle für alle Projekte, Kanäle und Unternehmensauftritte im Web."
 permalink: /profiles/
 author: "Christian Storb"
 locale: "de_DE"

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Cookie-Richtlinie"
+title: "Cookie-Richtlinie von STORB Consulting"
 description: "Informationen zur Verwendung von Cookies bei STORB Consulting – transparent und rechtssicher."
 permalink: /policies/cookie-policy/
 author: "Christian Storb"

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Unsere Services"
+title: "Services von STORB Consulting"
 description: "STORB Consulting – Projektunterstützung von der Planung über die Entwicklung bis zur Markteinführung und den Betrieb."
 permalink: /services/
 author: "Christian Storb"

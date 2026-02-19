@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Über uns"
-description: "STORB Consulting – seit 2000 unabhängige Beratung und erfolgreiche Projekte für Unternehmen jeder Größe."
+title: "Über STORB Consulting"
+description: "Seit 2000 bietet STORB Consulting unabhängige Beratung und erfolgreiche Projekte für Unternehmen jeder Größe."
 permalink: /consulting/
 author: "Christian Storb"
 locale: "de_DE"

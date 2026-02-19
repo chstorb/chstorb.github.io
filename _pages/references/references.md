@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Referenzen"
+title: "Referenzen zu STORB Consulting"
 description: "Referenzen und ausgewählte Projekte von STORB Consulting – Expertise aus verschiedenen Branchen."
 permalink: /references/
 author: "Christian Storb"

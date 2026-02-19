@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Synergy at Work"
+title: "Zusammenarbeit mit STORB Consulting"
 description: "STORB Consulting arbeitet mit starken Partnern wie 4Unit Systems Integration für ganzheitliche IT-Lösungen."
 permalink: /partner/partner/
 author: "Christian Storb"

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Ausgewählte Referenzen"
+title: "Ausgewählte Referenzen zu STORB Consulting"
 description: "Referenzen zu Projekten von STORB Consulting – Bewertungen durch namhafte Unternehmen und Führungskräfte."
 permalink: /references/featured-references/
 author: "Christian Storb"

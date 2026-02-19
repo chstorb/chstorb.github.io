@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Unternehmensgrundsätze"
+title: "Unternehmensgrundsätze von STORB Consulting"
 description: "Die Unternehmensgrundsätze von STORB Consulting – Unabhängigkeit, Objektivität, Kompetenz und Vertraulichkeit."
 permalink: /principles/
 author: "Christian Storb"

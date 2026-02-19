@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Über den Autor"
+title: "Autor bei STORB Consulting"
 description: "Christian Storb – IT-Berater & Inhaber von STORB Consulting. Experte für .NET, Cloud & Azure mit über 20 Jahren Erfahrung. Erfahren Sie mehr über meine Projekte."
 permalink: /author/christian-storb/
 locale: "de_DE"

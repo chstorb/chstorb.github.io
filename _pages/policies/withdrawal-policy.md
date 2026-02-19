@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Widerrufsbelehrung & Rückgabebedingungen"
+title: "Widerrufsbelehrung & Rückgabebedingungen von STORB Consulting"
 description: "Widerrufsbelehrung von STORB Consulting: Erfahren Sie mehr über Ihr 14-tägiges Rückgaberecht, den Umtausch und den Prozess der Rückerstattung bei uns im Detail."
 permalink: /policies/withdrawal-policy/
 author: "Christian Storb"

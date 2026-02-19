@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Werbepartner"
-description: "STORB Consulting arbeitet mit starken Partnern zusammen."
+title: "Werbepartner von STORB Consulting"
+description: "STORB Consulting arbeitet mit starken Advertising-Partnern zusammen. Klare Rahmenbedingungen, transparente Kooperationen, verlässliche Prozesse und verantwortungsbewusste Zusammenarbeit."
 permalink: /partner/advertising-partner/
 author: "Christian Storb"
 locale: "de_DE"

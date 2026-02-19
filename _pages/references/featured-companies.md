@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Ausgewählte Unternehmen"
-description: "Referenzen von STORB Consulting: Sehen Sie hier eine Auswahl an Unternehmen und Partnern, mit denen wir erfolgreich IT- und Management-Projekte realisiert haben."
+description: "Referenzen zu STORB Consulting: Sehen Sie hier eine Auswahl an Unternehmen und Partnern, mit denen wir erfolgreich IT- und Management-Projekte realisiert haben."
 permalink: /references/featured-companies/
 author: "Christian Storb"
 locale: "de_DE"

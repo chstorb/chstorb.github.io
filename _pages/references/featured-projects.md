@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Ausgewählte Projekte"
-description: "Referenzen: Ausgewählte Projekte von STORB Consulting in IT, E-Government und Industrie."
+title: "Ausgewählte Projekte von STORB Consulting"
+description: "STORB Consulting - Ausgewählte Projekte in IT, E‑Government und Industrie: präzise umgesetzt, verantwortungsbewusst geführt und klar dokumentiert."
 permalink: /references/featured-projects/
 author: "Christian Storb"
 locale: "de_DE"

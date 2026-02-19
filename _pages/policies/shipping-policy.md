@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Versandbedingungen"
+title: "Versandbedingungen von STORB Consulting"
 description: "Informationen zu Versand, Lieferzeiten und Kosten bei STORB Consulting."
 permalink: /policies/shipping-policy/
 author: "Christian Storb"
