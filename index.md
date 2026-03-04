@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: default
 title: null
 description: "Christian Storb, STORB Consulting unterstützt Ihr Projekt bei Kunden und Geschäftspartnern vor Ort – von der Planung über die Entwicklung bis zur Markteinführung und den Betrieb."
 author: "Christian Storb"
@@ -182,3 +182,15 @@ robots: "index, follow"
 
 <!-- BLOG LIST -->
 <h2 class="mb-4 border-bottom pb-2">Aktuelle Blogbeiträge</h2>
+
+{% for post in site.posts limit: 5 %}
+
+  <article class="mb-4">
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <p>{{ post.excerpt }}</p>
+    <p><a href="{{ post.url }}">Weiterlesen</a></p>
+  </article>
+
+{% endfor %}  
+
+<p><a href="/blog/">Alle Artikel anzeigen →</a></p>
