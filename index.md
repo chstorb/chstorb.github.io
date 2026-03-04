@@ -16,8 +16,6 @@ twitter:
 robots: "index, follow"
 ---
 
-<div>
-
 <!-- INTRO -->
 <section class="py-5 mb-5 border-bottom bg-body-tertiary rounded-4 px-4 px-md-5">
   <div class="row align-items-center">
@@ -42,6 +40,18 @@ robots: "index, follow"
   </div>
 </section>
 
+<!-- ADSENSE SLOT 1 -->
+<!--
+<div class="container-xl my-5" style="max-width: 760px;">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-XXXX"
+       data-ad-slot="1111111111"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+-->
 
 <!-- ICON MODULES -->
 <section class="mb-5">
@@ -86,6 +96,18 @@ robots: "index, follow"
   </div>
 </section>
 
+<!-- ADSENSE SLOT 2 -->
+<!--
+<div class="container-xl my-5" style="max-width: 760px;">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-XXXX"
+       data-ad-slot="2222222222"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+-->
 
 <!-- WARUM STORB CONSULTING -->
 <section class="mb-5">
@@ -130,7 +152,7 @@ robots: "index, follow"
 
 
 <!-- ÜBER MICH -->
-<section class="mb-5">
+<section class="mb-5" style="max-width: 760px; margin: 0 auto;">
   <h2>Über mich</h2>
 
   <p>Ich bin Softwareentwickler und Softwarearchitekt mit breiter Erfahrung in modernen Entwicklungswerkzeugen, Frameworks, Datenbanksystemen und der Azure Cloud.</p>
@@ -145,13 +167,18 @@ robots: "index, follow"
 </section>
 
 
-<!-- KONTAKT -->
-<section class="mb-5">
-  <h2>Kontakt</h2>
-  <p>Für Projektanfragen oder Gespräche über Architektur, Modernisierung oder technische Verantwortung:</p>
-  <p><a itemprop="email" href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-</section>
-
+<!-- ADSENSE SLOT 3 -->
+<!--
+<div class="container-xl my-5" style="max-width: 760px;">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-XXXX"
+       data-ad-slot="3333333333"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
+-->
 
-<h2 class="h4 mb-4 border-bottom pb-2">Aktuelle Blogbeiträge</h2>
+<!-- BLOG LIST -->
+<h2 class="mb-4 border-bottom pb-2">Aktuelle Blogbeiträge</h2>
