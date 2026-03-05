@@ -77,8 +77,3 @@ partners:
     include: "100percentpure.html"
     active: true
   
-  - name: "instantdownload"
-    publisher_id: 118893
-    category: "shopping"
-    include: "instantdownload.html"
-    active: true
