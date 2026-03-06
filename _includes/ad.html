@@ -1,0 +1,11 @@
+{% comment %}
+Universal STC Ad Include
+Usage:
+{% include ad.html layout="hero" theme="premium" count="1" autoplay="true" interval="3000" %}
+{% endcomment %}
+
+<div class="stc-ad-slot" data-layout="{{ include.layout | default: 'list' }}" {% if include.theme
+    %}data-theme="{{ include.theme }}" {% endif %} {% if include.count %}data-count="{{ include.count }}" {% endif %} {%
+    if include.autoplay %}data-autoplay="{{ include.autoplay }}" {% endif %} {% if include.interval
+    %}data-interval="{{ include.interval }}" {% endif %} {% if include.ratio %}data-ratio="{{ include.ratio }}" {% endif
+    %}></div>
