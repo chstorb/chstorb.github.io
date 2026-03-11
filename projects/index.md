@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Projekte von STORB Consulting"
-description: "Open-Source .NET Bibliotheken und andere Projekte von Christian Storb: Fritz für AVM Fritz!Box TR-064 und Money.Unifi für SEPA-Zahlungsdateien."
+description: "Open-Source .NET Bibliotheken und andere Projekte von Christian Storb: Fritz für AVM Fritz!Box TR-064 und Money.Unifi für SEPA-Zahlungsdateien. AdCanvas – eine leichte, modulare Werbe‑ und Content‑Engine für moderne Websites."
 permalink: /projects/
 author: "Christian Storb"
 locale: "de_DE"
@@ -24,7 +24,7 @@ tags: [Services, Consulting, Projekte, Microsoft, Entwicklung, Betrieb]
   <div class="row justify-content-center mb-5">
     <div class="col-lg-10 text-center">
       <p class="lead mb-5 col-lg-8 mx-auto">
-        Open-Source .NET Bibliotheken – entwickelt für praxisnahe Anwendungsfälle im Bereich Netzwerk- und Finanzintegration.
+        Produkte und Open-Source .NET Bibliotheken – entwickelt für praxisnahe Anwendungsfälle im Bereich Netzwerk- und Finanzintegration.
       </p>
     </div>
   </div>

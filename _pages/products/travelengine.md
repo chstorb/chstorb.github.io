@@ -1,8 +1,14 @@
 ---
-layout: default
-title: "STC Travel Engine"
+layout: product
+title: "Travel Engine"
+version: "1.1.0"
+date: 2026-03-08 12:00:00 +0100
+nupkg_id: ""
+repo_url: ""
 description: "Automatisierte Content-Engine für Instagram – modular, zuverlässig, datengesteuert."
-permalink: /products/
+license: ""
+programmingLanguage: ""
+permalink: /products/travelengine
 author: "Christian Storb"
 locale: "de_DE"
 seo: 
@@ -15,14 +21,14 @@ twitter:
   creator: "@ChristianStorb"
 
 robots: "index, follow"
-categories: [services, consulting, products]
-tags: [Services, Consulting, Produkte, Entwicklung, Betrieb]
+categories: [products]
+tags: [Products]
 ---
 
-# STC Travel Engine  
+# Travel Engine  
 **Automatisierte Content‑Engine für Instagram – modular, zuverlässig, datengesteuert**
 
-Die STC Travel Engine ist ein vollständig automatisiertes Publishing‑System für Instagram‑Stories und Feed‑Posts. Sie kombiniert planbare Veröffentlichungslogik, intelligente Medienverwaltung und robuste API‑Anbindung zu einem zuverlässigen Content‑Workflow für Unternehmen, Creator und Agenturen.
+Die Travel Engine ist ein vollständig automatisiertes Publishing‑System für Instagram‑Stories und Feed‑Posts. Sie kombiniert planbare Veröffentlichungslogik, intelligente Medienverwaltung und robuste API‑Anbindung zu einem zuverlässigen Content‑Workflow für Unternehmen, Creator und Agenturen.
 
 ---
 

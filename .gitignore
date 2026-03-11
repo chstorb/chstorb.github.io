@@ -4,8 +4,8 @@ _site
 .jekyll-metadata
 vendor
 
-# Ignore plans folder
-plans
-
 # Ignore agent folder
 .agent
+
+# Ignore plans folder
+.home
