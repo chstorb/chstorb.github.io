@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "Projekte von STORB Consulting"
+title: "Produkte von STORB Consulting"
 description: "Open-Source .NET Bibliotheken und andere Projekte von Christian Storb: Fritz für AVM Fritz!Box TR-064 und Money.Unifi für SEPA-Zahlungsdateien. AdCanvas – eine leichte, modulare Werbe‑ und Content‑Engine für moderne Websites."
-permalink: /projects/
+permalink: /products/
 author: "Christian Storb"
 locale: "de_DE"
 seo: 
@@ -15,8 +15,8 @@ twitter:
   creator: "@ChristianStorb"
 
 robots: "index, follow"
-categories: [services, consulting]
-tags: [Services, Consulting, Projekte, Microsoft, Entwicklung, Betrieb]
+categories: [products, consulting]
+tags: [Consulting, Produkte, Microsoft, Entwicklung, Betrieb]
 ---
 
 <div class="container">
@@ -32,23 +32,23 @@ tags: [Services, Consulting, Projekte, Microsoft, Entwicklung, Betrieb]
 
 <hr class="my-5 opacity-10">
 
-<div class="project-cards">
-{% for project in site.projects %}
+<div class="product-cards">
+{% for product in site.products %}
   <div class="mb-5">
-    <h2><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h2>
-    <p>{{ project.description }}</p>
-    {% if project.nuget_id %}
+    <h2><a href="{{ product.url | relative_url }}">{{ product.title }}</a></h2>
+    <p>{{ product.description }}</p>
+    {% if product.nuget_id %}
     <p>
-      <img src="https://img.shields.io/nuget/v/{{ project.nuget_id }}.svg" alt="NuGet Version">
-      <img src="https://img.shields.io/nuget/dt/{{ project.nuget_id }}.svg" alt="NuGet Downloads">
+      <img src="https://img.shields.io/nuget/v/{{ product.nuget_id }}.svg" alt="NuGet Version">
+      <img src="https://img.shields.io/nuget/dt/{{ product.nuget_id }}.svg" alt="NuGet Downloads">
     </p>
     {% endif %}
-    <a href="{{ project.url | relative_url }}" class="btn btn-primary">Projekt ansehen</a>
-    {% if project.nuget_id %}
-    <a href="https://www.nuget.org/packages/{{ project.nuget_id }}" target="_blank" class="btn btn-secondary">NuGet installieren</a>
+    <a href="{{ product.url | relative_url }}" class="btn btn-primary">Produkt ansehen</a>
+    {% if product.nuget_id %}
+    <a href="https://www.nuget.org/packages/{{ product.nuget_id }}" target="_blank" class="btn btn-secondary">NuGet installieren</a>
     {% endif %}
-    {% if project.repo_url %}
-    <a href="{{ project.repo_url }}" target="_blank" class="btn btn-secondary">GitHub</a>
+    {% if product.repo_url %}
+    <a href="{{ product.repo_url }}" target="_blank" class="btn btn-secondary">GitHub</a>
     {% endif %}
   </div>
 {% endfor %}

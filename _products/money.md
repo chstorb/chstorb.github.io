@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: product
 title: "Money on GitHub"
 description: ".NET‑Bibliothek zum Erstellen von SEPA‑Zahlungsdateien (pain.001) und zum Einlesen sowie Auswerten von Kontoauszügen.“"
 version: "0.9.0"

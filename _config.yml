@@ -102,7 +102,7 @@ collections:
     permalink: /:name
     layout: default
 
-  projects:
+  products:
     output: true
-    permalink: /projects/:slug/
+    permalink: /products/:slug/
 

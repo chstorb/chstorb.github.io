@@ -1,28 +1,11 @@
 ---
 layout: product
 title: "Fritz#"
-version: "1.1.0"
-date: 2026-03-08 12:00:00 +0100
-nupkg_id: "Fritz"
-repo_url: "https://github.com/chstorb/Fritz"    
 description: "NET‑Bibliothek für eine nahtlose Anbindung der AVM‑Fritz!Box über TR‑064 – schnell, stabil, integrationsbereit."
-license: "https://opensource.org/licenses/MIT"
-programmingLanguage: "C#"
-permalink: /products/fritz/
-author: "Christian Storb"
-locale: "de_DE"
-seo: 
-  type: WebPage
-
-# Open Graph / Twitter Cards
-image: "/assets/images/consulting/og-image.png"
-twitter:
-  card: "summary_large_image"
-  creator: "@ChristianStorb"
-
-robots: "index, follow"
-categories: [products, fritz]
-tags: [Fritz, Produkte]
+version: "1.1.0"
+date: 2024-01-01 12:00:00 +0100
+nuget_id: "Fritz"
+repo_url: "https://github.com/chstorb/Fritz"
 ---
 
 ## Overview
