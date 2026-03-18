@@ -8,25 +8,24 @@
 
   <!-- SEO & Social -->
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Fritz# | Christian Storb</title>
+<title>Blog von STORB Consulting | Christian Storb</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Fritz#" />
+<meta property="og:title" content="Blog von STORB Consulting" />
 <meta name="author" content="Christian Storb" />
 <meta property="og:locale" content="de_DE" />
-<meta name="description" content="NET‑Bibliothek für eine nahtlose Anbindung der AVM‑Fritz!Box über TR‑064 – schnell, stabil, integrationsbereit." />
-<meta property="og:description" content="NET‑Bibliothek für eine nahtlose Anbindung der AVM‑Fritz!Box über TR‑064 – schnell, stabil, integrationsbereit." />
-<link rel="canonical" href="https://chstorb.github.io/projects/fritz/" />
-<meta property="og:url" content="https://chstorb.github.io/projects/fritz/" />
+<meta name="description" content="STORB Consulting unterstützt Ihr Projekt bei Kunden und Geschäftspartnern vor Ort – von der Planung über die Entwicklung bis zur Markteinführung und den Betrieb." />
+<meta property="og:description" content="STORB Consulting unterstützt Ihr Projekt bei Kunden und Geschäftspartnern vor Ort – von der Planung über die Entwicklung bis zur Markteinführung und den Betrieb." />
+<link rel="canonical" href="https://chstorb.github.io/blog/" />
+<meta property="og:url" content="https://chstorb.github.io/blog/" />
 <meta property="og:site_name" content="Christian Storb" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-01-01T11:00:00+00:00" />
+<meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Fritz#" />
+<meta property="twitter:title" content="Blog von STORB Consulting" />
 <meta name="twitter:site" content="@ChristianStorb" />
-<meta name="twitter:creator" content="@https://twitter.com/ChristianStorb" />
+<meta name="twitter:creator" content="@Christian Storb" />
 <meta property="article:publisher" content="https://www.facebook.com/storb.christian/" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Christian Storb","url":"https://chstorb.github.io/author/christian-storb/"},"dateModified":"2024-01-01T11:00:00+00:00","datePublished":"2024-01-01T11:00:00+00:00","description":"NET‑Bibliothek für eine nahtlose Anbindung der AVM‑Fritz!Box über TR‑064 – schnell, stabil, integrationsbereit.","headline":"Fritz#","mainEntityOfPage":{"@type":"WebPage","@id":"https://chstorb.github.io/projects/fritz/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://chstorb.github.io/assets/images/consulting/og-image.png"},"name":"Christian Storb"},"url":"https://chstorb.github.io/projects/fritz/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Christian Storb"},"description":"STORB Consulting unterstützt Ihr Projekt bei Kunden und Geschäftspartnern vor Ort – von der Planung über die Entwicklung bis zur Markteinführung und den Betrieb.","headline":"Blog von STORB Consulting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://chstorb.github.io/assets/images/consulting/og-image.png"},"name":"Christian Storb"},"url":"https://chstorb.github.io/blog/"}</script>
 <!-- End Jekyll SEO tag -->
 
   <script type="application/ld+json">
@@ -123,10 +122,11 @@
   <link rel="manifest" href="/assets/images/consulting/site.webmanifest">
 
   <!-- CSS -->
-  <link href="/assets/css/bootstrap.min.css?v=1772733957" rel="stylesheet">
-  <link href="/assets/css/material-symbols.css?v=1772733957" rel="stylesheet">
-  <link href="/assets/css/custom.css?v=1772733957" rel="stylesheet">
-  <link href="/assets/css/ads.css?v=1772733957" rel="stylesheet">
+  <link href="/assets/css/bootstrap.min.css?v=1773869970" rel="stylesheet">
+  <link href="/assets/css/material-symbols.css?v=1773869970" rel="stylesheet">
+  <link href="/assets/css/custom.css?v=1773869970" rel="stylesheet">
+  <link href="/assets/css/ads.css?v=1773869970" rel="stylesheet">
+  <link href="/assets/css/adcanvas.min.css?v=1773869970" rel="stylesheet">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4ETH06PXMC"></script>
@@ -371,14 +371,16 @@
         </li>
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle px-3" href="/projects" role="button"
+          <a class="nav-link dropdown-toggle px-3" href="/products" role="button"
             data-bs-toggle="dropdown" aria-expanded="false">
-            Open Source
+            Produkte
           </a>
           <ul class="dropdown-menu border-0 shadow-sm rounded-3 mt-1">
-            <li><a class="dropdown-item py-2" href="/projects">Übersicht</a></li>
-            <li><a class="dropdown-item py-2" href="/projects/fritz">Fritz</a></li>
-            <li><a class="dropdown-item py-2" href="/projects/money">Money.Unifi</a></li>
+            <li><a class="dropdown-item py-2" href="/products/">Übersicht</a></li>
+            <li><a class="dropdown-item py-2" href="/products/adcanvas/">AdCanvas</a></li>
+            <li><a class="dropdown-item py-2" href="/products/fritz/">Fritz</a></li>
+            <li><a class="dropdown-item py-2" href="/products/money/">Money.Unifi</a></li>
+            <li><a class="dropdown-item py-2" href="/products/travelengine/">TravelEngine</a></li>
           </ul>
         </li>
 
@@ -401,89 +403,51 @@
     <div class="container py-5">
 
       <!-- Page Title (Visually Hidden by default, accessible for Screen Readers) -->
-      <h1 class="visually-hidden mb-4 fw-bold">Christian Storb @ STORB Consulting - Fritz#</h1>
+      <h1 class="visually-hidden mb-4 fw-bold">Christian Storb @ STORB Consulting - Blog von STORB Consulting</h1>
 
-      <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareSourceCode",
-  "name": "Fritz#",
-  "version": "1.1.0",
-  "description": "NET‑Bibliothek für eine nahtlose Anbindung der AVM‑Fritz!Box über TR‑064 – schnell, stabil, integrationsbereit.",
-  "codeRepository": "https://github.com/chstorb/Fritz",
-  "license": "https://opensource.org/licenses/MIT",
-  "datePublished": "2024-01-01T11:00:00+00:00",
-  "programmingLanguage": {
-    "@type": "ComputerLanguage",
-    "name": "C#"
-  },
-  "author": {
-    "@type": "Person",
-    "name": "Christian Storb"
-  }
-}
-</script>
-
-
-<div class="row mb-4">
-    <div class="col">
-        <h2 class="fw-bold">Fritz#</h2>
-        <p class="text-muted small">
-            Version: <strong>1.1.0</strong>
-            
-            &bull; <a href="https://www.nuget.org/packages/Fritz" target="_blank" rel="noopener">NuGet</a>
-            
-            
-            &bull; <a href="https://github.com/chstorb/Fritz" target="_blank" rel="noopener">GitHub</a>
-            
-        </p>
+      <div class="container">
+  <!-- Intro -->
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-9 text-center">
+      <div class="mb-3 text-primary">
+         <span class="material-symbols-outlined display-4">news</span>
+      </div>
+      <h2 class="display-5 fw-bold mb-4">Blog</h2>
     </div>
+  </div>
 </div>
 
+<hr class="my-5 opacity-10">
 
-<div class="mb-4">
-    <img src="https://img.shields.io/nuget/v/Fritz.svg" alt="NuGet Version" class="me-2">
-    <img src="https://img.shields.io/nuget/dt/Fritz.svg" alt="NuGet Downloads" class="me-2">
-    <img src="https://img.shields.io/github/license/chstorb/Fritz#.svg" alt="License">
-</div>
+<h2 class="h4 mb-4 border-bottom pb-2">Beiträge</h2>
 
 
-<div class="mb-4">
-    <h3>Installation</h3>
-    <pre><code class="language-bash">dotnet add package Fritz --version 1.1.0</code></pre>
-</div>
+<section class="mb-5">
+    <div class="d-flex align-items-center mb-3">
+        <span class="material-symbols-outlined text-primary" style="font-size: 2.2rem;">
+            library_books
+        </span>
+        <h1 class="ms-2 mb-0 fw-bold">Blog</h1>
+    </div>
 
-<div class="post-content">
-    <h2 id="overview">Overview</h2>
+    <p class="lead text-secondary">
+        Aktuelle Beiträge zu Softwarearchitektur, Cloud‑Modernisierung, .NET‑Entwicklung,
+        IoT‑Plattformen und technischen Entscheidungsgrundlagen.
+        Praxisnah, präzise und aus realen Projekten.
+    </p>
+</section>
 
-<p>Fritz is a .NET library designed to simplify interaction with AVM Fritz!Box routers via the TR-064 protocol. It provides easy access to features like phonebook exports and device information.</p>
-
-<h2 id="quick-start">Quick Start</h2>
-
-<p>Here is a simple example of how to authenticate and export the phonebook as a CSV file.</p>
-
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">using</span> <span class="nn">Fritz</span><span class="p">;</span>
-<span class="kt">var</span> <span class="n">client</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">FritzClient</span><span class="p">(</span><span class="s">"http://fritz.box"</span><span class="p">,</span> <span class="s">"username"</span><span class="p">,</span> <span class="s">"password"</span><span class="p">);</span>
-<span class="k">await</span> <span class="n">client</span><span class="p">.</span><span class="nf">AuthenticateAsync</span><span class="p">();</span>
-<span class="kt">var</span> <span class="n">csv</span> <span class="p">=</span> <span class="k">await</span> <span class="n">client</span><span class="p">.</span><span class="n">Phonebook</span><span class="p">.</span><span class="nf">ExportCsvAsync</span><span class="p">();</span>
-<span class="n">File</span><span class="p">.</span><span class="nf">WriteAllText</span><span class="p">(</span><span class="s">"phonebook.csv"</span><span class="p">,</span> <span class="n">csv</span><span class="p">);</span>
-</code></pre></div></div>
-
-<p>For more details, visit the <a href="https://github.com/chstorb/Fritz">GitHub Repository</a>.</p>
-
-</div>
-
-<div class="mt-4 d-flex gap-2 flex-wrap">
-    
-    <a href="https://github.com/chstorb/Fritz" target="_blank" rel="noopener" class="btn btn-outline-primary">GitHub ansehen</a>
-    <a href="https://github.com/chstorb/Fritz/issues/new" target="_blank" rel="noopener" class="btn btn-outline-secondary">Issue
-        erstellen</a>
-    
-    
-    <a href="https://www.nuget.org/packages/Fritz" target="_blank" rel="noopener"
-        class="btn btn-outline-success">NuGet installieren</a>
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
     
 </div>
+
+<nav class="pagination mt-5 d-flex justify-content-between">
+    
+    <span></span>
+    
+
+    
+</nav>
 
     </div>
   </main>
@@ -546,7 +510,7 @@
         <div class="d-flex flex-wrap justify-content-center justify-content-md-end gap-3 mb-3 small fw-medium">
           <a href="/services" class="text-decoration-none text-secondary hover-primary">Services</a>
           <a href="/profiles" class="text-decoration-none text-secondary hover-primary">Profile</a>
-          <a href="/projects" class="text-decoration-none text-secondary hover-primary">Open
+          <a href="/products" class="text-decoration-none text-secondary hover-primary">Open
             Source</a>
           <a href="/author/christian-storb"
             class="text-decoration-none text-secondary hover-primary">Über mich</a>
@@ -670,9 +634,11 @@
         height: auto !important;
     }
 </style>
-  <script src="/assets/js/bootstrap.bundle.min.js?v=1772733957"></script>
-  <script src="/assets/js/copy-code.js?v=1772733957"></script>
+  <script src="/assets/js/bootstrap.bundle.min.js?v=1773869970"></script>
+  <script src="/assets/js/copy-code.js?v=1773869970"></script>
   <script src="https://www.dwin2.com/pub.1933231.min.js"></script>
+  <script src="/assets/js/adcanvas.min.js?v=1773869970" type="module"
+    defer></script>
 </body>
 
 </html>
