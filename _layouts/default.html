@@ -74,6 +74,35 @@
 
   {% include footer.html %}
 
+  <!-- AdCanvas Config -->
+  <script>
+    /**
+     * Sanitizes HTML by escaping dangerous characters.
+     * @param {string} text - Text to sanitize
+     * @returns {string} Safe HTML-escaped text
+     */
+    function sanitize(text) {
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    window.AdCanvasConfig = {
+      feedUrl: "https://raw.githubusercontent.com/chstorb/chstorb.github.io/refs/heads/main/awin-travel.json",
+      templates: {
+        list: ad => `
+          <div class="adcanvas-ad-card">
+              <a href="${sanitize(ad.awDeepLink)}" rel="sponsored" target="_blank">
+                  <img src="${sanitize(ad.merchantImageUrl)}" alt="${sanitize(ad.productName)}" loading="lazy" decoding="async">
+                  <div class="adcanvas-ad-title">${sanitize(ad.productName)}</div>
+                  <div class="adcanvas-ad-destination-city">${sanitize(ad.destinationCity)}</div>
+                  <div class="adcanvas-ad-price">${sanitize(ad.displayPriceFormatted)}</div>
+              </a>
+          </div>`
+      }
+    };
+  </script>
+
   <!-- Scripts -->
   {% include mermaid.html %}
   <script src="{{ '/assets/js/bootstrap.bundle.min.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>

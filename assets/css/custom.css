@@ -340,3 +340,12 @@ pre {
   margin-top: 10px;
   white-space: nowrap;
 }
+
+.my-custom-theme {
+  --adcanvas-bg: #e1f5fe !important;
+  --adcanvas-text: #01579b !important;
+  --adcanvas-border: #4fc3f7 !important;
+  --adcanvas-radius-md: 16px !important;
+  --adcanvas-radius-sm: 8px !important;
+  --adcanvas-spacing-md: 20px !important;
+}
