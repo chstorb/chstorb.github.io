@@ -20,7 +20,7 @@
 <meta property="og:site_name" content="Christian Storb" />
 <meta property="og:image" content="https://chstorb.github.io/assets/images/consulting/og-image.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2026-03-18T21:39:30+00:00" />
+<meta property="article:published_time" content="2026-03-22T11:57:20+00:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://chstorb.github.io/assets/images/consulting/og-image.png" />
 <meta property="twitter:title" content="Zahlungsarten bei STORB Consulting" />
@@ -28,7 +28,7 @@
 <meta name="twitter:creator" content="@Christian Storb" />
 <meta property="article:publisher" content="https://www.facebook.com/storb.christian/" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Christian Storb"},"dateModified":"2026-03-18T21:39:30+00:00","datePublished":"2026-03-18T21:39:30+00:00","description":"Informationen zu Zahlungsarten bei STORB Consulting.","headline":"Zahlungsarten bei STORB Consulting","image":"https://chstorb.github.io/assets/images/consulting/og-image.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://chstorb.github.io/assets/images/consulting/og-image.png"},"name":"Christian Storb"},"url":"https://chstorb.github.io/policies/payments-methods-info/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Christian Storb"},"dateModified":"2026-03-22T11:57:20+00:00","datePublished":"2026-03-22T11:57:20+00:00","description":"Informationen zu Zahlungsarten bei STORB Consulting.","headline":"Zahlungsarten bei STORB Consulting","image":"https://chstorb.github.io/assets/images/consulting/og-image.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://chstorb.github.io/assets/images/consulting/og-image.png"},"name":"Christian Storb"},"url":"https://chstorb.github.io/policies/payments-methods-info/"}</script>
 <!-- End Jekyll SEO tag -->
 
   <script type="application/ld+json">
@@ -125,11 +125,11 @@
   <link rel="manifest" href="/assets/images/consulting/site.webmanifest">
 
   <!-- CSS -->
-  <link href="/assets/css/bootstrap.min.css?v=1773869970" rel="stylesheet">
-  <link href="/assets/css/material-symbols.css?v=1773869970" rel="stylesheet">
-  <link href="/assets/css/custom.css?v=1773869970" rel="stylesheet">
-  <link href="/assets/css/ads.css?v=1773869970" rel="stylesheet">
-  <link href="/assets/css/adcanvas.min.css?v=1773869970" rel="stylesheet">
+  <link href="/assets/css/bootstrap.min.css?v=1774180640" rel="stylesheet">
+  <link href="/assets/css/material-symbols.css?v=1774180640" rel="stylesheet">
+  <link href="/assets/css/custom.css?v=1774180640" rel="stylesheet">
+  <link href="/assets/css/ads.css?v=1774180640" rel="stylesheet">
+  <link href="/assets/css/adcanvas.min.css?v=1774180640" rel="stylesheet">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4ETH06PXMC"></script>
@@ -503,8 +503,7 @@ Die Weitergabe ist für die Durchführung der Zahlung und damit zur Erfüllung d
         <div class="d-flex flex-wrap justify-content-center justify-content-md-end gap-3 mb-3 small fw-medium">
           <a href="/services" class="text-decoration-none text-secondary hover-primary">Services</a>
           <a href="/profiles" class="text-decoration-none text-secondary hover-primary">Profile</a>
-          <a href="/products" class="text-decoration-none text-secondary hover-primary">Open
-            Source</a>
+          <a href="/products" class="text-decoration-none text-secondary hover-primary">Produkte</a>
           <a href="/author/christian-storb"
             class="text-decoration-none text-secondary hover-primary">Über mich</a>
         </div>
@@ -527,6 +526,35 @@ Die Weitergabe ist für die Durchführung der Zahlung und damit zur Erfüllung d
     </div>
   </div>
 </footer>
+
+  <!-- AdCanvas Config -->
+  <script>
+    /**
+     * Sanitizes HTML by escaping dangerous characters.
+     * @param {string} text - Text to sanitize
+     * @returns {string} Safe HTML-escaped text
+     */
+    function sanitize(text) {
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    window.AdCanvasConfig = {
+      feedUrl: "https://raw.githubusercontent.com/chstorb/chstorb.github.io/refs/heads/main/awin-travel.json",
+      templates: {
+        list: ad => `
+          <div class="adcanvas-ad-card">
+              <a href="${sanitize(ad.awDeepLink)}" rel="sponsored" target="_blank">
+                  <img src="${sanitize(ad.merchantImageUrl)}" alt="${sanitize(ad.productName)}" loading="lazy" decoding="async">
+                  <div class="adcanvas-ad-title">${sanitize(ad.productName)}</div>
+                  <div class="adcanvas-ad-destination-city">${sanitize(ad.destinationCity)}</div>
+                  <div class="adcanvas-ad-price">${sanitize(ad.displayPriceFormatted)}</div>
+              </a>
+          </div>`
+      }
+    };
+  </script>
 
   <!-- Scripts -->
   <!-- Mermaid.js Support -->
@@ -627,10 +655,10 @@ Die Weitergabe ist für die Durchführung der Zahlung und damit zur Erfüllung d
         height: auto !important;
     }
 </style>
-  <script src="/assets/js/bootstrap.bundle.min.js?v=1773869970"></script>
-  <script src="/assets/js/copy-code.js?v=1773869970"></script>
+  <script src="/assets/js/bootstrap.bundle.min.js?v=1774180640"></script>
+  <script src="/assets/js/copy-code.js?v=1774180640"></script>
   <script src="https://www.dwin2.com/pub.1933231.min.js"></script>
-  <script src="/assets/js/adcanvas.min.js?v=1773869970" type="module"
+  <script src="/assets/js/adcanvas.min.js?v=1774180640" type="module"
     defer></script>
 </body>
 

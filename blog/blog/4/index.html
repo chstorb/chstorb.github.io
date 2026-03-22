@@ -123,11 +123,11 @@
   <link rel="manifest" href="/assets/images/consulting/site.webmanifest">
 
   <!-- CSS -->
-  <link href="/assets/css/bootstrap.min.css?v=1773869970" rel="stylesheet">
-  <link href="/assets/css/material-symbols.css?v=1773869970" rel="stylesheet">
-  <link href="/assets/css/custom.css?v=1773869970" rel="stylesheet">
-  <link href="/assets/css/ads.css?v=1773869970" rel="stylesheet">
-  <link href="/assets/css/adcanvas.min.css?v=1773869970" rel="stylesheet">
+  <link href="/assets/css/bootstrap.min.css?v=1774180640" rel="stylesheet">
+  <link href="/assets/css/material-symbols.css?v=1774180640" rel="stylesheet">
+  <link href="/assets/css/custom.css?v=1774180640" rel="stylesheet">
+  <link href="/assets/css/ads.css?v=1774180640" rel="stylesheet">
+  <link href="/assets/css/adcanvas.min.css?v=1774180640" rel="stylesheet">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4ETH06PXMC"></script>
@@ -855,8 +855,7 @@ https://learn.microsoft.com/en-us/dotnet/architecture/blazor-for-web-forms-devel
         <div class="d-flex flex-wrap justify-content-center justify-content-md-end gap-3 mb-3 small fw-medium">
           <a href="/services" class="text-decoration-none text-secondary hover-primary">Services</a>
           <a href="/profiles" class="text-decoration-none text-secondary hover-primary">Profile</a>
-          <a href="/products" class="text-decoration-none text-secondary hover-primary">Open
-            Source</a>
+          <a href="/products" class="text-decoration-none text-secondary hover-primary">Produkte</a>
           <a href="/author/christian-storb"
             class="text-decoration-none text-secondary hover-primary">Über mich</a>
         </div>
@@ -879,6 +878,35 @@ https://learn.microsoft.com/en-us/dotnet/architecture/blazor-for-web-forms-devel
     </div>
   </div>
 </footer>
+
+  <!-- AdCanvas Config -->
+  <script>
+    /**
+     * Sanitizes HTML by escaping dangerous characters.
+     * @param {string} text - Text to sanitize
+     * @returns {string} Safe HTML-escaped text
+     */
+    function sanitize(text) {
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    window.AdCanvasConfig = {
+      feedUrl: "https://raw.githubusercontent.com/chstorb/chstorb.github.io/refs/heads/main/awin-travel.json",
+      templates: {
+        list: ad => `
+          <div class="adcanvas-ad-card">
+              <a href="${sanitize(ad.awDeepLink)}" rel="sponsored" target="_blank">
+                  <img src="${sanitize(ad.merchantImageUrl)}" alt="${sanitize(ad.productName)}" loading="lazy" decoding="async">
+                  <div class="adcanvas-ad-title">${sanitize(ad.productName)}</div>
+                  <div class="adcanvas-ad-destination-city">${sanitize(ad.destinationCity)}</div>
+                  <div class="adcanvas-ad-price">${sanitize(ad.displayPriceFormatted)}</div>
+              </a>
+          </div>`
+      }
+    };
+  </script>
 
   <!-- Scripts -->
   <!-- Mermaid.js Support -->
@@ -979,10 +1007,10 @@ https://learn.microsoft.com/en-us/dotnet/architecture/blazor-for-web-forms-devel
         height: auto !important;
     }
 </style>
-  <script src="/assets/js/bootstrap.bundle.min.js?v=1773869970"></script>
-  <script src="/assets/js/copy-code.js?v=1773869970"></script>
+  <script src="/assets/js/bootstrap.bundle.min.js?v=1774180640"></script>
+  <script src="/assets/js/copy-code.js?v=1774180640"></script>
   <script src="https://www.dwin2.com/pub.1933231.min.js"></script>
-  <script src="/assets/js/adcanvas.min.js?v=1773869970" type="module"
+  <script src="/assets/js/adcanvas.min.js?v=1774180640" type="module"
     defer></script>
 </body>
 
