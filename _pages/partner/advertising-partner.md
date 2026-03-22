@@ -53,7 +53,6 @@ Eine Auswahl unserer aktiven Partnerprogramme:
 - <a rel="sponsored" href="https://www.awin1.com/cread.php?s=4658264&v=14964&q=372437&r=1933231">bahn.de</a>
 - <a rel="sponsored" href="https://www.awin1.com/cread.php?s=2888542&v=23469&q=413866&r=1933231">Eurowings Holidays</a>
 - <a rel="sponsored" href="https://www.awin1.com/cread.php?s=4029161&v=15034&q=374559&r=1933231">Flightright</a>
-- <a rel="sponsored" href="https://www.awin1.com/cread.php?awinmid=118893&awinaffid=1933231">FOURNSEVEN</a>
 - <a rel="sponsored" href="https://www.awin1.com/cread.php?s=3879662&v=113964&q=511925&r=1933231">GoBusi</a>
 - <a rel="sponsored" href="https://www.lima-city.de/webhosting?cref=447478">limacity</a>
 - <a rel="sponsored" href="https://www.awin1.com/cread.php?awinmid=58127&awinaffid=1933231&ued=https%3A%2F%2Flogo-matten.com">Logomatten Welt</a>

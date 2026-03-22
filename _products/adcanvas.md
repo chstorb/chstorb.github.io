@@ -25,6 +25,9 @@ repo_url: "https://github.com/chstorb/adcanvas"
         Es ist schnell, modular, leichtgewichtig und funktioniert in jeder Umgebung – von statischen
         Seiten bis zu komplexen Web‑Apps.
       </p>
+    <p>
+     <a href="https://codepen.io/editor/chstorb/pen/019d15fb-6659-7aa0-a61b-00233f8df247">📍 Live Demo</a> | <a href="https://github.com/chstorb/adcanvas">🔗 Repository</a>
+    </p>
     </div>
   </div>
 
@@ -58,6 +61,17 @@ repo_url: "https://github.com/chstorb/adcanvas"
     &lt;div class="adcanvas-ad-slot" data-layout="carousel" data-count="10" data-autoplay="true" data-interval="3000"&gt;&lt;/div&gt;
         </pre>
     </div>
+
+    <div class="row">
+        <h3 class="mt-5">Die Demo‑Seite</h3>
+
+    <p>Eine vollständige, interaktive Demo findest du hier:</p>
+
+    <p>👉 <a href="https://codepen.io/editor/chstorb/pen/019d15fb-6659-7aa0-a61b-00233f8df247">https://codepen.io/editor/chstorb/pen/019d15fb-6659-7aa0-a61b-00233f8df247</a></p>
+
+    <p>Die Demo zeigt das grundlegende Rendering, ein Custom‑Template und das Laden eines echten Travel‑Feeds.</p>
+    </div>
+
     <hr class="my-5">
 
     <h3 class="mt-5">Themes</h3>
