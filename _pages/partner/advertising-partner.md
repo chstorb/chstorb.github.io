@@ -56,7 +56,6 @@ Eine Auswahl unserer aktiven Partnerprogramme:
 - <a rel="sponsored" href="https://www.awin1.com/cread.php?s=3879662&v=113964&q=511925&r=1933231">GoBusi</a>
 - <a rel="sponsored" href="https://www.lima-city.de/webhosting?cref=447478">limacity</a>
 - <a rel="sponsored" href="https://www.awin1.com/cread.php?awinmid=58127&awinaffid=1933231&ued=https%3A%2F%2Flogo-matten.com">Logomatten Welt</a>
-- <a rel="sponsored" href="https://www.awin1.com/cread.php?awinmid=45239&awinaffid=1933231&ued=https%3A%2F%2Fsamuraimuseum.de">SAMURAI MUSEUM BERLIN</a>
 - <a rel="sponsored" href="https://www.awin1.com/cread.php?s=3955195&v=115953&q=520698&r=1933231">Zen Hotels</a>
 
 Eine vollständige Übersicht der aktiven Programme finden Sie in unseren thematischen Beiträgen und Empfehlungen.

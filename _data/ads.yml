@@ -59,12 +59,6 @@ partners:
     include: "logomatten.html"
     active: true
 
-  - name: "samurai"
-    publisher_id: 45239
-    category: "museum"
-    include: "samurai.html"
-    active: true
-
   - name: "zenhotelseu"
     publisher_id: 115953
     category: "hotel"
