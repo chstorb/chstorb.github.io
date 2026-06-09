@@ -15,11 +15,11 @@
     "productName": "Arabella Azur Resort",
     "awProductId": "37797517756",
     "merchantProductId": "9",
-    "displayPriceFormatted": "791,00 \u20AC",
+    "displayPriceFormatted": "797,00 \u20AC",
     "merchantImageUrl": "https://eurowingsholidays.wavecdn.net/icmphotels/hlx/960_638/1493189148_OTS_AEGHRG10Q4_b3b964c8f387bd239dc6507b065be5cf.jpg",
     "description": "",
     "merchantCategory": "",
-    "searchPrice": "791",
+    "searchPrice": "797",
     "merchantName": "Eurowings Holidays DE",
     "merchantId": "23469",
     "categoryName": "",
@@ -31,7 +31,7 @@
     "merchantDeepLink": "https://holidays.eurowings.com/de-de/hotel/alle-regionen/aegypten/hurghada/arabella-azur-resort-9?maxD=7\u0026minD=7",
     "language": "",
     "lastUpdated": "",
-    "displayPrice": "EUR791",
+    "displayPrice": "EUR797",
     "dataFeedId": "93280"
   },
   {
@@ -50,11 +50,11 @@
     "productName": "Arabia Azur Resort",
     "awProductId": "43858051710",
     "merchantProductId": "10",
-    "displayPriceFormatted": "773,00 \u20AC",
+    "displayPriceFormatted": "776,00 \u20AC",
     "merchantImageUrl": "https://eurowingsholidays.wavecdn.net/icmphotels/hlx/960_638/1602498694_OTS_AEGHRG10P0_2b1ad8dae3a038845dfdf44f7a3ccdde.jpg",
     "description": "",
     "merchantCategory": "",
-    "searchPrice": "773",
+    "searchPrice": "776",
     "merchantName": "Eurowings Holidays DE",
     "merchantId": "23469",
     "categoryName": "",
@@ -66,7 +66,7 @@
     "merchantDeepLink": "https://holidays.eurowings.com/de-de/hotel/alle-regionen/aegypten/hurghada/arabia-azur-resort-10?maxD=7\u0026minD=7",
     "language": "",
     "lastUpdated": "",
-    "displayPrice": "EUR773",
+    "displayPrice": "EUR776",
     "dataFeedId": "93280"
   },
   {
@@ -365,11 +365,11 @@
     "productName": "Sindbad Club",
     "awProductId": "40071497599",
     "merchantProductId": "47",
-    "displayPriceFormatted": "837,00 \u20AC",
+    "displayPriceFormatted": "703,00 \u20AC",
     "merchantImageUrl": "https://eurowingsholidays.wavecdn.net/icmphotels/hlx/960_638/1669188839_OTS_AEGHRG2S76_b9c7517cb9a76b5659bad97c29a80d92.jpg",
     "description": "",
     "merchantCategory": "",
-    "searchPrice": "837",
+    "searchPrice": "703",
     "merchantName": "Eurowings Holidays DE",
     "merchantId": "23469",
     "categoryName": "",
@@ -381,7 +381,7 @@
     "merchantDeepLink": "https://holidays.eurowings.com/de-de/hotel/alle-regionen/aegypten/hurghada/sindbad-club-47?maxD=7\u0026minD=7",
     "language": "",
     "lastUpdated": "",
-    "displayPrice": "EUR837",
+    "displayPrice": "EUR703",
     "dataFeedId": "93280"
   }
 ]
