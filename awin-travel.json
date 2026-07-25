@@ -85,11 +85,11 @@
     "productName": "Giftun Azur Resort",
     "awProductId": "44745913802",
     "merchantProductId": "21",
-    "displayPriceFormatted": "561,00 \u20AC",
+    "displayPriceFormatted": "576,00 \u20AC",
     "merchantImageUrl": "https://eurowingsholidays.wavecdn.net/icmphotels/hlx/960_638/1386251748_OTS_AEGHRG10SE_3.jpg",
     "description": "",
     "merchantCategory": "",
-    "searchPrice": "561",
+    "searchPrice": "576",
     "merchantName": "Eurowings Holidays DE",
     "merchantId": "23469",
     "categoryName": "",
@@ -101,7 +101,7 @@
     "merchantDeepLink": "https://holidays.eurowings.com/de-de/hotel/alle-regionen/aegypten/hurghada/giftun-azur-resort-21?maxD=7\u0026minD=7",
     "language": "",
     "lastUpdated": "",
-    "displayPrice": "EUR561",
+    "displayPrice": "EUR576",
     "dataFeedId": "93280"
   },
   {
@@ -120,11 +120,11 @@
     "productName": "Hilton Plaza",
     "awProductId": "43858051711",
     "merchantProductId": "24",
-    "displayPriceFormatted": "678,00 \u20AC",
+    "displayPriceFormatted": "656,00 \u20AC",
     "merchantImageUrl": "https://eurowingsholidays.wavecdn.net/icmphotels/hlx/960_638/1605081054_OTS_AEGHRG10UQ_24ccc925eda602d61862777eabcc4ebb.jpg",
     "description": "",
     "merchantCategory": "",
-    "searchPrice": "678",
+    "searchPrice": "656",
     "merchantName": "Eurowings Holidays DE",
     "merchantId": "23469",
     "categoryName": "",
@@ -136,7 +136,7 @@
     "merchantDeepLink": "https://holidays.eurowings.com/de-de/hotel/alle-regionen/aegypten/hurghada/hilton-plaza-24?maxD=7\u0026minD=7",
     "language": "",
     "lastUpdated": "",
-    "displayPrice": "EUR678",
+    "displayPrice": "EUR656",
     "dataFeedId": "93280"
   },
   {
@@ -365,11 +365,11 @@
     "productName": "Sindbad Club",
     "awProductId": "40071497599",
     "merchantProductId": "47",
-    "displayPriceFormatted": "755,00 \u20AC",
+    "displayPriceFormatted": "761,00 \u20AC",
     "merchantImageUrl": "https://eurowingsholidays.wavecdn.net/icmphotels/hlx/960_638/1782718622_Sindbad_7jpg.jpg",
     "description": "",
     "merchantCategory": "",
-    "searchPrice": "755",
+    "searchPrice": "761",
     "merchantName": "Eurowings Holidays DE",
     "merchantId": "23469",
     "categoryName": "",
@@ -381,7 +381,7 @@
     "merchantDeepLink": "https://holidays.eurowings.com/de-de/hotel/alle-regionen/aegypten/hurghada/sindbad-club-47?maxD=7\u0026minD=7",
     "language": "",
     "lastUpdated": "",
-    "displayPrice": "EUR755",
+    "displayPrice": "EUR761",
     "dataFeedId": "93280"
   }
 ]
