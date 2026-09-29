@@ -1,7 +1,7 @@
 [
   {
     "hotelName": "",
-    "hotelStars": "3.5",
+    "hotelStars": "3.0",
     "destinationCity": "Hurghada",
     "checkInDate": "",
     "checkOutDate": "",
@@ -15,11 +15,11 @@
     "productName": "Arabella Azur Resort",
     "awProductId": "37797517756",
     "merchantProductId": "9",
-    "displayPriceFormatted": "652,00 \u20AC",
+    "displayPriceFormatted": "699,00 \u20AC",
     "merchantImageUrl": "https://eurowingsholidays.wavecdn.net/icmphotels/hlx/960_638/1493189148_OTS_AEGHRG10Q4_b3b964c8f387bd239dc6507b065be5cf.jpg",
     "description": "",
     "merchantCategory": "",
-    "searchPrice": "652",
+    "searchPrice": "699",
     "merchantName": "Eurowings Holidays DE",
     "merchantId": "23469",
     "categoryName": "",
@@ -31,7 +31,7 @@
     "merchantDeepLink": "https://holidays.eurowings.com/de-de/hotel/alle-regionen/aegypten/hurghada/arabella-azur-resort-9?maxD=7\u0026minD=7",
     "language": "",
     "lastUpdated": "",
-    "displayPrice": "EUR652",
+    "displayPrice": "EUR699",
     "dataFeedId": "93280"
   },
   {
