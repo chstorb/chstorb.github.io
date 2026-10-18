@@ -9,7 +9,7 @@ partners:
     publisher_id: 102513
     category: "shopping"
     include: "awolvisioneu.html"
-    active: true
+    active: false
 
   - name: "limacity"
     publisher_id: 447478
@@ -39,7 +39,7 @@ partners:
     publisher_id: 113964
     category: "bus"
     include: "gobusi.html"
-    active: true
+    active: false
 
   - name: "gurado"
     publisher_id: 112830
