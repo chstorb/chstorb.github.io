@@ -1,0 +1,26 @@
+{% comment %}
+  Zentraler Google AdSense Anzeigenblock
+  Parameter:
+    - slot: Die AdSense Slot-ID (z. B. "1111111111" oder aus site.data.ads)
+    - client: Optional (Standard: ca-pub-6012977884316456 bzw. aus site.data.ads.google_adsense.client)
+    - format: Anzeigentyp (Standard: "auto")
+    - max_width: Maximale Breite des Containers (Standard: "760px")
+    - class: Zusätzliche CSS-Klassen für den Container (Standard: "my-5")
+{% endcomment %}
+{% assign ad_client = include.client | default: site.data.ads.google_adsense.client | default: "ca-pub-6012977884316456" %}
+{% assign ad_slot = include.slot | default: site.data.ads.google_adsense.slots.home_1 | default: "1111111111" %}
+{% assign ad_format = include.format | default: "auto" %}
+{% assign ad_max_width = include.max_width | default: "760px" %}
+{% assign ad_class = include.class | default: "my-5" %}
+
+<div class="container-xl {{ ad_class }}" style="max-width: {{ ad_max_width }};">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="{{ ad_client }}"
+       data-ad-slot="{{ ad_slot }}"
+       data-ad-format="{{ ad_format }}"
+       data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>

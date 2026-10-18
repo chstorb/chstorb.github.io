@@ -41,17 +41,8 @@ robots: "index, follow"
 </section>
 
 <!-- ADSENSE SLOT 1 -->
-<!--
-<div class="container-xl my-5" style="max-width: 760px;">
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-XXXX"
-       data-ad-slot="1111111111"
-       data-ad-format="auto"
-       data-full-width-responsive="true"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>
--->
+{% include google-ad.html slot=site.data.ads.google_adsense.slots.home_1 %}
+
 
 <!-- ICON MODULES -->
 <section class="mb-5">
@@ -97,17 +88,8 @@ robots: "index, follow"
 </section>
 
 <!-- ADSENSE SLOT 2 -->
-<!--
-<div class="container-xl my-5" style="max-width: 760px;">
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-XXXX"
-       data-ad-slot="2222222222"
-       data-ad-format="auto"
-       data-full-width-responsive="true"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>
--->
+{% include google-ad.html slot=site.data.ads.google_adsense.slots.home_2 %}
+
 
 <!-- WARUM STORB CONSULTING -->
 <section class="mb-5">
@@ -168,17 +150,8 @@ robots: "index, follow"
 
 
 <!-- ADSENSE SLOT 3 -->
-<!--
-<div class="container-xl my-5" style="max-width: 760px;">
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-XXXX"
-       data-ad-slot="3333333333"
-       data-ad-format="auto"
-       data-full-width-responsive="true"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>
--->
+{% include google-ad.html slot=site.data.ads.google_adsense.slots.home_3 %}
+
 
 <!-- BLOG LIST -->
 <h2 class="mb-4 border-bottom pb-2">Aktuelle Blogbeiträge</h2>

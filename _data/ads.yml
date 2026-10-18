@@ -70,4 +70,10 @@ partners:
     category: "shopping"
     include: "100percentpure.html"
     active: true
-  
+
+google_adsense:
+  client: "ca-pub-6012977884316456"
+  slots:
+    home_1: "8883317946"
+    home_2: "3603071102"
+    home_3: "7823096721"
