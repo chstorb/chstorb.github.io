@@ -1,3 +1,5 @@
+{% assign active_ads = site.data.ads.partners | where: "active", true %}
+{% if active_ads.size > 0 %}
 <div class="container">
     <div id="adCarousel" class="carousel slide" aria-label="Partneranzeigen" data-bs-ride="carousel"
         data-bs-pause="false">
@@ -6,7 +8,7 @@
 
         <div class="carousel-inner">
 
-            {% for ad in site.data.ads.partners %}
+            {% for ad in active_ads %}
             <div class="carousel-item {% if forloop.first %}active{% endif %}">
                 {% include ads/{{ ad.include }} %}
             </div>
@@ -25,3 +27,4 @@
         </button>
     </div>
 </div>
+{% endif %}
